@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Atlas speechprocessor</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BACKGROUND="Image5.gif">
+
+<B><FONT FACE="Tahoma" SIZE=6><FONT FACE="Tahoma" SIZE=6><SPAN LANG="N"><P ALIGN="CENTER">LIMITING HF SPEECH PROCESSOR FOR Atlas210x/215X</P>
+</FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">A simple (universal) system based on DSB clipping and selection with one filter.</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="updated2.gif" WIDTH=44 HEIGHT=12></FONT><B><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4>&nbsp;</FONT></FONT><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2>7 may 2011</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="Atlas-210xf.jpg" WIDTH=812 HEIGHT=301></P>
+<P ALIGN="CENTER"></P>
+<P ALIGN="CENTER"><IMG SRC="Atlas-215xf.jpg" WIDTH=812 HEIGHT=304></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">INTRODUCTION</P><IMG SRC="clipperf1.jpg" ALIGN="LEFT" HSPACE=9 WIDTH=320 HEIGHT=197>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">The DSB limiter in my original article (see </FONT></FONT></SPAN><A HREF="../../Diversen/DSBclipper/dsb-clipper.eng.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">RF speech processor</FONT></FONT></SPAN></A><U><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">)</U> gave problems for some foreign home brewers. Probably by using a different type of IC (eg TBA120S, TBA120AS, TBA120T, TBA120U) than the previous model (TBA120, TBA120A) which was used in my circuit. Moreover, the older types are difficult to obtain. Reason why I started experimenting with readily available mixer NE612A (or SA12AN). This experimental version («fig) of a speech clipper, one of the many tested designs, worked satisfactorily.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&nbsp;</P>
+<P ALIGN="JUSTIFY">&nbsp;</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">DESIGN</P><IMG SRC="atlas&#32;clippers.gif" ALIGN="RIGHT" HSPACE=9 WIDTH=427 HEIGHT=329>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">The double sideband signal from the first NE612A (pins 4, 5) is too weak to be limited with two silicon or Schottky diodes without idling current. </P><IMG SRC="diodeclips1.gif" ALIGN="LEFT" HSPACE=9 WIDTH=102 HEIGHT=75>
+<P ALIGN="JUSTIFY">During experimenting arose («fig) a clipper circuit with one diode and the emitter-base junction of a transistor (T1) as second diode. </P><IMG SRC="diodeclips2.gif" ALIGN="LEFT" HSPACE=9 WIDTH=92 HEIGHT=93>
+<P ALIGN="JUSTIFY">The 1k8 and 3k9 resistors are used for the best possible symmetrical clipping. Eventually can be replaced («fig) by a 5k0 potentiometer and 1K0 resistor to refine symmetrical clipping. The transistor contributes the necessary amplification for the ceramic filter CFW455H. This 455 kHz type must be loaded at input and output with 2k0 impedance, which I did at first. However no marked difference was noted with the higher values in the diagram.</P>
+<P ALIGN="JUSTIFY">The intention is that the diodes clips and not the second mixer. With sufficient signal from the filter, the second mixer limits rather than the diodes. Therefore the filter is loaded with a voltage divider (2k2, 1K0).</P><IMG SRC="mixers.gif" ALIGN="LEFT" HSPACE=9 WIDTH=75 HEIGHT=73>
+<P ALIGN="JUSTIFY">Note that, unlike the designs of others, oscillator and RF signals are respectively routed to pins 1 and 6 of the second NE612A. I did this for more LF output at pin 4. </P><IMG SRC="scoopf.jpg" ALIGN="RIGHT" HSPACE=9 WIDTH=153 HEIGHT=140>
+<P ALIGN="JUSTIFY">The clipping level is determined by the strength of the microphone signal. Extreme limiting must be avoid to maintain a good understanding. Optimal is a higher average power output while the listener does not notice that a speech processor is in action. The S meter moves much less. This (fig») can be seen on an oscilloscope with aaahhh ... into the mic.</P><IMG SRC="outputs.gif" ALIGN="LEFT" HSPACE=9 WIDTH=226 HEIGHT=56>
+<P ALIGN="JUSTIFY">The increased average output is noticeable. Use a 230 V/100 W lamp as transmitter load and tune with an ATU for SWR = 1. Speak into the microphone without processor and then enabled clipper, see the lamp show's more light.</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">FILTER</P><IMG SRC="cfw455hf1.jpg" ALIGN="RIGHT" HSPACE=9 WIDTH=320 HEIGHT=119>
+</B></FONT></FONT><P ALIGN="JUSTIFY"></P><IMG SRC="cfw455hf2.jpg" ALIGN="LEFT" HSPACE=9 WIDTH=270 HEIGHT=125>
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">The Murata 6 kHz/6 dB, 18 kHz/50 dB CFW455H filter («fig) is selected as a compromise between bandwidth and price. The type is obsolete, but is still available via internet (ebay.de, ebay.co.uk). More modern versions with the same specifications and with the addition of "H" (eg CFWLA455KHFA-B0) are also suitable. Alternatively, an expensive and narrow SSB filter type CFJ455K13 may used.</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">RESONATOR</P><IMG SRC="ztb455ef.jpg" ALIGN="RIGHT" HSPACE=9 WIDTH=88 HEIGHT=120>
+</B></FONT></FONT><P ALIGN="JUSTIFY"></P><IMG SRC="csb455ef.jpg" ALIGN="LEFT" HSPACE=9 WIDTH=246 HEIGHT=125>
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">A (fig ») 455 kHz ceramic resonator is used for the oscillator circuit. Unfortunately, they seldom resonate at the specified frequency. Experimentation is often needed even with items of the same type and brand. I chose for a Murata CSB455E, this model is more in circulation. Some vendors offer (fig») a ZTB455E resonator, probably a newer version of the CSB455E type. </P>
+<P ALIGN="JUSTIFY">Depending on the resonator's oscillation frequency the filter's output signal is SSB with suppressed opposite sideband or partly suppressed opposite sideband. Almost perfect SSB is obtained if the carrier is set to 452 or 457 kHz, which favour to the last frequency. Unfortunately the CSB455E does not oscillate on 457 kHz in this design. </P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P>INSTALLATION</P><IMG SRC="clipperf3.jpg" ALIGN="LEFT" HSPACE=9 WIDTH=320 HEIGHT=204>
+</B></FONT></FONT><IMG SRC="clipperf2.jpg" ALIGN="RIGHT" HSPACE=9 WIDTH=320 HEIGHT=131>
+<P>&nbsp;</P>
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Because the very limited space in my Atlas210x/215x with an already mounted VFO stabilizer, an etched PCB is too big. So I soldered (fig») the components "dead beetle" style on a cladded printboard. </P>
+<P ALIGN="JUSTIFY">&nbsp;</P>
+<P ALIGN="JUSTIFY">&nbsp;</P>
+<P ALIGN="JUSTIFY">Installation in the Atlas is done (fig») at the back of the MIC.GAIN/ALC pot with double-sided mounting tape. </P>
+<P ALIGN="JUSTIFY"></P></FONT></FONT></SPAN>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=860 DIR="LTR">
+<TR><TD WIDTH="66%" VALIGN="MIDDLE">
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N"><P ALIGN="JUSTIFY">-Desolder at the top of the potmeter the wire to PC300.</P>
+<P ALIGN="JUSTIFY">-Decouple with 10 nF.</P>
+<P ALIGN="JUSTIFY">-Connect the wire via a 47k resistor to the input of the processor.</P>
+<P ALIGN="JUSTIFY">-Connect a wire from the output to the potmeter.</P>
+<P ALIGN="JUSTIFY">-Connect a wire to chassis/ground.</P>
+<P ALIGN="JUSTIFY">-Connect a wire to the (= orange wire) 8-9 Volt supply.</FONT></FONT></SPAN></TD>
+<TD WIDTH="34%" VALIGN="MIDDLE">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="clipperf4.jpg" WIDTH=254 HEIGHT=200></FONT></SPAN></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<B><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N"><P ALIGN="JUSTIFY">See my other Atlas-210x/215x articles:</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="atlas210x-215x&#32;modsf.jpg" WIDTH=601 HEIGHT=413></P>
+<P ALIGN="JUSTIFY"></FONT></SPAN><A HREF="../Atlas215/AtlasEng.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">General information</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="JUSTIFY"></FONT></SPAN><A HREF="../Atlas215&#32;AGC&#32;mod/atlas215&#32;agc&#32;mod&#32;eng.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">AGC modification</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="JUSTIFY"></FONT></SPAN><A HREF="../Atlas215&#32;stabilizer/Atlas215x&#32;VFO&#32;stabilizer.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">VFO stabiliser</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="JUSTIFY"></FONT></SPAN><A HREF="../Atlas215&#32;post&#32;mixer&#32;amp/Atlas215x&#32;post&#32;mixer&#32;amp.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">Post mixer amplifier</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="JUSTIFY"></FONT></SPAN><A HREF="../Atlas215&#32;stabilizer/Atlas215x&#32;VFO&#32;stabilizer.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">VFO stabilizer</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="JUSTIFY"></FONT></SPAN><A HREF="../Atlas210&#32;17m&#32;mod/atlas210x&#32;17m&#32;mod&#32;eng.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">17m modification</FONT></FONT></SPAN></A></P>
+<SPAN LANG="N"><P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;<IMG SRC="bar2.gif" WIDTH=500 HEIGHT=36></P>
+<FONT SIZE=2><P ALIGN="CENTER"></FONT></SPAN><A HREF="../Modifaties.htm"><IMG SRC="backfri.gif" BORDER=0 WIDTH=53 HEIGHT=25></A></P></BODY>
+</HTML>

@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Omni VI mods</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080" BACKGROUND="Image1.gif">
+
+<B><FONT FACE="Tahoma" SIZE=7><FONT FACE="Tahoma" SIZE=7><SPAN LANG="N"><P ALIGN="CENTER">TEN TEC OMNI VI MODIFICATIES</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="engver.gif" WIDTH=83 HEIGHT=22></FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2>&nbsp;click </B></FONT></FONT></SPAN><A HREF="Omni&#32;VI&#32;modseng.htm"><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><SPAN LANG="N">OMNI VI mods</B></FONT></FONT></SPAN></A></P>
+<B><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff"><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff"><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff"><SPAN LANG="N"><P ALIGN="CENTER">Aan dit artikel wordt nog gewerkt!</P>
+</B></FONT></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="updated2.gif" WIDTH=44 HEIGHT=12></FONT><B><FONT FACE="Tahoma" SIZE=2 COLOR="#0000ff"><FONT FACE="Tahoma" SIZE=2 COLOR="#0000ff"><FONT FACE="Tahoma" SIZE=2 COLOR="#0000ff">&nbsp;</FONT></FONT></FONT><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2>27 jul 2011 Met een HF speech processor.</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="omni6f.jpg" WIDTH=800 HEIGHT=251></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P>INLEIDING</P>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Er zijn diverse modificaties voor een Ten Tec OMNI VI te vinden, maar die van mij ben ik nog niet als zodanig op internet tegengekomen.</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P>RX ZWAKKER OP 160m </P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="frontends.gif" WIDTH=900 HEIGHT=776></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Monteer 100 nF parellel aan de gemarkeerde condensators (C3, C10, C23, C38, C39, C40, C41 en C49).</P>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Als mijn Corsair II en Omni VI gevoed worden met een 50 µV signaal, wijst de S-meter op 160 m veel minder aan dan S9. Lang heb ik naar deze ongevoeligheid gezocht en kennelijk toch &eacute;&eacute;n van de oorzaken gevonden. Verder vermoed ik dat de zelfinductie van de wikkelingen op de balanstrafo T3 voor deze band aan de lage kant is.</P></FONT></FONT></SPAN>
+<P ALIGN="RIGHT"><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=609 ALIGN="RIGHT" HSPACE=12 DIR="LTR">
+<TR><TD VALIGN="TOP">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="capsf1.jpg" WIDTH=600 HEIGHT=330></P>
+<P ALIGN="CENTER"><IMG SRC="capsf2.jpg" WIDTH=600 HEIGHT=201></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">BPF/FRONT END BOARD (81593), 8 × 100 nF en 2 × 470R</B></FONT></FONT></SPAN></TD>
+</TR>
+</TABLE>
+</P>
+
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N"><P ALIGN="JUSTIFY">De totale koppelcapaciteit is voor het 160 m signaal te) klein, vooral ten opzichte van de signaalweg van ongeveer 50 Ohm. Van de antenne ingang naar de 4 × J30 voorversterker staan respectievelijk in serie C3, C10, C23 en dan in serie met parallel aan elkaar C38, C39, C40, C41. Dat is in totaal maar (3.3 × 40) : (3.3 + 40) = 3 nF! Ook C42 (10 nF) en C49 (10 nF) zijn onvoldoende. Door aan de sporenzijde van de print een 100 nF condensator parallel aan elk van de genoemde capaciteiten te monteren, geeft de S-meter vrijwel hetzelfde aan als op de andere banden. Een aanmerkelijke verbetering ten opzichte van de originele opzet. Het vergt wel enig speurwerk om aan de onderzijde van de print de juiste componenten te vinden. De (fig») de foto's kunnen u daarbij op weg helpen.</P>
+<P ALIGN="JUSTIFY">Twee 470R weerstanden parallel aan de originele 470R weerstanden op print, is een van internet gehaalde modificatie. Men kan ook de originele weerstanden verwijderen en 220R in de plaats monteren.</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">S-METER</P><IMG SRC="s&#32;meters.gif" ALIGN="RIGHT" HSPACE=9 WIDTH=223 HEIGHT=129>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Het is in mijn (&gt;5dehands!) set niet gelukt om de S-meter volgens de manual af te regelen op: 0.8 µV = S3 en 50 µV = S9. Dat laatste lukt wel het eerste niet. Bij 0.8 µV komt de wijzer niet uit de hoek en gaat verder op maximum bij iets meer dan 50 µV. Een algehele verbetering was mogelijk met aan de componentenzijde (fig») een Schottky diode (BAT85) parallel aan D4 (1N4148). S3 met 0.8 µV lukt nog steeds niet, maar S7, S8, S9 en S9</FONT></FONT><B><SUP><FONT FACE="Tahoma">+</B></SUP></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4> zijn wat dichter bij de waarheid gekomen. Als u deze verandering uitvoert, vergeet dan niet om ook L3 en L5 opnieuw af te regelen!</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">AGC</P></B></FONT></FONT></SPAN>
+<TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=946 DIR="LTR">
+<TR><TD WIDTH="31%" VALIGN="MIDDLE">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="agcs.gif" WIDTH=207 HEIGHT=212></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Bruggelijkrichting voor het AGC systeem.</B></FONT></FONT></SPAN></TD>
+<TD WIDTH="69%" VALIGN="MIDDLE">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="agcf.jpg" WIDTH=601 HEIGHT=274></FONT></SPAN></TD>
+</TR>
+</TABLE>
+
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N"><P ALIGN="JUSTIFY">De ontvanger heeft regelmatig storing zoals dat van een schrikdraad installatie, maar dat is niet de bron. Een Atlas210x/215x en Corsair II transceiver met hun van LF afgeleide AGC systeem, hebben daar ook hinder van, terwijl andere sets dat euvel niet hebben. Bij de Atlas heb ik dat grotendeels verholpen door het AGC systeem te voeden uit een bruggelijkrichter systeem. </P>
+<P ALIGN="JUSTIFY">Dat is nu ook in de OMNI VI gedaan en de storing is veel minder geworden. Het ontwerp bestaat uit een extra transistor (BC547) geschakeld als fasedraaier met een versterking van 1. De emitter is niet ontkoppeld. De schakeling wordt parallel aan de basis van Q3 gelegd en het signaal afgenomen van BC547's collector en naar een paar extra diodes (1N4148) gestuurd. Samen met D6 en D7, beide ook een 1N4148, vormen zij een bruggelijkrichter. Ook hier geldt dat L3 en L5 opnieuw afgeregeld dienen te worden!</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">VERVANGEN TRIMMERS</P><IMG SRC="trimmersf2.jpg" ALIGN="RIGHT" HSPACE=9 WIDTH=230 HEIGHT=286>
+</B></FONT></FONT><P ALIGN="JUSTIFY"></P><IMG SRC="trimmersf1.jpg" ALIGN="LEFT" HSPACE=9 WIDTH=240 HEIGHT=120>
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Kennelijk was door vorige eigenaars veelvuldig met de draaggolf trimmers gespeeld, want goed instellen bij het draaien was door verspringen van de frequentie niet eenvoudig. De originele trimmers voor SSB zijn 20 pF en voor CW 60 pF. De afgebeelde («fig) 20 pF folietrimmer (Philips) heeft dezelfde pinafstand en werd dan ook als vervanger (fig») gemonteerd. Om de juiste frequentie te bereiken was een condensator van 33 pF parallel aan de CW trimmer nodig. Montage was geen probleem want aan de sporenzijde van de print waren twee ongebruikte eilandjes, waarschijnlijk (uit voorzorg) bestemd voor zo'n extra capaciteit. </P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">SPEECH PROCESSOR</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="speechprocf1.jpg" WIDTH=552 HEIGHT=355></P></FONT></SPAN>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=952 DIR="LTR">
+<TR><TD WIDTH="55%" VALIGN="MIDDLE">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="speechprocs1.gif" WIDTH=495 HEIGHT=248></FONT></SPAN></TD>
+<TD WIDTH="45%" VALIGN="TOP">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="speechprocs2.gif" WIDTH=419 HEIGHT=221></FONT></SPAN></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N"><P ALIGN="JUSTIFY">Met wat meer ALC uitsturing werkt de zender in deze set net zo effectief als met ingeschakelde originele speech processor. De laatste is een AF compressor gevolgd door een begrenzer. Zo'n systeem heeft maar een beperkte werking, beter is begrenzing van een HF signaal.</P><IMG SRC="speechprocf3.jpg" ALIGN="RIGHT" HSPACE=9 WIDTH=286 HEIGHT=313>
+</FONT></FONT><P ALIGN="JUSTIFY"></P><IMG SRC="speechprocf2.jpg" ALIGN="LEFT" HSPACE=9 WIDTH=333 HEIGHT=313>
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Na een paar experimenten werd de boven afgebeelde </FONT></FONT></SPAN><A HREF="../../Diversen/DSBclipper/dsb-clipper.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">DSB clipper</FONT></FONT></SPAN></A><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N"> op een zodanige wijze ingebouwd, dat zoveel mogelijk van de oorspronkelijk processor schakeling in werking bleef. Zo ook de drukschakelaar en potmeter van de frontplaat. Een gedeelte (fig») werd buiten werking gesteld door respectievelijk &eacute;&eacute;n poot van R48, R58, D19 en D20 los te maken en weerstand R57 kort te sluiten. De montage deed ik met twee getwiste draden omdat afgeschermd snoer niet nodig bleek te zijn. De input van de nieuwe processor komt op terminal 74 en de output op elco C37. De afbeeldingen kunnen u bij de montage op weg helpen.&nbsp;</P>
+</FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="bar2.gif" WIDTH=500 HEIGHT=36></P>
+<P ALIGN="CENTER"></FONT></SPAN><A HREF="../Modifaties.htm"><IMG SRC="backfri.gif" BORDER=0 WIDTH=53 HEIGHT=25></A></P></BODY>
+</HTML>

@@ -1,0 +1,91 @@
+<TITLE>FT-77S modifications</TITLE>
+<BODY LINK="#0000ff" VLINK="#800080" BACKGROUND="Image1.gif">
+<p align="center"><b><font face="Tahoma" size="6"><font face="Tahoma" size="6"><span lang="EN-GB" pbzloc="7">YAESU/SOMMERKAMP FT-77S MODIFICATIONS</span></font></font></b></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="12" src="updated2.gif" width="44" /></span></font><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB" pbzloc="28">&nbsp;<span style="font-size: 16px"><span pbzloc="100">17-apr-2021 With corrected pins assembly of 2SC2509.</span></span></span></font></font></b></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="325" src="ft77sf.jpg" width="800" /></span></font></p>
+
+<p align="center"><span style="font-size: 16px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">YAESU/SOMMERKAMP FT-77S.</span></font></font></b></span></p>
+
+<p><b><span lang="EN-GB"><font face="Tahoma" size="5"><font face="Tahoma" size="5">INTRODUCTION</font></font></span></b></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">A YAESU FT-77 has an output of 100 W and a FT-77S 10 W. Apart from the power amplifier both devices are identical, even with a SOMMERKAMP frontplate. Just the 160 m band is lacking in both brands.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Although the sets (1981-1987) were advertised as economic transceivers the electrical construction and design were better than the then pasted label suggests. </font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">REPLACE FINAL TRANSISTORS</font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Two 2SC2509 transistors were &quot;dead&quot; upon a request to &quot;investigate&quot; a FT-77S. Someone had already replaced them, but the collector fin mounted onto the heatsink without insulation. Some things had apparently not gone well.</font></font></span></p>
+<span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="right" height="285" hspace="9" src="2sc1945f1.JPG" width="420" /> </font></font></span>
+
+<table align="left" cellpadding="1" cellspacing="1" style="width: 500px">
+	<tbody>
+		<tr>
+			<td pbzloc="9" style="text-align: center"><img border="0" height="300" pbzloc="50" src="replaces.gif" width="386" /></td>
+			<td pbzloc="43" style="text-align: center"><img border="0" height="191" src="pin&#32;2sc2509.jpg" width="261" /></td>
+			<td pbzloc="19" style="text-align: center"><img border="0" src="data&#32;2sc2509.gif" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify" pbzloc="10"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="37">After about 30 years many transistors are obsolete, so it is not always possible to achieve the same or a replacement. One type 2SC1945 seemed interesting because, unlike conventional collector-fin construction, the emitter is connected to the fin and direct installation on mass is an attractive option. According to the data the 2SC1945 has the ability of withstanding infinite load VSWR when operated at 16 V. This transistor has been used in several Asian products as driver stage. There are many fake printed with a Mitsubishi label, which unfortunately does not meet the original specifications. However, one manufacturer (Eleflow) and supplier (Yoyo) (fig&raquo;) claim to produce and deliver a type with the original specifications: </span></font></font><a href="http://www.eleflow.com/2SC1945.pdf"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="25">http://www.eleflow.com/2SC1945.pdf</span></font></font></a></p>
+
+<p align="justify" pbzloc="16"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="8" style="font-size: 18px">The correct pin connection of a 2SC2509 has been a mystery for years. In various service manuals of for example Kenwood (including TS-180S) it is indicated with images as <strong>B, E, C.</strong> The emitter is therefore the center pin that is connected to the cooling fin. If one examines the track side of a PCB, it appears that the cooling fin is mounted without insulation onto the chassis or onto a heat sink.<br />
+There are two possibilities to explain the problem.<br />
+Apparently there are fake 2SC2509&#39;s in circulation of which the center pin is the collector e.g.: <strong>B, C, E.</strong><br />
+It is also possible that the draughtsman of Toshiba&#39;s 2SC2509 made a drawing error in the datasheet that no one has noticed, because most TO220 package have the sequence: <strong>B, C, E or E, C, B</strong>.<br />
+If for some reason you need to replace the original output transistors, pay attention to which type you are going to install. If it is a <strong>B, C, E</strong> then the collector and emitter must be cross-soldered with a mica insulation between collector and heatsink.<br />
+If it is a <strong>B, E, C</strong> type, it can be soldered directly and screwed onto the heat sink without insulation.</span><br />
+<span pbzloc="15" style="font-size: 18px">It now appears that with&nbsp;<span style="color: #0000ff">2SC2509 it must be: B, E, C!</span></span></span></p>
+
+<p align="center"><font size="2"><span lang="N" pbzloc="17"><img height="273" src="2sc1945f2.jpg" width="800" /></span></font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><span lang="EN-GB">INSTALLATION</span></font></font></b></p>
+
+<table align="center" cellpadding="1" cellspacing="1" style="width: 500px">
+	<tbody>
+		<tr>
+			<td pbzloc="118" style="text-align: center"><img border="0" src="ft77s&#32;component&#32;side&#32;f.jpg" /></td>
+			<td pbzloc="166" style="text-align: center"><img border="0" height="472" src="2sc1945s.gif" width="498" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="41"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="154" style="font-size: 18px">The board is apparently designed for transistors where&nbsp;the center pin is the emitter and&nbsp;at the same time&nbsp;cooling fin. When mounting the 2SC2509&#39;s, the pins of emitter and collector must be arranged crosswise. That will be the reason for failed repairs when installing 2SC2509 transistors.</span></span></p>
+
+<p pbzloc="44" style="text-align: center"><img border="0" height="720" src="ft77s&#32;component&#32;side&#32;f2.jpg" width="579" />&nbsp;<img border="0" height="720" src="ft77s&#32;track&#32;side&#32;f.jpg" width="1108" /><br />
+<span style="color: #800000"><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">ON4BXZ has found the original 2SC2509 and mounted it on the PCB. The output was 10 W. This shows that with this &quot;vintage&quot; transitor the pin order is: B, E, C!&nbsp;</span></span></strong></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">OUTPUT REDUCED TO 25 W</font></font></b></span></p>
+<span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="left" height="131" hspace="9" src="backf.jpg" width="320" /> </font></font></b></span>
+
+<p align="justify" pbzloc="45">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="161" size="4">With the new Mitsubishi transistors the output of the FT-77S increased to about 30 W at 13.8 volts and even 35 W on the 15 m band. Given the result nothing of the original design was changed and the power adjusted to 25 W to keep the semiconductors well within the specifications. The (&laquo;fig) mounting plate of the finals is to small for sufficient cooling so a larger heatsink should be installed.</font></font></span><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">&nbsp;</font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">&nbsp;</font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">RF AMPLIFIER</font></font></b></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="center"><font size="2"><span lang="N"><img height="412" src="hfamps.gif" width="381" /></span></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">&nbsp;<img height="412" src="hfampf1.jpg" width="640" /></span></font></font></p>
+
+<p align="center">&nbsp;</p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB"><img align="right" height="257" hspace="9" src="hfampf2.jpg" width="600" /> </span></font></font>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">With strong signals on the 40m band the set suffer from seepage of broadcast transmitters outside the amateur band. Probably due to the many switching diodes in the front-end, but also by a &quot;weak&quot; RF amplifier. The latter consists of a cascade amplifier circuit with a FET (2SK125) and a NPN transistor (2SC380) in series.</span></font></font></p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB"><img align="left" height="213" hspace="9" src="j310f.jpg" width="150" /> </span></font></font>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">As an experiment I replaced them with more current types: J310 (FET) and 2N3866 (NPN) and shorted R24 (33 Ohm). The connections of both semiconductors are different from the removed components and that is showed (&laquo;fig) in the pictures.</span></font></font></p>
+
+<p align="justify" pbzloc="45"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="46">Unfortunately the overload still exist, but when turning on the attenuated outband broadcast signals vanished. Because I still thought the receiver was improved, the modification was maintained. Anyway after extensive testing by various ways to attenuate the incoming signal, one major improvement was obtained by changing the voltage across the two semiconductors. Instead of 3k3 (R3) 1k was installed. Maybe this was even good for the original components, but I have not bothered to test.</span></font></font><br />
+&nbsp;</p>
+
+<p pbzloc="11" style="text-align: center">&nbsp;<img border="0" src="pa&#32;unit.gif" /></p>
+
+<p align="center"><span lang="EN-GB"><b><font face="Tahoma" size="2"><font face="Tahoma" pbzloc="28" size="2">&nbsp;<img height="36" pbzloc="16" src="bar2.gif" width="500" /><br />
+<a class="0" href="../Modifaties.htm"><img border="0" height="50" pbzloc="27" src="Back.gif" width="77" /></a></font></font></b></span></p>
+</body>
+</html>

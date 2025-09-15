@@ -1,0 +1,187 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>swan100mx mod eng</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080" BACKGROUND="Image1.gif">
+<p align="center"><b><font face="Tahoma" size="6"><font face="Tahoma" size="6"><span lang="N" pbzloc="0">SWAN 100MX MODIFICATIONS</span></font></font></b></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="12" src="updated2.gif" width="44" /></font><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">&nbsp;27-01-2011 Schematics.</font></font></b></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="360" src="swan100mxf.jpg" width="841" /></font></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="430" src="100MX-upf.jpg" width="440" /></font><font face="Tahoma" size="1"><font face="Tahoma" size="1">&nbsp;<img height="430" src="100MX-dwnf.jpg" width="442" /></font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">SELF OSCILLATING (10m)</font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="407" hspace="9" src="preselectors1.gif" width="506" /> </font></font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">If the <i>PRESELECTOR</i></font></font><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"> </font></font></b><font face="Tahoma" size="4"><font face="Tahoma" size="4">is tuned for 10 m resonance, the set oscillates already when PTT is pressed in USB or LSB mode. I was days and nights searching for failures. Damping circuits, reducing gain or more feedback in the transistor amplifier was not a real improvement. However, the conclusion was that for almost 100% the malefactor was in the Preselector.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Some US hams reported me: &quot; (1) <i>I had the same problem with mine &amp; never did get to the bottom of the problem. My 100MX have been setting on the shelf now for over a year.</i> &quot; (2) &quot;<i>That is exactly what mine does! I had come to the conclusion that there were to many interdependent circuits in this radio. Another member of this group had the same problem at the same time. I don&#39;t know if he ever fixed it or not.</i>&quot;</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">PA&Oslash;FVE pointed me to an irregularity in the schematic that might cause an unwanted positive feedback. However it was a drawing error, and (fig&raquo;) the proper connections are now marked with an arrow.</font></font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">MODIFICATION</font></font></b></span></p>
+
+<p align="center">&nbsp;</p>
+
+<center>
+<table align="left" border="0" cellpadding="4" cellspacing="0" dir="ltr" width="820">
+	<tbody>
+		<tr>
+			<td valign="middle" width="37%">
+			<p align="center"><font size="2"><span lang="N"><img height="236" src="preselectorf.jpg" width="281" /></span></font></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">Components at the track side.</font></font></b></span></p>
+			</td>
+			<td valign="middle" width="63%">
+			<p align="center"><font size="2"><span lang="N"><img pbzloc="63" src="beadf.jpg" style="height: 239px; width: 511px" /></span></font></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">Richt: a ferrite bead over the inner conductor.</font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p pbzloc="64">&nbsp;</p>
+
+<p pbzloc="65">&nbsp;</p>
+
+<p pbzloc="66">&nbsp;</p>
+
+<p pbzloc="67">&nbsp;</p>
+
+<p pbzloc="68">&nbsp;</p>
+
+<p pbzloc="69">&nbsp;</p>
+
+<p pbzloc="70">&nbsp;</p>
+
+<p pbzloc="72">&nbsp;</p>
+
+<p pbzloc="73">&nbsp;</p>
+<img pbzloc="11" src="preselectors2.gif" style="height: 304px; width: 333px; float: left; margin-left: 9px; margin-right: 9px" /><img align="left" height="304" hspace="9" src="cap22nf.jpg" width="297" />
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="10">Because the phenomenon only occurred at 10 m, I suspect the (zero) capacitance of CR115 (BA244) as culprit. When the relevant coax cable was disconnected, the 10 m band was pretty stable with nice &quot;trees&quot; pictures on a scoop. Indeed, both transmitter and receiver sections uses the Preselector, e.g. the signals passes through the Antenna Relay to input and output. In transmit mode a leakage RF current passes as positive feedback through C125 and CR115 to T101. </span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="4">The schematic shows how the fix is done. During transmit the input of capacitor C125 is electronically short-circuit to ground with two diodes. Desolder the inner conductor of the cable and mount a 22-100 nF capacitor into the hole. That is the point P in the diagram. Then solder the coax at the other side of the capacitor and mount the rest of the components on the track side, see the first photo. After this operation the stability was not always good and it was solved by sliding a ferrite bead over the inner conductor at the &quot;beginning&quot; of the coaxial cable.</span></font></font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">OVERDRIVE</font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="156" hspace="9" src="overdrives.gif" width="395" /> </font></font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">At the next QSO&#39;s I got the report that there was still something wrong with the modulation. It sounds like RF feedback. The cause was first sought in the microphone, then the slightly odd microphone amplifier and then to a possibly non-linear behaviour of the transistor amplifier (<i>AMP POWER BOARD</i></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">). Ultimately it was overdrive of the PA. Apparently, the engineers of Atlas were evenly confronted with the problem, given the presence of R125 (47 &Omega;) on the preselector board and R101 (47 &Omega;) on the power amp. board. The fix was increasing the attenuation with a series resistor of about 12 &Omega;. The resistor was mounted between the coaxial cable and the feed-through of the PA compartment. See the second picture in the previous topic.</font></font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">MICROPHONE PREAMPLIFIER</font></font></b></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="294" src="mikeampf.jpg" width="446" /></font>&nbsp;<img height="294" src="mikeconf.jpg" width="477" /></span></p>
+<span lang="N"><img align="left" height="115" hspace="9" src="mikeamps.gif" width="199" /> </span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">According to the manual, the impedance of microphone input (J101) is 25 k&Omega;. That was in the last century well suited for an average 50 k&Omega; microphone, but today is 200-600 &Omega; a more normal value. Unfortunately, the level is too low for this transceiver and therefore I used an earlier </font></font></span><a href="../../Diversen/Microfamp/microfamp.htm"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">design</span></font></font></a><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N"> for a Heil 4 &amp; 5 microphone as amplifier. </span></font></font></p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N"><img align="right" height="198" hspace="9" src="audios.gif" width="230" /> </span></font></font>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">The components had to be mounted in the transceiver on the <i>CARRIER OSC. BOARD</i> because without damage of the set, on the front plate was no room for J101 (&laquo;fig) to be replaced by a 4 pin microphone system. The extra pin was needed to provide a positive voltage for the preamplifier.<i> </i></span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Hams reported the modulation sounded pinched with or without preamplifier. The audio on the <i>Exciter BOARD</i> was modified by respective a 100 nF capacitor in parallel with C163 (10 nF) and 4.7 nF in parallel with C164 (470 pF). Furthermore, the additional 4.7 nF capacitance is an extra RF decoupling of IC A103.</span></font></font></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">ALC</font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img pbzloc="49" src="alcmods.gif" style="height: 183px; width: 231px; float: left; margin-left: 9px; margin-right: 9px" /> </font></font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="53" size="4">The release time of the ALC is slow, resulting in too much RF compression. That&#39;s too much at the wrong place and so capacitor C111 (10 &micro;F) at the <i>PRESELECTOR BOARD</i> was replaced by a 1 &micro;F type.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">AGC</font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="left" height="123" hspace="9" src="agcmods.gif" width="229" /> </font></font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="19" size="4">Personally</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> I prefer a slower AGC which was obtained by the 220 &micro;F capacitor in parallel with C132 (100&mu;F) at the </font></font><i><font face="Tahoma" size="4"><font face="Tahoma" size="4">PRESELECTOR BOARD</font></font></i><font face="Tahoma" size="4"><font face="Tahoma" size="4">. Of course one may replace C132 by a 330 &micro;F capacitor type.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">RX OVERLOAD</font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="359" hspace="9" src="preselectors.gif" width="506" /> </font></font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">For a good overview, all preselector modifications were drawn in one schematic.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The receiver is overdriven with strong signals in the 40 m band. The additional 100 &Omega; resistor at the intersection of CR111 (BA244) and R114 (680 &Omega;) is a preliminary experiment. During reception, this component together with the conductive diode CR111 and resistor R113 (100 &Omega;) is an attenuator for the signal to the diode ringmixer. The gain also depends on Q102&#39;s drain load resistance, which is decreased by the extra 100 &Omega; resistor. </font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">F</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">urther the mixer-input load becomes approximately 50 &Omega;. </font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The overload is currently cured, but there is insufficient experience if it is indeed the correct remedy.</font></font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">9000 kHz IF FILTER</font></font></b></span></p>
+
+<table align="left" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="278">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><font size="2"><span lang="N"><img height="79" src="iffilterf1.jpg" width="128" /></span></font><span lang="N"><font face="Tahoma" size="1"><font face="Tahoma" size="1">&nbsp;<img height="79" src="iffilterf2.jpg" width="131" /></font></font></span></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">Full size SHOWA filters.</font></font></b></span></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">Model SF0922B: 8 pole 9000 kHz</font></font></b></span></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">In en output impedance: 500 &Omega;</font></font></b></span></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">BW: 2.30 kHz/-6 dB, 4.14 kHz/-60 dB</font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">&nbsp;</span></font></font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="26">The original SHOWA IF crystal filter model SF0927A is 9001.65 kHz, BW 2.7 kHz. The plan was to replace with a KVG XF-9B, but I had a SHOWA (&laquo;fig) SF0922B model in stock. It appeared that the assembly and pin connections were exactly the same as the original model, so it is like drop-in types, only the height was less. Because my experience with this filter in an FT7 was good, I decide to mount the narrow filter into this SWAN 100MX.</span></font></font></p>
+
+<p>&nbsp;</p>
+
+<p><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="22">Via the Internet is such a filter still available and years ago I bought the same way in the USA. Eventually try the G-QRP club as a source.</span></font></font></p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N"><img align="right" height="335" hspace="9" src="carrieroscs.gif" width="477" /> </span></font></font><span lang="N"><img align="left" height="200" hspace="9" src="iffilterf3.jpg" width="276" /> </span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="29" size="4">Although it probably is possible to pull down the original crystals 9000.0 kHz and 9003.3 kHz with additional capacitances in parallel with (fig &raquo;) C105 and C111, I replaced with </font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">8998.5</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> kHz and </font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">9001.5</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> kHz from a YAESU FT200. </font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">In the LSB mode adjust C109 for 8998.5 kHz, in the USB mode adjust C104 for 9001.5 kHz and in the CW mode adjust C106 for 9000.7 kHz.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Test with a two-tone generator and the balance setting of T101 (carrier osc. board) proved it was better to set the LSB and frequencies at respective </font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">8998.55</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> and </font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">9001.55</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="26" size="4"> kHz. </font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify" pbzloc="33"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">IF FILTER LOAD</font></font></b></span></p>
+
+<p align="justify" pbzloc="33">&nbsp;</p>
+
+<p align="justify" pbzloc="22"><span lang="N" pbzloc="23"><img pbzloc="19" src="sf0922bs.gif" style="height: 168px; width: 321px; float: left; margin-left: 7px; margin-right: 7px" /> <img pbzloc="39" src="trackf.jpg" style="border-top: 0px solid; height: 168px; border-right: 0px solid; width: 281px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="42" size="4">Initially the filter was installed without any modification to the circuit. Because it</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> turned out to be a minor effort to load the filter with the correct impedance, I calculated (&laquo;fig) the value of the additional components as close as 500 &Omega;. The resistors causes a drop of the gain and that was increased with a 220 &Omega; resistor in parallel </font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">t</font></font><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="43" size="4">o R105 (470 &Omega;). One can solder the new components at the trackside without damaging of the PCB. </font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="center"><span lang="N"><font size="2"><img height="36" src="bar2.gif" width="500" /></font></span></p>
+
+<p align="center"><a href="../Modifaties.htm"><img border="0" height="57" src="back.gif" width="80" /></a></p>
+</body>
+</html>

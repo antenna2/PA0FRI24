@@ -1,0 +1,16 @@
+<TITLE>Marker calibrator or generator</TITLE>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BACKGROUND="Image4.gif">
+
+<B><FONT FACE="Tahoma" SIZE=6><P ALIGN="CENTER">MARKER GENERATOR OR CALIBRATOR</P>
+</B></FONT><FONT FACE="Tahoma" SIZE=1><P ALIGN="CENTER">&nbsp;</P>
+</FONT><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Much of the older transceivers can only rely on a linear mechanical scale that can be calibrated with a 100 kHz oscillator. Those circuit mainly works with a 100 kHz crystal. The marker points are rather far apart and it's not always easy to get "on frequency". Sometimes, the crystal respective doesn't oscillate or will not work 100% and at present a 100 kHz crystal is often unavailable. </P><IMG SRC="markers1.gif" ALIGN="RIGHT" HSPACE=9 WIDTH=374 HEIGHT=208>
+<P ALIGN="JUSTIFY">A replacement for an existing marker oscillator can be easily and cheaply build with modern components such as a MC14060BCP (or an equivalent type) and an inexpensive microprocessor crystal. The IC is a 14-stage binary ripple counter with an on-chip oscillator buffer.</P>
+<P ALIGN="JUSTIFY">This type of marker generators is nothing special. However, the circuit used here is very simple, differs from the original data sheet and (fig») has few components. All-in experiment showed a good functioning of the circuit and the beeps are also strong enough on the 2 m band. With a 6.4 MHz crystal and the internal oscillator, the generated frequency is divided further and creates marks of 12.5, 25, 50 and 100 kHz. See the table.</P>
+<P ALIGN="JUSTIFY">The frequency can be precisely tuned with a frequency counter to pin 9.</P>
+<P ALIGN="JUSTIFY">When used in a vintage 2 m transceiver it showed that a division to 12.5 kHz the marks were weaker than the beeps of a division for 25 kHz, while the 12.5 kHz marks can be observed.</P><IMG SRC="markerf.jpg" ALIGN="RIGHT" HSPACE=9 WIDTH=320 HEIGHT=177><IMG SRC="markers2.gif" ALIGN="LEFT" HSPACE=9 WIDTH=196 HEIGHT=170>
+<P ALIGN="JUSTIFY">A 12.8 MHz crystal from a scrapped PC did well in the circuit, but the 25 kHz raster signal should be taken from pin 13 (V9). More equal pulses can be obtained with an additional pulse amplifier as an IC or a general-purpose transistor. I have tested different types and all (e.g. BC547, C945) produced even good pulses in the 2 m band and strong beeps in the HF range. </P>
+<P>All circuits were tested with a stabilised voltage of 9 V.</P>
+<P>&nbsp;</P>
+</FONT><P ALIGN="CENTER"><IMG SRC="bar2.gif" WIDTH=500 HEIGHT=36></P>
+<P ALIGN="CENTER"><A HREF="../Diversen.htm"><IMG SRC="backfri.gif" BORDER=0 WIDTH=53 HEIGHT=25></A></P></BODY>
+</HTML>

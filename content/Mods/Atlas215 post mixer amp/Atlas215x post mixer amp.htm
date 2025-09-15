@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Atlas215x post mixer amp</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BACKGROUND="Image4.gif">
+
+<B><FONT FACE="Tahoma" SIZE=6><FONT FACE="Tahoma" SIZE=6><SPAN LANG="N"><P ALIGN="CENTER">Atlas -210x/215x POST MIXER AMPLIFIER</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="updated2.gif" WIDTH=44 HEIGHT=12></FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2>&nbsp;6-jul-2014. A third simpler design for a post mixer amp &amp; spectruanalyzer image of input SWR &amp; image.</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="atlas215xf.jpg" WIDTH=694 HEIGHT=253></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Current saving LED lightning for dial and meter, homemade Alu finger dimple.</P>
+</FONT></FONT><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P>POST MIXER AMPLIFIER I</P><IMG SRC="diplexs.gif" ALIGN="RIGHT" HSPACE=9 WIDTH=264 HEIGHT=94>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">An optimal operation of a double-balanced diode ring mixer can be improved if the IF port is loaded with a non-induction impedance of 50 ohms. This can be achieved with a so-called duplexer (fig»), but also with an amplifier with broadband input impedance of approximately 50 ohms.</P>
+<P ALIGN="JUSTIFY">I have tested a number of circuits see below:</P></FONT></FONT></SPAN>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=985 DIR="LTR">
+<TR><TD WIDTH="56%" VALIGN="TOP">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="postmixamps1.gif" WIDTH=512 HEIGHT=322></FONT></SPAN></TD>
+<TD WIDTH="44%" VALIGN="MIDDLE">
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N"><P ALIGN="CENTER">Finally I selected the following design:</P>
+</FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="postmixamps2.gif" WIDTH=409 HEIGHT=226></FONT></SPAN></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+<IMG SRC="postmixf1.jpg" ALIGN="RIGHT" HSPACE=9 WIDTH=441 HEIGHT=300>
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N"><P ALIGN="JUSTIFY">This J310 FET post mixer amplifier follows the front-end mixer without having to use a diplexer. The design is in fact a buffer between the mixer and the tuned L103. The modification is applicable for all PC-100A to 100D-PC boards. Note the different capacitors and colour of L3's slugs. The data was actually collected from the original boards.</P>
+<P ALIGN="JUSTIFY">The circuit with a grounded gate provides proper termination to the diode mixer and the input SWR at the source is flat. Too much gain in this set leads to oscillate during transmit, therefore the output is loaded through an attenuator with standard resistors. That improves the flat load for the mixer and a measurement showed SWR &#8804; 1.7 from 1.5 to 45 MHz. Unfortunately my test gear was only accurate to about 45 MHz.</P>
+<P ALIGN="JUSTIFY">Purists will note that a high current FET could be a better choose. Indeed I have tested the amplifier with a vintage P8000 and P8002 FET. However in practice showed no noticeable difference, so I did the mod with the more available J310.</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">INSTALLATION</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="postmixf2.jpg" WIDTH=800 HEIGHT=401></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Mount the J310 with shorter legs. I used a 4C6 toroid in stead of the FT50-43 type.</P>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">The installation (see photo) is not difficult and you need only to cut a track and solder the components. If one are not satisfied with the result or you would for any other reason generate the original circuit, it is sufficient to remove everything and recover the track.</P>
+<P ALIGN="JUSTIFY">In principle there is nothing to be adjusted after the modification, but optimal results can be achieved by trimming L103 on 15 m for maximum during transmit or receive. </P>
+</FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="postmixamps3.gif" WIDTH=800 HEIGHT=291></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">PC-100A redrawn with sPlan.</FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4>&nbsp;</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="postmixamps4.gif" WIDTH=797 HEIGHT=292></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">The post mixer amplifier has drawn in the PC100C circuit.</P>
+</FONT></FONT><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P>POST MIXER AMPLIFIER II</P><IMG SRC="postmixamps5.gif" ALIGN="RIGHT" HSPACE=9 WIDTH=462 HEIGHT=220>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Because I have PC-100A, 100B PC, PC-100C and PC-100D boards, I could not resist my urge to experiment further with PC-100D in my Atlas215x. In the past I replaced the absolete "P8000 and P8002 with multiple J310 in parallel. The goal was to load the output of L102 as closely as possible with 50 Ohm and not introduce too much amplification in the existing circuit.</P>
+<P ALIGN="JUSTIFY">It is reasonably well managed with the adjacent circuit and L102's output is matched over a wide range with 50 Ohms and VSWR = 1.3. The system was measured with two different antenna analyzers.</P>
+<P ALIGN="JUSTIFY"></P>
+</FONT></FONT><FONT FACE="Tahoma" SIZE=1><FONT FACE="Tahoma" SIZE=1><P ALIGN="JUSTIFY">&nbsp;</P>
+<P ALIGN="JUSTIFY">&nbsp;</P>
+</FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="postmixamps6.gif" WIDTH=800 HEIGHT=301></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">PC-300D drew with the mods.</P>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff"><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff"><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff"><P ALIGN="JUSTIFY">Note</FONT></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4> the additional 100 nF capacitor in parallel with electrolytic capacitor C113 (15 uF). I recommend this improved decoupling for all types PC-100 boards.</P>
+<P ALIGN="JUSTIFY">After much searching I purchased 1N5711 diodes, so the original 1N4148's of the first mixer were replaced.</P>
+<P ALIGN="JUSTIFY">Are the Altas transceivers got better with the mods? I have not (yet) measure, but the sets are not become worse.</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">POST MIXER AMPLIFIER III</P>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Later in 2014 during experimentation revealed that J310 FET's of the same batch were rather similar. If they were switched in parallel instead working with their own resting current system (e.g. diagram above), it had no appreciable effect in the circuit.</P><IMG SRC="postmixamps8.gif" ALIGN="RIGHT" HSPACE=9 WIDTH=462 HEIGHT=361>
+<P ALIGN="JUSTIFY">Initially a low VSWR at the input was obtained with one J310, but with both (fig ») in parallel, the SWR was even better!</P>
+<P ALIGN="JUSTIFY">The coupling with the following tuned circuit (L103) was not done with a toroid wide band transformer, but with a 10 pF capacitor at the top of L103. As a result post-mixer amplifier and tuned circuit are less loaded and a sharper resonance is obtained. The intersection point of the voltage divider C104/C105 becomes useless. The tuned circuit must be re-adjusted after the application of the modification.</P>
+<P ALIGN="JUSTIFY">The 1 nF capacitor (C104) is in fact redundant and could be short-circuit. For resonance core L103 should be turned out, but unfortunately it does not go far enough. As an improvement, the combination of C104/C105 could be replaced by a high quality capacitor (in this case, 91 pF).</P>
+<P ALIGN="JUSTIFY">Note that Atlas hardly update their schematics. Multiple versions of print designs exist and slugs of tuned circuit have different colours. Also associated tuning capacitance's differ. For your information I have drawn all details of my six PC100(A…D) at the schematic (fig»).</P>
+<P ALIGN="JUSTIFY"></P>
+</FONT></FONT><FONT FACE="Tahoma" SIZE=1><FONT FACE="Tahoma" SIZE=1><P ALIGN="CENTER">&nbsp;</P>
+</FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="postmixamps7.gif" WIDTH=803 HEIGHT=411></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">A third simpler effective option for a post mixer amplifier.</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="postmixf3.jpg" WIDTH=745 HEIGHT=335></P></FONT></SPAN>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=1065 DIR="LTR">
+<TR><TD WIDTH="33%" VALIGN="MIDDLE">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="test&#32;swr&#32;f.jpg" WIDTH=332 HEIGHT=200></P>
+<P ALIGN="CENTER"><IMG SRC="test&#32;swr&#32;s.gif" WIDTH=186 HEIGHT=108></P>
+</FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">The SWR at the input of the two FET's were also measured separately (fig»). </P>
+<P ALIGN="JUSTIFY">The SWR is quite insensitive to a change in load of the drain even if that is short-circuited with a 10 nF capacitor.</FONT></FONT></SPAN></TD>
+<TD WIDTH="67%" VALIGN="MIDDLE">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="input&#32;swr&#32;&#32;f.gif" WIDTH=695 HEIGHT=464></FONT></SPAN></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="bar2.gif" WIDTH=500 HEIGHT=36></P>
+<P ALIGN="CENTER"></FONT></SPAN><A HREF="../Modifaties.htm"><IMG SRC="backfri.gif" BORDER=0 WIDTH=53 HEIGHT=25></A></P>
+<B><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N"><P>See my other Atlas-210x/215x articles:</P>
+</B></FONT></FONT><FONT SIZE=2><P></FONT></SPAN><A HREF="../Atlas215/AtlasEng.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">General information</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P></FONT></SPAN><A HREF="../Atlas215&#32;AGC&#32;mod/atlas215&#32;agc&#32;mod&#32;eng.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">AGC modification</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P></FONT></SPAN><A HREF="../Atlas215&#32;stabilizer/Atlas215x&#32;VFO&#32;stabilizer.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">VFO stabilizer</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P></FONT></SPAN><A HREF="../Atlas215&#32;speechprocessor/Atlas&#32;speechprocessor.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">Speech processor</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P></FONT></SPAN><A HREF="../Atlas210&#32;17m&#32;mod/atlas210x&#32;17m&#32;mod&#32;eng.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">17m modification</FONT></FONT></SPAN></A></P></BODY>
+</HTML>

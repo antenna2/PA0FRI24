@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="Generator" content="Microsoft Word 97">
+
+<title>FT857 FET's modification</title><meta name="Titel" content=" ">
+<meta name="Template" content="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz"></head>
+<body background="Image5.gif" link="#0000ff" vlink="#800080">
+<p align="center" pbzloc="144"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="218" style="font-size: 26px"><span style="font-family: tahoma,geneva,sans-serif"><strong><span pbzloc="3" style="font-size: 26px">REPLACING FET&#39;s</span></strong></span><strong>&nbsp;</strong></span></span></p>
+
+<p align="center" pbzloc="144"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="218" style="font-size: 26px"><strong pbzloc="224">FT-857/FT-897&#39;s EXCITER, FT-817&#39;s FINAL AMPLIFIER</strong></span></span></p>
+
+<p align="center" pbzloc="144"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="218" style="font-size: 26px"><strong pbzloc="225">&nbsp;</strong></span></span><strong><span style="font-size: 22px"><span pbzloc="219" style="font-family: tahoma,geneva,sans-serif">By Kevin ON5DRE.</span></span></strong></p>
+
+<p align="center" pbzloc="189">&nbsp;</p>
+
+<p pbzloc="223">&nbsp;<img pbzloc="205" src="measure&#32;f.jpg" style="border-top: 0px solid; height: 600px; border-right: 0px solid; width: 383px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></p>
+
+<p pbzloc="155" style="text-align: justify">&nbsp;</p>
+
+<p pbzloc="71" style="text-align: justify"><span style="font-size: 24px"><span pbzloc="64"><span pbzloc="65" style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="72">INTRODUCTION</strong></span></span></span></p>
+
+<p pbzloc="155" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="95" style="font-size: 18px">A while ago, I bought a used and defective FT-857 transceiver, which had an intermittent transmit power problem. First thing I did was to check all BIAS settings of the different amplifier stages. All stages could be aligned properly according to the service manual. So, in my opinion, all stages should work properly. Still, while in transmit, the power was lost more and more often. Most logic end easy thing to do, was to decouple the power amplifier at the bottom with the red coax plug at the top. I then connected the output of the exciter stage via a power/SWR meter to a dummy load. In transmit, I saw that the signal was still intermittent there or gone.</span></span></p>
+
+<p pbzloc="155" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="74" style="font-size: 18px"><span pbzloc="77" style="font-size: 24px"><strong pbzloc="195">SETUP</strong></span></span></span></p>
+
+<p pbzloc="1" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="2" style="font-size: 18px">In this setup, I connected my scope-meter to the gate of the exciter FETs 2SK2975. There was also an intermittent signal. So I connected the scope-meter to the output of the next stage, the one with the 2SK2973 FETs. There the signal was stable.<br />
+While&nbsp; doing all these tests, all of a sudden, I got no more power anymore out of the exciter stage, not even intermittent. This was not good, so I re-checked the BIAS setting of the exciter, and I could not set the BIAS anymore. Here the real problem begins: I blew the exciter FETs&hellip;<br />
+Now I have real good confidence that the exciter stage is blown, I connected the output of the 2SK2973 FETs directly to the output of the exciter stage, disconnecting the exciter completely (unplug the jumper for BIAS measurement) At last some hope: I saw a stable signal at the output, and connected the the power amplifier at the bottom, this created about 20 W RF at 100 W setting.</span></span></p>
+
+<p pbzloc="159" style="text-align: justify">&nbsp;</p>
+
+<p pbzloc="82" style="text-align: center">&nbsp;&nbsp;<img border="0" src="pcb&#32;f.jpg" /></p>
+
+<p pbzloc="177" style="text-align: center"><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 14px"><span lang="EN-US" pbzloc="174" style="line-height: 107%; mso-ansi-language: EN-US; mso-fareast-font-family: Calibri; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Bypassed exciter stage with white &ldquo;ground&rdquo; wire, and couple-capacitor. Note the unplugged jumper on top of the picture!</span></span></span></strong></p>
+
+<p pbzloc="106" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><strong><span style="font-size: 24px"><span pbzloc="149">TO FIX THE PROBLEM</span></span></strong></span></p>
+
+<p pbzloc="295" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="101" style="font-size: 18px">The problem is now definitely located in the exciter stage. I searched the web about this problem, and found various problems, in not only the FT-857, but also the FT-897, which is actually the same radio, and also the FT-817, who has the same&nbsp; FETs to make it&rsquo;s 5W RF output. I also learned that I now was a member of the &ldquo;<strong>blown finals club</strong>&rdquo;. Yay ! But in my search on how to fix this problem, I did not come up with much useful information. My best option was to go the FT-817 way of fixing : buy a new final board, with the complete amplifier on it, and try to merge it somewhat into the FT-857.</span></span></p>
+
+<table align="right" cellpadding="1" cellspacing="1" style="width: 500px">
+	<tbody>
+		<tr>
+			<td pbzloc="304">
+			<p pbzloc="368" style="text-align: center"><img pbzloc="360" src="amp&#32;board&#32;f.jpg" style="border-top: 0px solid; height: 272px; border-right: 0px solid; width: 445px; border-bottom: 0px solid; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></p>
+
+			<p pbzloc="310" style="text-align: center"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="371" style="font-size: 14px"><span lang="NL-BE" style="line-height: 107%; mso-ansi-language: NL-BE; mso-fareast-font-family: Calibri; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-language: NL-BE; mso-bidi-language: AR-SA; mso-no-proof: yes"><v:shapetype coordsize="21600,21600" filled="f" o:preferrelative="t" o:spt="75" path="m@4@5l@4@11@9@11@9@5xe" pbzloc="217" stroked="f"><v:formulas pbzloc="307"><v:f eqn="if lineDrawn pixelLineWidth 0" pbzloc="219"></v:f></v:formulas></v:shapetype></span>FT-817 final amplifier board with the updated RD07MVS1 FETs</span></span></strong></p>
+
+			<p pbzloc="310" style="text-align: center"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="372" style="font-size: 14px">installed.</span></span></strong></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="329" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="109" style="font-size: 18px">I did not like this option at all, because it would involve some serious cutting in the main PCB, to fit the cooling for the new FETs, they have to be bolted to the center casing&nbsp; for proper cooling. This is really my last resort. I learned via various sources (thanks, HAM community) that the RD07MVS1 is more rugged than the original 2SK2975, and even Yaesu uses them as their more recent finals in the FT-817. It was also stated in some forums that the RD07MVS1 is <strong>not</strong> a simple drop-in replacement FET. So I started to search for the Yaesu schematic with the updated FETs in it. Up to today, I never found it&hellip;, but I found some info in a Chinese forum, where a HAM describes the differences between the &ldquo;old&rdquo; FT-817 finals board, and the &ldquo;new&rdquo; board. The difference lies in the bias circuit, and another capacitor on the input circuit. Not much other things were changed. OK, so I ordered 4 new RD07MVS1 FETs online Yes 4 pieces&hellip; sh*t happens, you know&hellip;&nbsp; and while I was at it, a TXCO to fit the transceiver.<br />
+In the meantime, I was searching how to remove and replace those weird looking FETS, with no &ldquo;pins&rdquo; on them. The FETs are soldered at the bottom, not only to the PCB, but also to the cooling-block underneath them. To top it off, the cooling-block is also soldered to the PCB on the underside. My soldering iron crawls away slowly in shame&hellip;&nbsp;&nbsp;&nbsp;I need something with more power, so I can remove the cooling block. To work on these small, fragile SMD components, I used this big hot-air paint stripper, which blows air at 600&deg;C !</span></span></p>
+
+<p pbzloc="383" style="text-align: center">&nbsp;<img border="0" height="494" src="hot&#32;air&#32;blower&#32;f.jpg" width="900" /></p>
+
+<p pbzloc="201" style="text-align: center"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="204" style="font-size: 14px">The used hot-air blower. Originally for floor-repairing and paint-stripping. Works great on small SMD rework&nbsp; ;-)</span></span></strong></p>
+
+<p pbzloc="7" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">I used a fine nozzle, to concentrate the airflow onto the bottom of the cooling block. While heating, I gently pried with a small screwdriver under the cooling block. After about 10 seconds, the cooling block pops off.</span></span></p>
+
+<p pbzloc="253" style="text-align: center">&nbsp;<img pbzloc="242" src="cooling&#32;f1.jpg" style="border-top: 0px solid; border-right: 0px solid; border-bottom: 0px solid; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img border="0" src="cooling&#32;f2.jpg" /></p>
+
+<p pbzloc="251" style="text-align: center"><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 14px"><span lang="EN-US" pbzloc="248" style="line-height: 107%; mso-ansi-language: EN-US; mso-fareast-font-family: Calibri; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Cooling block removed, and after a few seconds, also the removed FET&rsquo;s.</span></span></span></strong></p>
+
+<p pbzloc="9" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">With the cooling block removed, you can easily remove the FETs with your soldering iron trough the bottom hole. Once removed, the PCB is cleaned with some solder-wick, to leave a clean board afterwards. Note that I also removed the 2 220 ohm resistors in between the 2 FETs. I did this for easier access to clean the PCB, and because the new BIAS circuit for the RD07MVS1 didn&rsquo;t require them.</span></span></p>
+
+<p pbzloc="213" style="text-align: center">&nbsp;<img border="0" height="600" src="clean&#32;board&#32;f.jpg" width="522" /></p>
+
+<p pbzloc="216" style="text-align: center"><span style="font-family: tahoma,geneva,sans-serif"><strong><span style="font-size: 14px">Clean board ! here, the 2 &times; 220 Ohm resistors in the middle of the FETs are removed.</span></strong></span></p>
+
+<p pbzloc="155" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><strong><span style="font-size: 24px"><span pbzloc="154">INSTALL FET&#39;s</span></span></strong></span></p>
+
+<p pbzloc="12" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="152" style="font-size: 18px">To put back the RD07MVS1 FETs, I simply placed them on the board with a fine pincet, and soldered all sides to the PCB. Now I turned the PCB upside down, put a little tin on the bottom of the FETs, and placed the cooling block on its place. As you will notice, because of the extra tin applied to the bottom of the FETs, this cooling block is not touching the bottom of the PCB. This is OK! Now heat up the cooling block again with the hot air blower. You will find that at some point, the block &ldquo;drops&rdquo; a bit, confirming that the extra tin on the bottom of the FETs has melted. Make sure that the holes of&nbsp; the cooling block are aligned with the holes in the PCB.</span></span></p>
+
+<p pbzloc="82" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="156" style="font-size: 18px">The difficult part is done now. As I stated above, I removed the 2 &times; 220 Ohm resistors of the Bias network. There was also the need of placing an extra 1K8 resistor &ldquo;somewhere&rdquo; behind the trimmers for setting the BIAS. I tried this setup, and without placing the jumper on the PCB, I measured the voltage on the gate of the FETs when I adjusted the BIAS. The lowest possible setting was 4.2V. This would result in a short-circuit!<br />
+So I rebuild the original BIAS circuit, WITH the 2 &times; 220 Ohm resistors in the middle of the FET&rsquo;s, and now the voltage on the GATEs of the FETs can be reduced to about 1 V. According to the RD07MVS1 datasheet, the FET requires about 1.4 V to start conducting. <strong pbzloc="157">SET BOTH TRIMMERS FULLY COUNTER CLOCK WISE NOW !</strong></span></span></p>
+
+<p pbzloc="15" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="158" style="font-size: 18px">While soldering all around the input circuit of the FET&rsquo;s I noticed that one of the SMD coils (coil L1009 in the schematic) had a &ldquo;loose end&rdquo;. It looked ok, but when I soldered it at one side, the complete coil came loose. Aha, the problem with the intermittent power loss is found. I ordered 10 new coils from Farnell (order code 1669603; 2,7 nH; 0603 size). Lucky me that I had to order them with a minimum of 10 pieces, The first coil I replaced fell apart. These coils are <strong>very</strong> fragile, so I carefully replaced both coil L1008 and L1009 with a new one and checked everything with my ohm meter. Everything makes&nbsp;good contact now.</span></span></p>
+
+<p style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="91" style="font-size: 18px">In the original service manual, you can see in the schematic that at the input of the exciter stage, right after the toroid, there are 2 capacitors. One 15 pF, paralleled with one 22 pF. On the new FT-817 board with the RD07MVS1 FETs, there is only one capacitor of 15 pF. So I removed the 22 pF capacitor here.<br />
+<strong pbzloc="159">This is in fact the ONLY change I made when replacing the original 2SK2975 FETs to the new RD07MVS1 FETs.</strong></span></span></p>
+
+<p pbzloc="161" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="173" style="font-size: 18px">Best thing to do is test with your ohm meter for any possible shorts, then recalibrate the BIAS of your brand new RD07MVS1 FETs.&nbsp; I used 100 mA per FET, so a total of 200 mA. A bit high, but no problem. Connect everything correctly, make sure your bottom casing of your transceiver is placed and screwed tight, and do your first test.<br />
+I set my TRX to 14.200 MHz, power setting 50W, mode&nbsp;FM. You&rsquo;ve got power? congrats! As of now, you are a member of the &ldquo;Fixed finals club&rdquo;&nbsp;;-)&nbsp;hi !</span></span></p>
+
+<p pbzloc="161" style="text-align: center"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="185" style="font-size: 18px"><img pbzloc="183" src="schematic&#32;s.jpg" style="border-top: 0px solid; height: 463px; border-right: 0px solid; width: 397px; border-bottom: 0px solid; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img border="0" height="463" src="pcb&#32;f2.jpg" width="264" /></span></span></p>
+
+<p pbzloc="88"><span style="font-family: tahoma,geneva,sans-serif"><strong><span style="font-size: 24px"><span pbzloc="162">TEST SEQUENCE</span></span></strong></span></p>
+
+<p pbzloc="165" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="167" style="font-size: 18px">Test your TRX on various bands, and with various power levels. You will notice that the setting of power level may be a bit off to the power that the TRX is actually delivering (according to your PWR meter off course&hellip;). I had this &ldquo;problem&rdquo; too, and the thing to do is a recalibration in the service-menu of your transceiver.</span></span></p>
+
+<ul>
+	<li><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">Switch off your transceiver</span></span></li>
+	<li><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="171" style="font-size: 18px">Press A + B + C simultaneously while switching on your transceiver.</span></span></li>
+	<li><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="168" style="font-size: 18px">Cycle trough all menu numbers, and note ALL settings for later reference.</span></span></li>
+	<li><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">Begin the calibration at menu number 024: HF1-PO-MAX</span></span></li>
+	<li><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">Do all the following steps until the last number 044: UHF-PO-MIN</span></span></li>
+	<li><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">Press &ldquo;FUNC&rdquo; button to save all settings and exit the service menu.</span></span></li>
+</ul>
+
+<p pbzloc="170" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="172" style="font-size: 18px">I don&rsquo;t know if I did my calibration correct, but it sure did work for me.&nbsp; Here is how I did it:<br />
+Connect your TRX via a power meter to a dummy load. Set menu 024: HF1-PO-MAX, set mode to FM. Push the PTT switch on your microphone and see what power you measure. Adjust the power to 100 W on your meter. Important: note the new value in the list you made earlier with all the settings. This MAY come in handy someday.<br />
+Repeat these steps for the other menu&rsquo;s as well. Next we have menu 025: HF1-PO-MID2. Adjust the power till you measure 50 W. In menu 026: HF1-PO-MID1, adjust for 10 W on your meter. In menu 027: HF1-PO-MIN, adjust for 5 W.<br />
+All other steps are the same, just for other frequencies. Do all menus from 024 till 044.<br />
+In menu 043: UHF-PO-MAX I did not reach the stated 20 W&nbsp;(only about 14 W). Maybe my setup and power-meter? Anyways, it is not a great problem, so I adjusted to the maximum achievable power level, and kept the setting there.</span></span></p>
+
+<p style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="1" style="font-size: 18px">This concludes the calibrations of the power levels. Test your reborn transceiver on the different bands, with various power levels, and hopefully it works as good for you as it did for me !</span></span></p>
+
+<p><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="4" style="font-size: 18px"><strong pbzloc="21">Best 73, Kevin ON5DRE.</strong></span></span></p>
+
+<p pbzloc="5" style="text-align: center">&nbsp;<img height="36" src="bar2.gif" width="500" /></p>
+
+<p align="center"><a href="../Modifaties.htm" pbzloc="10"><img alt="" pbzloc="5" src="backfri.gif" style="border-top: 0px solid; height: 25px; border-right: 0px solid; width: 53px; border-bottom: 0px solid; border-left: 0px solid" /></a></p>
+</body>
+</html>

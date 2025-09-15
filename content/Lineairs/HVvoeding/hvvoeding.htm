@@ -1,0 +1,336 @@
+<TITLE>HV voeding, algemene informatie</TITLE>
+<BODY LINK="#0000ff" VLINK="#800080" BACKGROUND="Image5.gif">
+<p align="center"><span style="font-size: 28px"><b pbzloc="57"><font face="Tahoma" pbzloc="52">ALGEMENE INFORMATIE OVER HOOGSPANNING VOEDING (HV SUPPLY)</font></b></span></p>
+
+<p pbzloc="163"><b pbzloc="166"><font face="Tahoma" pbzloc="165" size="5">SPERSPANNING</font></b></p>
+
+<p align="justify"><font face="Tahoma" size="4">De sperspanning van een diode is de spanning die over de diode staat als de wisselspanning zich omkeert. Het overschrijden van die maximale piekwaarde is vaak de oorzaak van defecte HV voedingen.</font></p>
+
+<p><b><font face="Tahoma" size="5">LICHTNET</font></b></p>
+
+<p align="justify"><font color="#0000ff" face="Tahoma" size="4">Op het lichtnet staan regelmatige piekspanningen van 2 &times; &radic;2 &times; 230 V~</font><font face="Tahoma" size="4">. Dat betekent dat aan de secundaire kant van een transformator eveneens een dubbele wisselspanning kan ontstaan. Die zal misschien wel wat gedempt worden door aanwezige capaciteit en overdrachtsverliezen, maar het k&agrave;n.</font></p>
+
+<p><b><font face="Tahoma" pbzloc="18" size="5">BRUGCEL</font></b></p>
+<b><font face="Tahoma" size="5"> </font></b>
+
+<p align="justify"><font face="Tahoma" pbzloc="31" size="4">In het linkse deel van het schema (fig&raquo;) is een schakeling met een bruggelijkrichter getekend. Daarnaast ziet u dat in de beide fasen van het lichtnet er steeds twee diodes in serie staan. De condensator wordt in de positieve fase opgeladen tot een piekspanning (Up) van wortel twee maal de secundaire trafo spanning (U<img align="right" height="174" hspace="9" src="revvolts.gif" width="387" />sec): Up = &radic;2 &times; Usec. In de negatieve fase staat dan over beide diodes een (piek)sperspanning (reverse voltage Ur) van:</font></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="100" size="4">Ur = (2 &times; &radic;2 &times; Usec) + (1 &times; &radic;2 &times; Usec) = 3&radic;2 &times; Usec, dat is ongeveer 4.24 &times; Usec! Per diode staat dus in sperrichting Ur = &frac12; &times; 4.24 &times; Usec = 2.21 &times; Usec.</font></p>
+
+<p><b><font face="Tahoma" pbzloc="111" size="5">VOORBEELD</font></b></p>
+
+<p align="justify"><font face="Tahoma" size="4">Stel u heeft een transformator met aan de secundaire kant 2000 V~. Als u een bruggelijkrichter toepast met maar vier diodes dan staat er in het ongunstigste geval een piek sperspanning over elke diode van Ur = 2.21 &times; 2000 = 4240 Volt. Gebruikt u bij voorbeeld een 1000 V diode (1N4007) dan moeten er per tak 4240 &divide; 1000 = 5 diodes in serie staan. Een geschikte &quot;brugcel&quot; moet dan in plaats van vier diodes uit 4 &times; 5 = 20 diodes bestaan. </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Met deze beschouwing als wetenschap zult u vaststellen dat in veel HV voedingen te weinig diodes zitten en eens zal dat fout gaan.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Moderne gelijkrichtdiodes zijn in staat om HF gelijk te richten, daarom moet elke diode of een groep van diodes met een condensator ontkoppeld worden. Per diode is een schijfcondensator van 10 n/1 kV voldoende. Techniek en productie proces voor het maken van diodes zijn tegenwoordig zo verbeterd dat van een serie (batch) zij onderling vrijwel aan elkaar gelijk zijn. Het niet meer nodig is om een weerstand parallel aan elke diode te plaatsen. </font></p>
+
+<p><b><font face="Tahoma" size="5">HOOGSPANNING MET BRUG</font></b></p>
+<img align="right" height="324" hspace="9" src="hvbrugs1.gif" width="410" />
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4">Een voeding volgens de vermelde gegevens kan er dan zo (fig&raquo;) uitzien. Het is aan te bevelen om aan de primaire kant van de transformator een inschakelvertraging aan te brengen. In het begin vormen de elco&#39;s een kortsluiting waardoor de diodes een grote momentele stroom moeten verwerken. </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p><b><font face="Tahoma" size="5">HOOGSPANNING DOOR VERDUBBELING</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="323" hspace="9" src="hvverds.gif" width="356" /> </font></b>
+
+<p>&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="8" size="4">Ook met verdubbeling is (&laquo;fig) een goede voeding te maken. Deze methode is zelfs economischer door een reductie van onderdelen. Verder zijn er minder secundaire wikkelingen met een kleiner volume van het blikpakket. Zelfs al er dikker draad gebruikt wordt is de transformator kleiner. Voor een nog kleiner volume gebruikt men in plaats van &eacute;&eacute;n draad twee dunnere draden parallel. Met deze twee constructies is de ohms weerstand van de secundaire spoel lager en dat vertaalt zich in een belaste spanning die </font><font color="#0000ff" face="Tahoma" size="4">minstens 100 V hoger </font><font face="Tahoma" size="4">(zie TRANSFORMATOR) is dan een voeding met brugcel. </font></p>
+
+<p><font face="Tahoma" pbzloc="1" size="4">Tegenwoordig zitten in de meeste lineaire versterkers HV voedingen met een schakeling door spanningsverdubbeling.</font></p>
+
+<p>&nbsp;</p>
+
+<p><b><font face="Tahoma" pbzloc="159" size="5">TRANSFORMATOR 220 &divide; 380 V</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="341" hspace="9" src="trafo220-380s.gif" width="668" /> </font></b>
+
+<p><b><font face="Tahoma" size="5">&nbsp;</font></b></p>
+
+<p><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Met een paar 220 &divide; 380 transformatoren kan men ook een geschikte voeding maken en de schema&#39;s geven daarvan een indruk. </font></p>
+
+<p><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p><b><font face="Tahoma" size="5">CONDENSATOR</font></b></p>
+
+<p><font face="Tahoma" size="4">De lekstromen van de condensatoren zijn zelden gelijk aan elkaar en dan zijn de klemspanningen ook niet gelijk. </font></p>
+
+<p align="center" pbzloc="61"><img height="202" src="elcosf3.jpg" width="800" /></p>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="60"><font face="Tahoma">Het formaat wordt steeds kleiner en de condensator uiterst links werd in 2008 gekocht.</font></b></span></p>
+<b><font face="Tahoma" size="2"><img align="left" height="299" hspace="9" src="elco-series.gif" width="57" /> </font></b>
+
+<p align="justify"><font face="Tahoma" size="4">Bij het inschakelen van de voeding en het daarbij &quot;opladen&quot; ontstaan er grote spanningsverschillen tussen de elco&#39;s onderling omdat de onderlinge inwendige weerstand vrijwel nooit gelijk zijn. Er kan een situatie ontstaan waarbij (kortstondig) een toegestane maximum spanning van een condensator te hoog wordt en er vonkdoorslag plaats vindt. In plaats van 8 staan er dan 7 in serie en er ontstaat een kettingreactie waarbij alle elco&#39;s het loodje leggen. Zonder enige bescherming door een zekering ontstaat secundair een complete kortsluiting waarbij alle diodes doorpiepen en vervolgens de secundaire van de trafo doorbrandt.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Door het aanbrengen van geschikte weerstanden parallel aan een condensator wordt een betere spanningsdeling verkregen. Een waarde van 100 k? per condensator volstaat. In plaats van &eacute;&eacute;n weerstand is het beter om er een paar parallel te zetten. Bij voorbeeld (&laquo;fig) 3 &times; 330 k?. Als door veroudering de weerstanden niet meer allemaal dezelfde waarde hebben, heeft dat minder invloed op de gelijke spanningsverdeling over de elco&#39;s. Bovendien is de koeling in de vrije lucht van drie weerstanden beter dan &eacute;&eacute;n weerstand van hetzelfde vermogen.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Met de opkomst van schakelende voedingen zijn elektrolytische condensatoren beschikbaar van o.a. 220 &micro;F/400 V of zelfs 470 &micro;F/450 V. Door hun kleinere afmetingen passen ze meestal op de plek van de verouderde of defecte exemplaren. Vervang alles en de komende dertig jaar zit u goed. Op </font><a href="http://www.ebay.de/"><font face="Tahoma" size="4">http://www.ebay.de</font></a><font face="Tahoma" size="4"> worden zij regelmatig per 10 stuks aangeboden en vaak voor een &quot;direct kopen&quot; prijs van soms maar 15 EURO.</font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">REFORMEREN</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="88" hspace="9" src="reforelcos.gif" width="197" /> </font></b>
+
+<p align="justify"><font face="Tahoma" size="4">Van nieuwe en een lange tijd niet gebruikte condensatoren moet het elektrolyt gereformeerd worden. Sluit een losse elco via een 10 &ndash; 47 k</font><font face="Symbol" size="4">W</font><font face="Tahoma" size="4"> weerstand en HV diode (1N4007) aan op ongeveer 250 V~. Meet met een digitale voltmeter de gelijkspanning over de condensator en als dat niet meer stijgt is er voldoende gereformeerd. Ontlaadt de condensator met een 220 ? weerstand! Herhaal eventueel deze procedure een paar keer.</font></p>
+
+<p><b><font face="Tahoma" size="5">EFFECTIEVE CAPACITEIT</font></b></p>
+
+<p align="justify"><font face="Tahoma" size="4">Hoe groot moet de afvlakcapaciteit zijn wordt mij vaak gevraagd. Door experimenteren ben ik tot de volgende formule gekomen: C</font><b><font face="Tahoma" size="2"> =</font></b><font face="Tahoma" size="4"> 100 &micro;F/1 A. Dat is een ideale waarde maar met minder kan ook. Voor SSB en CW kan men stellen:</font></p>
+
+<p align="center"><font color="#0000ff" face="Tahoma" size="4">Afvlakcapaciteit HV voeding: C = 50 - 100 &micro;F/1000 mA</font></p>
+
+<p><font face="Tahoma" size="4">Meer is niet nodig en minder raad ik af. Het is wel de effectieve capaciteit en dat betekent in de twee vorige schema&#39;s van een voeding: C</font><b><font face="Tahoma" size="2">eff</font></b><font face="Tahoma" size="4"> = 220 &micro;F &divide; 8 = 27.5 &micro;F. </font></p>
+
+<table align="left" border="0" cellpadding="4" cellspacing="0" hspace="12" width="649">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><img height="150" src="elcosf1.jpg" width="298" /><img height="150" src="elcosf2.jpg" width="329" /></p>
+
+			<p align="center"><b><font face="Tahoma" size="2">Mijn favoriete montage van R en C, in dit voorbeeld een spanningsverdubbeling</font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="13" size="4">Weerstanden monteer ik altijd in kanteelvorm aan de koperzijde van een epoxyprint en de elco&#39;s komen aan de andere kant. In dit voorbeeld werden vier rijen van twee elco&#39;s in serie gezet. Er werden in plaats van drie, twee weerstanden parallel over de elco&#39;s geplaatst omdat het 2 W types waren en de onbelaste spanning maar 1900 V was.</font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p><b><font face="Tahoma" size="5">TRANSFORMATOR</font></b></p>
+<b><font face="Tahoma" size="5"><img align="left" height="173" hspace="9" src="trafoprls1.gif" width="494" /> </font></b>
+
+<p align="justify" pbzloc="9"><font face="Tahoma" size="4">Tegenwoordig zijn transformatoren voor 1 &ndash; 3.5 kV nog maar zelden te koop voor een amateur-prijs. Voor een eigenbouw is het maar wat u wilt uitgeven of kunt verwerven. Een mogelijke oplossing is het serie- parallel schakelen van twee transformatoren om de juiste primaire en secundaire spanning te krijgen. </font></p>
+
+<p align="justify" pbzloc="12"><font face="Tahoma" pbzloc="4" size="4">Dikwijls is het voordeliger om twee gelijke secundaire spoelen parallel te schakelen en dan de spanning gelijk te richten en te verdubbelen. Is er bij voorbeeld 2 &times; 1200 V en elke spoel heeft een weerstand van 50 </font><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">&Omega;</span></span><font face="Tahoma" pbzloc="4" size="4">, dan is dat met de spoelen in s</font><font face="Tahoma" size="4">erie 100 &Omega; en parallel maar 25 &Omega;. Ik heb daar grondig mee ge&lambda;xperimenteerd. Wat bleek? </font><font color="#0000ff" face="Tahoma" size="4">Door de kleinere inwendige weerstand kan onder volle belasting een 100 V hogere spanning verkregen worden dan met beide spoelen in serie en gelijkrichting door een brug met vier diodes.</font></p>
+
+<p><b><font face="Tahoma" pbzloc="15" size="5">IS EEN TRAFO GESCHIKT?</font></b></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="160" size="4">Er zijn allerlei manieren om te bepalen of een (onbekende) transformator geschikt is voor een bepaald vermogen. Men kan het gewicht bepalen of het blikpakket opmeten etc. Jammer genoeg (of niet?) werd in de loop der jaren de constructie van trafo&#39;s veranderd zodat oude meetmethodes nu niet meer gelden. Een redelijke manier die hier gebruikt wordt, is het opmeten van de gelijkstroomweerstand (Rsec) van de secundaire HV wikkeling. Stel dat de onbelaste secundaire spanning is: Usec = 2000 V en Rsec = 100 Ohm. Bij volle belasting mag de spanning (5%) inzakken naar 1900 V~, dan is de maximale stroom Imax = (2000 - 1900 V) &divide; 100&nbsp;= 1 A. Het is dan een 1900 &times; 1 = 1.9 kW transformator. </font></p>
+<font face="Tahoma" size="4"><img align="right" height="361" hspace="9" src="trafosf.JPG" width="412" /> </font>
+
+<p align="justify"><font face="Tahoma" size="4">Dit is geen waterdichte methode maar in de praktijk heb ik gemerkt dat hij toch goed bruikbaar is. Dat bleek onder ander bij (fig&raquo;) deze vier verschillende trafo&#39;s.</font></p>
+<font face="Tahoma" size="4"><img align="left" height="300" hspace="9" src="trafof1.jpg" width="298" /> </font>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="62" size="4">Vermeldt een fabrikant op een transformator bij voorbeeld 2800 V/400 mA is, dan is dat 1120 W onder een continue belasting. Als zendamateur zenden wij voornamelijk met een intermitterende mode SSB en CW en dat is geen constant vermogen. Genoemde trafo kan dan veilig belast worden met 800 mA (2240 W) gedurende een SSB of CW uitzending want dat is gemiddeld zelfs minder dan 1120 W.</font></p>
+
+<p align="center">&nbsp;</p>
+
+<center pbzloc="63">
+<table border="0" cellpadding="4" cellspacing="0" width="940">
+	<tbody>
+		<tr>
+			<td valign="top" width="54%">
+			<p align="center"><img height="409" src="supplyf.jpg" width="480" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="67"><font face="Tahoma">External HV supply for experiments with amplifiers.</font></b></span></p>
+			</td>
+			<td valign="middle" width="46%">
+			<p align="center"><img height="246" src="hvbrugs2.gif" width="415" /></p>
+
+			<p align="center"><b><font face="Tahoma" size="2">&nbsp;</font></b></p>
+
+			<p align="center"><img height="150" src="softstartf.jpg" width="227" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify"><font face="Tahoma" pbzloc="64" size="4">In de loop der tijd werden via vlooienmarkten en eBay een kast en componenten voor een redelijke prijs verworven. Daarmee kon een goede externe voeding gemaakt worden voor experimenten met en testen van zelfgebouwde, te repareren of te modificeren versterkers. Niet afgebeeld is een aparte variac warmee de voeding op een willekeurige spanning ingesteld kan worden.</font></p>
+
+<center pbzloc="68">
+<table border="0" cellpadding="4" cellspacing="0" width="935">
+	<tbody>
+		<tr>
+			<td valign="middle" width="52%">
+			<p align="center"><img height="291" src="quadrups.gif" width="470" /></p>
+
+			<p align="center"><b><font face="Tahoma" size="2">On load about 2 kV.</font></b></p>
+			</td>
+			<td valign="top" width="48%">
+			<p align="center"><img height="395" src="trafof3.jpg" width="417" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify"><font face="Tahoma" size="4">Ook met een 220 &divide; 380 V transformator is een behoorlijke voeding te maken. Houdt er wel rekening mee dat met ons huidige elektriciteitsnet (&plusmn; 228V~) er aan de secundaire kant een hogere spanning gegenereerd wordt. Bij mijn experimentele voeding op het plankje werd een 380 &divide; 220 V trafo ingezet. Als zoiets gebruikt wordt voor een 220 &divide; 380 V transformatie, ontstaat er aan de secundaire kant een lagere spanning dan 380 V. Bij volle belasting werd aan de secundaire kant een spanning van 2 kV gemeten.</font></p>
+
+<p><b pbzloc="170"><font face="Tahoma" pbzloc="69" size="5">MAGNETRON TRAFO</font></b></p>
+
+<table align="right" border="1" cellpadding="4" cellspacing="1" hspace="12" width="403">
+	<tbody>
+		<tr>
+			<td valign="top" width="34%">
+			<p><b><font face="Tahoma" size="2">Afmeting</font></b></p>
+			</td>
+			<td valign="top" width="34%">
+			<p><b><font face="Tahoma" size="2">11.5 &times; 11.5 &times; 9 cm</font></b></p>
+			</td>
+			<td valign="top" width="31%">
+			<p><b><font face="Tahoma" size="2">Groot model</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="34%">
+			<p><b><font face="Tahoma" size="2">Onbelast</font></b></p>
+			</td>
+			<td valign="top" width="34%">
+			<p><b><font face="Tahoma" size="2">3150 V=</font></b></p>
+			</td>
+			<td valign="top" width="31%">
+			<p><b><font face="Tahoma" size="2">3200 V=</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="34%">
+			<p><b><font face="Tahoma" size="2">Met ruststroom</font></b></p>
+			</td>
+			<td valign="top" width="34%">
+			<p><b><font face="Tahoma" size="2">2650 V/80 mA</font></b></p>
+			</td>
+			<td valign="top" width="31%">
+			<p><b><font face="Tahoma" size="2">2900 V/100 mA</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="34%">
+			<p><b><font face="Tahoma" size="2">Met SSB gemiddeld</font></b></p>
+			</td>
+			<td valign="top" width="34%">
+			<p><b><font face="Tahoma" size="2">2200 V=</font></b></p>
+			</td>
+			<td valign="top" width="31%">
+			<p><b><font face="Tahoma" size="2">2750 V=</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="34%">
+			<p><b><font face="Tahoma" size="2">Met draaggolf</font></b></p>
+			</td>
+			<td valign="top" width="34%">
+			<p><b><font face="Tahoma" size="2">1950 V=</font></b></p>
+			</td>
+			<td valign="top" width="31%">
+			<p><b><font face="Tahoma" size="2">2650 V=</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="34%">
+			<p><b><font face="Tahoma" size="2">HF PEP output</font></b></p>
+			</td>
+			<td valign="top" width="34%">
+			<p><b><font face="Tahoma" size="2">575 W</font></b></p>
+			</td>
+			<td valign="top" width="31%">
+			<p><b><font face="Tahoma" size="2">650 W</font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4">Defecte magnetrons uit een kringloop- winkel zijn een mogelijke bron voor een HV transformator. Er werden door mij zes verschillende typen getest met een bruggelijkrichter voeding. De spanning werd getest met steeds dezelfde eigenbouw lineaire versterker. Van een paar zijn de meetresultaten in de tabel verwerkt. Op het kleinste exemplaar, 11.5 &times; 11.5 &times; 9 cm, stond: Classe H, 220 V/50 Hz, sec 2100 V, 1200 VA, 3,35 V. mA. Met een continue draaggolf was het HF uitgangsvermogen 575 W en met SSB was de gemiddelde spanning 2200 V. Voor zo&#39;n klein geval een opmerkelijk resultaat.</font></p>
+
+<p align="center">&nbsp;</p>
+
+<center pbzloc="70">
+<table border="0" cellpadding="4" cellspacing="0" width="940">
+	<tbody>
+		<tr>
+			<td valign="top" width="35%">
+			<p align="center"><img height="313" src="trafof2.jpg" width="250" /></p>
+			</td>
+			<td valign="middle" width="65%">
+			<p align="justify"><font face="Tahoma" size="4">Een duurproef werd bij het experiment niet gedaan. Een intermitterend ICAS (intermittent commercial and amateur service) gebruik, zoals dat in het huishouden ook gebeurt, lijkt goed mogelijk.</font></p>
+
+			<p align="justify"><font face="Tahoma" size="4">In magnetrons werkt men meestal met spanningverdubbeling. &Eacute;&eacute;n uiteinde van de secundaire HV winding is daarbij aan de metalen kern gepuntlast. Als de draad losgemaakt wordt (&laquo;fig) om met een bruggelijkrichter te gebruiken, dan is </font><font color="#0000ff" face="Tahoma" size="4">de isolatie van wikkelvorm en wikkeldraad ten opzichte van de metalen lamellen niet berekend op een hoge spanning</font><font face="Tahoma" size="4">. De trafo moet dan gescheiden van het chassis op een isolerende plaat van kunststof gemonteerd worden.</font><font size="2"> </font></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="middle" width="35%">
+			<p align="justify"><font face="Tahoma" size="4">Uit veiligheidsoverwegingen is het beter om twee dezelfde magnetron trafo&#39;s te verzamelen. De verbinding hoeft dan niet losgemaakt te worden als een dubbelfasige (fig&raquo;) gelijkrichting met middenaftakking toegepast wordt.</font></p>
+			</td>
+			<td valign="top" width="65%">
+			<p align="center"><img height="197" src="trafomagns1.gif" width="439" /></p>
+
+			<p align="center"><b><font face="Tahoma" size="2">Veilige methode voor een HV voeding met twee identieke magnetrontrafo&#39;s.</font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify"><b><font face="Tahoma" size="5">MAGNETRON HV DIODE </font></b></p>
+<b><font face="Tahoma" size="5"><img align="left" height="38" hspace="9" src="diodef1.jpg" width="283" /> </font></b>
+
+<p align="justify"><font face="Tahoma" size="4">PE1KYC meldde mij per email dat HV diodes voor magnetrons goedkoper zijn geworden. HV05-12 types waren per 10 stuks te koop voor 18,5 Euro (mei 2006). De diodes staan omschreven als SI-D 12 kV 0,5 A. </font></p>
+<font face="Tahoma" size="4"><img align="left" height="102" hspace="9" src="diodef2.jpg" width="260" /> </font>
+
+<p align="justify"><font face="Tahoma" size="4">Van PE1KYC kreeg ik per post vier diodes (&laquo;fig) om mee te experimenteren. Zodra hij zijn bestelling binnen had, maakte hij al snel een &quot;brugcel&quot; met vier diodes en testte dat met 5.3 kV; het ging prima! </font></p>
+<font face="Tahoma" size="4"><img align="right" height="320" hspace="9" src="Alpha374f.jpg" width="303" /> </font>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="34" size="4">Gezien de informatie uit deze </font><a href="spec-diode1.pdf"><font face="Tahoma" size="4">diode.pdf</font></a><font face="Tahoma" size="4">, bestaat elke gelijkrichter waarschijnlijk uit een aantal in serie geschakelde diodes op &eacute;&eacute;n chip. Door de toegestane stroom van 500 mA zijn zij alleen geschikt voor 1 A als een bruggelijkrichter (4 diodes) of dubbelfasige gelijkrichting met 2 diodes toegepast wordt. Het bouwen van een voeding wordt met deze componenten aantrekkelijk omdat het kleiner en eenvoudiger kan. Toen ik een stroom van 100 mA door &eacute;&eacute;n diode liet lopen, was de spanningsval 8.005 Volt. Dat kan betekenen dat er op de chip 11 &agrave; 12 diodes in serie staan. In mijn fotoarchief zag dat in een ALPHA 374 lineaire versterker er kennelijk ook iets dergelijks aan HV diodes (fig&raquo;) gemonteerd wordt. </font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">INSCHAKEL VERTRAGING</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="364" hspace="9" src="softstarts1.gif" width="381" /> </font></b>
+
+<p align="justify"><font face="Tahoma" size="4">In een uitgeschakelde HV voeding zijn de elco&#39;s geheel ontladen en bij het inschakelen vormen zij een kortsluiting tot de lading volledig is. Als de voeding daar niet tegen beschermd is, kunnen diodes kapot gaan en zijn dan een permanente kortsluiting met alle ellende die daarbij hoort. Ook kan door de inschakelstoot op de volle sinustop van het lichtnet de smeltveiligheid in de zekeringkast doorbranden of de gloeidraden van buizen een behoorlijke opdoffer krijgen.</font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="93" size="4">Een eenvoudig inschakelvertraging of &quot;soft start&quot; ziet u (&laquo;fig&raquo;) hiernaast. De hoofdschakelaar is S1. Het HV deel wordt apart geschakeld. Dat geniet mijn voorkeur en als ik de shack verlaat zet ik uit voorzorg HV af. De huisgenoten zijn niet deskundig en je weet maar nooit! </font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="96" size="4">Het maakt niet uit in welke volgorde S2 en S3 (fig A) ingeschakeld worden want steeds zal eerst een begrenzingweerstand in serie met de trafo staan. Het is een kwestie van klikklak en dat geeft al een voldoende vertraging. Ook systeem fig. B werkt naar behoren en dat gebruik ik in mijn losse 3 kV experimenteer voeding. Vergeet niet om bij het uitschakelen van de voeding ook S2 en S3 terug te zetten!</font></p>
+
+<p pbzloc="140" style="text-align: center">&nbsp;<img pbzloc="143" src="softstarts2.gif" style="border-top: 0px solid; height: 240px; border-right: 0px solid; width: 371px; border-bottom: 0px solid; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img pbzloc="147" src="softstarts3.gif" style="border-top: 0px solid; height: 202px; border-right: 0px solid; width: 282px; border-bottom: 0px solid; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img pbzloc="151" src="softstarts4.gif" style="border-top: 0px solid; height: 290px; border-right: 0px solid; width: 389px; border-bottom: 0px solid; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="154" size="4">Er zijn diverse vormen van automatische vertraging mogelijk. Een methode die in een paar door mij gemodificeerde versterkers werden aangebracht, ziet u in de schema&#39;s (fig&raquo;). Er werd zoveel mogelijk gebruikt gemaakt van de originele schakeling. In een SB-200 wordt de 6.3 V spanning van de gloeidraad gelijkgericht en verdubbeld.&nbsp;</font><font face="Tahoma" pbzloc="105" size="4"> </font><font face="Tahoma" size="4">Via een weerstand wordt een condensator parallel aan een 12 V relais opgeladen. </font></p>
+
+<p align="justify" pbzloc="155"><font face="Tahoma" pbzloc="156" size="4">Het</font><font face="Tahoma" size="4"> relais komt vertraagd op omdat eerst de elco&#39;s op spanning komen, vervolgens sluit het aan de primaire kant van de transformator een weerstand kort. De vertraging kan men anders instellen door met de waarden van 10 &Omega; en 1000 &micro;F te spelen. Let erop dat de</font><font face="Tahoma" size="4"> schakeling op geen enkel punt contact maakt met massa.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">In een MLA-2500 (fig&raquo;) gebeurt vrijwel hetzelfde, alleen werd de originele 12 V spanning van de transformator ingezet samen met het toevoegen van een weerstand, een diode, een elco en een relais.</font></p>
+<font face="Tahoma" size="4"><img align="left" height="150" hspace="9" src="ntcf.jpg" width="127" /> </font>
+
+<p align="justify">&nbsp;</p>
+<img align="right" height="81" hspace="9" src="ntcs.gif" width="185" />
+<p align="justify"><font face="Tahoma" size="4">Er wordt ook wel een NTC weerstand in de primaire kant van een trafo aanbevolen als inschakelvertraging. Het inzetten daarvan hangt af van het type transformator. Veel trafo&#39;s voor HF versterkers hebben een behoorlijk lage gelijkstroomweerstand (Rp) aan de primaire kant. Dat kan wel 2 &agrave; 10 &Omega;</font><font face="Tahoma" size="4"> zijn. Een NTC van 1 &Omega; effectief onder volle belasting zal dan bij Rp =10 &Omega; een spanningsverlies geven van 10 %. Vertaalt naar de</font><font face="Tahoma" size="4"> secundaire kant van een transformator, betekent dat een spanningsval van ongeveer 100 V onder volledige belasting.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Voorbeeld: volledig belaste 2300 W/230 &divide; 2300 V ~ trafo, primaire stroom is 10 A. Een NTC van 1 Ohm in de primaire kant verlaagt daar de spanning tot 220 V~. De belaste spanning aan de secundaire kant is dan (2300 : 230) &times; 220 = 2200 V~ en zonder NTC is dat 2300 V~. </font></p>
+
+<p align="center"><img height="36" src="bar2.gif" width="500" /></p>
+
+<p align="center"><a href="../Lineairs.htm"><img border="0" height="25" src="backfri.gif" width="53" /></a></p>
+</body>
+</html>

@@ -1,0 +1,543 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>AtlasEng</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BACKGROUND="Image5.gif">
+
+<B><FONT FACE="Tahoma" SIZE=6 COLOR="#ff0000"><P ALIGN="CENTER">Atlas</FONT><FONT FACE="Tahoma" SIZE=6>-210, </FONT><FONT FACE="Tahoma" SIZE=6 COLOR="#ff0000">Atlas</FONT><FONT FACE="Tahoma" SIZE=6>-210x, </FONT><FONT FACE="Tahoma" SIZE=6 COLOR="#ff0000">Atlas</FONT><FONT FACE="Tahoma" SIZE=6>-215x</P>
+</FONT><FONT FACE="Tahoma" SIZE=5><P ALIGN="CENTER">Modification and Information</P>
+</B></FONT><P ALIGN="CENTER"><IMG SRC="Atlas-210xf.jpg" WIDTH=812 HEIGHT=301></P>
+<P ALIGN="CENTER"><IMG SRC="Atlas-215xf.jpg" WIDTH=812 HEIGHT=304></P>
+<P ALIGN="CENTER"><IMG SRC="UC1.jpg" WIDTH=162 HEIGHT=70></P>
+<P ALIGN="CENTER"><IMG SRC="updated2.gif" WIDTH=44 HEIGHT=12>&nbsp; <B><FONT FACE="Tahoma" SIZE=2 COLOR="#008000">Updated with schematics and photos.</P>
+</FONT><FONT FACE="Tahoma" SIZE=5><P>DOUBLE-SIDEBAND LIMITING RF SPEECH PROCESSOR</P></B></FONT>
+<P ALIGN="RIGHT"><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=742 ALIGN="RIGHT" HSPACE=12>
+<TR><TD WIDTH="50%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="clippers1.gif" WIDTH=351 HEIGHT=342></TD>
+<TD WIDTH="50%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="clippers2.gif" WIDTH=351 HEIGHT=341></TD>
+</TR>
+</TABLE>
+</P>
+
+<FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">This simple </FONT><A HREF="../../Diversen/DSBclipper/dsb-clipper.eng.htm"><FONT FACE="Tahoma" SIZE=4>speech processor</FONT></A> <FONT FACE="Tahoma" SIZE=4>is suited for all Atlas 210-215 types. The audio signal from the first stage microphone amplifier Q202 (PC-200) is coupled to integrated oscillator and mixer circuit NE612A (SA612), which converts it to a 6.4 MHz signal. The heterodyning action of the mixer produces a double sideband signal (DSB), which is coupled to the second integrated clipper and mixer circuit. The DSB signal is then clipped in the TBA120A (SN76660) and is further converted back to audio for input to MIC. GAIN potentiometer. The resulting harmonics (of 6.4 MHz) are filtered out with simple RC filtering when it was demodulated back to audio. The result is a 'cleaner' clipped signal being finally transmitted. This increases the average output level of an audio signal from a microphone by clipping off the excessive signal peaks. By lowering the peaks in proportion to the average level, a higher average output level can be attained with an associated increase in intelligibility under difficult conditions. It is set up easily without special equipment because no RF filters are used. This effective design offers microphone level input and output adjustments. The clip level depends on the amount of microphone gain. </P>
+<P ALIGN="JUSTIFY">The crystal of 6.4 MHz is not critical. Each other frequency of 3 - 10.7 MHz is useful because the internal oscillator start easily and there no RF filters. The oscillator can be omitted if there is another HF oscillator. A good result was reached by coupling the carrier oscillator signal (PC-600) from pin 6 and 7 of PC-300 to pin 6 of NE612A. </P>
+<P ALIGN="JUSTIFY">The modification is simple; nothing has to be changed on any of the original print boards. Just disconnect a wire on the top of potentiometer R5 (MIC. GAIN). That point easily can be spotted because resistor R6 is connected to it. The wire must soldered on the top of the potentiometer (P) at the input of the processor. The audio from the output of the processor is then coupled to the top of R5. That is all! Preferably use screened wire for the assembly to or from the processor. The clipping level can be adjusted with potentiometer P. Do not run the gain to far, or you will decrease the intelligibility of your audio. So the gain must be carefully adjusted. If you always use the same microphone, the adjustment can be done once. </P>
+<P ALIGN="JUSTIFY">Adjust R5 as follows: whistle in the microphone for maximum output of the transmitter, set P so that the voice peaks are just below the maximum level. Eventually check with a scoop if the voice peaks will not be reaching the maximum level.</P>
+<P ALIGN="JUSTIFY">It is possible to set the controls so that the peak envelope power reaches the desired level without activating the ALC at all. </FONT><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff">The level then is only a few tenths of a dB below the level that would have been set by the ALC, but the transmission is a lot cleaner while maintaining very high average modulation. </P>
+</FONT><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Probably the TBA120A or SN76660 are no longer manufactured, but it appears that they are offered still new (old stock).</P>
+</FONT><B><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">VFO</P>
+</B></FONT><FONT FACE="Tahoma" SIZE=4><P>My ATLAS </FONT><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff">210</FONT><FONT FACE="Tahoma" SIZE=4> is successfully modified from 3.7 down to 3.5 MHz.</P></FONT>
+<P ALIGN="RIGHT"><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=581 ALIGN="RIGHT" HSPACE=12>
+<TR><TD WIDTH="57%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="vfo80ms.gif" WIDTH=249 HEIGHT=216></TD>
+<TD WIDTH="43%" VALIGN="TOP">
+<P><IMG SRC="vfo80mf.jpg" WIDTH=246 HEIGHT=300></TD>
+</TR>
+</TABLE>
+</P>
+
+<FONT FACE="Tahoma" SIZE=4><P ALIGN="RIGHT">&nbsp;</P>
+<P>&nbsp;</P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><P ALIGN="JUSTIFY">(1) Remove the marked coil and replace with a coil of about 0.5 µH.</P>
+<P ALIGN="JUSTIFY">(2) Calibrate with the trimmer for "0 = 3.5 MHz" on the dial scale. </P>
+<P ALIGN="JUSTIFY">(3) Realign the 80m receiver input circuit for maximum sensitivity</B></FONT><FONT FACE="Tahoma" SIZE=4>.</P>
+<P>&nbsp;</P>
+</FONT><B><FONT FACE="Tahoma" SIZE=5><P>17 m INSTEAD OF 10 m </P>
+</FONT><U><FONT FACE="Tahoma" SIZE=4><P>VFO</P>
+</B></U><P>My ATLAS </FONT><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff">210x</FONT><FONT FACE="Tahoma" SIZE=4> is successfully modified for the 17 m band by sacrifice the 10 m range. Output is 100 W.</P></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=821>
+<TR><TD WIDTH="62%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="vfo17ms.gif" WIDTH=402 HEIGHT=207></TD>
+<TD WIDTH="38%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="vfo17mf.jpg" WIDTH=219 HEIGHT=186></TD>
+</TR>
+<TR><TD VALIGN="MIDDLE" COLSPAN=2>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Wafer A: Disconnect the wire to the 10m tap of L403 and solder a jumper to the 40 m contact. </P>
+<P ALIGN="CENTER">Wafer B: shortcut 1 × 4.7 pF cap.</B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">Adjust the 10 m (= 17 m) VFO trimmer C415 for an accurate dial calibration of 18.000 – 18.500 MHz. The VFO range is then moved up to 12.750 – 13.250 MHz.</P>
+<B><U><P>RECEIVER INPUT TUNING</P></B></U></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=940>
+<TR><TD WIDTH="23%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="rx17ms.gif" WIDTH=187 HEIGHT=115></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Eventually replace with 1 × ± 100 pF cap parallel to each coil.</B></FONT></TD>
+<TD WIDTH="40%" VALIGN="TOP">
+<P ALIGN="CENTER"><IMG SRC="test17mrxf.jpg" WIDTH=320 HEIGHT=334></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Testing the modified circuit using the soldering tags on top of the PCB.</B></FONT></TD>
+<TD WIDTH="37%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="rx17mf.jpg" WIDTH=320 HEIGHT=273></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Final modification. </B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">Check for a coupling capacitor C813 of 4.7 pF and solder parallel to C814 and C 815 an capacitor of 56 pF, eventually 47 pF. Adjust the iron cores for maximum signal on ± 18.110 MHz.</P>
+<P>I did not remove the PCB PC-800 but used the soldering tags for the final modification of the 10 m receiver input tuning transformer.</P>
+<B><U><P>TRANSMITTER INPUT TUNING</P></B></U></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=626>
+<TR><TD WIDTH="33%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="tx17ms.gif" WIDTH=174 HEIGHT=137></TD>
+<TD WIDTH="67%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="tx17mf.jpg" WIDTH=320 HEIGHT=113></TD>
+</TR>
+<TR><TD VALIGN="MIDDLE" COLSPAN=2>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Rewind 10 m toroids with 24 turns and a tap on 4 turns.</B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">Set the trimmers C921 and C922 for maximum output on ± 18.110 MHz.</P>
+<B><U><P>LOW PASS FILTER</P></B></U></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=630>
+<TR><TD WIDTH="46%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="lpf17ms.gif" WIDTH=202 HEIGHT=264></TD>
+<TD WIDTH="54%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="lpf17mf.jpg" WIDTH=320 HEIGHT=319></TD>
+</TR>
+<TR><TD VALIGN="MIDDLE" COLSPAN=2>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Using the 15 m low pass filter for 17 m (the 10 m LPF is disconnected).</B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">The low pass filter provides full coverage of the 17 m band and require no further adjustment.</P>
+<P>&nbsp;</FONT><B><FONT FACE="Tahoma" SIZE=5>MORE MODIFICATIONS</P></B></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE BORDER CELLSPACING=1 CELLPADDING=4 WIDTH=940>
+<TR><TD WIDTH="34%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="smeters1.gif" WIDTH=190 HEIGHT=347></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">AGC &amp; S-meter mods.</B></FONT></TD>
+<TD WIDTH="66%" VALIGN="TOP">
+<P ALIGN="CENTER"><IMG SRC="pc200as.gif" WIDTH=600 HEIGHT=456></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">PC-200A.</B></FONT></TD>
+</TR>
+<TR><TD VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><IMG SRC="pc200ans.gif" WIDTH=935 HEIGHT=399></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">PC-200A redrawn with sPlan.</P>
+</B></FONT><P ALIGN="CENTER"><IMG SRC="pc200cs.gif" WIDTH=793 HEIGHT=391></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">PC-200C (the differences with PC-200A and PC-200B red are red coloured).</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="34%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="agcs1.gif" WIDTH=226 HEIGHT=208></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">AGC mods.</B></FONT></TD>
+<TD WIDTH="66%" VALIGN="TOP">
+<P ALIGN="CENTER"><IMG SRC="pc300cs.gif" WIDTH=600 HEIGHT=401></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">PC-300C.</B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="JUSTIFY">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=960>
+<TR><TD WIDTH="8%" VALIGN="MIDDLE">
+<B><U><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Mixers</P>
+</U><P ALIGN="CENTER">PC-100A</P>
+<P ALIGN="CENTER">PC-100B</P>
+<P ALIGN="CENTER">PC-120B</B></FONT></TD>
+<TD WIDTH="9%" VALIGN="MIDDLE">
+<B><U><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Mixers</P>
+</U><P ALIGN="CENTER">PC-200A</P>
+<P ALIGN="CENTER">PC-200B</P>
+<P ALIGN="CENTER">PC-200D</B></FONT></TD>
+<TD WIDTH="16%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="mixerdiodes.jpg" WIDTH=139 HEIGHT=154></TD>
+<TD WIDTH="35%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="trims1.gif" WIDTH=273 HEIGHT=140></TD>
+<TD WIDTH="32%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="mixerdiodesf.jpg" WIDTH=200 HEIGHT=167></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<FONT SIZE=1><P ALIGN="CENTER">&nbsp;</P>
+</FONT><B><U><FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">PA bias </U></FONT><FONT FACE="Tahoma" SIZE=2>(G3YXM design) </FONT><FONT FACE="Tahoma" SIZE=4>PC-500, PC-500D, PC-520.</P></B></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=945>
+<TR><TD VALIGN="MIDDLE" COLSPAN=35 HEIGHT=255>
+<P ALIGN="CENTER"><IMG SRC="paprintf2.jpg" WIDTH=313 HEIGHT=320>&nbsp;<IMG SRC="paprintf3.jpg" WIDTH=281 HEIGHT=320></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">GPT transistor on top of Q506.</P>
+<P ALIGN="CENTER">Improved bias with an extra general purpose (GPT) transistor, for example 2N2905.</P>
+</B></FONT><P ALIGN="CENTER"><IMG SRC="idlepas.gif" WIDTH=399 HEIGHT=244></TD>
+</TR>
+<TR><TD VALIGN="MIDDLE" COLSPAN=35 HEIGHT=28>
+<P ALIGN="CENTER"><IMG SRC="pc500as.gif" WIDTH=450 HEIGHT=300>_<IMG SRC="pc500ds.gif" WIDTH=448 HEIGHT=300></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">PC-900A and PC-900D.</B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">Note: the ATLAS RADIO INC. used CTC 2545, CTC A50-12 or CTC S70-12 transistors in the PC-500 amplifier!</P>
+</FONT><P ALIGN="CENTER"><IMG SRC="col-currents.gif" WIDTH=265 HEIGHT=159></P>
+<FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">Increase R516 (330 &#937;) to ± 910 &#937; for a correct indication of the collector current.</P></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=920>
+<TR><TD WIDTH="44%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="pc500mods.gif" WIDTH=323 HEIGHT=215></TD>
+<TD WIDTH="19%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="t502s.gif" WIDTH=126 HEIGHT=101></TD>
+<TD WIDTH="37%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="pc500modf.jpg" WIDTH=320 HEIGHT=281></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Eventually increase the output with an extra cap parallel to C505, but evenly decrease the output on 80 m and improves the overall stability of the amplifier with an one turn on T502 and feedback resistors to the collectors of Q504 and Q505. I was satisfied with C505 = 270 pF + 270 pF. The output of my PC-500D is not representative, may be you obtains more power on some bands.</P><IMG SRC="q503s.gif" ALIGN="RIGHT" HSPACE=9 WIDTH=204 HEIGHT=115>
+<P ALIGN="JUSTIFY">&nbsp;</P>
+</FONT><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">For improved linearity and to prevent instability the output of my amplifier is limited with an extra feedback (fig») on transistor Q503. With a 1 k&#937; pot and C270 I reduced the power to maximum 95 W.</P>
+</FONT><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">&nbsp;</P>
+</FONT><P ALIGN="CENTER"><IMG SRC="pc500mods1.gif" WIDTH=350 HEIGHT=192><FONT FACE="Tahoma" SIZE=4>&nbsp;<IMG SRC="pc500mods2.gif" WIDTH=352 HEIGHT=184></P>
+</FONT><FONT FACE="MS Shell Dlg" SIZE=1><P>&nbsp;</P></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE BORDER CELLSPACING=1 CELLPADDING=4 WIDTH=900>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">&nbsp;</FONT><B><FONT FACE="Tahoma" SIZE=2>12.5V 28 MHz</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Brand</B></FONT></TD>
+<TD WIDTH="18%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Class</B></FONT></TD>
+<TD WIDTH="14%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Pout</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Ic-max</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Gain (Gp)</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">MD3</B></FONT></TD>
+<TD WIDTH="17%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Replacement for:</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">MRF453</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Motorola</B></FONT></TD>
+<TD WIDTH="18%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">HF communication</B></FONT></TD>
+<TD WIDTH="14%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">60 W</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">15 A</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">13 dB</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">–</B></FONT></TD>
+<TD WIDTH="17%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">A50-12 CD2545</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">2SC2879</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Toshiba</B></FONT></TD>
+<TD WIDTH="18%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">AB</B></FONT></TD>
+<TD WIDTH="14%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">100 W</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">25 A</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">13 dB</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">-24 dB</B></FONT></TD>
+<TD WIDTH="17%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">–</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">2SC2290</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Toshiba</B></FONT></TD>
+<TD WIDTH="18%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">SSB</B></FONT></TD>
+<TD WIDTH="14%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">60 W PEP</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">20 A</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">11.8 dB</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">-30 dB</B></FONT></TD>
+<TD WIDTH="17%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">–</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">HF75-12</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">ASI</B></FONT></TD>
+<TD WIDTH="18%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">AB</B></FONT></TD>
+<TD WIDTH="14%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">75 W</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">20 A</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">13.5 dB</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">-30 dB</B></FONT></TD>
+<TD WIDTH="17%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">MRF454 SD1405</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">HF100-12</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">ASI</B></FONT></TD>
+<TD WIDTH="18%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">C</B></FONT></TD>
+<TD WIDTH="14%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">100 W</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">20 A</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">13 dB</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">-30 dB</B></FONT></TD>
+<TD WIDTH="17%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">–</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">HF50-12F</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">ASI</B></FONT></TD>
+<TD WIDTH="18%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">C</B></FONT></TD>
+<TD WIDTH="14%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">55 W</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">12 A</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">10 dB</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">-30 dB</B></FONT></TD>
+<TD WIDTH="17%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">–</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">SD1446</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">SGS</B></FONT></TD>
+<TD WIDTH="18%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">C</B></FONT></TD>
+<TD WIDTH="14%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">70 W 50 MHz</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">12 A</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">10 dB</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">?</B></FONT></TD>
+<TD WIDTH="17%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">–</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="12%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">NTE317</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">NTE</B></FONT></TD>
+<TD WIDTH="18%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">HF communication</B></FONT></TD>
+<TD WIDTH="14%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">70 W</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">15 A</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">13.5 dB</B></FONT></TD>
+<TD WIDTH="10%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">?</B></FONT></TD>
+<TD WIDTH="17%" VALIGN="TOP">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">–</B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<B><FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">EXPERIMENTS WITH OTHER TRANSISTORS</P></B></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=957>
+<TR><TD WIDTH="38%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="2sc2879s.gif" WIDTH=351 HEIGHT=220></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Test Q504, Q505 (2SC2879).</B></FONT></TD>
+<TD WIDTH="25%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><IMG SRC="2sc1969f.jpg" WIDTH=241 HEIGHT=134></P>
+<B><U><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Test Q503 (2SC1969).</P>
+</B></U></FONT><P ALIGN="CENTER"><IMG SRC="2sc1306f.jpg" WIDTH=160 HEIGHT=162></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Tested types.</B></FONT></TD>
+<TD WIDTH="37%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="2sc1306s.gif" WIDTH=351 HEIGHT=220></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Test Q503 (2SC1306), Q504,Q505 (2SC2879).</B></FONT></TD>
+</TR>
+<TR><TD VALIGN="MIDDLE" COLSPAN=4>
+<P ALIGN="CENTER"><IMG SRC="pc500cf.jpg" WIDTH=800 HEIGHT=373></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">PC-500 with 2 × 2SC2879.</B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="CENTER"></P>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=760>
+<TR><TD WIDTH="28%" VALIGN="MIDDLE">
+<B><U><FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">Rx/tx sensitivity</P>
+</U><P ALIGN="CENTER">PC-100A</P>
+<P ALIGN="CENTER">PC-100B</B></FONT></TD>
+<TD WIDTH="37%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="ontkopcf.jpg" WIDTH=250 HEIGHT=200></TD>
+<TD WIDTH="35%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="ontkopcs.gif" WIDTH=197 HEIGHT=202></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Increased decoupling for improved sensitivity.</B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="CENTER"><IMG SRC="pc100as.gif" WIDTH=600 HEIGHT=444></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">PC-100A.</P></B></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=940>
+<TR><TD WIDTH="27%" VALIGN="MIDDLE" HEIGHT=271>
+<B><U><FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">Termination mixers</P>
+</U><P ALIGN="CENTER">PC-100A</P>
+<P ALIGN="CENTER">PC-100B</P>
+<P ALIGN="CENTER">PC-200A</P>
+<P ALIGN="CENTER">PC-200B</B></FONT></TD>
+<TD WIDTH="29%" VALIGN="MIDDLE" HEIGHT=271>
+<P ALIGN="CENTER"><IMG SRC="ontkopcf.jpg" WIDTH=250 HEIGHT=200></TD>
+<TD WIDTH="44%" VALIGN="TOP" HEIGHT=271>
+<P ALIGN="CENTER"><IMG SRC="1ste-mixers.jpg" WIDTH=370 HEIGHT=211></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Termination of the mixers with non-inductive resistors.</B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<B><FONT FACE="Tahoma" SIZE=5><P ALIGN="CENTER">POST MIXER AMPLIFIER OR DIPLEXER?</P>
+</FONT><FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">PC-100A, PC-100B, PC-100D, PC-120B</P></B></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=948>
+<TR><TD VALIGN="TOP" COLSPAN=4>
+<P ALIGN="CENTER"><IMG SRC="postmixamps.gif" WIDTH=543 HEIGHT=420></TD>
+</TR>
+<TR><TD WIDTH="49%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><IMG SRC="p8002f.jpg" WIDTH=388 HEIGHT=184></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Amplifier with P8002.</P>
+</B></FONT><P ALIGN="CENTER"><IMG SRC="p8002f1.jpg" WIDTH=432 HEIGHT=184></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Amplifier with J310.</B></FONT></TD>
+<TD WIDTH="51%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><IMG SRC="diplexs.gif" WIDTH=261 HEIGHT=128></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Termination of the 1st mixer with a diplexer.</P>
+</B></FONT><P ALIGN="CENTER"><IMG SRC="p8002s2.gif" WIDTH=312 HEIGHT=191></TD>
+</TR>
+<TR><TD WIDTH="49%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><IMG SRC="p8002f3.jpg" WIDTH=438 HEIGHT=370></TD>
+<TD WIDTH="51%" VALIGN="MIDDLE" COLSPAN=2>
+<P ALIGN="CENTER"><IMG SRC="p8002f2.jpg" WIDTH=460 HEIGHT=355></TD>
+</TR>
+<TR><TD VALIGN="MIDDLE" COLSPAN=4>
+<B><U><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">&nbsp;</U>Amplifier &amp; gain control.</P>
+</B></FONT><P ALIGN="CENTER"><IMG SRC="pc100ans.gif" WIDTH=787 HEIGHT=287></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">PC-100A redrawn with sPlan.</P>
+</B></FONT><P ALIGN="CENTER"><IMG SRC="pc100aj310s.gif" WIDTH=792 HEIGHT=286></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">This modification with a J310 is suited for all PC-100 versions.</P>
+</B></FONT><P ALIGN="CENTER"><IMG SRC="pc100mods.gif" WIDTH=788 HEIGHT=286></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">PC-100 updated with an extra gain control.</B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="CENTER"></P>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=1027>
+<TR><TD WIDTH="14%" VALIGN="MIDDLE">
+<B><U><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Microphone amp</P>
+</U><P ALIGN="CENTER">PC-200A</P>
+<P ALIGN="CENTER">PC-200B</B></FONT></TD>
+<TD WIDTH="22%" VALIGN="TOP">
+<P ALIGN="CENTER"><IMG SRC="micamps.gif" WIDTH=156 HEIGHT=135></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Increased MIC gain with an extra GPT transistor.</B></FONT></TD>
+<TD WIDTH="64%" VALIGN="TOP" COLSPAN=2>
+<P ALIGN="CENTER"><IMG SRC="micampf.jpg" WIDTH=480 HEIGHT=306></TD>
+</TR>
+<TR><TD WIDTH="14%" VALIGN="MIDDLE">
+<B><U><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">(HF DSB) clipper</P>
+<P ALIGN="CENTER">Noise blanker</P>
+</U><P ALIGN="CENTER">PC-120B</B></FONT></TD>
+<TD WIDTH="22%" VALIGN="TOP">
+<P ALIGN="CENTER"><A HREF="pc120s.jpg"><IMG SRC="pc120sk.jpg" BORDER=0 WIDTH=150 HEIGHT=219></A></TD>
+<TD WIDTH="25%" VALIGN="TOP">
+<P ALIGN="CENTER"><IMG SRC="dsbclips.jpg" WIDTH=150 HEIGHT=198></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">DSB clipper.</B></FONT></TD>
+<TD WIDTH="40%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="noiseblanks.jpg" WIDTH=295 HEIGHT=164></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Improved noise blanker.</B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="CENTER"></P>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=920>
+<TR><TD WIDTH="87%" VALIGN="TOP">
+<P><IMG SRC="pc900af1.jpg" WIDTH=311 HEIGHT=250><IMG SRC="pc900af2.jpg" WIDTH=186 HEIGHT=250><IMG SRC="pc900bf1.jpg" WIDTH=279 HEIGHT=250></TD>
+<TD WIDTH="13%" VALIGN="TOP">
+<P ALIGN="CENTER"><IMG SRC="tangf.jpg" WIDTH=88 HEIGHT=160></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Circuits trimmed with this tool.</B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="CENTER"></P>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=2 WIDTH=945>
+<TR><TD WIDTH="67%" VALIGN="MIDDLE">
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Trimmer capacitors are located on PC-900A or PC-900B boards with the transmitter tuning input circuits.</B></FONT>&nbsp;</TD>
+<TD WIDTH="33%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="pc900bf2.jpg" WIDTH=276 HEIGHT=250></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="CENTER"></P>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=940>
+<TR><TD WIDTH="20%" VALIGN="MIDDLE">
+<B><U><FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">Carrier oscillator</P>
+</U><P ALIGN="CENTER">PC-600</B></FONT></TD>
+<TD WIDTH="22%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="carr-oscs.gif" WIDTH=173 HEIGHT=155></TD>
+<TD WIDTH="29%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="carr-oscf.jpg" WIDTH=263 HEIGHT=230></TD>
+<TD WIDTH="29%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="iffils1.jpg" WIDTH=248 HEIGHT=125></P>
+<B><U><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">IF crystal ladder filter (Oct. 1975).</B></U></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">The normal carrier frequency is 5520 kHz and the opposite side band frequency is 5523.3 kHz.</P></B></FONT>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=852>
+<TR><TD WIDTH="50%" VALIGN="TOP">
+<P ALIGN="CENTER"><IMG SRC="ladderfilters.gif" WIDTH=378 HEIGHT=311></TD>
+<TD WIDTH="50%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="iffils2.jpg" WIDTH=252 HEIGHT=125></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Graph («fig) obtained by DJ9PK from his 8 pole ladder filter.</P>
+</B></FONT><P ALIGN="CENTER"><IMG SRC="ladderfilterf.jpg" WIDTH=75 HEIGHT=53></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Graph on my analyzer. </B></FONT></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="CENTER"><IMG SRC="coverf1.jpg" WIDTH=291 HEIGHT=120>&nbsp;<IMG SRC="coverf2.jpg" WIDTH=252 HEIGHT=120> <IMG SRC="coverf3.jpg" WIDTH=249 HEIGHT=120></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Removing black "paint" for improved screening and improved electrical contact for the (-) pole of the DC supply.</P>
+</B></FONT><P ALIGN="CENTER"><IMG SRC="connectorf1.jpg" WIDTH=436 HEIGHT=240><IMG SRC="connectorf3.jpg" WIDTH=409 HEIGHT=240></P>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=920>
+<TR><TD WIDTH="36%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="connectorf2.jpg" WIDTH=244 HEIGHT=245></P>
+<B><U><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Home made 12 VDC connector</B></U></FONT></TD>
+<TD WIDTH="13%" VALIGN="TOP">
+<P><IMG SRC="connectors.jpg" WIDTH=112 HEIGHT=81></TD>
+<TD WIDTH="51%" VALIGN="MIDDLE" ROWSPAN=2>
+<P><A HREF="ch-wirings.jpg"><IMG SRC="ch-wiringsk.jpg" BORDER=0 WIDTH=459 HEIGHT=300></A></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">ATLAS 210x/215x Chassis Wiring (click to enlarge).</B></FONT></TD>
+</TR>
+<TR><TD WIDTH="36%" VALIGN="MIDDLE">
+<P ALIGN="CENTER"><IMG SRC="regulators1.gif" WIDTH=120 HEIGHT=132><IMG SRC="regulators2.gif" WIDTH=132 HEIGHT=132></P>
+<B><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Noise reduction of the regulator.</B></FONT></TD>
+<TD WIDTH="13%" VALIGN="TOP">
+<P>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;<IMG SRC="bar2.gif" WIDTH=500 HEIGHT=36></P>
+<P ALIGN="CENTER"><A HREF="../Modifaties.htm"><IMG SRC="backfri.gif" BORDER=0 WIDTH=53 HEIGHT=25></A></P></BODY>
+</HTML>

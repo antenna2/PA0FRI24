@@ -1,0 +1,785 @@
+<TITLE>KENWOOD TL-922 modifications</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BACKGROUND="Image1.gif">
+<p align="center"><b><font face="Tahoma" size="6"><font face="Tahoma" size="6"><span lang="EN-GB" pbzloc="14">KENWOOD TL-922 (TL-922A, TL922) MODIFICATIONS</span></font></font></b></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="12" src="updated2.gif" width="44" /></span></font><b><font color="#008000" face="Tahoma" size="2"><font color="#008000" face="Tahoma" size="2"><font color="#008000" face="Tahoma" size="2"><span lang="EN-GB" pbzloc="20">&nbsp;13</span></font></font></font><span style="font-size: 14px"><span lang="EN-GB"><font face="Tahoma"><font face="Tahoma" pbzloc="21">-may-2024. </font></font></span></span></b></p>
+
+<center pbzloc="19">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="952">
+	<tbody>
+		<tr>
+			<td valign="middle" width="30%">
+			<ol>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">Rerouted the tune variable capacitor (VC1) and grounded directly to the grids for more stability.</span></font></font></b></li>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">Groundid grid for more stability and increased output.</span></font></font></b></li>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">Slow blow fuse installed to prevent a grid to cathode short in the primary of the fillament transformer.</span></font></font></b></li>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">A fast fuse &amp; glitch resistor installed in series with the anode choke to protect the tubes and the HV transformer from flash over.</span></font></font></b></li>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">Modified Harbach circuit.</span></font></font></b></li>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">Added 1n5 bypass at anode choke bypass capacitor C25.</span></font></font></b></li>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">Feed back resistor</span></font></font></b></li>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">Replace power zenediode D2.</span></font></font></b></li>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">Repair or replace parasitic suppressors.</span></font></font></b></li>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">Diode protection on meters.</span></font></font></b></li>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">Step-Start circuits.</span></font></font></b></li>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">Test output.</span></font></font></b></li>
+				<li style="text-align: left"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB" pbzloc="25">Tips.</span></font></font></b></li>
+			</ol>
+			</td>
+			<td valign="top" width="70%">
+			<p align="center"><font size="2"><span lang="N"><img height="467" src="schemas.gif" width="647" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><a href="tl-922eng.htm#MINIMUM"><b><font color="#ff0000" face="Tahoma" size="4"><font color="#ff0000" face="Tahoma" size="4"><font color="#ff0000" face="Tahoma" size="4"><span lang="EN-GB">Click voor minimum modification</span></font></font></font></b></a></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="472" src="tl922f.jpg" width="924" /></span></font></p>
+
+<p align="center" pbzloc="7">&nbsp;<img border="0" height="105" src="outputs1.gif" width="722" /><br />
+<span style="font-size: 14px"><b><font color="#0000ff" face="Tahoma"><font color="#0000ff" face="Tahoma"><font color="#0000ff" face="Tahoma"><span lang="EN-GB" pbzloc="60">9 Bands with 1000-1300 Watt output!</span></font></font></font></b></span></p>
+
+<p align="center" pbzloc="89"><font size="2"><span lang="N" pbzloc="73"><img height="400" pbzloc="63" src="tl922f1.jpg" width="409" />&nbsp;</span><span lang="N" pbzloc="72"><img height="400" pbzloc="69" src="tl922f2.jpg" width="436" /></span></font>&nbsp;<a class="0" href="TL-922&#32;schematic.jpg"><img border="0" pbzloc="91" src="TL-922&#32;schematic&#32;small.jpg" /></a><br />
+<strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 16px">Click on schematic to enlarge.</span></span></strong></p>
+
+<p><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><span lang="EN-GB" pbzloc="92">INTRODUCTION</span></font></font></b></p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="621">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><font size="2"><span lang="N"><img height="180" src="mods.gif" width="576" /></span></font></p>
+
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">At the top and the bottom of the valves changes were implemented which improve stability.</span></font></font><span lang="EN-GB"><font face="Tahoma" size="1"><font face="Tahoma" size="1">&nbsp;</font></font></span></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="80">A Kenwood TL922 linear amplifier with 2 &times; 3-500Z valves is one of the best, sturdiest and compact pieces of equipment for radio amateurs. It is equipped with double shielding in a cabinet of thick material with sturdy handles. It is designed with good quality components and there are separate transformers for high voltage and filaments. If the HV transformer overheats, a thermal safety device incorporated inside it will operate and disconnects the bias. When you switch off the amplifier, the cooling fan will carry on for a few more minutes. Here are features, which are not present in a lot of current models. This is good advice if you come across a 2</span></font></font><span lang="EN-GB"><sup><font face="Tahoma" size="2"><font face="Tahoma" size="2">nd</font></font></sup><font face="Tahoma" size="4"><font face="Tahoma" size="4"> hand one, however there is always room for improvement.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The filaments have the correct heater voltage if the (NL) 228 Volts mains voltage is supplied on the 240 volts connection of the transformers. With a 100 W exciter the amplifier will deliver about 1000 to 1150 watts on 10, 12, 15, 17, 20, 40, 80 and 160 meters into a 50 Ohm termination. One can also transmit quite a bit of power on the 30 m band with a tuner between the exciter and the amplifier. When all grids were directly grounded, the power increased to 1300 watts maximum.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">MY OPINION</font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">It is wise to fit the </font></font></span><a href="tl-922eng.htm#MINIMUM"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">minimum modification</span></font></font></a><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB"> at the end of this article </span></font></font><span lang="EN-GB"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">before you switch on this amplifier</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">REACTIVATON 3-500Z</font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="36" size="4"><img pbzloc="39" src="3-500zs.gif" style="border-top: 0px solid; height: 404px; border-right: 0px solid; width: 522px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" />To avoid flashover in a new or a long time unused tube, it is prudent to prepare (&quot;reactivate&quot;) it for his task. There are various opinions and solutions how to do it, but with a 3-500Z it can be relatively simple. A DC of 30 to 40 V is sufficient for the tube to draw 400 mA as the grid is connected to the anode. Heat the tube 30 minutes with a filament voltage of 4.9 V. Then supply a &quot;high voltage&quot; of about 35 V and set the voltage to a current of 400 mA. If possible use a current limiter, because during reactivate the current can increase suddenly so that continue monitoring could be necessary to maintain 400 mA. Usually I will not reactivate longer than an hour or so. Soon you will find out that a good tube behaves like the showed table.</font></font></span></p>
+
+<p><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">OUTPUT, LOAD &amp; PLATE SETTING ON 9 BANDS AFTER MODIFICATIONS</font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">After normal tune up of the TL922A, increase the power output of the transciever to full output and readjust the PLATE &amp; LOAD for maximum RF power out of the amplifier. Your grid current (Ig) will be a little over 200 mA so make it quick! During SSB transmission after tuning like this, the Ig meter </font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">never</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="40" size="4"> deflects beyond 125 mA. Average Ig during SSB is what&#39;s important. Peak Ig, which your Ig meter will not read, is not important. During CW tune up I see around 1250 W/750 mA cathode current (Ic) and 225 mA grid current (Ig).</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<center pbzloc="280">
+<table align="left" border="0" cellpadding="4" cellspacing="0" dir="ltr" width="870">
+	<tbody>
+		<tr>
+			<td valign="top" width="58%">
+			<p align="center" pbzloc="14"><img border="0" height="265" src="outputs2.gif" width="733" /></p>
+			</td>
+			<td valign="middle" width="42%">
+			<p align="center"><font size="2"><span lang="N"><img height="94" src="coaxs.gif" width="323" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">Maximum performance with about 2 m coax cable.</span></font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="397">A stable TL-922 was the result after implementing modifications, like the length of the coax cable between exciter and amplifier, all grids direct to ground (</span></font></font><span lang="EN-GB"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">no capacitors</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="43" size="4">) and an extra earth wire to VC1. Sometimes during the daytime the mains voltage is a bit higher and the amplifier can give approx. 50 watts more output.</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">Wire to VC1</font></font></b>.</span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="228" size="4"><img pbzloc="231" src="extra&#32;wire.gif" style="border-top: 0px solid; height: 285px; border-right: 0px solid; width: 667px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" />This modification improves the stability by means of a shorter connection to a common RF ground near the valve sockets. Such a direct connection I have done in all HF amplifiers, for example Yaesu FL2100, Dentron GLA1000, AEA LA30, NEC CQ301, Heathkit SB200, TenTec Centaur and my own designs. This was the cause of oscillations on VHF in a lot of amplifiers.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Richard Measures AG6K fixed this problem with multiple parasitic suppressers, but it is far easier and cheaper to have a direct connection from the plate capacitor to the grid connections on the valve sockets. The ground connection of the variable capacitor is in reality &quot;isolated&quot; from the valve sockets, because it is situated in a kind of Faraday cage.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">A RF current from the variable capacitor doesn&#39;t arrive at the valve socket via the shortest route. It is possible that with other amplifiers too, this will lead to instability.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="281" size="4">A direct connection from the variable capacitor to the bottom of the valves will prevent this. You can use an insulated wire through a hole already present in the frame. In my own equipment a feedthrough with solder connections was implemented.</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="880">
+	<tbody>
+		<tr>
+			<td valign="top" width="41%">
+			<p align="center"><font size="2"><span lang="N"><img height="300" src="vc1f1.jpg" width="343" /></span></font></p>
+			</td>
+			<td valign="top" width="27%">
+			<p align="center"><font size="2"><span lang="N"><img height="300" src="vc1f2.jpg" width="235" /></span></font></p>
+			</td>
+			<td valign="top" width="32%">
+			<p align="center"><font size="2"><span lang="N"><img height="300" src="vc1f3.jpg" width="255" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><font size="2"><span lang="N"><img height="432" src="gridmodf1.jpg" width="800" /></span></font></p>
+
+<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">This is the way it was implemented in an amplifier belonging to a fellow ham.</span></font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">At the bottom you connect the two ground supports, one on each side of the valve sockets, with a length of 2.5 mm&sup2; tinned copper wire. This will become the common earth for both valves and the connection for the extra wire to VC1</font></font></span></p>
+
+<p><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">PARASITIC SUPPRESSION CIRCUITS</font></font></b></span></p>
+<span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="left" height="91" hspace="9" src="stoppers3.gif" width="101" /> </font></font></b></span>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">A method of parasitic suppression is the insertion of RF current (hairpin shaped) obstacles (dampers) at right angles (&laquo;fig) to the probable flow of the parasitic currents. This method can be used up to frequencies of several 100 MHz without noticeably reducing fundamental power. The main function is to provide a high impedance path in series with other (tank) circuit elements. However such method can be used only where the fundamental and parasitic frequencies are sufficiently far apart, so that excessive resistive losses of the fundamental frequencies are avoided. The circuit should have a L/C ratio al low as practicable and be suitably damped to give a broadband effect.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Damping can be achieved by paralleling the hairpin circuit inductor with a non-inductive resistor and by making the inductor from resistive material. A mat surface rather than a polished surface may provide sufficient surface resistance. The resistive component need often be no more than a nickel alloy wire/strip or tinned copper wire/strip with a DC resistive value of a fraction of an ohm.</font></font></span></p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="888">
+	<tbody>
+		<tr>
+			<td valign="top" width="50%">
+			<p align="center"><font size="2"><span lang="N"><img height="300" src="suppresf1.jpg" width="435" /></span></font></p>
+			</td>
+			<td valign="top" width="50%">
+			<p align="center"><font size="2"><span lang="N"><img height="300" src="suppresf2.jpg" width="425" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">The parasitic suppressers were made from a 12 cm piece of tinned copper 2.5 mm&sup2; or 12 AWG wire.</span></font></font></b></span></p>
+
+<p align="justify" pbzloc="416"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The parasitic suppressors were made from a 12 cm piece of tinned copper 2.5 mm&sup2; or 2 mm diameter wire. The resistors of the original dampers looked a bid sad and were cracked, their shape was also in my opinion a bit small.</font></font></span></p>
+
+<center pbzloc="441">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="920">
+	<tbody>
+		<tr>
+			<td valign="middle" width="18%">
+			<p align="center"><font size="2"><span lang="N"><img height="259" src="stopperf2.jpg" width="150" /></span></font></p>
+			</td>
+			<td valign="middle" width="22%">
+			<p align="center"><font size="2"><span lang="N"><img height="270" src="stoppers1.gif" width="177" /></span></font></p>
+			</td>
+			<td valign="middle" width="15%">
+			<p align="center"><font size="2"><span lang="N"><img height="255" src="stopperf1.jpg" width="121" /></span></font></p>
+			</td>
+			<td valign="middle" width="45%">
+			<p align="center"><font size="2"><span lang="N"><img height="300" src="suppresf3.jpg" width="394" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+<span lang="EN-GB"><img align="left" height="128" hspace="9" src="resistorf1.jpg" width="294" /> </span>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="443" size="4"><img pbzloc="446" src="wiref.jpg" style="border-top: 0px solid; height: 332px; border-right: 0px solid; width: 320px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" />The &quot;ancient&quot; carbon resistors (&laquo;fig) are almost impossible to obtain, but there are suitable 3 W (PHILIPS) metal film resistors.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">My experience with hairpin parasitic suppressors is that they work better then coiled inductors with resistors in the centre of it. All my amplifiers were done like that, so this one was done the same way. According to Richard Measures AG6K they have to be made of nichrome wire, but that is not necessary.&nbsp;</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">If you use 6 mm&sup2; or 2.7 mm diameter tinned copper wire (fig&raquo;), it will have sufficient skin resistance for VHF. They will be as sturdy as the original suppressers. Cut off a 12 cm long piece of wire and bend it around a piece of pipe 25 mm od., solder a lug (eye cable tag) on each end. &nbsp;In the US that size lug is very hard to find, however, WN4N found some made by Burndy. They are available from Graybar Electric the largest supplier of electrical construction in the US. The number is 93157387. The Burndy part number is YA8CLNT6. In the event someone needs to find these lugs you will know where it can be found.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">When I think about it, it wouldn&#39;t surprise me because the way the resistors are attached, the suppressers could be effective on 2 frequencies.&nbsp;</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><b pbzloc="447"><font face="Tahoma" size="5"><font face="Tahoma" size="5">TO-220 STYLE RESISTOR</font></font></b></span></p>
+<span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img pbzloc="450" src="suppresf6.jpg" style="height: 286px; width: 465px; float: left; margin-left: 7px; margin-right: 7px" /> </font></font></b></span>
+
+<p align="justify">&nbsp;</p>
+<span lang="EN-GB"><img align="left" height="192" hspace="9" src="resistorf2.jpg" width="196" /> </span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="459" size="4">Nowadays it is not easy to obtain conventional non inductive resistors. A considerable number of amateurs ask me for help or advice. Although I have not tested it yet, I suggested (&laquo;fig) to try it with non-inductive metal plate resistor housed in TO-220 style package. PE1DFT did the experiment. He wrote: &quot;I&#39;d promised feedback and can say: It works, they are almost one year installed (&laquo;fig) and everything is still intact!&quot;</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="453" size="4">That&#39;s good news for anyone who has to retrofit his PA. </font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">GROUND THE GRIDS ANOTHER WAY.</font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">Note:</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> Each amplifier seems mechanically the same, but that is not electrically. Therefore there is a difference in stability. If you ground the grids directly eventually you have to replace or change the parasite suppressors. Use the hairpin type and if the PA still oscillate, change the size of the suppressors a bit.</font></font></span></p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="941">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><font size="2"><span lang="N"><img height="432" src="gridmodf1.jpg" width="800" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">In my TL922 I grounded all grids original with 3 &times; 220 pf to one ground point next to the valve socket, this point is also connected with an insulated wire to VC1.</span></font></font></b></span></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">(At a later stage the decoupling capacitors were removed and all grid connections were grounded</span></font></font></b><span lang="EN-GB"><font face="Tahoma"><font face="Tahoma">.)</font></font></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">My experience on HF is that it is better to connect all grid pins together and to connect only to one point on the chassis. This way a HF current is forced to go one way only which will enhance stability. When this was applied to a NEC CQ301 amplifier with 2 &times; 3-500Z, it was cured of instability instantaneously. In a different type of amp the output power increased with 100 watts on the 10-meter band. </span></font></font></p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB"><img align="left" height="212" hspace="9" src="sockets1.gif" width="243" /> </span></font></font>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">&nbsp;</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="240"><img pbzloc="243" src="extracap.jpg" style="border-top: 0px solid; height: 300px; border-right: 0px solid; width: 217px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" />I prefer to remove all decoupling capacitors and connect all grid connections direct to ground. If you do it that way, the input impedance of the valves will change and the input inductors may have to be readjusted to SWR = 1.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="244">The minimal decoupling capacitance of 3 &times; 220 pf for each valve gives a negative AC feedback that makes the input impedance different then with direct connection to ground</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">&nbsp;</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">&nbsp;</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">&nbsp;</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="245">For an improved decoupling of 80 and 160 meters of the anode choke, an extra 1500 pf capacitor was installed and grounded to the feedthrough earth wire. For the same reason a few more capacitors were added across the filament connections. Red caps. See photo.</span></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">&nbsp;</span></font></font></p>
+
+<p align="center">&nbsp;</p>
+
+<center pbzloc="284">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="900">
+	<tbody>
+		<tr>
+			<td valign="top" width="73%">
+			<p align="center"><font size="2"><span lang="N"><img height="484" src="gridmodf3.jpg" width="640" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">The final modification with C28 - C33, R22, R23, L7 and L8 removed.</span></font></font></b></span></p>
+			</td>
+			<td valign="middle" width="27%">
+			<p align="center"><font size="2"><span lang="N"><img height="308" src="sockets2.gif" width="208" /></span></font></p>
+
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB"><span style="font-size: 14px">A 12 pF capacitor was added to compensates for the removed voltage divider C40 and </span>C41.</span></font></font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><font face="Tahoma" size="1"><font face="Tahoma" size="1"><span lang="EN-GB">&nbsp;<img height="201" pbzloc="283" src="detailmodf1.jpg" width="752" /></span></font></font></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">At a later stage the decoupling capacitors were removed and all grid connections were grounded. Above all expectations it worked very well and output power was increased to 1250 watts on some bands. L7, L8, R22, R23 and components from the ALC were all removed. I didn&#39;t use the latter because I never use more then 100 watts.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The old mounting strip was used for the new relay circuitry, which appears further down this article. The MosFet of this system is seen as a little black square in the left-hand top of the photo. To compensate for the removed voltage divider C40 a C41, a 12 pf was added.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="16" size="5"><a name="FEEDBACK" pbzloc="15">FEEDBACK</a></font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">If I drive my amplifier with a 100W carrier, the control grid current in some bands is more than 200 mA. That is not bad for the tubes because that is on average much less with SSB or CW. </font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p style="text-align: center"><span lang="EN-GB" pbzloc="14"><img border="0" src="feedback.gif" /> <img border="0" src="feedbackf.jpg" /></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="18" size="4">The application of feedback can make things better. This can be achieved with a non decoupled induction free resistor of 5 to 10 ohms between C42 and the coaxial cable to the band switch S6-2. This type resistor is not easy and cheap to buy. However, with quiet a number of &quot;ordinary&quot; 100-ohm resistors in parallel, the total self-inductance for HF is so low that it can be neglected. It is claimed that the resistor prevents random oscillations or suppresses parasites.</font></font></span><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="286" size="4">&nbsp;</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">CONNECTING THE FILAMENTS DIFFERENTLY</font></font></b></span></p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="800">
+	<tbody>
+		<tr>
+			<td valign="top" width="57%">
+			<p align="center"><font size="2"><span lang="N"><img height="305" src="filaments.gif" width="387" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">A modification of a different Japanese ham with signal on pin 1.</span></font></font></b></span></p>
+			</td>
+			<td valign="middle" width="43%">
+			<p align="center"><font size="2"><span lang="N"><img height="240" src="filamentf.jpg" width="320" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">Different Japanese modification.</span></font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">While surfing on the Internet I found the site of JH2CLV which was difficult for me to read, but I understood out of the drawings what was going on. According to this OM it is better due to the mechanical construction of the filament (fig&raquo;) in a 3-500Z to connect it somewhat differently. This way the input signal appears on pin 5 of both valves instead of one valve on pin 1 and the other on pin 5.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">It could also be to reduce 50 Hz hums during an AM transmission or that the &quot;wrong&quot; connection can shield parts of the filament, so they slow down the electron flow. For the rest it isn&#39;t very clear, because on another Japanese site (see photo) the input signal is connected to pin 1 of both valves.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">Assuming the drawing of the filament gives the correct picture of the real mechanical construction I&#39;m inclined to use pins 5 for the input signal. These can bee seen in the previous photo of my TL-922.</span></font></font></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">PROTECTION FOR VALVES AND POWER SUPPLY</font></font></b></span></p>
+
+<table align="left" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" pbzloc="302" width="736">
+	<tbody>
+		<tr>
+			<td height="283" valign="middle" width="45%">
+			<p align="justify"><font size="2"><span lang="N"><img height="203" pbzloc="297" src="fuse-grids.gif" width="312" /></span></font></p>
+			</td>
+			<td height="283" valign="top" width="55%">
+			<p align="center"><font size="2"><span lang="N"><img height="250" src="filtrafof.jpg" width="351" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">A slow-blow fuse in the primary side of the filament transformer.</span></font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">Grid chokes sometimes burn out because of instability of the valves.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">That happen more to valves, which haven&#39;t been used for a long time.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">The short circuit goes via relay R2-1, the zener diode and the frame, the meter also will get a big knock.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">Connecting fuses in series with grid chokes L7, L8, can make a protection. I didn&#39;t do this in my TL922, but as a preventive against grid to cathode (filament) short. I connected (see fig&raquo;) a fuse on the primary side of the filament transformer.</span></font></font></p>
+
+<center pbzloc="293">
+<table align="right" border="0" cellpadding="4" cellspacing="0" dir="ltr" width="940">
+	<tbody>
+		<tr>
+			<td valign="middle" width="71%">
+			<p align="center"><font size="2"><span lang="N"><img height="451" pbzloc="301" src="protectf1.jpg" width="601" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">While testing I connected the safety resistor and fuse temporarily and later installed it more permanently (fig&raquo;) </span></font></font></b></span></p>
+			</td>
+			<td valign="middle" width="29%">
+			<p align="center"><font size="2"><span lang="N"><img height="300" src="protectf2.jpg" width="221" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">I did not use L2 (12 &micro;H).</span></font></font></b></span></p>
+
+			<p align="center"><font size="2"><span lang="N"><img height="192" src="protectf3.jpg" width="221" /></span></font></p>
+
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB">More permanent construction.</span></font></font></b></p>
+
+			<p align="center"><font size="2"><span lang="N"><img height="28" src="protects.gif" width="145" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="309">We can protect the valves and power supply against momentary shorts (ea. Flashover) by means of a resistor together with a fuse in series with the anode choke. In the photo this was done temporarily to protect and test the amplifier. Later it can be installed more permanently.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">During the test a 2</span></font></font><span lang="EN-GB"><b><sup><font face="Tahoma">nd</font></sup></b><font face="Tahoma" size="4"><font face="Tahoma" size="4"> hand 3-500Z was tested for usefulness. The valve under test wasn&#39;t used for a long time. A variable transformer c was connected and the voltage was slowly increased where at a certain point a few flashovers occurred and the 1 Amp fuse was blown. This proved that the power supply was well protected. After about 30 minutes and a few more blown fuses the valve became stable, had his normal output and the plasma glow had disappeared.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">INPUT CIRCUIT FOR 10 METERS</font></font></b></span></p>
+<span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="left" height="67" hspace="9" src="10ml5s.gif" width="92" /> </font></font></b></span>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Guido ZL2VB (ex NL) wrote to me: I replaced the windings on the 10 meter input coil with 3&frac12; instead of 2&frac12; turns. The adjustable core didn&#39;t change the induction in the coil sufficiently to bring the SWR down. Replacing the input capacitor wasn&#39;t a good idea because it will make for a narrower bandwidth. With 3&frac12; turns (&laquo; fig) and a 120 pf capacitor (C60) the end result was a SWR of 1 : 1.15 at the band edges between 24 and 30 MHz.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The SWR on 40, 80 and 160 meters was very good in the amplifier we tested at the time, but less so on 15 meters and not very good at all on 10 and 20 meters. Please take note, whenever you replace the valves at least on the higher bands, the input coils have to be readjusted. In my own amplifier only the SWR on 80 meters was unsatisfactory. See next chapter.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="24" size="5">INPUT CIRCUIT FOR 80 METERS</font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">It was found that in 2 different TL922&#39;s it wasn&#39;t possible to get the input SWR down sufficiently. This isn&#39;t accidentally but a design fault. Even with a variable capacitor instead of fixed ones, the results were not consistent. If there was a good SWR at the start of the band, it was bad at the end or visa versa. Also the length of the cable between exciter and amplifier has an influence on the SWR on all bands. </font></font></span></p>
+<span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="20" size="4"><img pbzloc="23" src="inputfil.jpg" style="border-top: 0px solid; border-right: 0px solid; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /> </font></font></span>
+
+<p align="justify" pbzloc="460"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="462" size="4">It was discussed on the Internet that what was ok for one person, didn&#39;t work for somebody else. I blame this on variations in the way the input circuits were manufactured (fig&raquo;.) The circuits are in a Faraday cage and don&#39;t allow the RF current to return to ground directly. You can put an insulated tinned copper wire through the hole of where a ground pin uses to be and use this as a central grounding point (left). The best way to do this to ground all capacitors of the input filters on this earth wire. In the meantime this was only done for the 10, 15 and 80 meter input circuits.</font></font></span></p>
+
+<table align="left" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="575">
+	<tbody>
+		<tr>
+			<td valign="middle" width="52%">
+			<p align="center"><font size="2"><span lang="N"><img height="65" pbzloc="355" src="80ml10s.gif" width="268" /></span></font></p>
+			</td>
+			<td valign="middle" width="48%">
+			<p align="center"><font size="2"><span lang="N"><img height="90" src="80ml10f.jpg" width="248" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">After a bit of experimenting a better compromise was reached for 80 m by removing 2 turns of L10 and to increase a number of the capacitors in parallel to the existing ones (fig &raquo;). The range of the inductor was changed from 2.7 &ndash; 3.2 &mu;H to 2.5 &ndash; 3 &mu;H. If</span></font></font><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4"> </font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">you want a different inductor value, you can calculate this with the formula L(&mu;H) = 9n&sup2; &chi;1000, &quot;n&quot; is the number of turns. </font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">Attention:</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> In the circuit diagram C57 and C59 is 120 pF respectively 220 pF. In my amplifier the manufacturer had a 120 pF capacitor for both C57 and C59!</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">WITH 2 METERS OF COAX CABLE SWR &lt; 1.5</font></font></b><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="356" size="4"> (also on 12, 17 &amp; 30 meter).</font></font></span></p>
+<span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="left" height="94" hspace="9" src="coaxs.gif" width="323" /> </font></font></span>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The length of a 50 &Omega; (RG58) coax cable between exciter and amplifier has a strong influence on the SWR. It seems that</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> after adjusting all the input filters a length of 2 m was the optimum for all bands. That was also favourable for 12 and 17 meters because it was possible to transmit with 1000 to 1100 watts with very low SWR. </font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">When later on all grids were directly grounded, the SWR remained the same and even went down on some bands. Only on the 12-meter band it was worse if the band switch was in the 15-meter position. So it maybe better to use the 10-meter position to get a better SWR on 12 meter.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">SUPPLY VOLTAGE AND IDLE CURRENT</font></font></b></span></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="36"><img pbzloc="39" src="idlecurrents.gif" style="border-top: 0px solid; border-right: 0px solid; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" />The input voltage of the power transformers can be changed either up to 240 or down to 220 Volt. The present line voltage in the Netherlands is only 228 V. If you set in the 220 V position you get more power-out, but your valve filament voltage is to high. However if you select 240 V, you will have the correct filament voltage of between 4.85 and 4.95 Volts, but your idle current will be to low. This can be corrected with 4 &times; 3 Amps (1N5408) diodes (in series) parallel to de zener diode D2 (7.5V). Depending on the individual 3-500Z, that could be more or less.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="42">Because both 3-500ZG&#39;s are working under the same conditions as the Drake L-4B amplifier (see table), one can use the L-4B idle current for the TL922 without any problems. In my amplifier with 2 &times; 3-500ZG (RF PARTS) the idle current was adjusted to 190 mA. I also found an Eimac spec. sheet for the 3-500Z that advises 115 mA per valve. </span></font></font></p>
+
+<p align="justify">&nbsp;</p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="16"><img pbzloc="19" src="zenerdiode.jpg" style="border-top: 0px solid; height: 480px; border-right: 0px solid; width: 464px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /> </span></font></font>
+
+<p align="justify">&nbsp;</p>
+<span lang="EN-GB"><img align="left" height="190" hspace="9" src="zenerdiodes2.gif" width="394" /> </span>
+
+<p align="justify" pbzloc="41">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="259" size="4">In another TL-922, the previous owner removed zenerdiode D2 with all mechanical components and then mounted 10 diodes in series. That was a rather clumsy and mechanically unstable construction. So everything was removed and replaced (fig&raquo;) by 4 &times; 3A diodes (1N5408) in series mounted on supports in two released holes. This lower number was necessary because the 228 V line voltage was set in the 240 V position. The idle current was about 220 mA/2400 V on load.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="252" size="4">To prevent mistakes and to keep the wiring orderly, some people have removed the extra wiring for the change to 110 &ndash; 120 Volt. Only the 220 &ndash; 240 Volt wiring was left. This way one can wire the HV transformer for 220 Volt and the filament transformer for 240 Volt.</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">ANTENNA RELAY SWITCHING</font></font></b></span></p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="500">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><font size="2"><span lang="N"><img height="210" src="txrelays1.gif" width="269" /></span></font></p>
+
+			<p align="center"><font size="2"><span lang="N"><img height="327" src="txrelayf.jpg" width="480" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">When a transceiver excites this amplifier, it has to cope with approximate 80 &ndash; 100 Volt to switch the input and output relays of the amplifier. Most modern transceivers are not suitable for high voltage switching.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">Typical antenna relay switching outputs for modern exciters are: Open collector transistor or reed relay with voltages of between 12 and 48 Volt maximum and low currents. The circuit, which was used, had already been used in a modified SB200 amplifier.</span></font></font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="21">A transceiver used with this amplifier had to switch only +1.5 volt at 200 &micro;A. A multitude of transmitters can therefore used this way. It is still in the testing stage, but it works perfect until now. Everythin</span></font></font><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">g is in the spot of the old ALC system (which has been removed). The 2SK719 MOSFET out of my junk box came probably out of the switching power supply of an old monitor. The specifications are Id = 5A, Uds = 900 Volt, P = 120 Watt and Rds = 3 &Omega;. These spec</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">ifications are a bit over the top, the most you need is Id = 1A and Uds = 300 Volt. For the transistor any universal type can be used and you can connect a diode across drain and source to limit the peak current. </font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">You can use this with al the QSK modifications of Richard Measures AG6K.</font></font></span><br />
+&nbsp;</p>
+
+<p align="right">&nbsp;</p>
+
+<table align="left" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" pbzloc="317" width="580">
+	<tbody>
+		<tr>
+			<td valign="top" width="61%">
+			<p><font size="2"><span lang="N"><img height="199" pbzloc="316" src="txrelays2.gif" width="346" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">ZL2VB&#39;s modification.</span></font></font></b></span></p>
+			</td>
+			<td valign="middle" width="39%">
+			<p><font size="2"><span lang="N"><img height="165" pbzloc="50" src="txrelays3.gif" width="213" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="47">Guido, ZL2VB send me a circuit with a comparator and transistor (Vce = 300V, Ice = 500mA). In his d</span></font></font><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">esign he had 2 resistors of 4.7 k&Omega; on pin 3-5. Because of the high input impedance of the IC I increased the resistors to 47 k&Omega; myself. Both circuits are made with parts out of the junkbox, other IC&#39;s and transistors can be substituted. JH2CVL does someth</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">ing different for a IC756 transceiver.</font></font></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">EXTRA HV RELAY AND STEP-START CIRCUIT</font></font></b></span></p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" style="width: 1000px" width="895">
+	<tbody>
+		<tr>
+			<td valign="bottom" width="52%">
+			<p align="center"><font size="2"><span lang="N" pbzloc="327"><img height="241" pbzloc="348" src="stepstarts.gif" width="391" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB" pbzloc="343">An unused section of the standby switch in action for HV switching.</span></font></font></b></span></p>
+			</td>
+			<td valign="middle" width="48%">
+			<p align="center"><font size="2"><span lang="N"><img height="156" src="hvrelayf1.jpg" width="380" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">HV Relay, according to the manufacturer the specs are: 10 mA/5 kV or 5 mA/10 kV </span></font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+<img align="right" height="396" hspace="9" src="hvrelayf2.jpg" width="423" /> <span lang="EN-GB"><img align="left" height="188" hspace="9" src="stepstarts2.gif" width="271" /> </span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="466" size="4">ZL2VB has pointed out that S4 (linear/standby/operate) switch has several spare segments. This section is now being used while in the STBY position with an extra HV reed relay to switch off the high voltage (fig&raquo;). It is done for safety reason. The 24-Volt doubling circuit is not connected to ground or frame of the TL-922!</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">According to the specs of the manufacturer the relay can switch 10 mA/5 kV or 5 mA/10 kV. Because there is no current flowing this system can switch the HV without any problems, even when testing key-down with 1250 watt.</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="470" size="4">The supply voltage for the step-start relay can be best obtained from the filament transformer. When the amplifier is first switched on, the filament resistance would be low (when cold) and the current would be high. The latter will be limited by a resistance in series with the mains voltage, the relay can&#39;t operate if the voltage is to low. When the filament are at the operating temperature, the voltage will rise, the relay will operate and the resistor(s) will be shorted. Everything happens in a fraction of time, which is sufficient to protect filaments and electrolytic caps of the power supply. If for some reason the relay wouldn&#39;t operate the resistor would burn out. To prevent this you can put a slow-blow fuse in series with the resistor. Perhaps you can use one of the mains fuse holders (F1, F2), because after all you don&#39;t need two!</font></font></span></p>
+
+<p><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="52" size="5">QSK SYSTEM</font></font></b></span></p>
+
+<p pbzloc="17" style="text-align: center"><img border="0" height="805" src="schemas.gif" width="1039" /><br />
+<span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB" pbzloc="14">The total of all the mods in one circuit diagram. Up to now everything works perfect.</span></font></font></b></span></p>
+
+<table align="center" cellpadding="1" cellspacing="1" style="width: 600px">
+	<tbody>
+		<tr>
+			<td style="text-align: center">
+			<p pbzloc="23"><img border="0" height="137" pbzloc="365" src="vacrelayf1.jpg" width="256" /><br />
+			<span style="font-size: 14px"><span lang="EN-GB"><b pbzloc="359"><font face="Tahoma"><font face="Tahoma">Relay1</font></font></b><br />
+			<b><font face="Tahoma"><font face="Tahoma" pbzloc="366">SIEMENS vacuum relay VR311, 26.5 V/335 &Omega;,</font></font></b><br />
+			<b><font face="Tahoma"><font face="Tahoma">suited for 8 kV/8 A at 30 MHz</font></font></b></span></span></p>
+			</td>
+			<td style="text-align: center">
+			<p><img border="0" height="70" src="rxrelayf1.jpg" width="85" /><img border="0" height="70" src="rxrelayf2.jpg" width="85" /><br />
+			<span lang="EN-GB"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">Relay2<br />
+			<img border="0" height="100" src="rxrelayf1a.jpg" width="187" /></font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="26" style="text-align: center"><img border="0" src="vacrelayf2.jpg" />&nbsp;<b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB" pbzloc="34">&nbsp;<img border="0" height="300" src="vacrelayf3.jpg" width="447" /></span></font></font></b></p>
+
+<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">Simple but effective fixed to soldering pins.</span></font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The previous owner had used the QSK switching of Richard Measures AG6K. That was modified and the &quot;ordin</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">ary&quot; 12-Volt small relay with plastic cover was replaced with a faster airtight 26.5 V/700 &Omega; of HI-G Co. in place of RL2. It was a relay out of military equipment.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The vacuum relay was mounted by means of two twisted copper wires and soldered to 2 existing solder points (see photo&#39;s). A simple and effective way and takes very little room. The smaller one of the relays is soldered with one pin to the input circuit, this will give together with the rest of the wiring a strong and self supporting construction. Many owners put it all on a circuit board and that will make the connection longer. With the self-supporting construction they are a lot shorter and the SWR between the transceiver and the amplifier improves on all bands.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">At first I wasn&#39;t happy with AG6K&#39;s circuit, but after replacing RL2 all worked perfect even on CW.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">I may replace the two 1.2k&Omega; resistors in series with the optocoupler with a constant current source or adjust the MosFet that way. In the meantime no other modifications are done.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">ZL2VB&#39;s MODIFICATIONS</font></font></b></span></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="580" src="zl2vb-s.jpg" width="800" /></span></font></p>
+
+<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">In the lower part of the schematic the ON AIR and STBY lamps are replaced with LEDs and drived without a relay.</span></font></font></b></span></p>
+
+<p><b><span lang="EN-GB"><font face="Tahoma" size="5"><font face="Tahoma" size="5">POWER INPUT DIN CONNECTOR</font></font></span></b></p>
+
+<p><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The big power cable of this amplifier is troublesome with experimenting and moving of this super heavy equipment and also the manufacturer predetermines its length. After some hesitation to violate a neat looking linear, it was decided to mount a DIN connector. This I do with all my equipment and it was expected that a fair bit of drilling, filing and sawing had to be done.</font></font></span></p>
+
+<p align="center">&nbsp;</p>
+
+<center pbzloc="376">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="940">
+	<tbody>
+		<tr>
+			<td valign="top" width="55%">
+			<p align="center"><font size="2"><span lang="N"><img height="236" src="gatenponsf.jpg" width="400" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">A punching tool set.</span></font></font></b></span></p>
+
+			<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">It would have been an extensive operation with removing some wiring and components. After taking some measurements it seemed that a 30-mm punching tool was the easiest way with very little damage and no removal of components. You can cover up the rest of the hole with a bit of black plastic.</font></font></span></p>
+			</td>
+			<td valign="top" width="45%">
+			<p align="center"><font size="2"><span lang="N"><img height="224" src="line-inputf.jpg" width="400" /></span></font></p>
+
+			<p align="center"><font size="2"><span lang="N"><img height="153" src="euroconnectf.jpg" width="400" /></span></font></p>
+
+			<p align="center" pbzloc="375"><span style="font-size: 14px"><span lang="EN-GB">&nbsp;<b><font face="Tahoma"><font face="Tahoma">A 30 mm hole for a male DIN power connector.</font></font></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">You can get these tools in different sizes, but a set of them is very handy for the DIY. They are also a lot cheaper as one tool. The set was bought last century when it was still affordable. I had a lot of use out of it.</span></font></font></p>
+
+<p align="justify"><span lang="EN-GB"><b><font color="#ff0000" face="Tahoma" size="5"><font color="#ff0000" face="Tahoma" size="5"><font color="#ff0000" face="Tahoma" size="5"><a name="MINIMUM"></a>MINIMUM MODIFICATION</font></font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">For a stable and safe amplifier use the following minimal changes. Then your amplifier is protected against flashover, random oscillations and supply shortcut (and often more output). </font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><b>1. FUSE &amp; RESISTOR</b></font></font></span></p>
+<span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><b><img align="right" height="35" hspace="9" src="protects2.gif" width="246" /> </b></font></font></span>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">If you acquired a 2ndhand TL-922 always starts with the following first modification: a resistor 10-22 ?/10 W and a fast 1 Amp fuse. It prevents a lot of misery as defective tubes, burned grid chokes and much more nasty events.</font></font></span></p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="900">
+	<tbody>
+		<tr>
+			<td valign="top" width="39%">
+			<p align="center"><font size="2"><span lang="N"><img height="350" src="fusef1.jpg" width="333" /></span></font></p>
+			</td>
+			<td valign="top" width="61%">
+			<p align="center"><font size="2"><span lang="N"><img height="350" src="protectf3a.jpg" width="538" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">Mounting in another TL-922. The resistor was glued with Cyanoacrilate.</span></font></font></b></span></center>
+<b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB"><img align="right" height="281" hspace="9" src="fusef3.jpg" width="400" /> </span></font></font></b>
+
+<p align="center">&nbsp;</p>
+<span lang="EN-GB"><img pbzloc="351" src="fusef2.jpg" style="height: 197px; width: 257px; float: right; margin-left: 7px; margin-right: 7px" /> </span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">In another TL-922 I did the mounting of resistor and fuse in a different way. If the fuse blows and the lid is lifted the supply voltage is safely short circuit to the chassis. One side of the fuse holder was soldered to the supply feed-through. The other side to a tubular rivet in a slit of non-cladded PCB that was fastens with a screw of the tuning capacitor VC1.</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+<span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="left" height="300" hspace="9" src="pd0biaf.jpg" width="478" /> </font></font></span>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="58" size="4">The two extra components have been useful when one of my spare tubes temporarily served as a replacement. The tube worked smoothly with a low plate voltage, but when it was increased in the SSB mode there was a flashover and the fuse blows. Without these measures, the tube was damaged by a short circuit and possibly something went wrong in the HV supply. The main fuse at the back is often too large and too slow to prevent this damage.</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">Note:</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="52" size="4"> Each amplifier seems mechanically the same, but that is not electrically. Therefore there is a difference in stability. If you ground the grids directly eventually you have to replace or change the parasite suppressors. Use the hairpin type and if the PA still oscillate, change the size of the suppressors a bit.</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><b>2. GROUND </b></font></font><b><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">ONE</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="51" size="4"> GRID PIN PER TUBE</font></font></b></span></p>
+
+<center pbzloc="377">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" style="width: 1000px" width="940">
+	<tbody>
+		<tr>
+			<td valign="middle" width="52%">
+			<p align="center"><font size="2"><span lang="N"><img height="323" pbzloc="388" src="gridmodf4.jpg" width="470" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">Al components soldered at the pins were removed. </span></font></font></b></span></p>
+			</td>
+			<td valign="top" width="23%">
+			<p align="center"><font size="2"><span lang="N"><img height="354" pbzloc="382" src="sockets3.gif" width="196" /></span></font></p>
+			</td>
+			<td valign="middle" width="25%">
+			<p align="center"><font size="2"><span lang="N"><img height="300" src="gnd-vc1f.jpg" width="221" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">Connect an insulated wire from VC1 ground to (&laquo;fig) one grid pin.</span></font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">A few years after the first modifications I considered that in the tube 3 external grid connections (2,3,4) are bolted to the same point. In nature, is a law of the least energy and therefore electricity follows the shortest path. You can disagree if you like, but I doubt that current flow simultaneously along 3 separate grid connections. So paralleling the external pins is for HF unnecessary. Just by grounding one pin the current is forced to flow via one point and that improves the HF stability of a tube is my opinion. Therefore, all components soldered at the pins were removed and one per tube was grounded.</span></font></font></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="468" src="detailmodf2.jpg" width="940" /></span></font></p>
+
+<p align="justify"><b><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">3. EXTRA GROUND FOR VC1</span></font></font></b></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">An insulated wire was connected only from pin 4 of the right tube to ground of the tuning capacitor VC1.</span></font></font></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="124" src="wires.gif" width="196" /></span></font></p>
+
+<p align="justify"><b><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">4. REPLACE PARASITIC SUPPRESSIORS</span></font></font></b></p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="900">
+	<tbody>
+		<tr>
+			<td valign="middle" width="21%">
+			<p><font size="2"><span lang="N"><img height="269" src="stoppers2.gif" width="174" /></span></font></p>
+			</td>
+			<td valign="middle" width="57%">
+			<p align="center"><font size="2"><span lang="N"><img height="360" src="suppresf4.jpg" width="480" /></span></font></p>
+			</td>
+			<td valign="middle" width="22%">
+			<p align="right"><font size="2"><span lang="N"><img height="245" src="stopperf3.jpg" width="172" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">The parasite suppressers work well with one resistor and it was tested in this amplifier. The open end of the hairpin was taken little wider for good alignment between tubes and the plate choke.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB"><b>5. CHECK THE FILAMENTS</b></span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">The voltage at the tube sockets should be 4.85 - 4.95 V. After the modifications the amplifier worked stable and just as good as my own linear. </span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">BTW: I used the TL922&#39;s to test some of my ideas and in this article are several good working modifications. In the last PA&#39;s that I modified for friends, I mounted one resistor per suppressor and ground only one pin per tube. Use this &quot;update&quot; if you want to modify your TL922A.</span></font></font></p>
+
+<p align="justify"><br />
+<span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">COMMENTS</font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">From home and abroad, I still receive many comments on these modifications. It welcomes the increased stability, protection against arcing and many reports that even on some bands they got about 100 W more ouput.</font></font></span></p>
+
+<center pbzloc="23">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="812">
+	<tbody>
+		<tr>
+			<td pbzloc="5" valign="top" width="31%">
+			<p align="center" pbzloc="36"><font size="2"><span lang="N" pbzloc="37"><img height="240" pbzloc="29" src="iw1purf2.jpg" width="321" /></span></font></p>
+			</td>
+			<td pbzloc="30" valign="top" width="34%">
+			<p align="center" pbzloc="32"><font size="2"><span lang="N" pbzloc="35"><img border="0" src="iw1purf1.jpg" /></span></font></p>
+			</td>
+			<td valign="top" width="34%">
+			<p align="center"><font size="2"><span lang="N"><img height="240" src="iw1purf3.jpg" width="320" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">On an Italian forum IW1PUR had read about the modifications and after applying he reported the oscillations had stopped and the linear now works perfectly.</span></font></font></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">NOTE</font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">(1) If you decide to modify the PA, start first with a resistor and fuse in series between HV and plate choke. This is a safety measure to protect the tubes under all circumstances!</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">(2)</font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"> </font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">If after modification oscillations occurs, an additional </font></font></span><a href="tl-922eng.htm#FEEDBACK"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">feedback resistor</span></font></font></a><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB"> usually suppresses them.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">(3) I used a TL922 to test some of my ideas, so there are several good working modifications. In the last PA&#39;s that I modified for friends, I mounted one resistor per suppressor and ground only one pin per tube. </span></font></font></p>
+
+<p><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">(4) Here is a quote from an old Kenwood Newsletter... </span></font></font></p>
+
+<p><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">&quot;After normal tune up of the 922, increase the power output of the transceiver to full output and readjust the PLATE &amp; LOAD for maximum RF power out of the TL-922&quot; </span></font></font></p>
+
+<p><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">Your Ig will be a little over 200 so make it quick! </span></font></font></p>
+
+<p><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">During SSB transmission after tuning like this, the Ig meter never deflects beyond 125ma. Average Ig during SSB is what&#39;s important. Peak Ig, which your Ig meter will not read, is not important. During tune up I see around 1250W CW @ 750ma Ip @ 225ma Ig.</span></font></font></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="36" src="bar2.gif" width="500" /></span></font></p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="92">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><a href="../Lineairs.htm"><img border="0" height="57" src="back.gif" width="80" /></a></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p>&nbsp;</p>
+
+<p align="center">&nbsp;</p>
+</body>
+</html>

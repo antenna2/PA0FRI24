@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>FT-736 modeng</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080" BACKGROUND="Image1.gif">
+<p align="center"><b><font face="Tahoma" size="6"><font face="Tahoma" size="6"><span lang="N" pbzloc="36">YAESU FT-736 MODIFICATION</span></font></font></b></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="12" src="updated2.gif" width="44" /></font><b pbzloc="24"><font face="Tahoma" size="2"><font face="Tahoma" size="2">&nbsp;<span style="font-size: 14px">26-jul-2012 With schematic version 26-jul-2012.</span></font></font></b></span></p>
+
+<p align="center"><span lang="N"><font pbzloc="141" size="2"><img height="365" src="ft736rf.jpg" width="900" /></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">INTRODUCTION</font></font></b></span></p>
+
+<p><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The schematics of FT-736R&#39;s switched power supply are on Internet, apart from DL7VHF&#39;s, not clear images. In this article I paid more attention to it and some components are mounted differently. </font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="148" size="5">FP-1274A PSU</font></font></b></span></p>
+
+<p align="center"><span lang="N"><font pbzloc="142" size="2"><img height="532" src="fp1274a-pcbs.gif" width="950" /></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="22"><font face="Tahoma"><font face="Tahoma">R11 is 4k7!</font></font></b></span></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="9" size="4">Note: the value of all components drawn in the schematic&nbsp;was originally installed on my PCB FP1274A-051. To be safe I removed Q4 (2SC3536) and mounted a BUV48A. Details of schematics published on Internet can be different. G8JACI replaced Q4 with a 2SC4429, which is rated at 1100 V/8 A, 60W and have the same pin configuration as the original, it works fine. These are easily available in the UK.</font></font></span></p>
+
+<p align="center"><span lang="N"><font pbzloc="26" size="2"><img height="502" src="fp1274a-pcbf.jpg" width="980" /></font></span></p>
+
+<p align="center" pbzloc="8"><span style="font-size: 14px"><span lang="N"><b pbzloc="18"><font face="Tahoma"><font face="Tahoma" pbzloc="43">Blackened area at the track side because two 33 Ohm&nbsp;resistors can not get rid of their heat also because the PSU is still connected to the mains&nbsp;when the FT-736 is switched-off.</font></font></b></span></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="348" pbzloc="21" src="psf1.jpg" style="height: 343px; width: 691px" width="636" /></font><font face="Tahoma" size="2"><font face="Tahoma" size="2">&nbsp;<img height="350" pbzloc="25" src="psf2.jpg" style="height: 343px; width: 272px" width="276" /></font></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><font face="Tahoma"><font face="Tahoma"><b>The PCB is blackened and two capacitors can be heated too much.</b></font></font></span></span></p>
+
+<p align="center" pbzloc="17"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" pbzloc="18" size="2"><img align="left" height="184" hspace="9" src="psuf.jpg" width="320" /> </font></font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The components in question are located in the yellow-circled area. The PSU is mounted upside on the lower cabinet half of the transceiver. Two relatively sma</font></font><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="29" size="4">ll 33 &Omega;/2 W resistors (R17, 18) in parallel produce much heat that is &quot;screened&quot; by the reverse board. After a time the PCB is often slightly charred and bad solder joints occurs at the track side. The problem ultimately leads to faulty 1 &micro;F en 220 &micro;F ele</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">ctrolytic capacitors. Although my FT-736 had no problems and the soldering pads were intact, a number of safety modifications were made.</font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="right" height="104" hspace="9" pbzloc="33" src="resistorf.jpg" width="320" /> </font></font></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Instead of two small resistors&nbsp;a pair of 33 W &Omega;/10 types (fig&raquo;)</font></font><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="31" size="4"> with long wire ends&nbsp;is used. This produces a reduced thermal conductivity onto the PCB and a better functioning of the cooling. To install&nbsp;the longer resistors above&nbsp;the PCB a jumper was removed and replaced by a &quot;U&quot; shaped jumper as support and contact pin.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="87" size="4">Because the capacitors are still looked good they were not replaced. </font></font></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="347" pbzloc="85" src="modf1.jpg" style="height: 364px; width: 796px" width="708" /></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;<img height="350" pbzloc="86" src="modf2.jpg" style="height: 364px; width: 239px" width="207" /></font></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="28"><font face="Tahoma"><font face="Tahoma" pbzloc="34">A &quot;U&quot; shaped jumper as support and contact pin to keep the wire wound resitors on sufficient distance of the PCB.</font></font></b></span></span></p>
+
+<p style="text-align: center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" pbzloc="63" size="2">&nbsp;</font></font></b></span><span lang="N" pbzloc="71"> <img pbzloc="74" src="fanf1.jpg" style="border-top: 0px solid; height: 184px; border-right: 0px solid; width: 317px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img pbzloc="77" src="fanf2.jpg" style="border-top: 0px solid; height: 184px; border-right: 0px solid; width: 160px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></p>
+
+<p align="justify" pbzloc="2">&nbsp;<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="1" size="4">I had in my stock&nbsp;a small 40 &times; 40 &times; 10 mm fan that fits on the inner side of the cage just between the left orange electrolytic capacitor and the right ferrite choke. So even for the security it was installed.</font></font></span></p>
+
+<p align="justify" pbzloc="20"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="33" size="4">To temper the fan&#39;s noise the supply voltage was reduced to about 8 Volts with 6.2 V zener diode in series to the 13.8 V plus tag on the PCB.</font></font></span></p>
+
+<p align="justify" pbzloc="20">&nbsp;</p>
+
+<p pbzloc="7" style="text-align: center"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span style="color: #0000ff"><strong><span pbzloc="16">NOTE </span></strong></span></span><span pbzloc="32" style="font-size: 18px">If the FT-736&nbsp;is off&nbsp;the PSU is still&nbsp;connected with the mains and the fan is running!</span></span></p>
+
+<p pbzloc="4"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="26" size="5">LINKS</font></font></b></span></p>
+
+<p align="justify"><a href="http://oz1db.dk/ft-736r/yaesuside_eng.html"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="29">http://oz1db.dk/ft-736r/yaesuside_eng.html</span></font></font></a></p>
+
+<p align="justify" pbzloc="31"><a href="http://www.xs4all.nl/~ketel/ham/ft736.htm"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="30">http://www.xs4all.nl/~ketel/ham/ft736.htm</span></font></font></a></p>
+
+<p align="center"><font size="2"><span lang="N" pbzloc="5"><img height="36" src="bar2.gif" width="500" /></span></font></p>
+
+<center pbzloc="4">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="95">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><a href="../Modifaties.htm"><img border="0" height="57" src="back.gif" width="80" /></a></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p>&nbsp;</p>
+
+<p align="center"><span lang="N">&nbsp;</span></p>
+</body>
+</html>

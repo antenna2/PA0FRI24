@@ -1,0 +1,630 @@
+<TITLE>FRI-1500 HF amplifier with GU-43B</TITLE>
+<BODY LINK="#0000ff" VLINK="#800080" BACKGROUND="Image5.gif">
+<p align="center" pbzloc="2"><u><font color="#0000ff" face="Tahoma" pbzloc="33" size="4">I am still experimenting with this design, but the information is sufficient for a home brewer!</font></u></p>
+
+<p align="center" pbzloc="243"><img height="12" src="updated2.gif" width="44" /><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 14px"><font pbzloc="236">&nbsp;</font><b pbzloc="237"><font pbzloc="244">26- jul-2016 </font></b></span></span></strong></p>
+
+<p align="center"><b pbzloc="1"><font face="Tahoma" pbzloc="238" size="6">GU-43B, GU43B,&nbsp;Q-1P/41, Q-1P/42</font></b></p>
+
+<p align="center"><b><font face="Tahoma" size="6">1.5 KW HF Amplifier FRINEAR 1500</font></b></p>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="6"><font face="Tahoma">1.8&ndash;30 MHz, Input 50 ohm SWR &le; 1.2</font></b></span></p>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="9"><font face="Tahoma">(Passive grid system, PA0FRI&#39;s 1.5kW QSK HF LINEAR published in RSGB&#39;s RadCom nov 2003)</font></b></span></p>
+
+<center pbzloc="24">
+<table border="0" cellpadding="4" cellspacing="0" width="921">
+	<tbody>
+		<tr>
+			<td valign="middle">
+			<p align="center"><img height="200" src="gu43bf04.jpg" width="238" /><img height="200" src="gu43bf05.jpg" width="241" /><img height="200" src="gu43bf06.jpg" width="161" /><img height="200" src="gu43bf07.jpg" width="217" /></p>
+
+			<p align="center" pbzloc="122"><img height="331" pbzloc="100" src="fri1500s1.gif" width="554" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="12"><font face="Tahoma">The first design.</font></b></span></p>
+
+			<p align="center"><img height="491" src="fri1500s2.gif" width="723" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="15"><font face="Tahoma">The second design.</font></b></span></p>
+
+			<p align="center">&nbsp;<img height="307" src="fri1500s3.gif" width="564" /><img height="169" src="balunf1.jpg" width="156" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="18"><font color="#0000ff" face="Tahoma">Recent experiments with a stripped design.</font></b></span></p>
+
+			<p align="center"><img height="322" src="fri1500s4.gif" width="588" /><b><font color="#0000ff" face="Tahoma" size="2">&nbsp;</font></b></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="21"><font color="#0000ff" face="Tahoma">Fitted with an electronic bias switch.</font></b></span></p>
+
+			<p align="center"><img height="377" src="balunf3.jpg" width="450" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center">&nbsp;</p>
+
+<center pbzloc="67">
+<table border="0" cellpadding="4" cellspacing="0" width="864">
+	<tbody>
+		<tr>
+			<td height="453" valign="middle" width="50%">
+			<p align="center"><img height="404" src="pa43bf5.jpg" width="374" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="30"><font face="Tahoma">Trial version second design.</font></b></span></p>
+			</td>
+			<td height="453" valign="middle" width="50%">
+			<p align="center">&nbsp;</p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="27"><font face="Tahoma">Click to enlarge.</font></b></span></p>
+
+			<p align="center"><a href="pa43bf1.jpeg"><img border="0" height="80" src="1.jpeg" width="120" /></a><a href="pa43bf2.jpg"><img border="0" height="81" src="2.jpeg" width="120" /></a><a href="pa43bf3.jpg"><img border="0" height="81" src="3.jpeg" width="120" /></a></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify"><b><font face="Tahoma" size="5">INTRODUCTION</font></b></p>
+
+<p><font face="Tahoma" pbzloc="68" size="4">While the circuit diagram provided the necessary basic information, care must be taken to use suitable rated components, adequate fan cooling etc. Remember always that this is a high power amplifier with potentially lethal (HV) voltages.</font></p>
+
+<center pbzloc="69">
+<table border="0" cellpadding="4" cellspacing="0" width="948">
+	<tbody>
+		<tr>
+			<td valign="middle" width="35%">
+			<p align="justify"><font face="Tahoma" size="4">This experimental </font><font face="Tahoma" size="4">design is capable of 1.5 kW output throughout the range 1.8&ndash;30 MHz. Delivering 300&ndash;400 W output with 5 W of driving power. The input is &quot;swamped&quot; by a non-inductive 50 &Omega; control-grid resistor eliminating the need for tuned circuits. This match the input c</font><font face="Tahoma" size="4">ircuit on the amateur bands, after band changing, only two capacitors need to be tuned. This type of linear has many desirable features, including low cost, low component count, stability due to the swamping effect of the passive grid input load and simplicity of the construction. </font></p>
+			</td>
+			<td valign="middle" width="65%">
+			<p align="center"><img height="403" src="pa43bf4.JPG" width="601" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="35"><font face="Tahoma">Testing the trial version, left side: a g<sub>2</sub> supply.</font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+<img align="right" height="129" hspace="9" src="ug2s4.gif" width="399" />
+<p align="justify"><font face="Tahoma" pbzloc="36" size="4">The simple screen supply (fig&raquo;) incorporates protection circuitry comprised of a small 230 VAC/15 W domestic lamp bulb as a constant current device. If the HV fails or the amplifier is not correctly tuned or is overloaded, the screen grid dissipation is limited to a safe value. If the pi-network output circuit is determined empirically for lowest screen current and maximum output, the screen supply is quite adequate and stable. </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">In practice, the GU-43B power valve and equivalent Polish-manufactured Q-1P/41 and Q-1P/42 are very rugged. During development of the amplifier; they withstood <i>temporary </i>overload: screen grid current 300 mA, anode current 2 A and 100 W drive without the 6 dB attenuation. The GU-43B is extremely stable in this design; no sign of oscillation even without in- and output loading. Lowest screen-grid current occurs with anode voltage between 3 and 3.3 kV. With normal speech the current should flicker about zero mA (&plusmn;5 mA). With a carrier (key down), it is about 20 mA positive. </font></p>
+<font face="Tahoma" size="4"><img align="right" height="309" hspace="9" src="gu43bf1.jpg" width="465" /> </font>
+
+<p><img height="236" src="ringf.jpg" width="480" /></p>
+
+<p align="justify"><font face="Tahoma" size="4">Q-1P/41 is a silver plated GU-43B; Q-1P/42 is a silver-plated and ceramic GU-43B. Both types have a better amplification factor than the Russian GU-43B. They need 1.0 to 1.5 V more negative bias (e.g., extra 1&ndash;2 diodes in series) and deliver 100&ndash;200 W more output power.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Note: </font><font color="#0000ff" face="Tahoma" size="4">Often the third contact ring (g2) of a Q-1P/42 makes not a good contact in a GU-43B&#39;s socket!</font></p>
+
+<p><b><font face="Tahoma" pbzloc="70" size="5">REACTIVATON</font></b></p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" hspace="12" width="382">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><img height="116" src="refors2.gif" width="307" /></p>
+
+			<p><img height="78" src="test-tubes.gif" width="370" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="185" size="4">To avoid flashover in a new or a long time unused tube, it is prudent to prepare (&quot;reactivate&quot;) it for his task. There are various opinions and solutions how to do it, but with a GU-43 it can be relatively simple. A DC of 10 to 15 V is sufficient for the tube to draw 900 mA as the grids are connected to the anode. Heat the tube 30 minutes with a filament voltage of 12.6 V. Then supply a &quot;high voltage&quot; of about 15 V and set the voltage to a current of 900 mA. If possible use a current limiter, because during reactivate the current can increase suddenly so that continue monitoring could be necessary to maintain 900 mA. Usually I will not reactivate longer than an hour or so. Soon you will find out at which voltage a good tube drawn 900 mA (or 800 mA/12-12.5 V) so you have an indication if another tube is better or not.</font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><b><font face="Tahoma" pbzloc="71" size="5">A WIDEBAND INPUT CIRCUIT</font></b></p>
+
+<center pbzloc="40">
+<table border="0" cellpadding="4" cellspacing="0" width="900">
+	<tbody>
+		<tr>
+			<td valign="top" width="57%">
+			<p align="center" pbzloc="30">&nbsp;<img border="0" height="429" src="inputsyss1.gif" width="635" /></p>
+			</td>
+			<td valign="middle" width="43%">
+			<p align="center"><img height="198" src="testingf1.jpg" width="360" /></p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="top">
+			<p align="center"><span style="font-size: 14px"><b pbzloc="39"><font face="Tahoma">Testing the input circuit with a 50 &Omega; dummy load.</font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+<img align="left" height="112" hspace="9" src="chiprf.JPG" width="318" />
+<p align="justify" pbzloc="46"><font face="Tahoma" size="4">Being a passive-grid amplifier, most of the input power is dissipated in a non-inductive 50 &Omega; resistor, see four types, left to right:</font></p>
+
+<p align="justify" pbzloc="52"><font face="Tahoma" pbzloc="44" size="4">50 </font><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="57" style="font-size: 18px">&Omega;</span></span><font face="Tahoma" pbzloc="56" size="4">/250 W, 50 </font><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="55" style="font-size: 18px">&Omega;</span></span><font face="Tahoma" pbzloc="59" size="4">/150 W, 150 </font><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="60" style="font-size: 18px">&Omega;</span></span><font face="Tahoma" pbzloc="62" size="4">/30 W and 50 </font><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="63" style="font-size: 18px">&Omega;</span></span><font face="Tahoma" pbzloc="62" size="4">/25 W. One might expect this arrangement to be frequency-independent.</font></p>
+<font face="Tahoma" size="4"><img align="right" height="523" hspace="9" src="inputsyss2.gif" width="579" /> </font>
+
+<p align="justify"><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p align="justify" pbzloc="50">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify" pbzloc="42">&nbsp;</p>
+
+<p align="justify" pbzloc="42">&nbsp;</p>
+
+<p align="justify" pbzloc="42">&nbsp;</p>
+
+<p align="justify" pbzloc="42"><font face="Tahoma" pbzloc="192" size="4">However, the capacitance&#39;s of the control-grid, socket and associated wiring add up to about 100 pF, which is only 55 &Omega; (at 29 MHz) paralleling the 50 &Omega; resistor! </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">This capacitance must be tuned out if what is adequate drive on 3.5 MHz is to produce full output on the higher-frequency bands. I do this with a dual-circuit (fig1&raquo;). By way of flywheel-action this tuned input-circuit will, to a degree, level out the vari</font><font face="Tahoma" size="4">able input impedance, thereby preserving a reasonable match and thus linearity and output of the driving transceiver. By putting a 50 &Omega;-swamping resistor across it, the driver will see a load with a SWR of less than 1.5.</font></p>
+
+<p align="justify" pbzloc="186"><font face="Tahoma" pbzloc="177" size="4">With respectively, an input of 100 W, 6 dB attenuation switched &quot;on&quot;, 3 kV HT and anode current 0.65 A, the output power with the GU-43B was 1250 W with. With type Q-1P/41 or 42, the power output was 1.3 &ndash; 1.4 kW with anode current greater than 0.65 A.</font></p>
+
+<p align="justify" pbzloc="186">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="center">&nbsp;</p>
+
+<center pbzloc="73">
+<table border="0" cellpadding="4" cellspacing="0" width="730">
+	<tbody>
+		<tr>
+			<td valign="middle" width="68%">
+			<p align="center"><img height="476" src="voet43bf3.jpg" width="480" /></p>
+			</td>
+			<td valign="middle" width="32%">
+			<p pbzloc="39"><img border="0" height="217" src="comp-voets.gif" width="338" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="76"><font face="Tahoma">Tube socket with components (see schematic), 3 &times; 15 nF (red) are removed for the replaced components.</font></b></span></p>
+
+<p align="center" pbzloc="77"><img height="342" src="vdrf.jpg" width="480" /></p>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="80"><font face="Tahoma">VDR, surge arrestor, varistor, etc.</font></b></span></p>
+
+<p><b><font face="Tahoma" size="5">SCREEN GRID SUPPLY</font></b></p>
+
+<p align="justify"><span lang="EN-GB" style="mso-ansi-language: EN-GB"><font face="Tahoma" pbzloc="82" size="4">A screen parallel voltage regulator is a must for a tetrode since the current can flow not only into the grid but periodically out during the driving cycle when the momentary anode potential decreases below the voltage of the screen grid. It is called secondary emission or dynatron effect and it creates a negative internal resistance. The regulator should absorb the current without changing of the supply voltage.&nbsp;</font></span></p>
+
+<center pbzloc="83">
+<table border="0" cellpadding="4" cellspacing="0" width="925">
+	<tbody>
+		<tr>
+			<td valign="top" width="52%">
+			<p align="center"><img height="365" src="qsks1.gif" width="345" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="86"><font face="Tahoma">Action of the QSK circuit.</font></b></span></p>
+			</td>
+			<td valign="middle" width="48%">
+			<p align="center"><img height="168" src="ug2s3.gif" width="358" /></p>
+
+			<p align="center"><b><font face="Tahoma" size="2">A simplified view of the system, the lamp is used as a constant current device</font><font face="Comic Sans MS" size="2">.</font></b></p>
+
+			<p align="center"><img height="137" src="vacrelaisf1.jpg" width="256" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="89"><font face="Tahoma">High-speed vacuum relay Siemens VR 311, 355 &Omega;/26.5 V.</font></b></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="top">
+			<p align="center"><font color="#0000ff" face="Tahoma" size="4">NOTE: Connect exclusively the (&ndash;Ug2) pole of the not stabilised 470&ndash;580 V power supply to point &quot;N&quot;.</font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify"><font face="Tahoma" size="4">Transmit and receive switching can be done in couple of ways and it was decided to switch the screen grid voltage (Ug2). The control grid is supplied with a permanent negative voltage of about -52 V and the tube is then &quot;cut off&quot; as there is no Ug2. The negative pole of the screen supply is connected to ground when transistor T2 conduct during transmit via a relay and the 50 Ohm grid swamping resistor. The advantage of this circuit is that a fast-switching relay (for example VR311) with only one contact can be applied. Remember that the negative pole of the stabilised screen supply (point N) must not be connected directly to ground.</font></p>
+<font face="Tahoma" size="4"><img align="left" height="137" hspace="9" src="unstab-pss.gif" width="409" /> </font>
+
+<p align="justify"><font face="Tahoma" pbzloc="90" size="4">The screen grid is at a stabilised fixed high voltage, if the HV supply fails or the amplifier is not correctly tuned and overloads, the screen grid dissipation is limited to a safe value. To that end, voltage is derived from a non stabilised supply (fig&raquo;) followed by circuitry comprised of a small 230 VAC/15 W domestic lamp as a constant current device with transistor T1 and serie/parallel connected zener diodes Z as a voltage stabilisation. The transistor has a relatively low amplifying factor (10&ndash;15), which eliminates any oscillations. All circuits with many semiconductors or operational amplifiers and a high gain regulation loop<span style="mso-spacerun: yes">&nbsp; </span>(as we may see in publications) are potential source of trouble. In the absence of drive the negative lead N is isolated from ground. E.g. there is almost zero screen voltage and the standing current is very low. During transmit transistor T2 connects the supply&#39;s negative pole N to ground. It will be noted that the protected circuitry is incorporated in the main amplifier circuit.&nbsp;</font></p>
+
+<center pbzloc="92">
+<table border="0" cellpadding="4" cellspacing="0" width="940">
+	<tbody>
+		<tr>
+			<td valign="middle" width="41%">
+			<p align="center"><img height="175" src="parallelstabs.gif" width="359" /></p>
+			</td>
+			<td valign="middle" width="59%">
+			<p align="center"><img height="154" src="zenerdiodef.jpg" width="540" /></p>
+
+			<p align="center"><b><font face="Tahoma" size="2">7 &times; 6 &times; 51 V/1.3 W zener diodes.</font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+<img align="right" height="106" hspace="9" src="lampf.jpg" width="320" />
+<p align="justify"><font face="Tahoma" size="4">This simple circuit wo</font><font face="Tahoma" pbzloc="93" size="4">rks better than expected. If the 27 k&Omega; resistor is loaded with the 27 k&Omega; parallel to the screen-grid, the output voltage does not change!&nbsp;</font><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p><b><font face="Tahoma" size="5">MULTI-PURPOSE FILAMENT TRANSFORMER</font></b></p>
+
+<table align="left" border="0" cellpadding="4" cellspacing="0" hspace="12" width="429">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><img height="142" src="filtrafos.gif" width="402" /></p>
+
+			<p align="center"><b><font face="Tahoma" size="2">Control grid, relay and filament supply with single transformer.</font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify" pbzloc="197"><font face="Tahoma" pbzloc="195" size="4">Only one transformer provides the supply for the filament and with rectifying, doubling and quadrupling the supply for the control grid and a fan. Please note that the positive pole is to the ground. A transformer for powering the filament must be exactly suitable for the purpose, not too big and not too small. Use a transformer of 90 W (&laquo;fig) which provides slightly more than 13 VAC. Measure the voltages of the filament directly on the tube socket and adjust to 12.3 V with a resistor in the primary. That extends the life of the tube.</font></p>
+
+<p align="justify" pbzloc="197">&nbsp;</p>
+
+<p align="justify"><b><font face="Tahoma" pbzloc="196" size="5">HV SUPPLY</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="390" hspace="9" src="hvsupplys.gif" width="525" /> </font></b>
+
+<p>&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="119" size="4">The generation of HV can be done in two ways, with a bridge rectifier and with rectifying and doubling, it depends on the transformer you can get. Many types have a secondary voltage of 1100 - 1300 V or 2200 - 2600 V. Something more is even better with this tube. The unloaded voltage is high but if the amplifier is drive with a continuous carrier (= key down) the voltage drops to a value of the unloaded secondary AC voltage. For example, the DC voltage of a 2800 VAC transformer drops to 2</font><font face="Tahoma" pbzloc="94" size="4">800 VDC with key down. The 220 &mu;F/400 V capacitor shown in the schematics are the most commonly offered for sale on internet.&nbsp;</font><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p><b><font face="Tahoma" size="5">PI-FILTER</font></b></p>
+<b><font face="Tahoma" size="5"><img pbzloc="228" src="pifilters1.gif" style="height: 191px; width: 391px; float: left; margin-left: 7px; margin-right: 7px" /> </font></b>
+
+<p><font face="Tahoma" pbzloc="147" size="4">The components of the output pi-filter must be determined empirically for lowest screen current with maximum output power. With normal speech screen current is + 5V to -5V, average &Oslash; Volt, with key down about 20 mA positive. Lowest screen current can be obtained at 3 kV &lt; anode voltage &lt; 3.3 kV.</font></p>
+
+<p>&nbsp;</p>
+<font face="Tahoma" pbzloc="69" size="4"><img pbzloc="73" src="t300-2f.jpg" style="border-top: 0px solid; height: 293px; border-right: 0px solid; width: 320px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /> </font>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="229" size="4">A toroid, self-shielding because of its low external field, facilitates a compact construction of an inductance. Before winding, several layers of Teflon plumbing tape must be applied to the core, to insulate it from the coil-windings. Another method of insulation is to cement two flat isolating washers (e.g. made from bare glass fibreboard, fig&raquo;) on each side of the bare core. Apply a small quantity of super glue, possibly only a few drops, around the sides of the core. Work swiftly; the glue hardens quickly. The glue prevents the washers from moving out of alignment while the core is being prepared for winding. With a T200-2 core, the inner hole should be 28 mm diameter and the outer diameter 55 mm. With this last construction it might be even possible to use bare copper wire for the windings.&nbsp;</font></p>
+
+<p><b><font face="Tahoma" size="5">ANODE IMPEDANCE</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="86" hspace="9" src="pifilters2.gif" width="232" /> </font></b>
+
+<p align="justify"><font face="Tahoma" size="4">Normally the anode- or output -impedance is known or can be calculated, or can be taken from a graph. However, hams are in the habit of (miss) using valves in other than normal ways, so available data don&#39;t apply. In the past I have built linear amplifiers in a test circuit, following published schematics or design formulae and copying given values of components for a (fig&raquo;) </font><font color="#0000ff" face="Tahoma" size="4">pi-filter: C</font><b><font color="#0000ff" face="Tahoma" size="2">tune</font></b><font color="#0000ff" face="Tahoma" size="4">, L and C</font><b><font color="#0000ff" face="Tahoma" size="2">load</font></b><font face="Tahoma" pbzloc="95" size="4">. After a while however, one will get an itch to experiment with this or that. Quite often in the following years, output was raised after tinkering with the output circuit. With simple means, the results were measured and tabulated, after which I tried to find a matching formula. I found my results to differ from the formulae and tables as found in handbooks of the years &#39;60. In all probability, pure class B or C was then adhered to. Adjustment according to my &quot;found&quot; formula is a good directive for home-brewing linear amplifiers that are meant for CW and SSB. The anode-impedance of an unknown amplifier&#39;s final stage with one or more valves, according to my findings is:&nbsp;</font></p>
+
+<table align="right" border="1" cellpadding="4" cellspacing="1" hspace="12" width="406">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p><b><font face="Tahoma" size="2">R<sub>a</sub> = V<sub>a</sub> &divide; (1.87 &times; I<sub>a</sub>), in which:</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+			<p><b><font face="Tahoma" size="2">R<sub>a</sub> = the (common) anode (or plate-)impedance, (in Ohms),</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+			<p><b><font face="Tahoma" size="2">I<sub>a</sub> = the (total) anode current at max. power, (in Amperes),</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+			<p><b><font face="Tahoma" size="2">V<sub>a</sub> = the applied anode voltage, (in Volts).</font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="right"><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="96" size="4">One may dispute the value of the last decimal of 1.87, but please consider that it is the average result of many experiments. As it is, the formulae worked very satisfactory for me.&nbsp;</font><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p><b pbzloc="156"><font face="Tahoma" pbzloc="97" size="5">CALCULATION&nbsp;PI FILTER </font></b></p>
+
+<p align="center">&nbsp;</p>
+
+<center pbzloc="214">
+<table border="1" cellpadding="4" cellspacing="1" width="846">
+	<tbody>
+		<tr>
+			<td valign="top" width="63%">
+			<p><b><font face="Tahoma" size="2">With my formula we find as a suitable anode load (R<sub>a</sub>) for :</font></b></p>
+			</td>
+			<td valign="bottom" width="37%">
+			<p><b><font color="#0000ff" face="Tahoma" size="2">Va<sub> </sub>= 3000 V/0.9 A</font><font face="Tahoma" size="2">:</font></b></p>
+
+			<p><b><font face="Tahoma" size="2">Ra = 3000 &divide; (1.87 &times; 0.9) = 1783 &Omega;.</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="63%">
+			<p align="justify"><b><font face="Tahoma" size="2">The anode-circuit must transfer energy and the circulating current amplification factor Q helps to suppress the generated higher harmonics. A loaded-circuit Q of 10&ndash;12 will meet most requirements regarding efficiency, suppression of harmonics and practical values of C and L. If we assume for the 80 m band:</font></b></p>
+			</td>
+			<td valign="bottom" width="37%">
+			<p><b><font face="Tahoma" size="2">&nbsp;</font></b></p>
+
+			<p><b><font face="Tahoma" size="2">&nbsp;Q = 10, </font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="63%">
+			<p><b><font face="Tahoma" size="2">then the loaded circuit-impedance becomes:</font></b></p>
+			</td>
+			<td valign="bottom" width="37%">
+			<p><b><font face="Tahoma" size="2">Za<sub> </sub>= Ra &divide; Q = 1783 &divide; 10 = 178.3 &Omega;.</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="63%">
+			<p><b><font face="Tahoma" size="2">The tuning-C (=C<sub>t</sub>) is mostly responsible for circuit-resonance, which occurs at the frequency for which:</font></b></p>
+			</td>
+			<td valign="bottom" width="37%">
+			<p><b><font face="Tahoma" size="2">Zct = 178.3 &Omega;.</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="63%">
+			<p><b><font face="Tahoma" size="2">We recalculate to obtain pF&#39;s:</font></b></p>
+			</td>
+			<td valign="top" width="37%">
+			<p><b><font face="Tahoma" size="2">Ct = 10<sup>6</sup> &divide; 2&pi;fZ<sub>ct</sub></font><font face="Tahoma" size="2">, in resp. pF, MHz and &Omega;.</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="63%">
+			<p><b><font face="Tahoma" size="2">For 3.5 MHz this becomes:</font></b></p>
+			</td>
+			<td valign="top" width="37%">
+			<p><b><font face="Tahoma" size="2">C</font><font color="#0000ff" face="Tahoma" size="2">t =</font><font face="Tahoma" size="2"> 10<sup>6 </sup>&divide; (2&pi; &times; 3.5 &times; 178.3) = </font><font color="#0000ff" face="Tahoma" size="2">255 pF</font><font face="Tahoma" size="2">.</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="63%">
+			<p align="justify"><b><font face="Tahoma" size="2">This includes anode capacitance, wiring capacitance and stray capacitance! The circuit transforms the anode-impedance:</font></b></p>
+			</td>
+			<td valign="bottom" width="37%">
+			<p><b><font face="Tahoma" size="2">&nbsp;1783 &Omega; down to 50 &Omega;,</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="63%">
+			<p><b><font face="Tahoma" size="2">giving an impedance ratio of:</font></b></p>
+			</td>
+			<td valign="top" width="37%">
+			<p><b><font face="Tahoma" size="2">1783 &divide; 50 = 35.66</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="63%">
+			<p><b><font face="Tahoma" size="2">and a capacitance ratio of:</font></b></p>
+			</td>
+			<td valign="top" width="37%">
+			<p><b><font face="Tahoma" size="2">&radic;35.66 = 5.97.</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="63%">
+			<p><b><font face="Tahoma" size="2">The second C, normally called loading-C (=C<sub>L</sub>), has a value of:</font></b></p>
+			</td>
+			<td valign="bottom" width="37%">
+			<p><b><font face="Tahoma" size="2">C</font><sub><font color="#0000ff" face="Tahoma" size="2">L</font></sub><font face="Tahoma" size="2"> = 255 (pF) &times; 5.97 = </font><font color="#0000ff" face="Tahoma" size="2">1522 pF</font><font face="Tahoma" size="2">.</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="63%">
+			<p><b><font face="Tahoma" size="2">Now we calculate the value of L for 3.5 MHz: Across the coil L is the series combination of :</font></b></p>
+			</td>
+			<td pbzloc="210" valign="bottom" width="37%">
+			<p pbzloc="213"><b><font face="Tahoma" pbzloc="208" size="2">Ra + Rload = 1783 + 50 = 1833 </font></b><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="216" style="font-size: 12px">&Omega;</span></span></strong><b><font face="Tahoma" pbzloc="215" size="2">.</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="63%">
+			<p><b><font face="Tahoma" size="2">The loaded coil with a Q of 10 will, at resonance, see a resistance of:</font></b></p>
+			</td>
+			<td valign="bottom" width="37%">
+			<p><b pbzloc="206"><font face="Tahoma" size="2">Rs = 1833 &divide; 10 = 183.3 &Omega;.</font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="63%">
+			<p><b><font face="Tahoma" size="2">Calculating for inductance gives:</font></b></p>
+			</td>
+			<td valign="bottom" width="37%">
+			<p><b><font color="#0000ff" face="Tahoma" size="2">L =</font><font face="Tahoma" size="2"> Rs &divide; 2&pi;</font><font face="Tahoma" pbzloc="232" size="2">f = 183.3&nbsp;&times; (2&pi; &times; 3.5) = </font><font color="#0000ff" face="Tahoma" size="2">8.34 &micro;H</font><font face="Tahoma" size="2">.</font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<center pbzloc="195" style="text-align: justify"><u><strong><span pbzloc="184"><span style="font-size: 18px"><span pbzloc="200" style="font-family: tahoma,geneva,sans-serif"><img pbzloc="192" src="spoelen&#32;in&#32;serief.jpg" style="border-top: 0px solid; border-right: 0px solid; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></span></span></strong></u></center>
+
+<center pbzloc="195" style="text-align: justify">&nbsp;</center>
+
+<center pbzloc="195" style="text-align: justify"><u><strong><span pbzloc="184"><span style="font-size: 18px"><span pbzloc="203" style="font-family: tahoma,geneva,sans-serif">Please note</span></span>!</span></strong></u><span style="font-size: 18px"><span pbzloc="200" style="font-family: tahoma,geneva,sans-serif"> Usually coils are installed in series (fig&raquo;). In this calculation the inductance for 40 m is about 4 &micro;H.&nbsp; If the&nbsp;80 m coil is a part&nbsp;of the higher bands in series, then the inductance for the&nbsp;80 m section is not 8.34 &micro;H, but 8.34 - 4 =&nbsp;4.34 &micro;H!&nbsp;</span></span></center>
+
+<p align="justify"><font face="Tahoma" size="4">It can be argued that the calculations with R</font><b><sub><font face="Tahoma">a</font></sub></b><font face="Tahoma" size="4"> = V</font><b><font face="Tahoma" size="2">a</font></b><font face="Tahoma" size="4"> &divide; (1.87 &times; I</font><b><font face="Tahoma" size="2">a</font></b><font face="Tahoma" pbzloc="204" size="4">) formula could be more exact. Just ask yourself what value you should assume for the added capacitance, caused by valve, wiring and stray capacitance&#39;s...this uncertainty is much higher than the one caused by a somewhat simpler calculation.</font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p><b><font face="Tahoma" pbzloc="220" size="5">ANODE CHOKE&nbsp;</font></b></p>
+
+<center pbzloc="99">
+<table border="0" cellpadding="4" cellspacing="0" width="840">
+	<tbody>
+		<tr>
+			<td valign="top" width="71%">
+			<p align="justify"><font face="Tahoma" size="4">About plate chokes, varying stories circulate. However, least problems arise with one-layer chokes. Because of the dissipation and closeness of the power valves, a heat-resistant coil former is a must: the heat and intense IR-radiation of a power valve at maximum dissipation can make phenol board at 2 cm distance burst out in flames! A sturdy ceramic wire-wound resistor, with its resistance wire removed, will make a good former. A diameter of about 2 cm and a length of 10 cm is satisfactory. Closely wind the former with one layer of 25 &ndash; 28 SWG enamelled wires over a length of 5 &ndash; 10 cm. In most cases its inductance is sufficient, even at a lowest frequency of 3.5 MHz. To test for series-resonance, short both ends together (fig&raquo;) and (with a GDO) checks for resonance&#39;s in the amateur bands. If there are none, you are lucky. If there are, try to shift them by removing or adding some turns. Another solution is to remove 1 cm of the windings and start again, leaving a gap of 1 cm between windings; then check again</font><font face="Tahoma" size="4">. My favourite choke has a diameter of 2 &ndash; 2.2 cm, is closely wound over a length of 5 cm with one layer of 28 SWG enamelled wire, has an inductance of about 180 &mu;H and will serve for all bands. The wire may seem too thin for some currents, but in all my </font><font face="Tahoma" size="4">experiments it never burnt through. The wirewound resistor (10&ndash;50 ?) between </font><b><sup><font face="Tahoma">+</font></sup></b><font face="Tahoma" size="4">HT and the choke will limit the damage from &quot;flash-over&quot;, caused by a momentary short in a valve, to the fuse and (often) the limit-resistor itself. Replacing them is much cheaper than replacing the valve.</font></p>
+			</td>
+			<td valign="middle" width="29%">
+			<p align="center"><img height="480" src="rfcf.jpg" width="222" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><img height="350" src="rfcf2.jpg" width="940" /></p>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="102"><font face="Tahoma" pbzloc="106">Count&nbsp;turns and make a RFC with the photo as an example.</font></b></span></p>
+
+<p align="justify"><b><font face="Tahoma" pbzloc="107" size="5">PROTECTION</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="234" hspace="9" src="protects.gif" width="193" /> </font></b>
+
+<p align="justify"><font face="Tahoma" size="4">For first protection in all my power amps there is a fuse and a resistor in series with the anode feed (fig&raquo;). The wire-wound resistor in the anode-circuit will curtail the flaming arc across the blown fuse and limits the maximum anode current. That proved good practice in this amplifier. Within five minutes after first application of power, there was a flashover in one of the valves. The fuse had blown but the valve had not suffered. Later on, under overdrive, the same thing happened. Again, the valve was OK. Feel free to use a bigger resistor but I use these resistors as a second fuse and do not mind replacing them. It seems that this often occurs with this type of valve after they have not been used for a long time. Once the amplifier has stabilised and is in regular use, this only happens infrequently. An extra 4.7 nF/3 kV bypass capacitor from between the fuse and resistor provides additional filtering. </font></p>
+
+<p><b><font face="Tahoma" size="5">PARASITIC SUPPRESSION CIRCUITS</font></b></p>
+<b><font face="Tahoma" size="5"><img align="left" height="91" hspace="9" src="suppress1.gif" width="101" /> </font></b>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="214" size="4">A method of parasitic suppression is the insertion of RF current (hairpin shaped) obstacles (dampers) at right angles (&laquo;fig) to the probable flow of the parasitic currents. This method can be used up to frequencies of several 100 MHz without noticeably reducing fundamental power.&nbsp;</font></p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" hspace="12" width="450">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><img height="191" src="pifilters1.gif" width="391" /></p>
+
+			<p align="center"><img height="240" src="suppress2.gif" width="250" /><img height="245" src="suppresf.jpg" width="172" /></p>
+
+			<p align="center"><b><font face="Tahoma" size="2">Parasitic suppressor.</font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4">The main function is to provide a high impedance path in series with other (tank) circuit elements. However such method can be used only where the fundamental and parasitic frequencies are sufficiently far apart, so that excessive resistive losses of the fundamental frequencies are avoided. The circuit should have a L/C ratio as low as practicable and be suitably damped to give a broadband effect.</font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="218" size="4">Damping can be achieved by paralleling the hairpin circuit inductor with a non-inductive resistor and by making the inductor from resistive material. A mat surface rather than a polished surface may provide sufficient surface resistance. The resistive component need often be no more than a nickel alloy wire/strip or tinned copper wire/strip with a DC resistive value of a fraction of an ohm.</font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="221" size="4">The test amplifier was un</font><font face="Tahoma" size="4">conditionally stable without a parasitic suppresser but for safety reasons I placed a stopper as the one shown. I had previously found this type more effective. The 56 &Omega;/2 W composition resistor (I happened to have that value) is shunted by hairpin loops </font><font face="Tahoma" pbzloc="225" size="4">made of about 2 mm diameter tinned wire. The effective length of the wire is 10 cm but cut off a 12 cm to allow for connection to solder tag. The hairpin size had been optimised on an earlier amplifier and was found to be effective here too. </font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p><b><font face="Tahoma" size="5">ON7AS &amp; ON4TO </font></b></p>
+
+<p><font face="Tahoma" pbzloc="109" size="4">With my design as an example ON7AS and ON4TO made this huge amplifier two times.&nbsp;</font></p>
+
+<center pbzloc="110">
+<table border="0" cellpadding="4" cellspacing="0" width="871">
+	<tbody>
+		<tr>
+			<td valign="middle" width="40%">
+			<p align="center"><img height="800" src="h-madef1.jpg" width="323" /></p>
+			</td>
+			<td valign="top" width="60%">
+			<p align="center"><img height="375" src="h-madef2.jpg" width="500" /></p>
+
+			<p align="center"><font face="Tahoma" size="4">&nbsp;</font></p>
+
+			<p align="center"><img height="375" src="h-madef3.jpg" width="500" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><img height="425" src="h-madef4.jpg" width="567" /><font face="Tahoma" size="4">&nbsp;<img height="425" src="h-madef5.jpg" width="319" /></font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">SOCKET</font></b></p>
+
+<p align="justify"><font face="Tahoma" size="4">Shown are examples of sockets for a GU-43B.</font></p>
+
+<p align="center"><img height="240" src="type-socketf6.jpg" width="217" /><img height="240" src="voet43bf2.jpg" width="216" /><img height="240" src="gu43bf2.jpg" width="195" /></p>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="113"><font face="Tahoma">1<sup>st </sup>type socket</font></b></span></p>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="116"><font face="Tahoma">NOTE: With some brands GU-43B the dimension from anode to base is about 5 mm that is to short for this chimney/socket, it is impossible to supply 12 V to the filament connector of the valve.</font></b></span></p>
+
+<p align="center"><img height="240" src="type-socketf6.jpg" width="217" />&nbsp;<img height="240" src="type-socketf7.jpg" width="269" /> <img height="240" src="type-socketf5.jpg" width="364" /></p>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="119"><font face="Tahoma">2<sup>nd</sup> types socket (see 12 &times; red 15 nF feed-through capacitors).</font></b></span></p>
+
+<p align="center"><img height="400" src="type-socketf1.jpg" width="403" /><b><font face="Tahoma" size="2">&nbsp;<img height="400" src="type-socketf4.jpg" width="324" /></font></b></p>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="122"><font face="Tahoma">3<sup>rd</sup> type socket and chimney.</font></b></span></p>
+
+<p align="center"><img height="300" src="type-socketf2.jpg" width="481" /><span style="font-size: 14px"><b pbzloc="125"><font face="Tahoma">&nbsp;<img height="300" src="type-socketf3.jpg" width="401" /></font></b></span></p>
+
+<p align="center"><span style="font-size: 14px"><b><font face="Tahoma">4<sup>th</sup> type socket and chimney.</font></b></span></p>
+
+<p align="center"><b><font face="Tahoma" pbzloc="126" size="5">4L1DA&#39;s &amp; UY5ZZ&#39;s GU-43B AMPLIFIER&nbsp;</font></b></p>
+
+<center pbzloc="136">
+<table border="0" cellpadding="4" cellspacing="0" width="798">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><img height="245" src="4L1DAs.gif" width="510" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="129"><font face="Tahoma">4L1DA&#39;s design, see the differences with UY5ZZ&#39;s and PA0FRI&#39;s PA&#39;s below.</font></b></span></p>
+
+			<p align="center"><img height="275" src="zz1200s.gif" width="511" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="132"><font face="Tahoma">UY5ZZ&#39;s commercial design, see the differences with PA0FRI&#39;s PA design below.</font></b></span></p>
+
+			<p align="center"><img height="331" src="fri1500s1.gif" width="554" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="135"><font face="Tahoma">PA&Oslash;FRI&#39;s 1<sup>st</sup> design</font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><b><font face="Tahoma" pbzloc="137" size="5">SOME HOME MADE COMPONENTS FOR THE FRINEAR 1500</font></b></p>
+
+<center pbzloc="138">
+<table border="0" cellpadding="4" cellspacing="0" width="920">
+	<tbody>
+		<tr>
+			<td valign="middle" width="45%">
+			<p align="center"><img height="480" src="socketf1.jpg" width="383" /></p>
+			</td>
+			<td valign="middle" width="55%">
+			<p align="center"><img height="339" src="socketf4.jpg" width="480" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="141"><font face="Tahoma">At present my second chimney is home made with standard PVC tubes, cooling with 12 &times; 12 cm fan.</font></b></span></p>
+
+<p align="center" pbzloc="78"><img border="0" height="640" pbzloc="77" src="unitra-gu43b.jpg" style="height: 445px; width: 609px" width="784" />&nbsp;<img height="444" src="cabinetf.JPG" width="640" /></p>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="144"><font face="Tahoma">Room for all components?</font></b></span></p>
+
+<p align="center" pbzloc="30"><img height="36" src="bar2.gif" width="500" /><br />
+<a class="0" href="../Lineairs.htm"><img border="0" height="50" pbzloc="32" src="back.gif" width="77" /></a></p>
+
+<p><font size="2">&nbsp;</font></p>
+</body>
+</html>

@@ -1,0 +1,724 @@
+<TITLE>Dentron GLA1000 Modifications</TITLE>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BACKGROUND="Image10.gif">
+<p align="center"><b><font face="Tahoma" size="6"><font face="Tahoma" size="6"><span lang="N" pbzloc="79">Dentron GLA-1000 Conversion, Modification</span></font></font></b></p>
+
+<p align="center"><b><font face="Tahoma" size="6"><font face="Tahoma" size="6"><span lang="N" pbzloc="81">With 4 &times; PL/EL-519 or 2 &times; GI-7B</span></font></font></b></p>
+
+<p align="center"><b><font face="Tahoma" size="6"><font face="Tahoma" size="6"><span lang="N" pbzloc="83"><span pbzloc="85" style="font-size: 14px"><span pbzloc="241" style="font-family: tahoma,geneva,sans-serif">Click for <a href="gla1000.htm">NL version</a></span></span></span></font></font></b></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="12" src="updated2.gif" width="44" /></font><span style="font-size: 16px"><b pbzloc="184"><font face="Tahoma"><font face="Tahoma" pbzloc="179">&nbsp;<span pbzloc="238" style="font-size: 14px">23-aug-2013 With an other input circuit.</span></font></font></b></span></span></p>
+
+<p align="center" pbzloc="20"><img border="0" src="kennis&#32;s.gif" /></p>
+
+<center pbzloc="198">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="946">
+	<tbody>
+		<tr>
+			<td valign="bottom" width="50%">
+			<p align="center"><font size="2"><span lang="N" pbzloc="259"><img height="331" pbzloc="8" src="gla1000fv.jpg" width="449" /></span></font></p>
+			</td>
+			<td valign="middle" width="50%">
+			<p align="center"><font size="2"><span lang="N"><img height="388" src="gla1000fb.jpg" width="449" /></span></font></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="middle" width="50%">
+			<p align="center"><font size="2"><span lang="N"><img height="288" src="gla1000fa.jpg" width="440" /></span></font></p>
+			</td>
+			<td valign="middle" width="50%">
+			<p align="center"><font size="2"><span lang="N"><img height="380" src="gla1000specs.jpg" width="440" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><font size="2"><span lang="N"><img height="499" src="gi7bs2.gif" width="724" /></span></font></p>
+
+<p align="center"><font size="2"><span lang="N" pbzloc="199"><img height="388" src="gla1000f1.jpg" width="640" /></span></font></p>
+
+<p align="center"><span lang="N"><font pbzloc="191" size="2"><img height="387" src="gla1000fa2.jpg" width="640" /></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="190"><font face="Tahoma"><font face="Tahoma">Partly finished conversion with a doubling power supply, a 12.6 VAC filament transformer and 2 &times; GI-7B.</font></font></b></span></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">&nbsp;</font></font></b><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">You may possibly build a HF amplifier with the information in this article.</font></font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">DESCRIPTION</font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="126" hspace="9" src="gla1000f2.jpg" width="264" /> </font></font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">By modifying this amp were minimal changes to the original design and as far as possible minor initial components used.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The pictures are of the (my) older model 80, 40, 20 and 15 m Dentron GLA-1000 (Plane, no tuned input) HF linear amplifier. The export model had not a 10 m imprint on the front but the band switch was equipped with a fifth state allowing an easy extension to 10 m. It was already done in my GLA-1000. That type is a compact little amplifier, size 28.5 &times; 14.5 &times; 34 cm, w &times; h &times; d. The depth includes the outward-blowing fan to the rear. These PA&#39;s were equipped with American 6MJ6, 6LQ6 and 6JE6C line output tubes. They are randomly to be used but it is better if all runs with equal quiescent currents. They cost a fortune if you can find them. Depending on the brand, the quality of the tubes is moderate to reasonable. They have the same sockets as an EL/PL519 only the pen contacts are different. My experience is that these European tubes appear to be much more robust in a HF amplifier than the American types. The latter have more flashovers after a long unused period. The tubes are also troubled with flashover with more than 50 W from the exciter and then the 230 VAC fuse blows. Unfortunately, the manufacturer did not fit a protection fuse and series resistor in the anode circuit so that the tubes can become defective. The rapid deterioration of the tubes was a common phenomenon. In the later versions a relay with three change over contacts was mounted and on transmit the third contact activate a zenerdiode for the correct idle current.</font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">CUT-OFF</font></font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Some plane Dentron GLA-1000 series amplifiers did not have a &quot;cut-off&quot; circuit to reduce the cathode current in receives mode. This had two disadvantages: they dissipate a continuous power of 80 W and the amplifier was &quot;on&quot; without an output load. In the latter case a chance for random oscillations was not excluded. With the increased idle current the tubes worked near their anode dissipation and worn out faster than usual.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">With this mod there is no need for a 3</font></font></font><b><sup><font color="#0000ff" face="Tahoma"><font color="#0000ff" face="Tahoma">rd</font></font></sup></b><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"> change over relay contact. </font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">There is only one component to be added.</font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="right" height="211" hspace="9" src="cut-offs.gif" width="523" /> </font></font></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">A 27 k&Omega; resistor cuts off the cathode current when the amplifier is stand by. There is still about 300-500 &mu;A idle current, eventually mount more than 27 k&Omega; for minimum current. Re</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">lay K1A contacts short cut the resistor when the amplifier is keyed allowing D1 to hold the idling plate current via RFC1. The latter isolates the RF driving signal from ground (via C7). Two paralleled capacitors were installed in the relay lead to the &quot;RF in&quot; input preventing DC current flowing into the transmitter. Choke RFC1 is wired from that relay contact to the bypassed end of the zener diode. </font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">GLITCH PROTECTION</font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="left" height="172" hspace="9" src="glitchs.gif" width="206" /> </font></font></b></span>
+
+<p><span lang="N">&nbsp;</span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">There is no failure mode of &quot;glitch&quot; protection and it is a matter of time before the amplifier fails for a number of reasons or shortcomings. Update the PA with the marked components. The extra 4.7 nF capacitor parallel to C8 improves the decoupling of the anode choke RFC6 on 80 m.</font></font></span></p>
+
+<p><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p align="center"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">TEST WITH 4 &times; PL519 </font></font></b></span></p>
+
+<p><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="200" size="4">Because the American sweep tubes has the same socket as an EL519 a modification would be a piece of cake. The ever-flashing 6LQ6 tubes (with simultaneously a blown main fuse) were replaced by PL519&#39;s, so it was easy and safe to see how the amplifier would react in the various bands.&nbsp;</font></font></span></p>
+
+<center pbzloc="201">
+<table border="1" cellpadding="4" cellspacing="1" dir="ltr" width="904">
+	<tbody>
+		<tr>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">4 &times; PL519</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Drive</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Output</span></font></font></b></p>
+			</td>
+			<td height="50" rowspan="9" valign="middle" width="17%">
+			<p align="center"><font size="2"><span lang="N" pbzloc="116"><img border="0" height="434" src="pl519f.jpg" width="132" /></span></font></p>
+			</td>
+			<td height="50" rowspan="9" valign="top" width="59%">
+			<p align="center"><font size="2"><span lang="N"><img height="147" src="sockets.gif" width="387" /></span></font></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">PL519 = EL519, filaments: PL519 = 40 VAC/300 mA, EL519 = 6.3 VAC/~2 A</font></font></b></span></p>
+
+			<p align="center"><span lang="N"><font size="2"><img height="227" src="el519mods.gif" width="273" /></font></span></p>
+
+			<p align="justify"><span style="font-size: 14px"><span lang="N"><b pbzloc="194"><font face="Tahoma"><font face="Tahoma">During the test a </font></font></b></span><a href="../../ATU/FRImatch/FRImatcheng.htm"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">FRI-match</span></font></font></b></a><b><font face="Tahoma"><font face="Tahoma"><span lang="N"> ATU was used for matching the PA&#39;s input with a length of 2 m coax cable between ATU and amplifier.</span></font></font></b></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 m</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">500 W</span></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">40 m</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">425 W</span></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">30 m</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">85 W</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">450 W</span></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">20 m</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">375 W</span></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">17 m</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">85 W</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">400 W</span></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">15 m</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">375 W</span></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">12 m</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">70 W</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">350 W</span></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">10 m</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">85 W</span></font></font></b></p>
+			</td>
+			<td height="50" valign="middle" width="8%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">250 W</span></font></font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><span lang="N" pbzloc="202">WIDEBAND INPUT CIRCUIT &amp; EL519&#39;s</span></font></font></b></p>
+
+<center pbzloc="203">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="720">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><font size="2"><span lang="N"><img height="299" src="el519mods2.gif" width="663" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+<img align="right" height="475" hspace="9" src="size-pl519f.jpg" width="463" />
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">The static input impedance of the cathode in a grounded grid circuit can be calculated if the valve characteristics relating to the specific circuit are known. The dynamic input impedance (during working conditions) is often higher. Furthermore it varies during a SSB transmission because the driver (the transceiver) is delivering power varying between say 0.1 W (the suppressed carrier) and about 100 W. The input- and output impedance of the amplifier are constantly varying and the driver sees a constantly varying load. If the internal controlling system (ALC) cannot handle this, a distorted signal will be generated in the transceiver. With a fast reacting SWR-indicator between TX and PA, one will see a constantly varying SWR. The input impedance of the PL519</span></font></font><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&#39;s in the circuit chosen by me was not known. With an experimental test rig, I have tried to obtain some relevant data. It turned out that these data were different for every amateur band, roughly averaging 17 &Omega;&ndash;27 &Omega; and with some guessing, I found that f</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">or 4 valves in parallel, the average </font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">real part</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> was 22 &Omega;, say 25 &Omega;.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">In most cases a tuned circuit between driver and final stage is recommended. By way of flywheel-action this tuned input-circuit will, to a degree, level out the quite variable input impedance, thereby preserving a reasonable match and thus linearity and output of the driving transceiver. The tuned input circuit also shortens the HF return path between anode and cathode by preventing this HF current to follow the longer path via the transceiver. As modern transceivers have more than sufficient power, the &quot;flattening&quot; of the input impedance may also be obtained by extra loading (swamping) the input-circuit with a resistance or suitable wide band combination, in which excess driving power can be absorbed. This also helps in lowering the HF return-path impedance.</font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="right" height="243" hspace="9" src="inputs.gif" width="161" /> </font></font></span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="88" size="4">In our case, matching is done with a 4 : 1 RF impedance transformer (fig&raquo;) which transforms the 25 &Omega; impedance to about 100 &Omega;. By putting a 100 &Omega;-swamping resistor across it, the driver will see a load with a SWR of less than 1.5. Nearly all transceivers can deliver about 100 W with such an SWR without an antenna tuner. The 100 pF trimmer is for minimising the input SWR in the 10 m band. Adj</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">ustment of the input- and output-circuits must be done with full carrier power (key down) for maximum output power and minimum input SWR.</font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="left" height="265" hspace="9" src="hftrafo.gif" width="224" /> </font></font></span>
+
+<p align="justify"><br />
+&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="83" size="4">This transformer (&laquo;fig) is wound on a ferrite rod from an old MF radio. A 5 cm piece of 1 cm diameter will do, longer is OK. With enamelled wire of 14&ndash;19 SWG, 9 close bifilar turns are made on a 9.5 mm drill bit and then slipped onto the ferrite rod. This is a safe method as the ferrite is quite fragile. The two inner wire ends must now be soldered together; this junction goes via 2 &times; 10 nF to the common junction of the 39 &Omega; cathode resistors. The two outer wire ends will go, via capacitors, respectively to earth and, with a piece of coax cable, to the input relay.</font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="right" height="282" hspace="9" src="inputel519s1.gif" width="284" /> </font></font></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="93" size="4">This (right picture) alternative simpler resistor input circuit has a higher SWR on 10&ndash;40 m and reduced output on 10 m, however this should not be a problem with a modern transmitter with a built-in antenna tuner.</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">IDLE CURRENT ADJUSTMENT</font></font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">When using valves in parallel, we have to consider the individual differences. With collective bias, individual-resting currents will differ. </font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">Even if the idle currents are made equal, the HF-amplification factors are not.</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> In our bare-bones circuit, an individual adjustment was considered, but left in favour of a simpler system, based upon DC-feedback during excitation.</font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="left" height="156" hspace="9" src="kathoders.gif" width="110" /> </font></font></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">This is done (&laquo;fig) with by-passed 39 &Omega; resistors in the individual cathode leads; a valve drawing more current will bias itself more and therefore reduce its amplification. The resistors will also partly determine input-impedance and SWR. Their value can be lowered (down to 10 &Omega;), to increase the output.</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> However, the SWR will be higher on some bands, causing a transceiver without built-in antenna tuner to resolutely settle back. The older transceivers with valves and pi output tuning do not have this problem.</font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="right" height="118" hspace="9" src="idlecurrents.gif" width="319" /> </font></font></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The value of the collective bias is adjusted with a string of 3&ndash;10 diodes in series. Short circuit one of more for a standing current of about 20&ndash;25 mA per valve, i.e. 80&ndash;100 mA in total for 4 valves. When using this simple bias circuit, it is advised not to wait too long with speaking after pushing the PTT button, in order to let the valves draw standing current for only a short moment. The reason for this prudence is the possibility that the individual currents deviates so much, that one or two will draw much more current and dissipate excessively. In this way, the valves will only conduct when the PTT is activated. As a rule, the individual products of standing current and anode voltage should stay below the maximum dissipation of 35 W per valve. Assuming a 10 % spread in standing currents the total dissipation, while sending without drive, will be about 130 W.</font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">FILAMENT PL519&#39;s</font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="left" height="228" hspace="9" src="filpl519s1.gif" width="342" /> </font></font></b></span>
+
+<p><span lang="N">&nbsp;</span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Each PL519 filament requires 40 VAC/0.3 A. In our circuit, the four</font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> filaments may be fed in series; with a capacitor of 5.6&ndash;6 &mu;F/250 VAC added in series. The string may be connected directly to the 230 VAC </font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">(50 Hz) </font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">mains. If the chassis of the PA is earthen through the cable to the mains, this method is acceptable, with the added benefit of a gradually heating up of the filaments, i.e. without the thermal shock incurred by transformer feed. Because the cathodes are not at RF earth level, the filaments are by-passed to earth with capacitors.</font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="right" height="164" hspace="9" src="calc-elcos.gif" width="412" /> </font></font></span>
+
+<p><span lang="N">&nbsp;</span></p>
+
+<p><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">This (fig&raquo;) is an example for the calculation of the capacitor in series with 0.3 A filaments. </font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">NOTE: substitute in the formula 60 for 60 Hz mains. </font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">(fig&raquo;)</font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">ADJUSTMENT </font></font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">After having (re) checked the newly built linear, the transceiver, a dummy-load and a power meter are connected. Don&#39;t forget the control lead for the relay! If, after applying power, the linear does stay stable, you probably did everything right. Now push the PTT-switch (in SSB mode but without speaking into the mic.) then one at a time, short as many of diodes in the cathode diode string as it takes to obtain the desired 80&ndash;100 mA anode idling current. </font></font></span></p>
+
+<p><span lang="N"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">Warning: Be sure the power is off and the HT electrolytic discharged before touching any internal wiring!</font></font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">With about 10 W drive and beginning with the 80 m band, tune the output-circuit for maximum power. Repeat the procedure, alternating between loading C and tuning C, till maximum power is reached. NB Whistling in the mike will not give a steady signal, a carrier (CW or FM) is necessary for repeatability.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Now raise the drive level to 100 W and repeat. Let the PA cool for at least 30 seconds after every 30 seconds of transmitting, to keep the valves healthy. Off-resonance, hefty currents can flow through the valves! If possible, proceed initially with lowered supply voltage. All now seems adjusted optimally but pay attention: lower the capacitance of the loading C until the needle of the power meter falls back 2 to 3 needle thickness; now re-adjust the tuning C for maximal power. Only after this last adjustment is full linearity achieved. Record capacitor settings before proceeding to the next frequency and/or antenna.</font></font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">REACTIVATON GI-7B and 6LQ6</font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="226" hspace="9" src="6lq6-s.gif" width="307" /><img align="left" height="123" hspace="9" src="reactivs.gif" width="308" /> </font></font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">To avoid flashover in a new or a long time unused tube, it is prudent to prepare (&quot;reactivate&quot;) it for his task. There are various opinions and solutions how to do it, but with a GI-7B it can be relatively simple. A DC of 30 to 40 V is sufficient for the tube to draw 500 mA as the grid is connected to the anode. Heat the tube 30 minutes with a filament voltage of 12.9 V. Then supply a HT of about 25 V &quot;high voltage&quot; and set for a current of 400-500 mA. If possible use a current limiter, because during reactivate the current can increase suddenly so that continue monitoring could be necessary to maintain the selected current. Usually I will not reactivate longer than an hour or so. Soon you will find out at which voltage a good tube drawn 500 mA, so you have an indication if another tube is better or not.</font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="204" size="5">TEST OF 2 &times; GI-7B WITH THE ORIGINAL 1050 V SUPPLY</font></font></b></span></p>
+
+<center pbzloc="205">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="926">
+	<tbody>
+		<tr>
+			<td valign="middle" width="49%">
+			<p align="center"><font size="2"><span lang="N"><img height="480" src="coolerf1.jpg" width="369" /></span></font></p>
+			</td>
+			<td valign="middle" width="51%">
+			<p align="center"><font size="2"><span lang="N"><img height="480" src="https://www.pa0fri.com/Lineairs/GLA1000/coolerf2.jpg" width="378" /></span></font></p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="middle">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Left: the original axial-flow cooler replaced with a transversal cooler (black), both have a 6 mm metrical thread. Right: an alternative cooler.</span></font></font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><font size="2"><span lang="N" pbzloc="200"><img height="480" src="gi7btestf1.jpg" width="640" /></span></font></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="199"><font face="Tahoma"><font face="Tahoma">Test 1 &times; GI-7B with a smaller cooler for the anode. The tube was temporary mounted on a base of a defect 3-500Z for eventually testing in my FRI750 PA</font></font></b></span></span></p>
+
+<p align="center"><span lang="N"><font pbzloc="204" size="2"><img height="297" src="gi7bs1.gif" width="683" /></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="203"><font face="Tahoma"><font face="Tahoma">Test with minor modifications of the schematic. The blue colour marks the details.</font></font></b></span></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><img height="480" src="gi7btestf2.jpg" width="640" /></span></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b><font face="Tahoma"><font face="Tahoma">Test with 2 &times; GI-7B and an external input circuit (ATU) to obtain SWR = 1 on all bands. Anode supply was about 850 V on load.</font></font></b></span></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="270" src="original-sockf1.jpg" width="640" /></font><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">&nbsp;<img height="270" src="original-sockf2.jpg" width="222" /></font></font></b></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="208"><font face="Tahoma"><font face="Tahoma" pbzloc="206">An original socket for the GI7B.</font></font></b></span></span></p>
+
+<center pbzloc="207">
+<table border="1" cellpadding="4" cellspacing="1" dir="ltr" width="655">
+	<tbody>
+		<tr>
+			<td colspan="11" valign="top">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Test with 4 &times; PL-519 and 2 &times; GI-7B with minor modifications (see schematic) of the original GLA-1000 design. NOTE: &quot;low&quot; output due to the 221 VAC mains in my home, anode voltage under load 850V.</span></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="20%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">4 &times; PL519</span></font></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Drive</span></font></font></b></p>
+			</td>
+			<td colspan="3" valign="top" width="20%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">Output</span></font></font></font></b></p>
+			</td>
+			<td valign="top" width="20%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">2 &times; GI7B</span></font></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Drive</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">Output</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td colspan="3" valign="top" width="20%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">500 W</span></font></font></font></b></p>
+			</td>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">450 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">40 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td colspan="3" valign="top" width="20%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">425 W</span></font></font></font></b></p>
+			</td>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">40 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">450 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">30 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">85 W</span></font></font></b></p>
+			</td>
+			<td colspan="3" valign="top" width="20%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">450 W</span></font></font></font></b></p>
+			</td>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">30 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">425 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">20 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td colspan="3" valign="top" width="20%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">375 W</span></font></font></font></b></p>
+			</td>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">20 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">450 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">17 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">85 W</span></font></font></b></p>
+			</td>
+			<td colspan="3" valign="top" width="20%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">400 W</span></font></font></font></b></p>
+			</td>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">17 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">400 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">15 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td colspan="3" valign="top" width="20%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">375 W</span></font></font></font></b></p>
+			</td>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">15 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">450 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">12 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">70 W</span></font></font></b></p>
+			</td>
+			<td colspan="3" valign="top" width="20%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">350 W</span></font></font></font></b></p>
+			</td>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">12 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">450 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">10 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">85 W</span></font></font></b></p>
+			</td>
+			<td colspan="3" valign="top" width="20%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">250 W</span></font></font></font></b></p>
+			</td>
+			<td valign="top" width="20%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">10 m</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 W</span></font></font></b></p>
+			</td>
+			<td colspan="2" valign="top" width="13%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N" pbzloc="65">425 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+<img align="right" height="130" hspace="9" src="feedbackrs.gif" width="141" />
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">This converted amplifier requires less drive than the 100 watts many transceivers provide. Addition of a &plusmn; 10 &Omega;/15 W non-inductive resistor (R) is a simple way of correcting the overdrive. An RF-negative-feedback voltage will be developed across R when th</span></font></font><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="2" size="4">e GI-7B amplifies RF and reduces the driving voltage developed at the cathode. The negative feedback also improves amplifier linearity by reducing IMD to a level lower than that attainable when the tube is driven at its rated driving power without the feedback resistor, it helps to keep tube operation in its linear region. R absorbs the excess driving power as heat. The input impedance without a input circuit is &plusmn; 50 Ohm and SWR &le; 1.7.</font></font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="208" size="5">EXPERIMENTAL VARIABLE INPUT CIRCUIT WITH 1 KNOB</font></font></b></span></p>
+
+<center pbzloc="267"><img pbzloc="270" src="https://www.pa0fri.com/Lineairs/GLA1000/gi7binputf.jpg" style="border-top: 0px solid; border-right: 0px solid; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" />
+<table border="1" bordercolor="#000000" cellpadding="4" cellspacing="1" dir="ltr" pbzloc="80" width="775">
+	<tbody>
+		<tr>
+			<td valign="middle" width="12%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">2 &times; GI7B</span></font></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Drive</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Output</span></font></font></b></p>
+			</td>
+			<td rowspan="9" valign="middle" width="64%">
+			<p align="center"><font size="2"><span lang="N"><img height="270" pbzloc="50" src="gi7binputs.gif" width="452" /></span></font></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">80 m</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">100 W</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">480 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">40 m</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">100 W</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">500 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">30 m</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">100 W</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">450 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">20 m</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">100 W</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">450 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">17 m</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N" pbzloc="112">100 W</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">400 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">15 m</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">100 W</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">450 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">12 m</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">100 W</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">450 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">10 m</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">100 W</span></font></font></b></p>
+			</td>
+			<td valign="top" width="12%">
+			<p align="center"><b><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><font color="#0000ff" face="Tahoma" size="2"><span lang="N">425 W</span></font></font></font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p pbzloc="127"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="128" size="4">I did experiments with an input circuit based on my </font></font></span><a href="../../ATU/FRImatch/FRImatcheng.htm"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Fri-match</span></font></font></a><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N"> design. This matching system increased the output on the lower frequency bands and improves the input SWR. The test model (fig&raquo;) is made with a T94-6 toroid and a small twin ganging variable cap.&nbsp;</span></font></font></p>
+
+<p pbzloc="143" style="text-align: center"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="255"><img border="0" src="gi7binputs2.gif" />&nbsp;<img border="0" height="200" pbzloc="149" src="t68-2f.jpg" width="320" /></span></font></font></p>
+
+<p pbzloc="158" style="text-align: center"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span id="result_box" lang="en" pbzloc="176"><span class="hps">I</span> <span class="hps">have not tested</span> <span class="hps" pbzloc="173">this</span> (F1FRV) modified <span class="hps" pbzloc="175">alternative</span> input <span class="hps" pbzloc="160">circuit</span>, <span class="hps">but</span> <span class="hps">you</span> <span class="hps" pbzloc="162">can do it yourself.</span></span></span></span></p>
+
+<p pbzloc="166"><span lang="N"><b pbzloc="168"><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="209" size="5">TEST 2 &times; GI-7B WITH DOUBLING 2100 V SUPPLY</font></font></b></span></p>
+
+<center pbzloc="73">
+<table border="1" cellpadding="4" cellspacing="0" dir="ltr" width="860">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><font size="2"><span lang="N" pbzloc="58"><img height="499" src="gi7bs2.gif" width="724" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="212"><font face="Tahoma"><font face="Tahoma" pbzloc="75">The &quot;final&quot; circuit? The key-down output is limited to 700&ndash;750 W with a 25 Ohm feed-back resistor (R).</font></font></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<center pbzloc="73" style="text-align: left"><br />
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="89"><img pbzloc="92" src="feedbackrf.jpg" style="border-top: 0px solid; height: 160px; border-right: 0px solid; width: 333px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img pbzloc="89" src="testhvf.jpg" style="border-top: 0px solid; height: 215px; border-right: 0px solid; width: 320px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></font></font></center>
+
+<center pbzloc="73" style="text-align: left">&nbsp;</center>
+
+<center pbzloc="73" style="text-align: left"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="92">Testing the &quot;final&quot; circuit with </span></font></font><span lang="N"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" pbzloc="4" size="4">10 Ohm</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> feed-back and an (fig&raquo;) temporary external HT doubling components, 6 &times; 220 &micro;F/450 V and 6 &times; 1300 V/1 A. Key-down output was 700&ndash;850 W with 1500 V on load. Average CW/1850 V, SSB/2000 V and off load &plusmn; 2100 V. An 24 zener diode holds the idling plate current flow to around 100 mA.</font></font></span></center>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="78" size="4">The dissipation of the tubes is overrated in this design but the transformer is not e.g. the output should be limited to 700&ndash;750 W. Therefore the feedback resistor &quot;R&quot; was increased to 25 Ohm. Two 50 Ohm/30 W non inductive &quot;chip&quot; resistors (&laquo;fig) in parallel on a small heath sink ware mounted in the airflow of the </font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">blowing</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="97" size="4"> fan.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="95" size="4">&nbsp;</font></font></span></p>
+
+<center pbzloc="95">
+<table border="0" cellpadding="3" cellspacing="0" dir="ltr" width="955">
+	<tbody>
+		<tr>
+			<td valign="middle" width="64%">
+			<p align="center"><font size="2"><span lang="N"><img height="528" src="socketf1.jpg" width="601" /></span></font></p>
+			</td>
+			<td valign="middle" width="36%">
+			<p align="center"><font size="2"><span lang="N"><img height="252" src="tool-clipsf.jpg" width="280" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><span lang="N"><b><u><font face="Tahoma"><font face="Tahoma">Tool clips</font></font></u></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">Test with temporary wiring and alternative cathode/filament connections with hose clamps and tool clips.</span></font></font></b></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><font pbzloc="214"><img height="420" src="socketf2.JPG" width="640" /></font></span></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b><font face="Tahoma"><font face="Tahoma">Standard tool clips used as connectors.</font></font></b></span></span></p>
+
+<p align="center"><span lang="N"><font pbzloc="219" size="2"><img height="579" src="socketf3.jpg" width="640" /></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="218"><font face="Tahoma"><font face="Tahoma">The improved wiring.</font></font></b></span></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The elevating of the voltage from 1050 to 2150 V increased the plate load impedance. </font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img pbzloc="106" src="draadf1.jpg" style="height: 289px; width: 320px; float: right; margin-left: 9px; margin-right: 9px" /> </font></font></span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="108" size="4">Remove the 20-15-10 m coil L1 and wind another coil with the same wire size or with standard 6 mm&sup2; tinned solid copper wire (fig &plusmn; 2.76 mm diameter&raquo;). It has 13 turns with an inner diameter of &plusmn; 34 mm, a length of about 6.5 cm. My coil was tightly wound on a standard grey 32 mm PVC tube, then elongated. The turns were evenly spaced and tapped on 4&frac12;, 8&frac12; and 11&frac12; turns for respective 10 m, 15 m and 20 m. Eventually reposition the 20 m tap for maximum output. An output match for 30 m is possible with the 20 m tap but a better match occurs by installing an additional contact on the band switch for 13 turns such as already drawled in the schematic. The new coil and L2 will now tune the tank circuit properly on both 40 and 80 m with the existing tune and load capacitors. The capacitance of the tuning C9 was increased by soldering an extra 100 pF/5 kV from the 20 m tap to ground.</font></font></span></p>
+
+<p align="justify"><br />
+&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p align="center"><span lang="N" pbzloc="223"><font size="2"><img height="480" src="elcosf1.JPG" width="394" /></font>&nbsp;<img height="480" src="elcosf2.JPG" width="407" /></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="222"><font face="Tahoma"><font face="Tahoma">PCB with fusing, rectifier &amp; doubling supply, metering plate current and plate voltage. </font></font></b></span></span></p>
+
+<table align="center" border="0" cellpadding="4" cellspacing="0" dir="ltr" width="950">
+	<tbody>
+		<tr>
+			<td pbzloc="98" valign="middle" width="34%">
+			<p align="center"><font size="2"><span lang="N"><img height="396" pbzloc="105" src="filtrafof.jpg" width="300" /></span></font></p>
+
+			<p align="center"><span lang="N"><u><font color="#ff0000" face="Comic Sans MS" size="4"><font color="#ff0000" face="Comic Sans MS" size="4"><font color="#ff0000" face="Comic Sans MS" size="4">Note: </font></font></font></u></span></p>
+
+			<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="226"><font face="Tahoma"><font face="Tahoma">The filament voltage on load is 12.8&ndash;13.1 VAC</font></font></b></span></span></p>
+			</td>
+			<td valign="middle" width="66%">
+			<p align="center"><font size="2"><span lang="N"><img height="607" src="elcosf3.jpg" width="596" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="center"><font size="2"><span lang="N" pbzloc="235"><img height="153" src="frontf.gif" width="591" /></span></font></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="230"><font face="Tahoma"><font face="Tahoma">Planned front with tuned input circuit.</font></font></b></span></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="300" src="gridcurrents.gif" width="853" /></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="234"><font face="Tahoma"><font face="Tahoma">Function Switch: Volts converted to grid current or rel. output converted to grid current.</font></font></b></span></span></p>
+
+<p align="center"><span lang="N"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">To be continued</font></font></font></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="36" src="bar2.gif" width="500" /></font></span></p>
+
+<p align="center"><a href="backfri.gif"><img border="0" height="25" src="backfri.gif" width="53" /></a></p>
+</body>
+</html>

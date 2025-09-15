@@ -1,0 +1,536 @@
+<HTML>
+<HEAD>
+<TITLE>PA0FRI's active loop antenna</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080" BACKGROUND="Image2.gif">
+<p align="center" pbzloc="27"><span lang="N"><font face="Tahoma" size="5"><font face="Tahoma" size="5"><strong><span style="font-size: 28px"><span style="font-size: 36px"><span pbzloc="28">PA0FRI&#39;s&nbsp;ACTIVE</span></span></span></strong></font></font></span><span lang="N" pbzloc="9"><font face="Tahoma" size="5"><font face="Tahoma" size="5"><strong><span style="font-size: 28px"><span style="font-size: 36px"><span pbzloc="7"> LOOP&nbsp;ANTENNA</span></span></span></strong></font></font></span><br />
+<strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="32" style="font-size: 20px">Experiments with various amplifiers.</span></span></strong><br />
+<span lang="N" pbzloc="9"><span style="color: #800000"><span style="font-size: 18px"><font face="Tahoma"><font face="Tahoma"><span style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="38">Version 05-May-2022</strong></span></font></font></span></span></span></p>
+
+<p align="center" pbzloc="19"><span style="color: #0000cd"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><strong pbzloc="36">&nbsp; </strong></span></span></span><span style="color: #0000ff"><span style="font-size: 18px"><strong><span pbzloc="15" style="font-family: tahoma,geneva,sans-serif">PCB&#39;s&nbsp;are available again for &euro;12.50 each including power supply print and white toroid core.</span><br />
+<span pbzloc="27" style="font-family: tahoma,geneva,sans-serif">Ask about&nbsp;shipping costs</span><span pbzloc="2" style="font-family: tahoma,geneva,sans-serif">. Please state your name and address when transferring</span></strong></span></span>.</p>
+
+<p pbzloc="35"><strong><span style="font-size: 18px"><span pbzloc="31" style="font-family: tahoma,geneva,sans-serif">See also: </span></span></strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><a href="https://pa0fri.home.xs4all.nl/Ant/Actieve%20ontvangst%20antenne/Active%20loop%20antenna%20for%20reception.htm">https://pa0fri.home.xs4all.nl/Ant/Actieve%20ontvangst%20antenne/Active%20loop%20antenna%20for%20reception.htm</a>:</span></span><br />
+<span lang="N" pbzloc="9"><span style="color: #800000"><span style="font-size: 18px"><font face="Tahoma"><font face="Tahoma"><span style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="31"><img pbzloc="37" src="ve3psz.gif" style="border-top: 0px solid; height: 252px; border-right: 0px solid; width: 501px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img pbzloc="25" src="2SC5551.jpg" style="border-top: 0px solid; height: 150px; border-right: 0px solid; width: 163px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img pbzloc="34" src="pa0fri.gif" style="border-top: 0px solid; height: 253px; border-right: 0px solid; width: 542px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></strong></span></font></font></span></span></span></p>
+
+<div pbzloc="6"><br />
+<span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="61" style="font-size: 18px">VE3PSZ: &quot;I recently built your 12 Nov 2021 version. I found it to be quite sensitive in the 5 to 15 MHz range. However because I have several strong local MW broadcast stations, I found many strong IMD products above and below the AM broadcast band using you circuit. </span></span><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="66" style="font-size: 18px">I decided to make a few resistor changes to increase the negative feedback. This essentially eliminated all IMD. I tried both the 2N5109 and the more common 2SC5551 with similar results&quot;.</span></span></div>
+
+<div pbzloc="54" style="text-align: justify"><br />
+<span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="52" style="font-size: 18px">His version has not yet been tested by us, but everyone is free to do so. (LOL)</span><br />
+<span pbzloc="58" style="font-size: 18px">The extra 100 k resistor serves to dissipate any static charge and it&#39;s not a bad idea to use it.<br />
+We had already tested such a negative feedback with smaller resistances, but because no noticeable IMD clutter was detected in the version of 15-Feb-2022, we decided to keep this version.</span></span></div>
+
+<div pbzloc="88">&nbsp;</div>
+
+<div pbzloc="36">&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<p pbzloc="84"><span style="font-size: 18px"><span pbzloc="11" style="font-family: tahoma,geneva,sans-serif"><img pbzloc="17" src="active&#32;antenna-s18.gif" style="border-top: 0px solid; height: 279px; border-right: 0px solid; width: 570px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img pbzloc="14" src="interferentie.gif" style="border-top: 0px solid; border-right: 0px solid; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></span></p>
+
+<p pbzloc="87">&nbsp;</p>
+
+<p pbzloc="19"><span style="font-size: 18px"><span pbzloc="20" style="font-family: tahoma,geneva,sans-serif">We thought that the design had been extensively tested by now, but it turns out that in my loop a choke balun between antenna and amplifier greatly reduces a certain type of interference. </span><span pbzloc="28" style="font-family: tahoma,geneva,sans-serif">A station with the loop is therefore better to copy than with the wire antenna. </span><span pbzloc="3" style="font-family: tahoma,geneva,sans-serif">A possible declaration is&nbsp;that an interference signal&nbsp;via PCB&#39;s copper clad enters into the receiver.<br />
+PD0EEA f</span><span pbzloc="1" style="font-family: tahoma,geneva,sans-serif">ound that a capacitor parallel to the input of the amplier improved reception at 80 m and below. I have also established the latter.<br />
+As a result, we are testing this still <strong>experimental</strong> design.<br />
+A preliminary conclusion is that the parallel capacitance should be&nbsp;100 - 150 pF. At present I used&nbsp;120 pF. Incidentally, PD0EEA has already taken into account with the design of the PCB that an additional capacitance may be added. The coupling capacitors of 1 nF to the bases have been increased to 1 &micro;F.</span></span></p>
+
+<p align="center" pbzloc="33">&nbsp;<img border="0" height="581" src="active&#32;antenna-s16.gif" width="1473" /></p>
+
+<p align="center" pbzloc="16"><img border="0" height="262" pbzloc="2" src="versie&#32;12nov2031&#32;f.jpg" width="157" />&nbsp;<img border="0" src="versie&#32;12nov2031&#32;f2.jpg" />&nbsp;<img border="0" height="297" src="active&#32;antenna-s17.gif" width="1053" /><img border="0" pbzloc="22" src="pcb&#32;versie&#32;12&#32;nov21.jpg" /><br pbzloc="38" />
+<br />
+<strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="16" style="color: #800000">For a nice finish of the working circuit, the spacious PCB design of PD0EEA was used.</span></span></span></strong></p>
+
+<p align="center" pbzloc="16"><img border="0" height="480" src="pcb&#32;170122&#32;f.jpg" width="1042" />&nbsp;<img border="0" height="480" src="pcb&#32;170122&#32;f2.jpg" width="596" /><br />
+<br pbzloc="27" />
+<strong pbzloc="2"><span style="font-size: 18px"><span style="color: #800000"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="8">These are more compact PCBs according to the schematic above.&nbsp;</span></span></span></span></strong> <span style="font-size: 18px"><span style="color: #800000"><span style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="18">The white toroidal core is supplied with the print. The print shows 4 turns bifilar, must be bifilar and 5 turns</strong></span>.</span></span><br />
+<br />
+<strong pbzloc="2"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="17" style="color: #800000"><img border="0" height="417" src="freq&#32;range&#32;f1.gif" width="600" />&nbsp;<img border="0" height="417" src="freq&#32;range&#32;f2.gif" width="585" />&nbsp;<img border="0" pbzloc="10" src="freq&#32;range&#32;f3.gif" /></span><br />
+<span style="color: #800000">As transmitting antenna for the spectrum analyzer, an equally large 120 cm diameter loop was used.</span><br />
+<span pbzloc="1" style="color: #800000">The descending gain is quite similar to that of the receiver in conventional HF transceivers.</span></span></span></strong></p>
+
+<p pbzloc="31" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="19" style="font-size: 18px">All loop antenna amplifiers shown in this article work well. The best is the November 12 design. By reducing the collector-base resistance from 33k to 22k, the sensitivity improved slightly. The loop with amplifier showed&nbsp;a dip between 2.5 - 3.5 MHz. By reducing the base coupling capacitor to 1nF, the loop is brought into resonance in that range, causing the dip to decrease. </span><span pbzloc="22" style="font-size: 18px">The supply voltage is not critical, but with about 14 Volts it is optimal. </span><span pbzloc="33" style="font-size: 18px">A constant current source is used&nbsp;to limit the current during experiments in the event of a possible short circuit.</span></span></p>
+
+<p pbzloc="49" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="46" style="font-size: 18px">During his experiments with all kinds of amplifiers for an active loop antenna, PD0EEA came up with the idea to also use an MC1350 as an amplifier. He was dealing with a balanced output and I found an opportunity to save some components with an asymmetrical or coaxial output.</span><br />
+<span pbzloc="13" style="font-size: 18px">Readers wonder why a better matching was not used,&nbsp;for example by installing transformers on ouput and/or input,&nbsp;so that at least 6 dB or more gain can be achieved. That is not necessary with my IC7300. When switching from an antenna tuner with a connected 2 &times; 16.55 m dipole to the loop antenna, nothing needs to be changed in the setting of the transceiver. With more signal from the loop antenna, the attenuator must be switched on or the RF gain must be reduced. In practice, the signals from both antennas are almost the same and depending on the band or time, the loop can be slightly stronger or the dipole gives slightly more signal.</span></span></p>
+
+<p pbzloc="16" style="text-align: center"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">These are other options</span></span>.<br />
+<br />
+<img border="0" height="202" src="active&#32;antenna-s15.gif" width="1178" /></p>
+
+<p pbzloc="49" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="12" style="font-size: 18px">The antenna is mounted&nbsp;on a 1.70 m high wooden pole in the backyard about 6 m from the house. The amplifier&#39;s own noise is then lower than the background noise.<br />
+The power supply is a constant current source of 18 mA. This was accepted&nbsp;because during experiments it regularly happened that the supply voltage was short-circuited and now this is limited to 18 mA.</span><br />
+<span pbzloc="33" style="font-size: 18px">With such a simple design one can have doubts about whether it works. This can be found out by assembling it in an electrically responsible way and then testing it.<br />
+Too short-sighted is&nbsp;the following theoretical comment: &quot;Someone told me that thing was hopelessly unstable and suffered from overdrive and&nbsp;oscillations. Nice but oversimplified circuit. <strong>IF</strong> it works at all, it is probably bursting with local man made noise, IMD, and oscillations. Further&nbsp;the S-meter reading in the RX says nothing about the actual strength ratios. Nice to earn quickly as a kit</span></span><span pbzloc="1" style="font-size: 18px">.&quot; </span><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="46">Sic!</span></span></span></p>
+
+<p pbzloc="54" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="4" style="font-size: 18px">Production of MC1350P is currently&nbsp;by or on behalf of ON Semiconductor. I ordered 10 pieces from China and compared them with a pair of original MOTOROLA MC1350P I still had in stock.&nbsp;No difference could be identified. Further the online shop of <a href="https://www.funkamateur.de/">https://www.funkamateur.de/</a>&nbsp;has them in stock.&nbsp;</span></span></p>
+
+<p pbzloc="31" style="text-align: center"><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="53" style="color: #800000">A recent experiment.</span></span></span></strong></p>
+
+<table align="center" cellpadding="1" cellspacing="1" pbzloc="19" style="width: 1500px">
+	<tbody>
+		<tr pbzloc="110">
+			<td pbzloc="5" style="text-align: center">
+			<p pbzloc="53"><img border="0" height="229" src="active&#32;antenna-s12.gif" width="878" /><br />
+			<img border="0" height="110" src="pcb&#32;mc1350&#32;f3.jpg" width="152" />&nbsp;<img border="0" height="85" src="pcb&#32;mc1350&#32;f4.jpg" width="216" /><br />
+			<strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="8" style="color: #800000">Actual size.</span></span></span></strong></p>
+			</td>
+			<td pbzloc="14" style="text-align: center">
+			<p pbzloc="37"><img border="0" height="234" src="active&#32;antenna-s13.gif" width="782" /><br />
+			<img border="0" height="110" pbzloc="103" src="pcb&#32;mc1350&#32;f.jpg" width="200" /><br />
+			<strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="17" style="color: #800000">Actual size.</span></span></span></strong></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="26" style="text-align: center"><img border="0" height="480" src="MC1350&#32;test.gif" width="800" /><br />
+<strong><span style="font-size: 18px"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="34" style="color: #800000">Loaded with 50 Ohms (receiver input) the gain is straight from 1.8 MHz to 70 MHz.</span></span></span></strong><br pbzloc="74" />
+<br />
+<span style="color: #800000"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="76" style="font-size: 18px">Both amplifiers were connected in parallel to the loop to switch the coaxial cable from one amplifier to the other as quickly as possible. This allowed the signal strength for both systems to remain as identical as possible. It can be seen that the difference between them is minimal. I therefore prefer the simplest design, but the choice is yours.</span></span></strong></span></p>
+
+<p align="center" pbzloc="37"><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="34" style="color: #800000"><img border="0" src="15m&#32;bal.gif" />&nbsp;<img border="0" src="15m&#32;asym.gif" />&nbsp;<img border="0" src="17m&#32;bal.gif" />&nbsp;<img border="0" src="17m&#32;asym.gif" /><br />
+<img border="0" src="20m&#32;bal.gif" />&nbsp;<img border="0" src="20m&#32;asym.gif" />&nbsp;<img border="0" src="30m&#32;bal.gif" />&nbsp;<img border="0" src="30m&#32;asym.gif" /><br />
+<img border="0" src="40m&#32;bal.gif" />&nbsp;<img border="0" src="40m&#32;asym.gif" />&nbsp;<img border="0" src="60m&#32;bal.gif" />&nbsp;<img border="0" src="60m&#32;asym.gif" /></span></span></span></strong><br />
+<strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="57" style="color: #800000"><img border="0" src="80m&#32;bal.gif" />&nbsp;<img border="0" src="80m&#32;asym.gif" /></span></span></span></strong></p>
+
+<p align="center" pbzloc="55"><img border="0" height="229" src="active&#32;antenna-s12.gif" width="878" /><br />
+<span style="color: #800000"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="16" style="font-size: 18px">Test with PA0FRI&#39;s design.</span></span></strong></span><br />
+<span style="color: #800000"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="12" style="font-size: 18px">&nbsp;<img border="0" height="272" src="MC1350&#32;ant&#32;se&#32;15m.gif" width="480" />&nbsp;<img border="0" src="MC1350&#32;lp&#32;se&#32;15m.gif" /></span></span></strong></span><br />
+<strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="7" style="color: #800000">&nbsp;<img border="0" src="MC1350&#32;ant&#32;se&#32;17m.gif" />&nbsp;<img border="0" src="MC1350&#32;lp&#32;se&#32;17m.gif" /><br />
+&nbsp;<img border="0" src="MC1350&#32;ant&#32;se&#32;20m.gif" />&nbsp;<img border="0" src="MC1350&#32;lp&#32;se&#32;20m.gif" /><br />
+&nbsp;<img border="0" src="MC1350&#32;ant&#32;se&#32;30m.gif" />&nbsp;<img border="0" src="MC1350&#32;lp&#32;se&#32;30m.gif" /><br />
+&nbsp;<img border="0" src="MC1350&#32;ant&#32;se&#32;40m.gif" />&nbsp;<img border="0" src="MC1350&#32;lp&#32;se&#32;40m.gif" /><br />
+&nbsp;<img border="0" src="MC1350&#32;ant&#32;se&#32;60m.gif" />&nbsp;<img border="0" src="MC1350&#32;lp&#32;se&#32;60m.gif" /><br />
+&nbsp;<img border="0" src="MC1350&#32;ant&#32;se&#32;80m.gif" />&nbsp;<img border="0" src="MC1350&#32;lp&#32;se&#32;80m.gif" /><br />
+&nbsp;<img border="0" height="272" src="MC1350&#32;lp&#32;se&#32;4m.gif" width="480" />&nbsp;<img border="0" src="MC1350&#32;lp&#32;se&#32;6m.gif" /></span></span></span></strong><br />
+&nbsp;<strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="27" style="color: #800000">&nbsp;<br />
+&nbsp;</span></span></span></strong><br />
+&nbsp;</p>
+
+<p pbzloc="9"><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 24px"><span lang="N"><font pbzloc="21">INTRODUCTION </font></span></span></span></strong></p>
+
+<p pbzloc="49" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="70" style="font-size: 18px"><img pbzloc="28" src="mini&#32;whip&#32;f1.jpg" style="border-top: 0px solid; border-right: 0px solid; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img pbzloc="25" src="mini&#32;whip&#32;f2.jpg" style="border-top: 0px solid; border-right: 0px solid; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" />The widely circulating active &quot;(mini) whip&quot; antennas performs&nbsp;well in the open field, but in a densely populated residential area the system picks up much less signal. The reception performance is also much less during the day than in the evening and/or night. That is the experience of PD0EEA, when he tested it with two purchased mini whip&#39;s. A loop antenna, on the other hand, receives better in a densely populated residential area and can minimize any interference by rotating the loop. Given these advantages, a Loop antenna is the best choice.<br />
+The experience gained with <a href="../Active&#32;antenna/Active&#32;receiving&#32;&#32;loop&#32;antenna&#32;eng.htm">PA3GZK&#39;s</a> active loop antenna has led to experiments with discrete components to&nbsp;test other preamplifiers.<br />
+It has become a project together with PD0EEA. We exchange the results of tests, he&nbsp;designs the PCBs, has them produced and takes the necessary measurements. The intention was to design a system that works as simple as possible and be a KISS project that works well with little hassle.</span></span></p>
+
+<p pbzloc="36" style="text-align: justify"><span style="font-size: 18px"><span pbzloc="4" style="font-family: tahoma,geneva,sans-serif">For the time being, two systems will become available with which one can experiment as desired. To this end, a universal print design has been made, which, once produced, can be ordered from PD0EEA. On request he can also supply a complete antenna system consisting of the loop antenna including antenna amplifier.</span></span><br />
+<br />
+<span style="font-size: 18px"><span pbzloc="18" style="font-family: tahoma,geneva,sans-serif">PD0EEA is still experimenting with amplifiers and if that yields an equally good or better result, a separate article will follow.</span></span></p>
+
+<table align="center" cellpadding="1" cellspacing="1" style="width: 1200px">
+	<tbody>
+		<tr pbzloc="33">
+			<td pbzloc="20">
+			<p pbzloc="23"><strong><span style="color: #800000"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="75" style="font-size: 18px">Many amplifiers have been made and tested, with 1 or 2 transistors, with 4 transistors, a balance circuit or a single circuit.<br />
+			If the settings are chosen properly, the difference between them is practically difficult to determine.<br />
+			The following two designs meet our aspirations: simple, well-functioning, with standard components and suitable for DIY.<br />
+			Nevertheless, i</span><span pbzloc="64" style="font-size: 18px">t is possible to experiment with the PCBs to find the circuit that best suits your needs.</span></span></span><br />
+			<span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="27" style="color: #800000">There are many designs about an active antenna on the internet, see for example: </span><br />
+			<a href="https://www.larches-cottage.co.uk/rx_antenna/loops_rx/loops.php"><span pbzloc="29" style="color: #800000">https://www.larches-cottage.co.uk/rx_antenna/loops_rx/loops.php</span></a></span></span></strong></p>
+
+			<p pbzloc="23" style="text-align: center"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="35" style="font-size: 18px"><img border="0" height="654" src="all&#32;pcb's&#32;f.jpg" width="1024" /><br />
+			<span style="color: #800000">A selecion of tested systems.</span></span></span></strong></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="22" style="text-align: justify">&nbsp;</p>
+
+<p pbzloc="73" style="text-align: justify"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="31" style="font-size: 24px">2N5109</span></span></strong></p>
+
+<p pbzloc="76" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="83" style="font-size: 18px"><img pbzloc="68" src="2n5109&#32;f.jpg" style="border-top: 0px solid; height: 225px; border-right: 0px solid; width: 243px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img pbzloc="65" src="2N5109&#32;table.gif" style="border-top: 0px solid; height: 225px; border-right: 0px solid; width: 193px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><br pbzloc="54" />
+<br />
+I&nbsp;still had 2N3866&#39;s, but another type (2N3904, BFG541, BFG591?) might be better suited. </span></span><span style="font-size: 18px"><span pbzloc="33" style="font-family: tahoma,geneva,sans-serif"><span pbzloc="14" style="color: #0000cd">It also turns out that it works well with an obsolete original RCA 2N5109.</span> A (clone?) 2N5109 is currently produced in CHina. A dozen have been ordered to investigate whether they are equivalent to the RCA&#39;s. </span><span pbzloc="16" style="font-family: tahoma,geneva,sans-serif">From a number of &quot;RCA&quot; 2N5109&#39;s no. K0512 made in Korea, 4 ones were chosen at random and compared with each other: 2 &times; hFE 174, 1 &times; hFE 122 and 1 &times; hFE 94. A big difference between the first and the last!</span><br />
+<span pbzloc="71" style="font-family: tahoma,geneva,sans-serif">With my order for 25 &times; 2N5109/K0512, the measurement result was:</span><br />
+<span pbzloc="79" style="font-family: tahoma,geneva,sans-serif">At a later stage, 10 more were ordered. Instead of K0512, K0342 were delivered. Of one transitor&nbsp;the collector wire was missing.<br />
+PA3GZK made two identical loops with 2N5109 and 2N3019 and there was no difference between the two systems. So a 2N3019 can be used instead of a 2N5109.</span></span></p>
+
+<p pbzloc="76" style="text-align: justify">&nbsp;</p>
+
+<p pbzloc="11" style="text-align: justify"><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 24px"><span lang="N"><font pbzloc="3">A GOOD PERFORMING&nbsp;SYSTEM</font></span></span></span></strong></p>
+
+<p align="center" pbzloc="45"><span style="color: #ff0000"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="24" size="4"><img border="0" height="305" src="active&#32;antenna-s11.gif" width="1013" />&nbsp;<img border="0" height="337" src="dipole&#32;s.gif" width="298" /><img border="0" src="inverted&#32;v&#32;f.jpg" /></font></font></span></span><br />
+<strong><span style="color: #800000"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="47" style="font-size: 18px">The supply voltage is not critical, it works from 5 to 16 V, but we did tests with 13.8 Volt&nbsp;and that voltage is usually present in everyone&#39;s shack.</span></span></span></strong></p>
+
+<p align="center" pbzloc="19"><img border="0" src="https://www.pa0fri.com/Ant/PA0FRI's%20actieve%20antenne/pcb%20150521.jpg" />&nbsp;<img border="0" height="239" pbzloc="11" src="pcb&#32;&#32;comp&#32;s.gif" style="height: 478px; width: 692px" width="368" /><br />
+<strong><span style="font-family: tahoma,geneva,sans-serif"><span style="color: #800000"><span pbzloc="26" style="font-size: 18px">Various PCBs have been designed during the test period.<br />
+This universal PCB&nbsp;</span><span pbzloc="25" style="font-size: 18px">has been updated to&nbsp; the latest modifications and are currently being manufactured.<br />
+You</span></span></span></strong><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="color: #800000"><span pbzloc="13" style="font-size: 18px"> can use it for experiments&nbsp; or make the above circuit.</span></span></span></strong></p>
+
+<p align="center" pbzloc="12"><span style="font-family: tahoma,geneva,sans-serif"><strong><span style="font-size: 18px"><span pbzloc="16" style="color: #800000">PCB&#39;&#39;s (PCB nr 150521) can be ordered from Hans Alards, PD0EEA via his email address: </span><a href="mailto:h.alards@gmail.com"><span style="color: #800000">h.alards@gmail.com</span></a><br />
+<span style="color: #800000">The price depends on the prints already produced or on prints still to be produced.</span></span></strong></span></p>
+
+<p align="center" pbzloc="56"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="59" style="font-size: 18px"><img pbzloc="250" src="bare&#32;loop&#32;f.jpg" style="border-top: 0px solid; height: 300px; border-right: 0px solid; width: 297px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img pbzloc="247" src="bare&#32;loop&#32;f2.jpg" style="border-top: 0px solid; height: 300px; border-right: 0px solid; width: 282px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></span></p>
+
+<p pbzloc="53" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="21" style="font-size: 18px">This active loop antenna is the result of experiments, a selection of which is mentioned later in this article. Despite its relative simplicity, the antenna works quite well from at least 100 kHz to 145 MHz. It can be a very helpfull system for those who listen a lot to radio stations , but do not have the option of installing a high or long antenna.<br />
+A 2 &times; 16.55 m inverted dipole with the top at 12 m was used as a reference for performance. An automatic antenna tuner per amateur band ensured that the system was brought into resonance. An ICOM 7300 served as receiver. My tests were done with the loop 50 cm or 170 cm above the ground and that was not disappointing. It is therefore expected that with a higher position the result will be more than satisfactory. I am thinking of listeners who live in a flat and only have a small balcony available.<br />
+If the antenna is set up rotatable, it is possible to reduce an interfering signal considerably and set it to maximum if the signal is weak.<br />
+The performance depends on conditions, the time of day and the beam angle of the transmitting station. The reception&nbsp;with the loop can be less than the dipole, but also stronger. The comparison must be done over a longer period of time in order to be able to assess properly.</span></span></p>
+
+<p pbzloc="2"><span style="font-size: 18px"><span pbzloc="10" style="font-family: tahoma,geneva,sans-serif">The impedance of the antenna depends on the frequency. The lower the frequency, the lower the impedance. The maximum impedance will be approximately 130 Ohms at a frequency (&asymp; 80 MHz) where the loop is a full wave.<br />
+<span style="color: #800000"><strong>A shielded loop has once again been compared to the wire loop. After testing over a longer period, it appears that&nbsp;a shielded loop has&nbsp;less interference.</strong></span></span></span><br />
+<br />
+<br />
+<span pbzloc="17" style="font-size: 18px"><span pbzloc="17" style="font-family: tahoma,geneva,sans-serif">In the following images nothing was changed to the receiver (IC7300). It was switched from the inverted V antenna to the active antenna as quickly as possible to get both images as identical as possible. Before taking the test, the amateur band or a bit&nbsp;outside of it was tuned to a signal that was as constant as possible. It will be clear that test&nbsp;were not done at the same time of day.</span></span></p>
+
+<p pbzloc="20" style="text-align: center"><strong><span style="color: #800000"><span pbzloc="17" style="font-size: 18px"><span pbzloc="19" style="font-family: tahoma,geneva,sans-serif">Receiving 160 kHz - 70 MHz.</span></span></span></strong></p>
+
+<p pbzloc="43" style="text-align: center"><span pbzloc="17" style="font-size: 18px"><span pbzloc="42" style="font-family: tahoma,geneva,sans-serif">&nbsp;<img border="0" pbzloc="6" src="loop&#32;Allouis&#32;bal.gif" />&nbsp;<img border="0" src="loop&#32;BBC&#32;bal.gif" /></span></span><br />
+<span pbzloc="17" style="font-size: 18px"><span pbzloc="41" style="font-family: tahoma,geneva,sans-serif">&nbsp;<img border="0" height="272" pbzloc="8" src="dipole&#32;160m&#32;bal.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;160m&#32;bal.gif" width="480" /><br />
+&nbsp;<img border="0" height="272" src="dipole&#32;80m&#32;bal.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;80m&#32;bal.gif" width="480" /></span></span><br />
+&nbsp;<img border="0" src="dipole&#32;60m&#32;bal.gif" />&nbsp;<img border="0" src="loop&#32;60m&#32;bal.gif" /><br />
+&nbsp; <img border="0" height="272" src="dipole&#32;40m&#32;bal.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;40m&#32;bal.gif" width="480" />&nbsp;<br />
+&nbsp;<img border="0" height="272" src="dipole&#32;30m&#32;bal.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;30m&#32;bal.gif" width="480" /><br />
+&nbsp;<img border="0" height="272" src="dipole&#32;20m&#32;bal.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;20m&#32;bal.gif" width="480" /><br />
+&nbsp; <img border="0" height="272" src="dipole&#32;17m&#32;bal.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;17m&#32;bal.gif" width="480" />&nbsp;<br />
+&nbsp;<img border="0" src="dipole&#32;15m&#32;bal.gif" />&nbsp;<img border="0" src="loop&#32;15m&#32;bal.gif" /><br />
+&nbsp; <img border="0" height="272" src="dipole&#32;12m&#32;bal.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;12m&#32;bal.gif" width="480" />&nbsp;<br />
+&nbsp; <img border="0" height="272" src="dipole&#32;10m&#32;bal.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;10m&#32;bal.gif" width="480" />&nbsp;<br />
+&nbsp;<img border="0" src="loop&#32;6m&#32;bal.gif" />&nbsp;<img border="0" height="272" src="loop&#32;4m&#32;bal.gif" width="480" /><br pbzloc="24" />
+<span style="color: #800000"><span pbzloc="188" style="font-size: 18px"><strong><font face="Tahoma" pbzloc="131">Switching between both antennas&nbsp;was a matter of seconds with the click of a tumbler switch.</font></strong></span></span></p>
+
+<p pbzloc="136" style="text-align: center"><img border="0" pbzloc="91" src="loop&#32;160&#32;f.jpg" /><br />
+<span style="color: #800000"><span style="font-size: 18px"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="96">Image with active loop on a </span></span></strong></span></span><span style="color: #0000cd"><span style="font-size: 18px"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="96">50 cm</span></span></strong></span></span><span style="color: #800000"><span style="font-size: 18px"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="146"> pole.</span></span></strong></span></span></p>
+
+<p pbzloc="33" style="text-align: justify">&nbsp;</p>
+
+<p pbzloc="33" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="167" style="font-size: 18px"><img pbzloc="166" src="floating.gif" style="border-top: 0px solid; height: 242px; border-right: 0px solid; width: 409px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></span></p>
+
+<p pbzloc="33" style="text-align: justify">&nbsp;</p>
+
+<p pbzloc="33" style="text-align: justify">&nbsp;</p>
+
+<p pbzloc="33" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="173" style="font-size: 18px">A choke balun (line insulator) was used for&nbsp;output coupling. That is easy to assemble for home brewers and ensures&nbsp;transmission of a very broad spectrum.<br />
+A DC power&nbsp;for the amplifier can be supplied through the choke balun, but to avoid pre-magnetization of the coil core, supplying&nbsp;was chosen via two large chokes.</span></span></p>
+
+<p pbzloc="52" style="text-align: justify"><span style="font-size: 18px"><span pbzloc="77" style="font-family: tahoma,geneva,sans-serif">An interesting experience was keeping the output floating, because this made the reception quieter. A PNS statement (probably nonsense statement) may be that the ground plane of the PCB, which was&nbsp;connected to the ground&nbsp;of the output connector, despite its small size, acts as a mini whip antenna sothat&nbsp;unwanted signals reach the receiver via the screen of the coax cable.</span></span></p>
+
+<p pbzloc="60" style="text-align: justify">&nbsp;</p>
+
+<p pbzloc="95"><span style="font-size: 24px"><strong pbzloc="7"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="2">OTHER SIMPLER CIRCUIT</span></span></strong></span></p>
+
+<p pbzloc="95" style="text-align: center"><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="83" style="color: #800000">This performs&nbsp;almost as well as the previous system and for its simplicity it is my preference. If one compares both systems at some distance, the difference is minimal.</span></span></span></strong><span pbzloc="188" style="font-size: 18px"><strong><font face="Tahoma" pbzloc="85"><strong pbzloc="81">&nbsp;</strong> </font></strong></span></p>
+
+<p align="center" pbzloc="23"><br pbzloc="70" />
+<img border="0" src="active&#32;antenna-s1d.gif" />&nbsp;&nbsp;<img border="0" height="286" src="active&#32;antenna-s1c.gif" width="728" /><br />
+<br />
+<img border="0" src="pcb&#32;150521&#32;(2).jpg" />&nbsp;<img border="0" height="258" pbzloc="50" src="pcb&#32;&#32;comp&#32;s2.gif" style="height: 474px; width: 521px" width="295" /><br />
+<span pbzloc="10" style="font-family: tahoma,geneva,sans-serif"><strong><span style="color: #800000"><span pbzloc="112" style="font-size: 18px">With&nbsp;the same PCB this circuit can be made.</span></span></strong></span></p>
+
+<p pbzloc="110" style="text-align: justify"><span pbzloc="17" style="font-size: 18px"><span pbzloc="9" style="font-family: tahoma,geneva,sans-serif">In the following images nothing was changed to the receiver (IC7300). It was switched from the inverted V (2 &times; 16.55m)&nbsp;antenna to the active antenna as quickly as possible to get both images as identical as possible. </span></span><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="4" style="font-size: 18px">An automatic antenna tuner per amateur band ensured that the inverted V antenna system was brought into resonance. </span></span><span pbzloc="17" style="font-size: 18px"><span pbzloc="9" style="font-family: tahoma,geneva,sans-serif">Before taking the test, the amateur band or a bit&nbsp;outside of it was tuned to a signal that was as constant as possible. It will be clear that test&nbsp;were not done at the same time of day.</span></span></p>
+
+<p pbzloc="91" style="text-align: center"><span style="font-size: 18px"><span pbzloc="1" style="font-family: tahoma,geneva,sans-serif">The dipole (inverted V) has a 12m mast as its suspension point. The loop was mounted on a 1.70m wooden pole.</span></span></p>
+
+<p pbzloc="2" style="text-align: center"><span style="font-size: 18px"><span pbzloc="48" style="font-family: tahoma,geneva,sans-serif"><img border="0" height="272" src="dipole160&#32;se.gif" width="480" />&nbsp;<img border="0" height="272" src="loop160m&#32;se.gif" width="480" /></span></span></p>
+
+<p pbzloc="74" style="text-align: center"><span style="font-size: 18px"><span pbzloc="47" style="font-family: tahoma,geneva,sans-serif"><img border="0" height="272" src="dipole&#32;80m&#32;se.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;80m&#32;se.gif" width="480" />&nbsp;</span></span></p>
+
+<p pbzloc="78" style="text-align: center"><span pbzloc="37" style="font-size: 18px"><span pbzloc="11" style="font-family: tahoma,geneva,sans-serif"><img border="0" height="272" src="dipole&#32;40m&#32;se.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;40m&#32;se.gif" width="480" />&nbsp;&nbsp;</span></span></p>
+
+<p pbzloc="49" style="text-align: center"><img border="0" height="272" src="dipole&#32;30m&#32;se.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;30m&#32;se.gif" width="480" /></p>
+
+<p pbzloc="19" style="text-align: center"><span style="font-size: 18px"><span pbzloc="46" style="font-family: tahoma,geneva,sans-serif"><img border="0" height="272" src="dipole&#32;20m&#32;se.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;20m&#32;se.gif" width="480" />&nbsp;&nbsp;</span></span></p>
+
+<p pbzloc="19" style="text-align: center"><span style="font-size: 18px"><span pbzloc="50" style="font-family: tahoma,geneva,sans-serif"><img border="0" height="272" src="dipole&#32;17m&#32;se.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;17m&#32;se.gif" width="480" /></span></span></p>
+
+<p pbzloc="19" style="text-align: center"><span style="font-size: 18px"><span pbzloc="20" style="font-family: tahoma,geneva,sans-serif"><img border="0" src="dipole&#32;15m&#32;se.gif" />&nbsp;<img border="0" src="loop&#32;15m&#32;se.gif" /></span></span></p>
+
+<p pbzloc="19" style="text-align: center"><span style="font-size: 18px"><span pbzloc="41" style="font-family: tahoma,geneva,sans-serif"><img border="0" src="dipole&#32;12m&#32;se.gif" />&nbsp;<img border="0" src="loop&#32;12m&#32;se.gif" /></span></span></p>
+
+<p pbzloc="19" style="text-align: center"><span style="font-size: 18px"><span pbzloc="24" style="font-family: tahoma,geneva,sans-serif"><img border="0" height="272" src="dipole&#32;10m&#32;se.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;10m&#32;se.gif" width="480" />&nbsp;</span></span></p>
+
+<p pbzloc="51" style="text-align: center"><img border="0" height="272" src="dipole&#32;60m&#32;se.gif" width="480" />&nbsp;<img border="0" height="272" src="loop&#32;60m&#32;se.gif" width="480" /></p>
+
+<p pbzloc="30" style="text-align: center"><img border="0" src="loop&#32;6m&#32;se.gif" />&nbsp;<img border="0" src="loop&#32;4m&#32;se.gif" /><br />
+<span style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="19"><span style="color: #800000"><span pbzloc="39" style="font-size: 18px">Bacons&nbsp;50.425MHz and&nbsp;70.070MHz.</span></span></strong></span></p>
+
+<p pbzloc="143" style="text-align: center"><img border="0" height="272" src="loop&#32;BBC.gif" width="480" /><br />
+<span style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="19"><span style="color: #800000"><span pbzloc="37" style="font-size: 18px">BBC Radio 4, 198 kHz.</span></span></strong></span><br pbzloc="17" />
+<span style="color: #800000"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="134" style="font-size: 18px">&nbsp;Not disappointing for such a simple circuit, especially when you actually compare it with other designs published on the internet.</span></span></strong></span></p>
+
+<p pbzloc="142" style="text-align: justify"><span style="font-size: 18px"><span pbzloc="31" style="font-family: tahoma,geneva,sans-serif">This&nbsp;result with such a simple circuit was a pleasant surprise. If you look closely at the images, you will see that the loop has a little less signal than the wire dipole. However, keep in mind that the top of this antenna is 12 m and the system is matched&nbsp;into resonance with an automatic antenna tuner. The loop, on the other hand, is on a 1.70 m pole and is broadband.</span></span></p>
+
+<p pbzloc="20" style="text-align: center">&nbsp;<strong><span style="font-size: 24px"><span><span><span pbzloc="140" style="font-family: tahoma,geneva,sans-serif">EXPERIMENTS WITH AMPLIFIERS</span></span></span></span></strong></p>
+
+<p pbzloc="149" style="text-align: justify">&nbsp;</p>
+
+<p pbzloc="36" style="text-align: center"><img border="0" height="243" pbzloc="17" src="active&#32;antenna-s4.gif" width="529" /><img border="0" height="241" src="active&#32;antenna-s5.gif" width="585" /></p>
+
+<div style="text-align: justify"><span style="font-size: 14px"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><img src="bare&#32;loop&#32;f.jpg" style="border-top: 0px solid; height: 600px; border-right: 0px solid; width: 593px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></span></span></div>
+
+<div pbzloc="23" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="19" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="26" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="38" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="85" style="text-align: justify"><span pbzloc="12" style="font-family: tahoma,geneva,sans-serif"><span pbzloc="86" style="font-size: 18px">Several amplifier systems were tested and the experiments&nbsp;were performed with an unshielded loopl (fig&raquo;).<br />
+The left system is a version of a cascode circuit. The second transistor does not operate in a grounded base circuit but with a grounded emitter.</span></span></div>
+
+<div pbzloc="7" style="text-align: justify"><span pbzloc="12" style="font-family: tahoma,geneva,sans-serif"><span pbzloc="20" style="font-size: 18px">I have used the transistor alignment may times in all kinds of experiments or designs, because the gain is straight from 1.8 MHz to 30 MHz when the input and output are loaded with 50 Ohm.</span></span></div>
+
+<div pbzloc="7" style="text-align: justify"><span pbzloc="12" style="font-family: tahoma,geneva,sans-serif"><span pbzloc="88" style="font-size: 18px">The right circuit has advantages: stable, very low input impedance, simple, broadband up to 70 MHz and not too many components. It is actually a clone of a simple &quot;cable TV amplier&quot;.<br />
+Because the impedance of the loop is very low, the antenna can be fed symmetrically with a&nbsp;line insulator/choke balun of not too great inductance.</span></span></div>
+
+<div style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="73" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="16" style="text-align: justify"><br />
+&nbsp;</div>
+
+<div style="text-align: justify">&nbsp;<span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">&nbsp;</span></span></div>
+
+<div style="text-align: justify">&nbsp;</div>
+
+<div style="text-align: justify">&nbsp;</div>
+
+<div style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><img src="active&#32;antenna-s8.gif" style="border-top: 0px solid; height: 184px; border-right: 0px solid; width: 414px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></span></div>
+
+<div style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="61" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="1" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="71" style="font-size: 18px">A (&laquo;fig) coupling with a toroid core has also been tested, but despite attempts with various transfer ratios, the result&nbsp;</span><span style="font-size: 18px">in terms of signal strength</span><span pbzloc="67" style="font-size: 18px"> was less than with direct coupling.</span></span></div>
+
+<div pbzloc="54" style="text-align: justify">&nbsp;</div>
+
+<div style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="65" style="text-align: justify">&nbsp;</div>
+
+<div style="text-align: justify">&nbsp;</div>
+
+<div style="text-align: justify">&nbsp;</div>
+
+<div style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="29" style="text-align: justify">&nbsp;</div>
+
+<p align="center" pbzloc="95"><img border="0" src="active&#32;antenna-s3.gif" />&nbsp;<img border="0" src="amplifier-f5.jpg" /></p>
+
+<p pbzloc="87" style="text-align: center"><span style="color: #800000"><span style="font-size: 18px"><strong><span pbzloc="88" style="font-family: tahoma,geneva,sans-serif">The advantage of a balance circuit is the suppression of even harmonics.</span></strong></span></span></p>
+
+<p pbzloc="94"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="153" style="font-size: 18px"><img pbzloc="186" src="graph&#32;trafo-f.gif" style="border-top: 0px solid; height: 480px; border-right: 0px solid; width: 800px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" />To my surprise, someone had already experimented with the balanced design.<br />
+He&nbsp;wrote:</span></span></p>
+
+<div pbzloc="169" style="text-align: justify">
+<p pbzloc="109">&nbsp;</p>
+
+<p pbzloc="128"><span style="font-size: 18px"><span pbzloc="5" style="font-family: tahoma,geneva,sans-serif">&ldquo;Tonight I made the loop Amp as it is on your site, There were still a number of new RCA 2N5109&#39;s from the 1970s!<br />
+The amplifier works well, even below 100 kHz it is two S points stronger&nbsp;than my old BC design. Above 3 MHz to 15 MHz, the gain increases even more and should actually be reduced&nbsp;a bit because the S meter already shows 1.5 S unit. On the other hand, all stations are very strong. It sounds like a good S/N ratio, it works better than with the INA amplifier.</span></span></p>
+
+<p pbzloc="133"><span style="font-size: 18px"><span pbzloc="136" style="font-family: tahoma,geneva,sans-serif">The reception&nbsp;from 50 to 500 kHz is simply superb and can compete with an expensive long-wire antenna. The loop (130cm)&nbsp;with&nbsp;the internal conductor&nbsp;as one turn&nbsp;</span><span style="font-family: tahoma,geneva,sans-serif">is approximately 4 &micro;H</span><span pbzloc="149" style="font-family: tahoma,geneva,sans-serif">.<br />
+When I insert a second winding (double loop) it becomes close to 10 &micro;H and the reception in this range is even better. The signal&nbsp;of BBC on 198 kHz is over&nbsp;S9 and you can hear all beep and whistle beacons below 100 kHz.</span></span></p>
+
+<p pbzloc="145"><span style="font-size: 18px"><span pbzloc="178" style="font-family: tahoma,geneva,sans-serif">I&#39;m probably going to use a relay to choose between one or two turns, because it is really worth it!&rdquo;.</span></span><span style="font-size: 18px"><span pbzloc="139" style="font-family: tahoma,geneva,sans-serif">&nbsp;&nbsp; </span></span></p>
+
+<div pbzloc="151">&nbsp;</div>
+</div>
+
+<div pbzloc="10" style="text-align: justify"><br />
+<span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="167" style="font-size: 18px">That the gain increases at the higher frequency is probably because the 1 &divide; 1 transformer (balun)&nbsp;</span><span style="font-size: 18px">has too small&nbsp;inductance</span><span pbzloc="51" style="font-size: 18px"> for the lower frequencies or the coupling capacitor across the 390 Ohm resistors must be 100 nF. This is the measurement result of my transformer:</span></span></div>
+
+<div pbzloc="33" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="36" style="text-align: justify"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="38" style="font-size: 24px">OTHER EXPERIMENTS</span></span></strong></div>
+
+<div pbzloc="47" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="40" style="font-size: 24px"><span pbzloc="65" style="font-size: 18px"><img pbzloc="68" src="active&#32;antenna-s9.gif" style="border-top: 0px solid; height: 275px; border-right: 0px solid; width: 753px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></span></span></div>
+
+<div pbzloc="50">&nbsp;</div>
+
+<div pbzloc="50">&nbsp;</div>
+
+<div pbzloc="50">&nbsp;</div>
+
+<div pbzloc="50">&nbsp;</div>
+
+<div pbzloc="63">&nbsp;</div>
+
+<div pbzloc="6">&nbsp;</div>
+
+<div pbzloc="122"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="7" style="font-size: 18px">Experiments were also carried out with a loop of two turns. The strength at lower frequencies increases at the expense of much higher frequencies. Again, it turns out that a 1-turn loop of about 120 cm in diameter is a good compromise between noise/interference. signal strength and directivity. PA3GZK had already established this after many tests with its <a class="0" href="../Active&#32;antenna/Active&#32;receiving&#32;&#32;loop&#32;antenna&#32;eng.htm">design</a>.</span><br />
+<span pbzloc="4" style="font-size: 18px">If you are not&nbsp;interested&nbsp;what can be experienced below 1.8 MHz, a diameter of 100 cm will also suffice.</span><br />
+<span pbzloc="14" style="font-size: 18px">Because we did experiments&nbsp;with different types of metal profiles for the loop, the impression has arisen that the diameter and/or the self-inductance of the loop plays a significant role. Conditionally, it appears that 4 &micro;H self-inductance will yield an optimal result.</span></span></div>
+
+<div pbzloc="124">&nbsp;</div>
+
+<div pbzloc="158">&nbsp;</div>
+
+<p><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="159" style="font-size: 24px">THE BEST TESTED&nbsp;SYSTEM</span></span></strong></p>
+
+<p pbzloc="15"><span style="font-size: 18px"><span pbzloc="16" style="font-family: tahoma,geneva,sans-serif">This&nbsp;design was chosen because it met our requirements: simple, well-performing, with standard components and suitable for DIY.</span></span></p>
+
+<p pbzloc="167" style="text-align: center"><img border="0" height="307" pbzloc="168" src="active&#32;antenna-s10.gif" width="833" />&nbsp;&nbsp;<img border="0" src="pcb&#32;active&#32;ant&#32;f.jpg" />&nbsp;<br />
+<strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="96" style="font-size: 14px"><span style="font-size: 16px"><span style="color: #800000"><span pbzloc="162" style="font-size: 18px">If a&nbsp;circuit has too much gain </span></span></span></span><span style="color: #800000"><span pbzloc="172" style="font-size: 18px">then it&nbsp;can be reduced with a resistance.</span></span><span pbzloc="96" style="font-size: 14px"><span style="color: #800000"><span pbzloc="170" style="font-size: 18px">&nbsp;</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #800000"><span style="font-size: 18px"><span pbzloc="91">This is the old larger PCB that was well suited for&nbsp;experimenting.</span></span></span></span></span></strong></p>
+
+<p pbzloc="102" style="text-align: center"><img border="0" height="480" src="pcb&#32;active&#32;ant&#32;f3.jpg" width="310" />&nbsp;<img border="0" height="480" src="pcb&#32;active&#32;ant&#32;f4.jpg" width="338" />&nbsp;<img border="0" height="480" src="pcb&#32;active&#32;ant&#32;f5.jpg" width="385" />&nbsp;<img border="0" height="480" src="pcb&#32;active&#32;ant&#32;f6.jpg" width="313" />&nbsp;<img border="0" height="480" src="pcb&#32;active&#32;ant&#32;f7.jpg" width="363" /><br />
+<br pbzloc="199" />
+&nbsp;</p>
+
+<p pbzloc="30" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="108" style="font-size: 18px"><img pbzloc="46" src="white&#32;toroid&#32;f.jpg" style="border-top: 0px solid; height: 150px; border-right: 0px solid; width: 209px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></span><span style="font-size: 18px"><span pbzloc="32" style="font-family: tahoma,geneva,sans-serif">Transformers at the input and output cause losses or limit the bandwidth and can have unwanted resonances. Due to (sometimes) many windings with extra capacitance, the question is what remains of such a balancing. That is why I prefer a toroid core as a line insulator/choke balun, where it is possible to separate windings <img pbzloc="12" src="inductance&#32;f.jpg" style="border-top: 0px solid; height: 240px; border-right: 0px solid; width: 112px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" />from each other so that they do not lie against each other along their entire length. Moreover, that system is suitable for DIY. The toroid core used here is type 2P80 and with 10 bifilar turns, the inductance is approximately 377 &micro;H measured with a Chinese M4070 LCR meter.<br />
+It can be&nbsp;replaced by AMIDON FT50-W.<br />
+<img pbzloc="36" src="toroid&#32;f.jpg" style="border-top: 0px solid; height: 262px; border-right: 0px solid; width: 320px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span><span pbzloc="38" style="font-family: tahoma,geneva,sans-serif">If you order PCB&#39;s from PD0EEA, the white (2P80?) toroid core is included free of charge.</span></span><br />
+&nbsp;</p>
+
+<p pbzloc="18" style="text-align: justify"><span style="font-size: 18px"><span pbzloc="26" style="font-family: tahoma,geneva,sans-serif">If there is&nbsp;too much gain, one can apply a resistor across the choke or use a suitable attenuator at will. The decoupling has become a choke balun or line insulator.</span></span></p>
+
+<p pbzloc="270" style="text-align: justify"><span style="font-size: 18px"><span pbzloc="46" style="font-family: tahoma,geneva,sans-serif">So one is not so dependent on the properties of a transformer or other system&nbsp;as coupling. Strangely enough, unwanted interference was much less. For the time being I assume that asymmetrical interfering signals have less chance of entering the receiver due to an improved balance.</span></span></p>
+
+<p pbzloc="51" style="text-align: justify"><span style="font-size: 18px"><span pbzloc="175" style="font-family: tahoma,geneva,sans-serif">There will be comments of: &quot;The output is not 50 Ohm&quot;.<br />
+No, that is not 50 Om, but the transceivers or receivers used for testing were not affected. In addition, the impedance at the input of receivers is rarely exactly 50 ohms.<br />
+In the meantime, various well-intentioned comments or suggestions have been received along the lines of: &quot;That is not good, why thst not, too much amplification, it could be better, it causes too much noise, the impedance is too low, the collectors are almost short-circuited, etc. &quot; However, the circuit works in practice, is our experience after extensive experiments. The disappointing thing is that all consultants do not present a simple and working circuit that can compete with the design in this article in a comparative practice test. When a better (KISS) pre-amplifier&nbsp;is designed, we as experimental radio amateurs would like to know more about it!</span></span></p>
+
+<p pbzloc="51" style="text-align: center"><img border="0" height="305" pbzloc="193" src="active&#32;antenna-s11.gif" width="1013" /><img border="0" height="133" src="pcb&#32;f4.jpg" width="240" /></p>
+
+<p pbzloc="191" style="text-align: center"><span style="color: #800000"><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">The operation is the same as the previous circuit, except that it has been slightly modified due to the small print design.</span></span></strong></span></p>
+
+<p pbzloc="46"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="56" style="font-size: 18px">The reception range with 2N5109 or 2N3866 is at least 30 kHz to 146 MHz and with BFG135 to 220 MHz.</span></span></p>
+
+<p pbzloc="49"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="23" style="font-size: 18px">With the bottom of the loop at 50 cm above&nbsp;ground, the Bergen op Zoom repeater can be heard on 145.625.<br />
+The distance to the repeater is approximately 30 km.</span><br />
+<span pbzloc="42" style="font-size: 18px">The&nbsp;70.070 MHz beacon at 40 km use a Big Wheel horizontally polarized antenna and the&nbsp;signal is received more strongly than with my vertical antenne&nbsp;on a 12 m high mast. Given the size of the loop,&nbsp;this band clearly shows horizontal polarization.</span><br />
+<span style="font-size: 18px">The result also depends on the beam angle of the opposing station. For example, if two stations close to each other at 40 m have the same strength with a 2 &times; 16.50 m dipole, then one of the two is stronger with the loop antenna than with the dipole.</span></span></p>
+
+<p pbzloc="120"><strong><span style="font-size: 24px"><span pbzloc="44" style="font-family: tahoma,geneva,sans-serif">ASYMMETRIC OUTPUT</span></span></strong></p>
+
+<table align="center" cellpadding="1" cellspacing="1" pbzloc="26" style="width: 500px">
+	<tbody>
+		<tr>
+			<td pbzloc="27" style="text-align: center"><img border="0" height="307" pbzloc="29" src="active&#32;antenna-s10.gif" width="833" /></td>
+			<td pbzloc="14" style="text-align: center"><img border="0" height="484" pbzloc="15" src="active&#32;antenna-s1.gif" width="756" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="14" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="78" style="font-size: 18px"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="130" style="font-size: 18px"><img pbzloc="127" src="principe&#32;s.gif" style="border-top: 0px solid; height: 223px; border-right: 0px solid; width: 257px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></span></span></span></p>
+
+<p pbzloc="14" style="text-align: justify">&nbsp;</p>
+
+<p pbzloc="14" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="172" style="font-size: 18px">A considerable simplification can be achieved by applying a single ended output. No transformers or baluns are needed, which can be frequency dependent. </span></span></p>
+
+<p pbzloc="14" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="76" style="font-size: 18px"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="53" style="font-size: 18px">Various attempts were made to obtain an even simpler design.<br />
+PD0EEA came up with the bright idea to design&nbsp;according to the internal circuitry of many ICs, such as an MC1350. This was and is still used in DIY projects and it is installed&nbsp;in many transceivers.</span></span></span></span></p>
+
+<p pbzloc="25" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="29">It is not clear to everyone how the circuit works. In one transitor, the collector is decoupled by a capacitor and then acts as an emitter follower. The signal is passed through the emitter to the other transistor. The latter serves as a grounded base amplifier, but also as a grounded emitter amplifier. The result is that with this transistor a signal is produced at the collector which is the sum of both signals because they have the same phase.</span></span></span></p>
+
+<table align="center" cellpadding="1" cellspacing="1" style="width: 500px">
+	<tbody>
+		<tr>
+			<td pbzloc="141" style="text-align: center"><img pbzloc="220" src="pcb&#32;5109&#32;se.jpg" style="border-top: 0px solid; border-right: 0px solid; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></td>
+			<td pbzloc="146"><img pbzloc="144" src="2n5109&#32;f.jpg" style="border-top: 0px solid; height: 150px; border-right: 0px solid; width: 162px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></td>
+			<td pbzloc="30" style="text-align: center"><img border="0" height="286" src="active&#32;antenna-s1c.gif" width="728" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="243" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="78" style="font-size: 18px"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="233" style="font-size: 18px">In</span></span>&nbsp;the original schematic, you only have to install&nbsp;one capacitor at a collector to ground and insert&nbsp;</span><span pbzloc="66" style="font-size: 18px">a common emitter choke.</span><span pbzloc="35" style="font-size: 18px">&nbsp;It remains to be tested whether the result is the same as that of the original design. If that works out positively, it will come even closer to our objective: to present a system that works as simple as possible (KISS) and&nbsp;performs with little effort.</span></span><br />
+<span pbzloc="33" style="font-size: 18px"><span pbzloc="253" style="font-family: tahoma,geneva,sans-serif">The advantage of this circuit is a symmetrical input and an asymmetrical (coaxial) output without baluns, choke baluns, line insulators or transformers.</span></span></p>
+
+<p pbzloc="53" style="text-align: justify"><span style="font-size: 18px"><span pbzloc="8" style="font-family: tahoma,geneva,sans-serif">The Korean 2N5109&#39;s performed just as well as the original &quot;vintage&quot; RCA 2N5109.</span></span></p>
+
+<p pbzloc="63">&nbsp;</p>
+
+<p pbzloc="73" style="text-align: center"><img border="0" height="515" src="active&#32;antenna-s2a.gif" width="604" /><img border="0" src="pcb&#32;active&#32;ant&#32;f6.jpg" /></p>
+
+<p pbzloc="72" style="text-align: center"><span style="color: #800000"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="75" style="font-size: 18px">Another idea that was tested is a grounded base circuit, but the gain is less than with a grounded emitter circuit, which was to be expected.<br />
+That was improved by combining both systems, but with two extra transistors!</span></span></strong></span></p>
+
+<p pbzloc="7" style="text-align: center"><img border="0" height="244" pbzloc="54" src="active&#32;antenna-s1a.gif" width="460" /><img border="0" height="251" src="active&#32;antenna-s1b.gif" width="463" /><br />
+<span style="color: #800000"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="55" style="font-size: 18px">It is also being investigated whether further simplification&nbsp;is possible.</span><br />
+<span pbzloc="13" style="font-size: 18px">This is the result of the left schematic.</span></span></strong></span></p>
+
+<p pbzloc="8" style="text-align: center"><span style="color: #800000"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="33" style="font-size: 18px"><img border="0" src="dipole&#32;80m&#32;ses.gif" />&nbsp;<img border="0" src="loop&#32;80m&#32;ses.gif" /></span></span></strong></span></p>
+
+<p pbzloc="8" style="text-align: center"><span style="color: #800000"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="40" style="font-size: 18px"><img border="0" src="dipole&#32;40m&#32;ses.gif" />&nbsp;<img border="0" src="loop&#32;40m&#32;ses.gif" /></span></span></strong></span></p>
+
+<p pbzloc="8" style="text-align: center"><span style="color: #800000"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="80" style="font-size: 18px"><img border="0" src="dipole&#32;20m&#32;ses.gif" />&nbsp;<img border="0" src="loop&#32;20m&#32;ses.gif" /></span></span></strong></span></p>
+
+<p pbzloc="74"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 24px"><strong><span lang="N" pbzloc="84">LOOP CONSTRUCTION</span></strong></span></span></p>
+
+<p pbzloc="104" style="text-align: center"><img border="0" src="2m&#32;antenne&#32;f.jpg" />&nbsp;<img border="0" src="2m&#32;antenne&#32;f2.jpg" />&nbsp;<img border="0" height="480" src="2m&#32;antenne&#32;f3.jpg" width="364" />&nbsp;<br />
+<span style="color: #800000"><strong><span style="font-family: times new roman,times,serif"><span style="font-size: 20px"><span pbzloc="108">&nbsp;</span><span style="font-size: 18px"><span pbzloc="109" style="font-family: tahoma,geneva,sans-serif">As an experimet I used a pair of home brewed&nbsp;2 m antennas as a loop. They works,&nbsp;only the strength of the signals is less and it is still better to use a larger circumference.&nbsp;</span></span></span></span></strong></span></p>
+
+<p pbzloc="82"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="91" style="font-size: 18px"><img pbzloc="90" src="square&#32;s.gif" style="border-top: 0px solid; height: 484px; border-right: 0px solid; width: 500px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></span></p>
+
+<p pbzloc="82">&nbsp;</p>
+
+<p pbzloc="111">&nbsp;</p>
+
+<p pbzloc="106">&nbsp;</p>
+
+<p pbzloc="82">&nbsp;</p>
+
+<p pbzloc="103">&nbsp;</p>
+
+<p pbzloc="82">&nbsp;</p>
+
+<p pbzloc="82">&nbsp;</p>
+
+<p pbzloc="82"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="108" style="font-size: 18px">We are still working on a sturdy and simple construction of the loop antenna. </span><span pbzloc="125" style="font-size: 18px">It could also be a 4 &times; 100 cm square. That&#39;s close to the circumference of 120 cm a circular loop. It can be made from Alu strip or Alu corner profile for strength. An angle up&nbsp;so that it becomes unattractive for birds to sit on.</span></span></p>
+
+<p pbzloc="82">&nbsp;</p>
+
+<p pbzloc="82">&nbsp;</p>
+
+<p pbzloc="82">&nbsp;</p>
+
+<p pbzloc="82">&nbsp;</p>
+
+<p pbzloc="81">&nbsp;</p>
+
+<p pbzloc="119">&nbsp;</p>
+
+<p pbzloc="48"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 24px"><strong><span lang="N" pbzloc="65">IC7300 WITH ACTIVE ANTENNA</span></strong></span></span></p>
+
+<div pbzloc="30" style="text-align: justify">
+<p pbzloc="7" style="text-align: center"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 24px"><strong><span lang="N"><img border="0" src="ic7300&#32;rx&#32;antenna&#32;f.jpg" /></span></strong></span></span></p>
+
+<table align="center" cellpadding="1" cellspacing="1" style="width: 500px">
+	<tbody>
+		<tr>
+			<td pbzloc="8" style="text-align: center"><img border="0" height="317" pbzloc="3" src="supply&#32;f.jpg" width="519" /></td>
+			<td pbzloc="9" style="text-align: center"><img border="0" height="184" src="supply&#32;s.gif" width="227" /></td>
+			<td pbzloc="10" style="text-align: center"><img border="0" height="171" src="supply&#32;f2.jpg" width="317" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<table align="center" cellpadding="1" cellspacing="1" pbzloc="40" style="width: 500px">
+	<tbody>
+		<tr>
+			<td pbzloc="36" style="text-align: center"><img border="0" src="supply&#32;s2.gif" /></td>
+			<td pbzloc="9" style="text-align: center"><img border="0" src="supply&#32;pcb.jpg" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="23"><span style="font-size: 18px"><span style="font-family: tahoma,geneva,sans-serif"><strong><span pbzloc="35">Feedback from VK:</span></strong><br />
+<span pbzloc="28" style="line-height: 150%">The performance is excellent and they outperform my early model Wellbrook with much less IMD especially on the broadcast band. </span></span></span><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span pbzloc="29" style="line-height: 150%">HF performance is superb.</span></span></span><br />
+<span pbzloc="34" style="font-size: 14px; font-family: Arial; line-height: 150%"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="33" style="font-size: 18px">I built a small 30&nbsp;cm unshielded loop and mounted it onto my car, which I use for QRM tracking.<br />
+I was so shocked when I was driving around in the city listening to Ja&#39;s, YB&#39;s, HL and USA stations with excellent signal noise ratios. It works very well on 40 meters in this situation</span></span>. </span></p>
+
+<p pbzloc="7" style="text-align: left">&nbsp;</p>
+
+<p pbzloc="43" style="text-align: center"><span style="font-size: 18px"><span style="font-family: tahoma,geneva,sans-serif"><strong><span pbzloc="4" style="color: #800000">Universal supply.</span></strong></span></span><br />
+&nbsp;<span lang="N"><font pbzloc="2" size="2"><img height="36" src="bar2.gif" width="500" /><br />
+<a class="0" href="../antennes.htm" pbzloc="37"><img border="0" height="50" src="back.gif" width="77" /></a></font></span><br />
+&nbsp;</p>
+</div>
+
+<p align="center"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">&nbsp;</span></font></font></p>
+
+<p align="center"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">&nbsp;</span></font></font></p>
+
+<p align="center"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">&nbsp;</span></font></font></p>
+
+<p align="center"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">&nbsp;</span></font></font></p>
+</body>
+</html>

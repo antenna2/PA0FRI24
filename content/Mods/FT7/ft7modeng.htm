@@ -1,0 +1,390 @@
+<title>FT-7 modifications</title>
+<body background="Image1.gif" link="#0000ff" text="#000000" vlink="#800080">
+<p pbzloc="82">&nbsp;</p>
+
+<p align="center"><b><font face="Tahoma" pbzloc="118" size="6">YAESU FT-7 MODIFICATIONS</font></b></p>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="116"><font face="Tahoma" pbzloc="76">&nbsp;<img border="0" height="12" src="updated2.gif" width="44" />15&nbsp;june 2020 BF961pin corrections on&nbsp;RX RF Amplifier PCB.</font></b></span></p>
+
+<p align="center"><img height="252" pbzloc="120" src="ft7f.jpg" width="682" /></p>
+
+<p><b><font face="Tahoma" pbzloc="293" size="5">INTRODUCTION</font></b></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="260" size="4">Since 1982 I am in possession of a 2ndhand YAESU FT-7. The 10 W set did well service at home, on holiday and during a UN mission abroad. With a freely suspended home-made FD4 antenna across a Wadi in Lebanon American hams could hardly believe that I was transmit with low power. Furthermore, the receiver is one of the quietest of its kind with low self-noise and the transmitter only draws about 3 A!</font></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="238" size="4">Currently there is a revived interest in this rather small and well-built transceiver and modifications are possible to those of interest to you.</font></p>
+<font face="Tahoma" size="4"><img align="right" height="197" hspace="9" pbzloc="230" src="fl-110f.jpg" width="240" /> </font>
+
+<p align="justify"><font face="Tahoma" pbzloc="48" size="4">More output is possible (some sets even 25 W) but do not go to extremes. With 10 W output, the transceiver is well protected even with high SWR to the load. Furthermore, this power remains constant with 13.8 V, but also with 15 V or 11 V when the battery needs to be charged. Yaesu has produced a transistor amplifier </font><a href="../FL110/fl110.htm"><span lang="N"><font face="Tahoma" size="4">FL-110</font></span></a><span lang="N"><font face="Tahoma" size="4"> (fig&raquo;) for the transceiver and this PA is sometimes offered as 2ndhand. A large portion of the device consists of plug-in boards that facilitate modification, repair or installation of your own design. If your circuit don&#39;t work just replace the original PCB. </font></span></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="113" size="4">Pretty soon I installed my ideas because in my opinion &quot;improvements&quot; were possible. You recognise the tinkering for some DIY! The set was a long time used as backup and for this article removed from a dusty shelf. I had forgotten why some modifications were installed, hi! After some searching in the mess of my shack, all documents found.</font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><b><font face="Tahoma" pbzloc="112" size="5">RX RF AMPLIFIER</font></b><b><font face="Tahoma" pbzloc="94" size="5"> </font></b></p>
+
+<p align="justify" pbzloc="106"><font face="Tahoma" pbzloc="107" size="4"><img pbzloc="103" src="rx&#32;amplifierf.jpg" style="border-top: 0px solid; height: 273px; border-right: 0px solid; width: 640px; border-bottom: 0px solid; float: left; margin-left: 6px; border-left: 0px solid; margin-right: 6px" /><img pbzloc="106" src="rf-amps.gif" style="height: 149px; width: 152px; float: right; margin-left: 6px; margin-right: 6px" /></font></p>
+
+<p align="justify" pbzloc="106">&nbsp;</p>
+
+<p align="justify" pbzloc="106"><font face="Tahoma" pbzloc="110" size="4">Almost immediately after the purchase (in 1982) the receiver input RF amplifier Q104 (3SK40M) was replaced by a BF900. A modern BF961 will also work in this circuit. Even with the original transistor the gain was too much for the low bands. So the source decoupling capacitor (C113) of was reduced to 100 pF. This value is suitable for 10 m and has sufficient gain for the 40 and 80 m bands without overloading.</font></p>
+
+<p align="justify" pbzloc="106">&nbsp;</p>
+
+<p align="justify" pbzloc="106">&nbsp;</p>
+
+<p align="justify" pbzloc="106">&nbsp;</p>
+
+<p align="justify" pbzloc="89">&nbsp;</p>
+
+<p align="justify"><b><font face="Tahoma" size="5">CW ROUNDING, STABILISATION</font></b></p>
+
+<p align="justify"><font face="Tahoma" size="4">In telegraphy, the envelope of the signal is rather &quot;blocky&quot; causing audible sideband clicks. This can be overcome (&quot;rounding&quot;) by the PRE-DRIVE PCB PB-1632:</font></p>
+<font face="Tahoma" size="4"><img align="right" height="217" hspace="9" src="cws2.gif" width="273" /> </font>
+
+<p align="justify">&nbsp;</p>
+<img align="left" height="149" hspace="9" src="cws1.gif" width="240" />
+<p align="justify"><font face="Tahoma" size="4">1. A (&laquo;fig) diode in parallel to R1014 (10 k) and replace capacitor C1012 (0.68 &micro;F) by 2.2 &micro;F or,</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">2. Resistor (fig&raquo;) R1015 (12 k) by 47 k and a 15 k resistor in parallel with C1012 (0.68 &micro;F).</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">The last method is applied in my FT-7.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">LA8AK (SK) discovered that a 9 volt zener diode (D1002) could not stabilise the voltage which stays of 8 - 8.5 V.</font></p>
+<font face="Tahoma" size="4"><img align="left" height="199" hspace="9" src="cwf.jpg" width="480" /> </font>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="40" size="4">Q1003 (TP4011AN) draws excessive current due to the unused pins (4, 5, 6). One could save about 15 mA by cutting the trace to pin 4. </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Apparently YAESU also noted that advice because in my (1980) set pin 4 (&laquo;fig)</font><font face="Tahoma" size="4"> was not to ground. I noticed that the voltage across the diode could be improved by paralleling a 470 &Omega; resistor to R1011 (220 &Omega;). </font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">&nbsp;</font></b></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">ANTI MICROPHONE CLICK</font></b></p>
+
+<p align="center"><img height="300" src="mic-clickf1.jpg" width="300" /><font face="Tahoma" size="4">&nbsp;<img height="300" src="mic-clickf2.jpg" width="289" /> <img height="300" src="mic-clickf3.jpg" width="278" /></font></p>
+<font face="Tahoma" size="4"><img align="left" height="148" hspace="9" src="micrclicks.gif" width="238" /> </font>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="44" size="4">Pressing the PTT causes an annoying click at the other station. This problem was cured in the FT-7B and the update is possible in the FT-7. At the MOD/DEM unit (PB-1624) replace R507 by 2k2 and insert a 220 &micro;H RFC between R507 and D505 (1S1555). Install 1N4148 in series with R507 and decouple with 10 nF and 47 nF.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p><b><font face="Tahoma" size="5">INCORRECTLY INSTALLED TANTALUM ELCO</font></b></p>
+
+<p align="center"><img height="350" src="tantaals.jpg" width="369" /><font face="Tahoma" size="4">&nbsp;<img height="350" src="tantaalf.jpg" width="482" /></font></p>
+
+<p align="justify"><font face="Tahoma" size="4">In 1982 I discovered that a tantalum elco was shorted after and few contacts with CW. It appeared that the manufacturer incorrectly installed the component. The negative terminal was grounded in place of the positive terminal. Recently (December 2012) I found the same (exemplary?) errors when repairing another FT-7 and&nbsp;my FT-7B checked.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Don&#39;t worry if one does not work CW, but with telegraphy the capacitor always get the wrong polarity and finally blows. The photo shows the correct mounting. Verify your FT-7 and FT-7B for the same problem.</font></p>
+
+<p><b><font face="Tahoma" size="5">BUFFER AMPLIFIER IN FRONT OF MIXER</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="168" hspace="9" src="buffer-amps.gif" width="533" /> </font></b>
+
+<p align="justify"><font face="Tahoma" size="4">The receiver is a single conversion system: a double balanced mixer with Schottky (1SS16) diodes and a 9 MHz IF frequency. The mixer is not loaded with wideband input, therefore a buffer amplifier was mounted. That is pretty simple. The coaxial cable from PB-1631 (pin 2) to PB-1626 (pin 2) is disconnected and the circuit shown was installed.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">I used an obsolete P8002 (fig&raquo;) as amplifier. The FET draws relatively low</font><font face="Tahoma" size="4"> 15 mA current but the circuit input and output are close to 50 &Omega;. So you can use a J310 FET with equal result, set R for an Id of 15 mA.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">For an improved mixer balance at PCB PB-1631 two 10 nF capacitors were inserted between L201 and the diodes quartet.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">B</font><font face="Tahoma" size="4">ecause I had another P8002 as an experiment it was installed in stead of transistor Q201 (2SC535A). To obtain a drain current of about 30 mA, R203 (4.7 k) was removed and R201 (330 &Omega;) reduced to 56 &Omega;.</font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">EXTRA BANDPASS FILTER</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="106" hspace="9" src="bpfs.gif" width="201" /> </font></b>
+
+<p align="justify"><font face="Tahoma" size="4">If strong signals occurs on 40 m, one can modify the 40 m input circuit T1922 P/O (PB-1634) to a bandpass filter (BPF). Disconnect the wire from the T1922 and install the extra circuit (fig&raquo;).</font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">EXTRA TRIMMER</font></b></p>
+<b><font face="Tahoma" size="5"><img align="left" height="139" hspace="9" src="pb-1631s.gif" width="263" /> </font></b>
+
+<p align="justify">&nbsp;</p>
+<img align="right" height="176" hspace="9" src="pb-1631bf1.jpg" width="420" />
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="116" size="4">In a FT-7B the PB-1631E unit is equipped with a 20 pF trimmer (TC201) across a 5 pf drain capacitor of Q202 (3SK51-03) providing some resonance of choke L203 (1 mH). In my FT-7 (fig&raquo;) I arranged it for maximum output on the 10 m band.</font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><b><font face="Tahoma" pbzloc="165" size="5">MIXER</font></b></p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" width="950">
+	<tbody>
+		<tr>
+			<td valign="middle" width="52%">
+			<p align="center"><span lang="N"><img height="275" src="mixers.gif" width="480" /></span></p>
+			</td>
+			<td valign="middle" width="48%">
+			<p align="right"><span lang="N"><img height="182" src="pb-1631bf2.jpg" width="430" /></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p pbzloc="111" style="font-family: Tahoma; font-weight: bold; text-align: center"><span style="font-family: tahoma,geneva,sans-serif"><small>Just press the FIX switch the next 500 kHz range is available and a LED light.</small></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">The last change around the mixer circuit is based on FT-7B&#39;s AGC design e.g. FT-7&#39;s PB-1631</font><font color="#0000ff" face="Tahoma" size="4">B</font><font face="Tahoma" size="4"> was modified according to FT-7B&#39;s PB-1631</font><font color="#0000ff" face="Tahoma" size="4">D</font><font face="Tahoma" size="4">. The second gate is directly connected to terminal 13 by removing R210 (10 k). The white wire in the picture is the direct link. Furthermore, a</font><font face="Tahoma" size="4"> 1 mH RFC was mounted from terminal 4 to the junction of R215 (100 &Omega;) and C211 (10 nF). The latter was mounted on the trackside and a 470 &Omega; resistor replaced R209 (4k7).</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">In a previous issue a P8002 FET replaced Q201 (2SC535A). The latter is no longer manuf</font><font face="Tahoma" size="4">actured so my choice was between almost equivalent semiconductors BFW16A, 2N4427 or 2N3866. It was tested with a used BFW16A and only R201 (330 &Omega;) was given a different value of 56 &Omega;. This &quot;updated&quot; PCB did well in both FT and FT-7B.</font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5">NOISE BLANKER</font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><img align="right" height="183" hspace="9" src="nbs.gif" width="185" /> </font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">One is not always satisfied with the operation of the noise blanker. After studying the FT-7B diagram showed that the FILTER UNIT (PB-1626) was extended with a 0.47 &micro;F capacitor. Installing the extra capacitance in a FT-7 and proper alignment of the NB UNIT (PB-1627) improves the noise blanker have I experienced.</font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5">EXTENDING 10 m BAND</font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">The transceiver was originally equipped with a 43 MHz crystal (X1904) for a range of 28.5 - 29.0 MHz. For another 500 kHz range a different crystal is required. Decades ago the Richter &amp; Co. sold a print design for the entire 10 m range in four stages but at present you have to make your own PCB design. FIX UNIT (PB-1629) must be replaced by the new PCB </font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><img alt="" src="cover10ms.gif" style="height: 264px; width: 649px; float: right" /> </font></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">The X1904 crystals is removed from his socket and with the other crystals mounted on the new print board. Terminal A of the circuit is connected the FIX switch on the front panel e.g. the terminal with a brown-white wire.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">Indication: the wire leads +8V to terminal 2 of FIX UNIT (PB-1629). Terminal B is connected the hot side of the former X1904 socket. Ifs one of the crystals does not oscillate trimmer TC-1904 at PRE MIX LOCAL PCB should be trimmed or T-1901 adjusted.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">In my set I used only two LEDS as indication for the four band segments see the right side of the diagram. </font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5">IF FILTER LOAD</font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><img alt="" src="filterloads.gif" style="height: 185px; width: 654px; float: right" /></font></b> </span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">Generally input and output of 9 MHz crystal filters are about 50</font><font face="Tahoma" size="4">0 &Omega;. This applies at least for KVG, SHOWA and INRAD filters. So I assume that the Yaesu XF-90A (XF302) need to be loaded with 500 &Omega; and 470 &Omega; was installed.</font></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p align="right">&nbsp;</p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" hspace="12" width="700">
+	<tbody>
+		<tr>
+			<td height="151" valign="middle" width="53%">
+			<p align="center"><span lang="N"><img height="240" src="filterloadf3.jpg" width="364" /></span></p>
+			</td>
+			<td height="151" valign="top" width="47%">
+			<p align="center"><span lang="N"><img height="169" src="filterloadf1.jpg" width="320" /></span></p>
+
+			<p align="center"><span lang="N"><img height="144" src="filterloadf2.jpg" width="320" /></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">According to the original circuit, the input is coupled to the lower source impedance of Q302 (2SK19GR). Proper load is obtained with a unity gain transistor </font><font face="Tahoma" size="4">and a 470 &Omega; resistor.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">During the test I used a BC547 transistor and later replaced a RF type. It turned out that three different RF types were not as good as a BC547B so it was put back. The extra semiconductor was also installed in a FT-7B (&laquo;fig).</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">Usually the input and output are also loaded with a 30 pF capacitance. The SF-0922B filter was mounted with two 27 pF capacitors that improves the symmetry of the pass-band.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">I have not tested the original XF-90A whether the addition would be an improvement. </font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5">DOUBLE SIDEBAND (DSB) CLIPPER</font></b></span></p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" width="952">
+	<tbody>
+		<tr>
+			<td valign="top" width="30%">
+			<p align="center"><span lang="N"><img alt="" src="dsbclips.gif" style="height: 170px; width: 256px" /></span></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2">Test clipper (fig&raquo;). </font></b></span></p>
+			</td>
+			<td valign="top" width="70%">
+			<p align="right"><span lang="N"><img height="190" src="testdsbclipf.jpg" width="600" /></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p>&nbsp;</p>
+<img align="right" height="217" hspace="9" src="dsbclipf.jpg" width="599" />
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">The above circuit can be extended to a double sideband IF clipper/processor in order to increase average output power. Even better is a SSB IF limiter with a second IF filter, but there is not enough space in FT-7 and FT-7B. I have successfully installed a DSB clipper in a </font></span></p>
+<a href="../TS50/ts50mod.htm"><span lang="N"><font face="Tahoma" size="4">TS-50S</font></span></a><span lang="N"><font face="Tahoma" size="4">. </font></span>
+
+<p>&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">Decoupling emitter resistor (470 &Omega;) increase the receiver gain. To prevent overload the resistor is only decoupled during transmit. Two diodes (1N4148) get 8V via terminal 13, they will conduct and a 220 &Omega; resistor is grounded through 10 nF. The degree of</font><font face="Tahoma" size="4"> processing is determined by the setting of the MIC. GAIN knob.</font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5">OTHER IF FILTER</font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><img align="right" height="245" hspace="9" src="filterf1.jpg" width="448" /> </font></b></span>
+
+<p align="justify">&nbsp;</p>
+<span lang="N"><img align="left" height="340" hspace="9" src="xf-90as.gif" width="281" /> </span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" pbzloc="52" size="4">According to the FT-7 manual the (fig&raquo;) YAESU XF-90A IF filter is an 8-pole 9 MHz/2.6 kHz BW type, but I am not sure about the number of poles.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">I was in the possession of two 8-pole crystal filters KVG XF-9B and SHOWA SF-0922B.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" pbzloc="111" size="4">The two filters have the same carrier frequencies 8998.5 kHz and 9001.5 kHz as the original filter, a replacement was considered.</font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify" pbzloc="145">&nbsp;</p>
+
+<p align="justify" pbzloc="64">&nbsp;</p>
+
+<p align="justify" pbzloc="26">&nbsp;</p>
+
+<table align="center" cellpadding="1" cellspacing="1" style="width: 500px">
+	<tbody>
+		<tr>
+			<td pbzloc="28" style="text-align: center">
+			<p pbzloc="90"><img pbzloc="137" src="filterf2.jpg" style="border-top: 0px solid; height: 265px; border-right: 0px solid; width: 300px; border-bottom: 0px solid; margin-left: 5px; border-left: 0px solid; margin-right: 5px" /></p>
+
+			<p pbzloc="49"><span style="font-size: 14px"><span lang="N"><b pbzloc="86"><font face="Tahoma" pbzloc="50">Test the 9 MHZ/2.2 kHz BW Filter.</font></b></span></span></p>
+			</td>
+			<td pbzloc="75">
+			<p pbzloc="83" style="text-align: center"><img pbzloc="141" src="filterf3.jpg" style="border-top: 0px solid; height: 265px; border-right: 0px solid; width: 288px; border-bottom: 0px solid; margin-left: 5px; border-left: 0px solid; margin-right: 5px" /></p>
+
+			<p pbzloc="88" style="text-align: center"><span style="font-size: 14px"><span lang="N"><b pbzloc="89"><font face="Tahoma" pbzloc="116">Final assembly.</font></b></span></span></p>
+			</td>
+			<td pbzloc="101" style="text-align: center">
+			<p><img pbzloc="144" src="filterf4.jpg" style="border-top: 0px solid; height: 265px; border-right: 0px solid; width: 280px; border-bottom: 0px solid; margin-left: 5px; border-left: 0px solid; margin-right: 5px" /></p>
+
+			<p pbzloc="106"><span style="font-size: 14px"><span lang="N"><b pbzloc="92"><font face="Tahoma" pbzloc="107">Only decouple caps at the trackside.</font></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="152"><span lang="N"><font face="Tahoma" pbzloc="153" size="4">Given the limited space at the FILTER UNIT the SHOWA type was most suited to replace the original filter. To test whether it worked well, the filter was temporary installed at the component side of PB-1626. On a crowded 80m band the reception with the narrower type was clearly different from the original filter. The two 27 pF capacitors in parallel with the input and output of the filter improved the symmetry of the band-pass. Carrier frequencies should be adjusted to 8998.5 and 9001.5 kHz.</font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5">SSB CARRIER POINT</font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><img align="right" height="366" hspace="9" src="filter-inrads.gif" width="412" /> </font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">I did the adjustment as follows:</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">Tune the transceiver to 14.250 MHz, LSB mode, and connect a 2100 Hz AF signal to the MIC jack.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">Close the PTT and adjust the MIKE GAIN or AF signal generator for 8 W output on a wattmeter.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">Tune the generator to 300 Hz and adjust the carrier trimmer clockwise for 2 W (which is a difference of 6 dB). Both 2100 HZ and 300 Hz signals should have the same output level!</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">Eventually repeat the above steps.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">Because the SF-0922B filter works satisfactory, it was finally assembled. For sufficient space the two coupling capacitors are soldered to the trackside. </font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">Who wants to spend more money, purchase a 2310 INRAD filter (fig&raquo;), which is 2.5 kHz wide, has</font><font face="Tahoma" size="4"> a nice symmetrical pass-band and should be loaded with 500 &Omega;.</font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" pbzloc="172" size="5">S-METER</font></b></span></p>
+
+<p style="text-align: center"><span lang="N"><img height="186" src="s-meters.gif" width="571" /><font face="Tahoma" size="4">&nbsp;<img height="190" src="s-meterf.jpg" width="320" /></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">A more realistic S meter indication is obtained by adding a BAT85 Schottky diode and a 100 &Omega; resistor. Note t</font><font face="Tahoma" size="4">hat R429 and C427 do not have the same value in an FT-7 and FT-7B!</font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5">PLUG-IN BOARDS</font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><img align="left" height="451" hspace="9" src="socketf.jpg" width="601" /> </font></b></span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" pbzloc="62" size="4">Malfunction or breakdown occurs frequently due to the way the plug-in boards making contact with the motherboard. This is especially noticeable when the set is a long period of time. The tracks are tin-plated contacts and too much tin caused thick PCB tracks. The golden contact springs (&laquo;fig) on the motherboard have the tendency to slip off the tracks with poor contact or interruption as result.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" pbzloc="56" size="4">There are two ways to avoid such disruptions. Remove excess solder with suction litzwire and when inserting a plug-in board be sure that the contact springs are in the middle of the track. In the picture you can see some contact springs are just at the edge of the relevant track. A third measure that has proved is using special contact lubricant.</font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<div style="text-align: center">
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">&nbsp;</font></span><br />
+&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><big style="font-weight: bold"><span pbzloc="196" style="font-family: Tahoma">EXTENSION BOARD</span></big></font></span></p>
+</div>
+
+<p align="center"><span lang="N"><img height="272" src="exboardf1.jpg" width="400" />&nbsp;<img height="272" src="exboardf2.jpg" width="452" /></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="95"><font face="Tahoma">Home made extension board.</font></b></span></span></p>
+
+<p align="right">&nbsp;</p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" hspace="12" width="347">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="justify"><span lang="N"><img height="270" src="exboardf3.jpg" width="335" /></span></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2">Extension board made with with a PC connector.</font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<br />
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">For measuring or adjusting one need an extension board. This tool was hardly on sale in the last century and therefore I was forced to DIY. The tracks were made with Stanley knife.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">The spring contacts of a former PC connector were used for the right board. The boards are somewhat primitive and not pretty, but it works and usually the extenders are not often used. </font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4">Moreover, it is worth because last adjusted FT-7B obtained improved reception and has almost identical output on all bands</font></span></p>
+
+<p align="justify" pbzloc="256"><span lang="N"><font face="Tahoma" pbzloc="257" size="4">&nbsp;</font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5">POWER CONNECTOR</font></b></span></p>
+
+<p style="text-align: center"><span lang="N"><b><font face="Tahoma" pbzloc="279" size="5"><img alt="" pbzloc="288" src="powerconf1.jpg" style="height: 217px; width: 320px; float: left; margin-left: 5px; margin-right: 5px" /><img pbzloc="70" src="powerconf2.jpg" style="border-top: 0px solid; height: 217px; border-right: 0px solid; width: 402px; border-bottom: 0px solid; float: left; margin-left: 5px; border-left: 0px solid; margin-right: 5px" />&nbsp;</font></b></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><small pbzloc="72" style="font-weight: normal">If you purchase an 2ndhand FT-7 the power cable and power plug is not always included.&nbsp;<br />
+Sometimes the correct connection of the battery terminals is unknown. Both pictures show the right interconnections.</small></font></b></span><br />
+&nbsp;</p>
+
+<p align="justify" pbzloc="250">&nbsp;</p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" hspace="12" width="515">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><span lang="N"><img height="227" src="counters.gif" width="484" /></span></p>
+
+			<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="98"><font face="Tahoma">I did not test this idea!</font></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify" pbzloc="247"><span lang="N"><b pbzloc="244"><font face="Tahoma" pbzloc="248" size="5">COUNTER</font></b></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" pbzloc="38" size="4">A FT-7B is a 50 W output successor of the FT-7 and both sets are internally not much different from one another. A digital frequency counter YC-7B for the FT-7B is sometimes for sale. The corresponding accessories plug is missing out on a FT -7.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" pbzloc="73" size="4">For someone at his request, I compared the diagrams of respective FT-7 and FT-7B and draw a diagram to update a FT-7 for YC-7B. Note: I did not test the update system and if anyone among the readers will take the trouble to experiment, please post me the result.</font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" pbzloc="75" size="4">&nbsp;</font></span></p>
+
+<p align="justify" pbzloc="290">&nbsp;</p>
+
+<p align="center"><span lang="N" pbzloc="35"><img height="36" src="bar2.gif" width="500" /></span></p>
+
+<div style="text-align: center"><a href="../Modifaties.htm"><img border="0" height="57" src="back.gif" width="80" /></a></div>
+
+<p>&nbsp;</p>
+</body>
+</html>

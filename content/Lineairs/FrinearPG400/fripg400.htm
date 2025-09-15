@@ -1,0 +1,186 @@
+<TITLE>FRINEAR-400PG a passive grid HF amplifier with 4 × PL519(EL519)</TITLE>
+<BODY LINK="#0000ff" VLINK="#800080" BACKGROUND="Image5.gif">
+<blockquote pbzloc="20" style="text-align: center"><font face="Tahoma" size="6"><strong pbzloc="0">EL519 &amp; PL519 passive-grid 400W linear HF amplifier</strong></font></blockquote>
+
+<p align="center" pbzloc="2">&nbsp;<img border="0" height="12" src="updated2.gif" width="44" />&nbsp;<span pbzloc="440" style="font-size: 14px"><span pbzloc="441" style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="3">15 Aug&nbsp;2019&nbsp;</strong></span></span><b><span style="font-size: 14px"><span lang="EN-GB"><font face="Tahoma"><font face="Tahoma" pbzloc="4">&nbsp;Update schematics.</font></font></span></span></b></p>
+
+<center pbzloc="507">
+<table border="0" cellpadding="4" cellspacing="0" width="940">
+	<tbody>
+		<tr>
+			<td colspan="2" valign="top">
+			<p align="center" pbzloc="461"><img height="370" src="pg400s2.gif" width="840" /></p>
+
+			<p align="center"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 14px"><b pbzloc="293">Schematic in RSGB Handbook (Fig. 1)</b></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="84%">
+			<p align="center" pbzloc="62">&nbsp;<img border="0" height="288" src="pg400s1.gif" width="715" /></p>
+			</td>
+			<td valign="middle" width="16%">
+			<p align="center"><img height="93" src="trafos.gif" width="126" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p pbzloc="506" style="text-align: center">&nbsp;<span pbzloc="508" style="font-size: 18px"><span style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="22">Published in RSGB Handbook 8th Edition: FRINEAR 400 LINEAR (RSGB&#39;s RadCom aug 1992).</strong></span>&nbsp;</span></p>
+
+<p pbzloc="457" style="text-align: center"><font face="Tahoma" pbzloc="460" size="4">A passive-grid 400 W linear HF amplifier, the PAOFRI Frinear. Screen-grid voltage is derived from the RF input and no grid bias supply is required PAOFRI&#39;s Frinear-400 is shown in the schematic. It has several interesting features.</font></p>
+<img align="right" height="231" hspace="9" src="capacitancess.gif" width="379" />
+<p align="justify" pbzloc="1">&nbsp;</p>
+
+<p align="justify" pbzloc="1">&nbsp;</p>
+
+<p align="justify" pbzloc="1"><font face="Tahoma" pbzloc="14" size="4">&bull; Being a passive-grid amplifier, most of the input power is dissipated in a hefty non-inductive carbon resistor applied to the control-grid of the valve.</font>. <font face="Tahoma" pbzloc="8" size="4">This type of linear has many desirable features, including low cost, low component count, stability due to the swamping effect of the passive grid input load and simplicity of the construction. Because the control grid is loaded with a resistor, the amplifier is in principle stable. Considering the low value of the resistor (50 or 68 Ohm), one might expect this arrangement to be frequency-independent; however, the capacitance of the four grids, sockets and associated wiring add up to about 100 pF which is only 55 Ohm at 29 MHz! This capacitance must be tuned out if what is adequate drive on 3.5 MHz is to produce full output on the higher-frequency bands. PAOFRI does this with a dual-resonant circuit (L3 and ganged tuning capacitors) similar to the well-known E-Z-Match antenna tuner; it covers 3.5-29 MHz without switching.</font></p>
+
+<p align="justify" pbzloc="1">&nbsp;</p>
+<font face="Tahoma" size="4"><img align="right" height="333" hspace="9" src="pe1abef3.jpg" width="480" /> </font>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" pbzloc="26" size="4">&bull; The screen grids in this amplifier are neither at a fixed high voltage nor at earth potential but at a voltage which is proportional to the RF drive. To that end, the RF input is transformed up 3 &divide; 1 in T1, rectified in a voltage doubler and applied to the four bypassed screen grids through individual resistors. This method is consistent with good linearity.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">&bull; Control-grid bias is not taken from a mains-derived negative supply voltage but the desired effect, reducing the standing current to 20-25 mA per valve, is obtained by raising the cathodes above earth potential. The bias voltage is developed by passing each cathode current through an individual 100 Ohm resistor and the combined currents through as many forward-biased rectifier diodes as are required to achieve a total standing current of 80-100mA. The individual cathode resistors help in equalising the currents in the four valves. During non-transmit periods the third contact set (RLA3) on the antenna changeover relay opens and inserts a large (10 kOhm) resistor into the combined cathode current, which thereby is reduced to a very low value.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">&bull; The pi-filter circuit for 3.5 and 7 MHz is wound on a powdered-iron toroid which is much smaller than the usual air-core coil. This is not often seen in high-powered amplifiers due to the fear that the large circulating current might saturate the core and spoil the intermodulation performance but no distortion was discernible in a two-tone test.</font></p>
+<font face="Tahoma" size="4"><img pbzloc="22" src="pe1abef4.jpg" style="height: 320px; width: 311px; float: left; margin-left: 7px; margin-right: 7px" /> </font>
+
+<p align="justify" pbzloc="18">&nbsp;</p>
+<img pbzloc="15" src="filamentss.jpg" style="height: 193px; width: 288px; float: right; margin-left: 7px; margin-right: 7px" />
+<p align="justify"><font face="Tahoma" size="4">&bull; In Fig 1, the 42 V filaments of the four valves and a capacitor are shown series connected to the 240 V mains. This 0.3 A chain is the way these valves were intended to be used in CTV sets and it does save a filament transformer, but this method is not recommended for experimental apparatus such as a home construction project. Besides, a 6&micro;F 250 VAC capacitor is neither small nor inexpensive, and generally not available from component suppliers. Also, with lethal mains voltage in the amplifier chassis, the mains plug must be pulled every time access to the chassis is required and after the change or adjustment is made there is the waiting for filaments to heat up before applying HT again. It is much safer and more convenient to operate the filaments in parallel on a 42 V transformer (3 &times; 12.6 + 5 V will do), or to use EL519 valves in parallel, series-parallel or series on 6.3, 12.6 or 25.2 V respectively.</font><b> </b></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="266" size="4">&bull; This amplifier was stable and build without a parasitic suppressor in the tank circuit. If any instability occurs fit a suppressor. </font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="center" pbzloc="471"><img height="320" src="pe1abef1.jpg" width="427" /><b><font face="Tahoma" size="2">&nbsp;<img height="320" src="pe1abef2.jpg" width="427" /></font></b></p>
+
+<p align="center"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 14px"><b pbzloc="512">PE1ABE&#39;s home brewed amplifier.</b></span></span></p>
+
+<p><span style="font-size: 24px"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="519"><strong pbzloc="91">PARASITIC SUPPRESSOR</strong></span></span></span></p>
+
+<p align="right" pbzloc="231">&nbsp;</p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" hspace="12" width="543">
+	<tbody>
+		<tr>
+			<td valign="top" width="50%">
+			<p align="center"><img height="75" src="stoppersf2.jpg" width="144" /></p>
+
+			<p align="center"><img height="240" src="stoppers2.gif" width="250" /></p>
+			</td>
+			<td valign="top" width="50%">
+			<p align="center"><img height="317" src="stoppersf1.jpg" width="242" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<img align="left" height="91" hspace="9" pbzloc="240" src="stoppers1.gif" width="101" />
+<p align="justify" pbzloc="249"><font face="Tahoma" pbzloc="248" size="4">A method of parasitic suppression is the insertion of RF current (hairpin shaped) obstacles (dampers) at right angles (&laquo;fig) to the probable flow of the parasitic currents. This method can be used up to frequencies of several 100 MHz without noticeably reducing fundamental power. The main function is to provide a high VHF/UHF impedance path in series with other (tank) circuit elements. However such method can be used only where the fundamental and parasitic frequencies are sufficiently far apart, so that excessive resistive losses of the fundamental frequencies are avoided. The circuit should have a L/C ratio al low as practicable and&nbsp;</font><span style="font-size: 18px"><span pbzloc="251" style="font-family: tahoma,geneva,sans-serif">be sufficiently damped to achieve a broadband effect.</span></span></p>
+
+<p pbzloc="260" style="text-align: justify"><font face="Tahoma" pbzloc="225" size="4">Damping can be achieved by paralleling the hairpin circuit inductor with a non-inductive resistor and by making the inductor from&nbsp;</font><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="233" style="font-size: 18px"><font pbzloc="225"><span pbzloc="227"> </span></font>poorly conductive metal</span></span><font face="Tahoma" pbzloc="256" size="4">. A mat surface rather than a polished surface may provide sufficient surface resistance. The resistive component need often be no more than a nickel alloy wire/strip or tinned copper wire/strip with a DC resistive value of a fraction of one ohm. If you use 1 - 2 mm diameter tinned copper wire, it will have sufficient skin resistance for VHF. Cut off a 12 cm long piece of wire and bend it around a piece of pipe 25 mm od., solder a lug on each end.</font></p>
+
+<p pbzloc="262" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="162" style="font-size: 18px">All my amplifiers with EL/PL519 were so stable that no parasite stoppers were needed at the anode. This also depends on how such a PA is built and not everyone has experience with it. Some rebuilders of my designs&nbsp;</span><span pbzloc="165" style="font-size: 18px">were confronted with instability but&nbsp;</span><span style="font-size: 18px">that disappears</span><span pbzloc="208" style="font-size: 18px">&nbsp;after parasite stoppers were applied to each anode.&nbsp; On the right (fig&raquo;) you can see how someone&nbsp;that did&nbsp;as a precaution. If the amplifier still appears to be unstable, increase or decrease the size of the hairpin a little.</span></span></p>
+
+<p pbzloc="263"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="181"><strong pbzloc="183"><span pbzloc="185" style="font-family: tahoma,geneva,sans-serif"><span pbzloc="264" style="font-size: 24px">SCREEN SUPPLY PRINCIPLE</span></span></strong></span></font></font></p>
+
+<p pbzloc="81" style="text-align: justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="305"><img pbzloc="310" src="principle&#32;s.gif" style="border-top: 0px solid; border-right: 0px solid; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></font></font></p>
+
+<p pbzloc="81" style="text-align: justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="226" size="4">The screen grid is neither at a fixed high voltage nor at earth potential but at a voltage with is proportional to the RF drive. To that end, voltage is derived from a small portion of the&nbsp;input signal, rectified in a voltage doubler applied to the bypassed screen grid. This method is consistent with good linearity. In the absence of drive there is no screen voltage and the idle current is very low. It is as if the system works as zero bias</font></font></span></p>
+
+<p pbzloc="259" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span id="result_box" lang="en" pbzloc="72"><span class="hps" pbzloc="19">Not everyone understand the principle of diriving screen grid voltage from the input signal. </span></span><span lang="en" pbzloc="72"><span class="hps" pbzloc="81">T</span></span><span id="result_box" lang="en" pbzloc="118"><span class="hps">he system is</span> often <span class="hps" pbzloc="82">applied</span> <span class="hps">indiscriminately</span> to other tubes (for example, <span class="hps" pbzloc="203">QE08</span><span class="hps" pbzloc="95">/</span><span class="hps" pbzloc="96">200)</span> <span class="hps" pbzloc="91">without proper</span> <span class="hps" pbzloc="237">adjustment procedure.</span></span></span></span></p>
+
+<p pbzloc="319" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="255" style="font-size: 18px"><span id="result_box" lang="en" pbzloc="314"><span class="hps">This article</span> <span class="hps">applies the</span> <span class="hps">principle</span> <span class="hps" pbzloc="211">of Figure&nbsp;2</span> <span class="hps" pbzloc="119">(&laquo;fig)</span>. <span class="hps">Without</span> drive <span class="hps" pbzloc="207">set&nbsp;the </span><span class="hps" pbzloc="268">idle current</span>&nbsp;<span class="hps">with</span> <span class="hps">a</span> <span class="hps" pbzloc="129">number of diodes in series</span>. Due to anode&nbsp; current cathode r<span class="hps" pbzloc="313">esistor</span> <span class="hps atn" pbzloc="228">R2&nbsp;</span>provides <span class="hps" pbzloc="217">a positive&nbsp;</span><span class="hps">voltage</span> <span class="hps">which is proportional to</span> <span class="hps">an</span> <span class="hps">instantaneous</span> <span class="hps">screen grid voltage</span><span pbzloc="141">. The latter is&nbsp;</span></span> derived from a small portion of the&nbsp;input signal and rectified in a voltage quadrupler. The cathode voltage creates&nbsp;a&nbsp;negative voltage of the control grid with respect to ground.</span><span pbzloc="255"> </span><span style="font-size: 18px"><span id="result_box" lang="en" pbzloc="273"><span class="hps">The more</span> drive&nbsp;<span class="hps">the more</span> the tube conducts. If&nbsp;R2 is</span><span id="result_box" lang="en" pbzloc="318"> <span class="hps">too small</span>&nbsp;<span class="hps" pbzloc="274">the negative</span> <span class="hps" pbzloc="276">voltage <span class="hps" pbzloc="280">reduces and screen grid current increases,</span></span>&nbsp;so that screen grid voltage <span class="hps">collapses.</span> <span class="hps">If the resistance is</span> <span class="hps" pbzloc="316">too large</span> <span class="hps">the</span> anode current decreases and ouput drops.</span></span></span></p>
+
+<div id="gt-src-tools">
+<div id="gt-src-tools-l" pbzloc="338" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span id="result_box" lang="en" pbzloc="403"><span class="hps" pbzloc="408"><img pbzloc="411" src="kathodes.gif" style="border-top: 0px solid; height: 178px; border-right: 0px solid; width: 356px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" />It</span> <span class="hps" pbzloc="340">will be clear that</span> <span class="hps">screen grid voltage</span> <span class="hps">and</span> <span class="hps">cathode</span> <span class="hps">voltage</span> <span class="hps">are inextricably bound up</span> <span class="hps">with each other and</span> <span class="hps">that their relationship</span> <span class="hps">also</span> <span class="hps">depends on</span> driving power. A&nbsp;<span class="hps">100 Ohm</span> cathode <span class="hps">resistor is</span> <span class="hps">a</span> <span class="hps">good compromise for</span> <span class="hps" pbzloc="346">a 10 W exciter.</span></span>&nbsp;</span></span></div>
+</div>
+
+<div id="gt-input-tool" pbzloc="412">
+<div id="itamenu" pbzloc="424" style="text-align: justify"><span style="font-size: 18px"><span pbzloc="27" style="font-family: tahoma,geneva,sans-serif"><span id="result_box" lang="en" pbzloc="369"><span class="hps" pbzloc="406">One can</span> DIY&nbsp;<span class="hps">the optimal value of</span> <span class="hps">the</span> <span class="hps">resistor</span>. <span class="hps">This may</span> <span class="hps">per</span> <span class="hps">tube</span>, or <span class="hps">for</span> <span class="hps">all</span> <span class="hps">four</span> <span class="hps">at the same time</span>. <span class="hps">In the latter</span> <span class="hps" pbzloc="363">case</span> <span class="hps" pbzloc="362">connect all the</span> <span class="hps">cathodes</span> <span class="hps">to each other</span> <span class="hps">(fig &raquo;)</span> and install&nbsp;<span class="hps" pbzloc="372">an more then <span class="hps">25 Ohm</span> adjustable</span> <span class="hps" pbzloc="380">resistor to ground. Apply maximum drive (here 10 W) and tune the amplifier for maximum output. Set the resistor on 25 Ohm. Increase the value and the output drops, decrease and the ouptut increases. Further decrease causes a&nbsp;suddenly collaps of power en dropping of the screen grid voltage. </span></span><span id="result_box" lang="en" pbzloc="394"><span class="hps">The right point</span> <span class="hps">for</span> <span class="hps">the potentiometer</span> <span class="hps">is the state</span> <span class="hps">just before the</span> collapsing. <span class="hps" pbzloc="388">Suppose measured&nbsp;r</span><span class="hps">esistance</span> is about<span class="hps" pbzloc="386">er</span> <span class="hps">20</span> O<span class="hps" pbzloc="389">hms.</span> <span class="hps">Remove</span> <span class="hps">and</span> re<span class="hps">place</span> <span class="hps">in</span> each&nbsp; <span class="hps" pbzloc="30">cathode&nbsp; 4 &times; 20 = 80 Ohm. Use a standard value of 82 Ohm.</span></span></span></span></div>
+
+<div pbzloc="424" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="45" style="text-align: justify"><strong><span style="font-size: 24px"><span pbzloc="27" style="font-family: tahoma,geneva,sans-serif"><span lang="en" pbzloc="394"><span class="hps" pbzloc="48">FILAMENT&nbsp;PL519</span></span></span></span></strong></div>
+
+<div pbzloc="47" style="text-align: justify"><br />
+<span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="65" style="font-size: 18px"><img pbzloc="55" src="filamentss.jpg" style="border-top: 0px solid; height: 193px; border-right: 0px solid; width: 288px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img pbzloc="62" src="pl519f.jpg" style="border-top: 0px solid; height: 133px; border-right: 0px solid; width: 416px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></span></div>
+
+<div pbzloc="47" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="47" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="1" style="font-size: 18px">The tube types EL519 and PL519 are identical, only voltage and current for the filament are different. A PL519 requires 40 V/0.3 A. By putting 4 &times; PL519 in series it is possible to feed the 160 V/0.3 A for the filament directly from the 50 Hz mains. That sounds strange, but it also happened in older KTVs. Based on a mains voltage of 230VAC, one can calculate the capacitor (&laquo;fig) that ensures the correct voltage drop. There are two options (see dotted line): a bipolar capacitor or two capacitors, each with a diode in series.</span></span></div>
+
+<div pbzloc="47" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="47" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="47" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="47" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="47" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="47" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="80" style="font-size: 18px"><strong><span style="font-size: 24px"><span pbzloc="79">OUTPUT POWER</span></span></strong>&nbsp;</span></span></div>
+
+<div pbzloc="47" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="94" style="text-align: justify"><span style="font-size: 18px"><span pbzloc="97" style="font-family: tahoma,geneva,sans-serif">The transmission power depends on the high voltage, but also on the frequency. The latter because the efficiency of the tubes on the higher bands decreases and more signal capacitively &quot;leaks&quot; when the voltage for the screen grid is generated. It is therefore not surprising that your DIY&nbsp;amplifier has an output of about: 10 m/300 W, 15 m/350 W, 20 m/400 W, 40 m/450 W and 80 m&gt; 450 W.</span></span></div>
+
+<div pbzloc="94" style="text-align: justify">&nbsp;</div>
+
+<div pbzloc="101" style="text-align: justify">&nbsp;</div>
+
+<p pbzloc="188">&nbsp;</p>
+
+<div pbzloc="36" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="198" style="font-size: 18px">&nbsp;</span></span></div>
+
+<div pbzloc="191" style="text-align: center">
+<table align="center" border="0" cellpadding="4" cellspacing="0" width="918">
+	<tbody>
+		<tr>
+			<td valign="middle" width="31%">
+			<p align="center"><img height="208" pbzloc="485" src="controlgrids.gif" width="178" /></p>
+			</td>
+			<td valign="middle" width="28%">
+			<p align="center" pbzloc="15"><img height="156" src="toroids.gif" width="177" /></p>
+			</td>
+			<td valign="middle" width="41%">
+			<p align="center" pbzloc="501"><img height="150" src="varcapf.jpg" width="337" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="64">&nbsp;</p>
+</div>
+</div>
+
+<table align="center" border="0" cellpadding="4" cellspacing="0" width="950">
+	<tbody>
+		<tr>
+			<td valign="middle" width="76%">
+			<p align="center" pbzloc="69"><img border="0" height="286" src="gu50s.gif" width="715" /></p>
+
+			<p align="center"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 14px"><b pbzloc="304"><u>This design with a GU-50 (&Gamma;?-50, FU-50S) is not tested.</u></b></span></span></p>
+			</td>
+			<td valign="middle" width="24%">
+			<p align="center"><img height="350" src="gu50f.jpg" width="155" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="95" style="text-align: center"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="430">&nbsp;</span></font></font><img height="36" pbzloc="416" src="bar2.gif" width="500" /></p>
+
+<p pbzloc="109" style="text-align: center"><a class="0" href="../Lineairs.htm" pbzloc="108"><img border="0" height="25" pbzloc="105" src="backfri.gif" width="53" /></a></p>
+
+<p><font face="Garamond">&nbsp;</font></p>
+
+<p><font face="Garamond">&nbsp;</font></p>
+</body>
+</html>

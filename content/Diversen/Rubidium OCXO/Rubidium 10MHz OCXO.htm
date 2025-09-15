@@ -1,0 +1,68 @@
+
+<title>Rubidium disciplined 10MHz OCXO</title><meta name="Titel" content=" ">
+<meta name="Template" content="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz"></head>
+<body background="Image5.gif" link="#0000ff" vlink="#800080">
+<p align="center" pbzloc="27"><span style="font-size: 36px"><font face="Tahoma" pbzloc="69"><strong pbzloc="6">A RUBIDIUM DISCIPLINED </strong><strong pbzloc="72">10 MHz </strong><strong pbzloc="71">OCXO </strong></font></span></p>
+
+<p align="center" pbzloc="94"><span pbzloc="89" style="font-size: 18px"><font face="Tahoma" pbzloc="1"><strong pbzloc="3">SM0FLY </strong><strong pbzloc="7">(SK 01-apr-2021)&nbsp;, July 2011</strong></font></span></p>
+
+<p>&nbsp;</p>
+
+<p pbzloc="65"><span style="font-size: 24px"><span style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="2">PRE-SCRIPTUM</strong></span></span></p>
+
+<p pbzloc="102" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="67" style="font-size: 18px">This mini project was &lsquo;forced upon me&rsquo; as I purchased a PC based spectrum analyser &rsquo;Signalhound&rsquo;. See the website <a href="http://www.signalhound.com/">www.signalhound.com</a> for detailed info.&nbsp;</span></span><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="68" style="font-size: 18px">As this spectrum analyser is a USB powered device, a stable built-in low noise reference oscillator in the analyzer is not an option with today&rsquo;s limited power handling on USB PC ports.&nbsp;</span></span><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="8" style="font-size: 18px">Hence, an external 10 MHz oscillator reference should provide the necessary absolute frequency accuracy as well as the low sideband noise requirements.</span></span></p>
+
+<p pbzloc="75"><span style="font-size: 24px"><span style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="103">RUBIDIUM AND OCXO FREQUENCY STANDARDS</strong></span></span></p>
+
+<p pbzloc="69"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="9" style="font-size: 18px">Numerous devices are available on eBay that satisfy our demand for an accurate 10 MHz reference regarding frequency accuracy.</span></span></p>
+
+<p pbzloc="70"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="10" style="font-size: 18px">For a handful USD, the following Rubidium 10 MHz standards were purchased via eBay and flea-markets:</span></span></p>
+
+<p pbzloc="119" style="margin-left: 480px"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="104" style="font-size: 18px">- Efratom FE5680A</span></span></p>
+
+<p style="margin-left: 480px"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">- LPRO-101</span></span></p>
+
+<p pbzloc="81" style="margin-left: 480px"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">- AT&amp;T (new, unused spare part)</span></span></p>
+
+<p pbzloc="84"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">A well known limitation of Rubidium standards is the relatively high nearby noise and/or spurious at the carrier, expressed in dBc/Hz. This was clearly noticed by measuring the above devices.&nbsp;&nbsp;</span></span></p>
+
+<p pbzloc="128" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">A simple ovenized crystal oscillator OCXO has a remarkable lower noise sideband and is therefore preferably implemented in SDR&rsquo;s or synthesizers in general. The used PTOC32227 from FOQ Piezo Technik, today available as IQOV-70-6, has &lt; -145 dBc/Hz at 1KHz distance from the carrier.</span></span></p>
+
+<p pbzloc="135"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="4" style="font-size: 18px">The task is therefore to combine the OCXO low noise specifications with the Rubidium absolute frequency accuracy.</span></span></p>
+
+<p pbzloc="138"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="5" style="font-size: 24px"><strong pbzloc="6">OCXO WITH RUBIDIUM FREQUENCY ACCURACY</strong></span></span></p>
+
+<h1 pbzloc="39"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">The above problem is easily solved by locking the OCXO (PTOC32227 at eBay) to a Rubidium standard. Another alternative is to discipline the OCXO to the GPS system, however this needs an antenna, external wiring, and makes it overall less portable.</span></span></h1>
+
+<p pbzloc="142" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="1" style="font-size: 18px">The circuit diagram&nbsp;below shows the solution. The OCXO, with a voltage controlled input that allows a few ppm frequency change, is locked via a PLL formed by the phase detector part of a&nbsp; 74HC4046 to the Rubidium standard. Time constant of the PLL to the OCXO is kept at approximately 0.5 seconds at pin 13 of the 74HC4046.</span></span></p>
+
+<p pbzloc="11">&nbsp;<img border="0" height="761" pbzloc="143" src="rubidum&#32;ocxo&#32;s.gif" width="1095" /></p>
+
+<p><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="3" style="font-size: 18px">A 74AC04 is used for signal &lsquo;shaping/driving&rsquo; and input handling for the PLL 74HC4046. Three (3) outputs with square wave are available for optional use for frequency counters, SDR&rsquo;s or auxiliary devices that need low noise accurate frequency references.</span></span></p>
+
+<p><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px">A Mini-Circuits LP filter PLP-10.7 is embedded in case a pure 10MHz sinus is required for other purposes e.g. long transmission lines.</span></span></p>
+
+<p pbzloc="34"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 24px"><strong pbzloc="44">PRACTICAL BUILD-UP</strong></span></span></p>
+
+<p pbzloc="43" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="45" style="font-size: 18px">Image&nbsp;below shows the implementation of the above circuit diagram. The heat sink is removed for this picture only. The OCXO is disciplined by the Efratom FE 5680A. Note that most Rubidium standards need approx 2-3 Amps at 15-24 Volts at start-up and the OCXO between 0.3 and 0.6 Amp at 5 Volt. The whole unit is therefore powered by an external low cost laptop-intended switched PSU.&nbsp; The 5 Volt for the logics and OCXO is accomplished by an internal 7805 circuit built into the box as shown below. A solid heat sink is a must to keep the maximum temperature within the Rubidium/OCXO specified range.</span></span></p>
+
+<p pbzloc="10" style="text-align: center">&nbsp;<img border="0" height="678" pbzloc="11" src="build-up&#32;f.jpg" style="height: 883px; width: 993px" width="800" /></p>
+
+<p pbzloc="65" style="text-align: center"><img border="0" height="438" src="pcb&#32;f.jpg" width="708" /></p>
+
+<p pbzloc="65"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="66" style="font-size: 24px">REFERENCES</span></span></strong></p>
+
+<ol>
+	<li pbzloc="30"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><a href="http://www2.elo.utfsm.cl/~lsb/elo211/datos/cristales/toc.htm">http://www2.elo.utfsm.cl/~lsb/elo211/datos/cristales/toc.htm</a></span></span></li>
+	<li><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><a href="http://en.wikipedia.org/wiki/Rubidium_standard" pbzloc="67">http://en.wikipedia.org/wiki/Rubidium_standard</a></span></span></li>
+	<li><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><a href="http://en.wikipedia.org/wiki/Allan_variance">http://en.wikipedia.org/wiki/Allan_variance</a></span></span></li>
+	<li><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><a href="http://www.rell.com/resources/RellDocuments/SYS_27/IQOV-70-6%20Iss%201.pdf">http://www.rell.com/resources/RellDocuments/SYS_27/IQOV-70-6%20Iss%201.pdf</a></span></span></li>
+	<li><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><a href="http://www.minicircuits.com/pdfs/PLP-10.7.pdf">http://www.minicircuits.com/pdfs/PLP-10.7.pdf</a></span></span></li>
+	<li pbzloc="10"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><a href="http://www.datasheetcatalog.org/datasheet/philips/74HC4046A.pdf">http://www.datasheetcatalog.org/datasheet/philips/74HC4046A.pdf</a></span></span></li>
+</ol>
+
+<p align="center" pbzloc="4"><img height="36" src="bar2.gif" width="500" /></p>
+
+<p align="center" pbzloc="7"><a href="../Diversen.htm"><img alt="" pbzloc="8" src="backfri.gif" style="border-top: 0px solid; height: 25px; border-right: 0px solid; width: 53px; border-bottom: 0px solid; border-left: 0px solid" /></a></p>
+</body>
+</html>

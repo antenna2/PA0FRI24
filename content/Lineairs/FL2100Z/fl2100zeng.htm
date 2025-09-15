@@ -1,0 +1,675 @@
+<TITLE>FL-2100Z modifications</TITLE>
+<BODY LINK="#0000ff" VLINK="#800080" BACKGROUND="Image5.gif">
+<dir>
+</dir>
+
+<p align="center"><b><font face="Tahoma" size="6"><font face="Tahoma" size="6"><span lang="N" pbzloc="0">YAESU FL-2100Z Linear HF Amplifier Mod</span></font></font></b><br />
+<span lang="N"><font face="Tahoma" size="2"><font face="Tahoma" pbzloc="82" size="2">&nbsp;<img height="12" src="updated2.gif" width="44" /></font></font><b><font face="Tahoma" size="6"><font face="Tahoma" pbzloc="131" size="6">&nbsp;</font></font></b><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 14px"><font pbzloc="130">04-sep-2023 PA3HBT&#39;s GI7B conversion.</font></span></span></strong></span></p>
+
+<center pbzloc="111">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" style="width: 1000px" width="876">
+	<tbody>
+		<tr>
+			<td valign="middle" width="45%">
+			<p><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">1. Rerouted variable capacitor VC1 ground path.</span></font></font></b></span></p>
+
+			<p><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">2. Install HV glitch resistor + fast fuse.</span></font></font></b></span></p>
+
+			<p><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">3. Added 4n7 bypass at HV glitch resistor.</span></font></font></b></span></p>
+
+			<p><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">4. Added 4n7 bypass at plate choke bypass capacitor C3.</span></font></font></b></span></p>
+
+			<p><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N" pbzloc="116">5. Repair or mod plate choke.</span></font></font></b></span></p>
+
+			<p><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">6. Repair or mod parasitic suppressors.</span></font></font></b></span></p>
+
+			<p><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">8. Diode protection on meters.</span></font></font></b></span></p>
+
+			<p><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">9. Test output.</span></font></font></b></span></p>
+
+			<p><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">10. Some tips.</span></font></font></b></span></p>
+			</td>
+			<td valign="middle" width="55%">
+			<p align="center"><font size="2"><span lang="N" pbzloc="121"><img height="232" src="fl2100mods.gif" width="452" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<center pbzloc="48">
+<table align="center" border="1" cellpadding="4" cellspacing="1" dir="ltr" width="952">
+	<tbody>
+		<tr>
+			<td valign="middle" width="12%">
+			<p align="center" pbzloc="53"><a href="fl2100zeng.htm#DESCRIPTION"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N" pbzloc="49">Description</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#OUTPUT"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Output</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#NEUTRALIZATION"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Neutralizat.</span></font></font></b></a></p>
+			</td>
+			<td pbzloc="1" valign="middle" width="13%">
+			<p align="center" pbzloc="7"><a href="fl2100zeng.htm#SHORTCOMING"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N" pbzloc="2">Shortcoming</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#PROTECTION"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Protection</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#MODIFICATIONS"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Modifications</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#METERS"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Meters</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#S3"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N" pbzloc="9">S3</span></font></font></b></a></p>
+			</td>
+			<td pbzloc="11" valign="middle" width="13%">
+			<p align="center" pbzloc="14"><a href="fl2100zeng.htm#Conversion"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N" pbzloc="44">GI7B</span></font></font></b></a></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="middle" width="12%">
+			<p align="center"><a href="fl2100zeng.htm#COOLING"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Cooling</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#INPUT"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Input</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#SUPPRESSOR"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Suppressor</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#RFC"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Plate RFC</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#BIAS"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Bias</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#MATCHED"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Match tubes</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#REACTIVATION"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Reactivation</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">
+			<p align="center"><a href="fl2100zeng.htm#STEPSTART"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="N">Step-start</span></font></font></b></a></p>
+			</td>
+			<td valign="middle" width="13%">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<dir>
+</dir>
+
+<p align="center"><font size="2"><span lang="N" pbzloc="45"><img height="323" src="fl2100f.jpg" width="575" /></span></font></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="123"><font face="Tahoma"><font face="Tahoma">YAESU FL-2100Z.</font></font></b></span></span></p>
+
+<p align="center"><span lang="N"><font pbzloc="124" size="2"><img height="306" src="fl2277f.jpg" width="575" /></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="51"><font face="Tahoma"><font face="Tahoma">SOMMERKAMP FL-2277Z.</font></font></b></span></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="300" src="fl2100bf.jpg" width="575" /></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="48"><font face="Tahoma"><font face="Tahoma">YAESU FL-2100B.</font></font></b></span></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="125"><font face="Tahoma"><font face="Tahoma" pbzloc="126">In the amplifiers real components were used to create a nice and compact amplifier.</font></font></b></span></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="14" size="5"><a name="DESCRIPTION" pbzloc="76">DESCRIPTION</a></font></font></b></span></p>
+
+<p pbzloc="6" style="text-align: center"><img border="0" pbzloc="10" src="fl2100z&#32;schematic&#32;s.gif" /><br pbzloc="71" />
+<br />
+&nbsp;</p>
+
+<p pbzloc="9"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="12" style="font-size: 24px">-----------------------------</span></span><br />
+<strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="7" style="font-size: 24px">DB5AR MODIFICATIE</span></span></strong></p>
+
+<p pbzloc="58"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="8" style="font-size: 18px">DB8AR wrote that 220 pF for C8 and C9 are too small on the lower bands 30, 40 and 80m. If this is increased to 1000 pF, the drivel goes down. Like on the 40 m band, where the modification required 80 W for 600 W output. After the change, only 45 W was needed for the same power. I haven&#39;t tested this mod myself yet.<br />
+-------------------------------------</span></span></p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="354">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><a href="fl2100f-1.jpg" pbzloc="13"><img border="0" height="90" src="1.jpeg" width="120" /></a><span lang="N">.</span><a href="fl2100f-2.JPG"><img border="0" height="120" src="2.jpeg" width="90" /></a><span lang="N">.</span><a href="fl2100f-3.jpg"><img border="0" height="90" src="3.jpeg" width="120" /></a></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">Click to Enlarge.</span></font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">An YAESU FL-2100Z (or the equivalent SOMMERKAMP FL2277Z) is a linear amplifier for 160-80-40-30-20-10-15-12-10 m and has a separate input circuit for each band. It has two 572B/T160 tubes in an AB2 earthen grid configuration and especially designed to be used together with the FT-101ZD or FT-901DM. Two horizontal mounted fans cool the tubes. The earlier models FL-2100 and FL-2100B are largely similar but cover fewer bands.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">The maximum output is not always achieved and an internal or external antenna tuner is needed in order to get everything out due to the poor SWR on some bands.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">The Sommerkamp is relabelled Yaesu manufactured equipment: Internally only Yaesu components are to be found.</span></font></font></p>
+
+<p align="justify" pbzloc="1"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="24" size="5"><a name="OUTPUT" pbzloc="23">OUTPUT</a></font></font></b></span></p>
+
+<center pbzloc="3">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="949">
+	<tbody>
+		<tr>
+			<td valign="top" width="43%">
+			<p align="center"><font size="2"><span lang="N"><img height="121" src="outputs1.gif" width="355" /></span></font></p>
+
+			<p align="center"><font size="2"><span lang="N" pbzloc="1"><img height="112" src="outputs3.gif" width="342" /></span></font></p>
+
+			<p align="center" pbzloc="9"><font size="2"><span lang="N" pbzloc="3"><span pbzloc="5" style="font-size: 14px"><span pbzloc="6" style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="10">Key down (carrier) output!</strong></span></span></span></font></p>
+			</td>
+			<td valign="top" width="41%">
+			<p align="center"><font size="2"><span lang="N"><img height="58" src="outputs2.gif" width="360" /></span></font></p>
+
+			<p align="center"><font size="2"><span lang="N" pbzloc="116"><img border="0" height="177" src="specs&#32;572b&#32;s.gif" width="207" /></span></font></p>
+			</td>
+			<td rowspan="2" valign="top" width="16%">
+			<p align="center"><font size="2"><span lang="N"><img height="460" src="572bf2.jpg" width="144" /></span></font></p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="top" width="84%">
+			<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">After normal tune up of the FL-2100Z, increase the power output of the transciever to full output and readjust the PLATE &amp; LOAD for maximum RF power out of the amplifier. Your grid current (Ig) will be a little over 200 mA so make it quick! During SSB transmission after tuning like this, the Ig meter </span></font></font><span lang="N"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">never</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> deflects beyond 100 mA. Average Ig during SSB is what&#39;s important. Peak Ig, which your Ig meter will not read, is not important. During 20m CW tune up you see around 600 -700 W/500 mA cathode current (Ic) and 150 mA grid current (Ig).</font></font></span></p>
+
+			<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">In manuals 1200 W was stated as Plate Input Power, but that is the tubes input power from the mains. Still I see it advertised in ads. Remember that the real output is about half of the input power.</font></font></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<center pbzloc="25" style="text-align: justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="9">Not all the examined PA&#39;s produces the same power per band. My table shows the results of a test with new (Taylor, RF Parts) tubes in one of the amplifiers. Because the voltage of the electricity during a day is not constant, the output was measured at three different times for three consecutive days. Used were: 100 W transmitter, Bird dummy load and Bird 43 Wattmeter with a 2.5 kW slug type 2500H and a 1 kW type 1KP for 160 m. The AC was on the 220 V taps of the power supply. A resistor in series with the filament circuit drops the voltage for the two tubes. So you have an idea about what output you can expect. Some bands needed an external ATU to load the driver with SWR = 1 in order to obtain maximum output. The lower output on the 160 m band is due to the very low Q of the anode circuit, because the manufacturer has cut the components. The lower power on the higher bands is due to the decreasing efficiency of the tubes and the higher circuit losses on the higher frequencies.</span></font></font></center>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">The input SWR and output depends on the neutralization e.g. adjusting of TC2 is my experience, see the next topic. </span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">As expected LU5OM&#39;s experiments with the neutralization shows that transmitting power and input VSWR was affected by the setting of TC2. Tuning was according to the manual with a dip at 10 m. The output could only be achieved with an additional tuner between IC7000 and FL2100Z.</span></font></font></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><a name="NEUTRALIZATION" pbzloc="4">NEUTRALIZATION</a></font></font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="26" size="4">The amplifier is very stable due to the modifications in this article and eventually neutralization may even be omitted. Because the 9 fixed tuned input circuits are designed with that system it was left intact to keep the SWR modest. The neutralization method in the manual reduces the output of 10 and 12 m significantly.&nbsp;</font></font></span></p>
+
+<table align="right" border="1" cellpadding="4" cellspacing="1" dir="ltr" hspace="12" style="width: 400px" width="338">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">-Tune the amplifier for maximum output on 10 m.</span></font></font></b></span></p>
+
+			<p pbzloc="55"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">-At full drive, adjust TC2 for minimum input SWR.</span></font></font></b></span></p>
+
+			<p align="justify"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N" pbzloc="63">-Repeat this procedure one time.</span></font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><span style="font-size: 18px"><font face="Tahoma"><font face="Tahoma"><span lang="N">After a few experiments with C2 the chosen trimming procedure was:</span></font></font></span></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">This method also shows that the lowest SWR is obtained at many bands. The stability can be checked (with a non-active exciter) by loading the amplifier into a 50 Ohm dummy load. Set the OPER/STBY switch to OPER. Close the T/R relay via J4 (= RY). Note the idle current while slowly turns the Plate and Loading knobs clock and anti clockwise. Repeat this procedure on each band. If there is no change of the idling current, your amplifier is stable enough.</span></font></font></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><a name="SHORTCOMING" pbzloc="56">SHORTCOMING</a></font></font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">There are two shortcomings: the tubes like to oscillate and there is no protection against &quot;flash-over&quot;. The FL-2100Z is a more or less copy of the </font></font></span><a href="../SB200/sb200eng.htm"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Heathkit SB-200</span></font></font></a><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="156">. In the referenced article there may be useful technical information and modifications for your Yaesu amplifier.</span></font></font></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="28" size="5"><a name="PROTECTION" pbzloc="27">PROTECTION OF THE TUBES</a></font></font></b></span></p>
+
+<center pbzloc="42">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="940">
+	<tbody>
+		<tr>
+			<td valign="middle" width="51%">
+			<p align="center"><font size="2"><span lang="N"><img height="345" pbzloc="155" src="fastfusef3.jpg" width="460" /></span></font></p>
+
+			<p align="center"><font size="2"><span lang="N">&nbsp;</span></font></p>
+
+			<p align="center"><font size="2"><span lang="N"><img height="35" src="fastfuses.gif" width="275" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="41"><font face="Tahoma"><font face="Tahoma">Protection circuit: 1 glitch resistor + 1 fast fuse</font></font></b></span></span></p>
+			</td>
+			<td valign="top" width="49%">
+			<p align="center"><font size="2"><span lang="N"><img height="231" src="fastfusef1.jpg" width="435" /></span></font></p>
+
+			<p align="center"><font size="2"><span lang="N"><img height="232" src="fastfusef2.jpg" width="435" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><span lang="N" pbzloc="30"><font size="2"><img height="345" src="fastfusef4.jpg" width="396" /></font>&nbsp;<img height="345" src="fastfusef5.jpg" width="478" /></span></p>
+
+<p style="text-align: justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="31" size="4">The 572B have the nasty habit of a &quot;flash-over&quot; if they have not been used in a long time. The main fuse can blow and the tube can be damaged by the momentarily short in the valve if there is (&laquo;fig) no fuse and resistor in the anode circuit. In addition the high voltage diodes can be destroyed which leads to the transformer demise. One of the first FL2100Z that I inspected had this fault but the valves survived because the protection circuit had been installed.</font></font></span></p>
+<span lang="N"><a name="MODIFICATIONS"></a></span>
+
+<p align="justify"><span lang="N"><a name="MODIFICATIONS" pbzloc="134"><b pbzloc="169"><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="32" size="5">RELAY CONTACTS</font></font></b></a></span></p>
+
+<p align="justify"><span lang="N" pbzloc="171"><img pbzloc="139" src="relaisf2.jpg" style="border-top: 0px solid; height: 135px; border-right: 0px solid; width: 308px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /><img pbzloc="132" src="relaisf1.jpg" style="border-top: 0px solid; height: 135px; border-right: 0px solid; width: 316px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="129" size="4">In one of the amps that I&#39;ve taken care of, the contacts of the relay&rsquo;s springs were out of alignment. Attempts to get the contacts right failed because the transparent lid did not fit well on top of the relay system. At first I thought it was a failure of one device, but a following FL-2100Z was manufactured with the same deviation. Check your PA at this fault!</font></font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N" pbzloc="35"><a name="MODIFICATIONS" pbzloc="184"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="34" size="5">MODIFICATIONS</font></font></b></a></span></p>
+
+<center pbzloc="36">
+<table align="right" border="0" cellpadding="4" cellspacing="0" dir="ltr" width="840">
+	<tbody>
+		<tr>
+			<td valign="top" width="43%">
+			<p align="center"><font size="2"><span lang="N"><img height="281" src="decouplef1.jpg" width="320" /></span></font></p>
+			</td>
+			<td valign="middle" width="57%">
+			<p align="center"><font size="2"><span lang="N"><img height="232" pbzloc="46" src="fl2100mods.gif" width="452" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p pbzloc="116">&nbsp;</p>
+
+<p pbzloc="116"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="53">The diagram shows the circuit enhancement to prevent both deficiencies. It is best to earth VC1 to </span></font></font><span lang="N"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">one</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> of the valve sockets (or a common earth) with heavy wire or, even better, a piece of coax. It is shown in the diagram how the ground connection of VC1 has been shielded from the ground of the valve sockets. (This is common to a lot of amplifiers.) </font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">A HF current from the tube via the capacitor to the tube sockets must overcome many barriers and reaches finally the sockets in the screened socket box. That caused is my belief instability and undesirable oscillations. A shorter solid direct connection forces the HF current from VC1 in one direction straight to the tubes.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="47" size="4">A resistor and a fuse in series with the anode connection give protection against &quot;flash over&quot; and a short. Add two 4.7 nF capacitors to improve the decoupling of L1 (&laquo;fig) on 80 and 160 meters.&nbsp;</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="944">
+	<tbody>
+		<tr>
+			<td valign="top" width="30%">
+			<p align="center"><font size="2"><span lang="N"><img height="273" src="tunecapf2.jpg" width="274" /></span></font></p>
+
+			<p align="center"><font size="2"><span lang="N"><img height="118" src="extrawires.gif" width="220" /></span></font></p>
+
+			<p align="center"><font size="2"><span lang="N"><img height="75" src="extrawires2.gif" width="217" /></span></font></p>
+			</td>
+			<td valign="top" width="32%">
+			<p align="center"><font size="2"><span lang="N"><img height="460" src="coaxf5.jpg" width="287" /></span></font></p>
+			</td>
+			<td valign="top" width="38%">
+			<p align="center"><font size="2"><span lang="N"><img height="460" src="coaxf2.jpg" width="345" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p pbzloc="118">&nbsp;<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">The best is to cut the short wires at the top and bottom VC1 so that HF current only can flow through the new wire or (fig&raquo;) coax cable.</span></font></font></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="275" src="tunecapf1.jpg" width="269" /></font><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="186" size="4">&nbsp;<img height="275" src="coaxf3.jpg" width="280" /> <img height="275" src="holef.jpg" width="282" />&nbsp;<img height="100" src="doorvoerf3.jpg" width="102" /></font></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="66"><font face="Tahoma"><font face="Tahoma">VC1 to tube socket with heavy (6mm&sup2;) wire (left) and coaxcable (center).</font></font></b></span></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The pictures show the short way to implement these changes. Drill a hole in the socket compartment and possibly mount a grommet. Subsequently use some 6 mm&sup2; wire (or RG213 etc.) from the bottom of VC1 to </font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">one</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"> valve socket. Insert some protection against the wire touching the chassis or ensure that the wire does not touch the chassis anywhere else.</font></font></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="307" src="coaxf4.jpg" width="361" /></font>&nbsp;<img height="307" src="coaxf1.jpg" width="495" /></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="71"><font face="Tahoma"><font face="Tahoma" pbzloc="187">Rerouted VC1 ground path to tube socket with RG213 coax cable.</font></font></b></span></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="275" src="draadf2.jpg" width="341" /></font><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="68" size="4">&nbsp;<img height="275" src="draadf1.jpg" width="512" /></font></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="74"><font face="Tahoma"><font face="Tahoma">VC1 to tube socket with heavy a 6 mm&sup2; wire.</font></font></b></span></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="295" src="draadf4.jpg" width="271" /></font>&nbsp;<img height="295" src="doorvoerf2.jpg" width="241" /> <img height="295" src="doorvoerf.jpg" width="320" /></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="77"><font face="Tahoma"><font face="Tahoma">VC1 to tube socket with heavy a 6 mm&sup2; wire.</font></font></b></span></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">See (&laquo;fig&raquo;) a wire or coax cable grounded at one point (tube socket or chassis). </font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="78" size="4">PA7TWO made first the modification with two wires to both valve sockets. However he kept on having parasitic oscillations. He tried almost everything until finally in desperation used only one wire from VC1 to one valve socket. Then, to his great relief, the amplifier became very stabile and both tubes had the same healthy red shine by long continuous transmissions. PA7TWO&rsquo;s experience once again shows that it is important to select (as I advised in my other PA articles) a single connection point, common to both valves, as close as possible to the valve sockets. The other end is only connected to the tuning capacitor.&nbsp;</font></font></span></p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="920">
+	<tbody>
+		<tr>
+			<td valign="top" width="23%">
+			<p align="center"><font size="2"><span lang="N"><img height="200" src="decouplef2.jpg" width="199" /></span></font></p>
+			</td>
+			<td valign="middle" width="53%">
+			<p align="center"><font size="2"><span lang="N"><img height="162" src="resistorf1.jpg" width="460" /></span></font></p>
+			</td>
+			<td valign="top" width="24%">
+			<p align="center"><font size="2"><span lang="N"><img height="200" src="decouplef3.jpg" width="204" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<center style="text-align: justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="126" size="4">After reading this article someone soldered that wire at the outside (fig&raquo;) of the tube compartment. That is not right because the (&laquo;fig) compartment is a screened box and will not conduct HF current through the wall. Moreover, the wire was too long to be effective. The next owner of the amplifier has that noticed because after a heavily flashover in one of the tubes the fuse was melted and the grid resistors R7 and R8 were blown.</font></font></span></center>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="80" size="5"><a name="METERS" pbzloc="79">PROTECTION OF THE METERS</a></font></font></b></span></p>
+
+<center pbzloc="57">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="920">
+	<tbody>
+		<tr>
+			<td valign="middle" width="32%">
+			<p align="center"><font size="2"><span lang="N"><img height="271" src="meterontkf.jpg" width="276" /></span></font></p>
+			</td>
+			<td valign="middle" width="39%">
+			<p align="center"><font size="2"><span lang="N"><img height="123" src="mtrontkops.gif" width="306" /></span></font></p>
+
+			<p align="justify"><span style="font-size: 14px"><span lang="N"><b pbzloc="56"><font face="Tahoma"><font face="Tahoma">If something in the HT supply goes wrong then meters may be damaged. Often no replacement is available. Suggested is to protect all panel meters with back-to-back connected diodes. Bridge rectifiers are very suitable too. In addition decouple with some 10 &ndash; 22nF capacitors because modern high voltage diodes can work well into the HF region.</font></font></b></span></span></p>
+			</td>
+			<td valign="middle" width="29%">
+			<p align="center"><font size="2"><span lang="N"><img height="271" src="meterontkf2.jpg" width="238" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p pbzloc="127"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="8">Hans PA3HGT and Henk PA0HRA have applied the modifications in their FL2100Z. Hans has an extensive guideline with many pictures on his homepage:</span></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="5">&nbsp;<a href="http://www.pa3hgt.nl." pbzloc="3">http://www.pa3hgt.nl</a></span></font><font face="Tahoma" size="4"><span lang="N" pbzloc="159">.</span></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="2">&nbsp;</span></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="2"> look for &quot;TechShit&quot;.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="81">It is recommended to apply these modifications to other manufacturer&rsquo;s amplifiers. Almost every linear amplifier that I get leaves with the same protections.&nbsp;</span></font></font></p>
+
+<table align="center" border="0" cellpadding="4" cellspacing="0" dir="ltr" width="872">
+	<tbody>
+		<tr>
+			<td valign="middle" width="47%">
+			<p align="justify"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><span lang="N" pbzloc="86"><a name="S3">SAFETY SWITCH S3</a></span></font></font></b></p>
+
+			<p><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">This (fig&raquo;) happens with the S3 SAFETY LOCK</font></font></span></p>
+
+			<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">if you apply HT without the top cover.</font></font></span></p>
+			</td>
+			<td valign="top" width="53%">
+			<p align="center"><font size="2"><span lang="N"><img height="298" src="safety-switchf.jpg" width="240" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><span lang="N"><a name="COOLING" pbzloc="129">COOLING</a></span></font></font></b></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The air pressure of the two fans is minimal and creates an airflow that is hardly noticeable. During long transmission period&#39;s e.g. during a contest, slow scan TV, RTTY etc. the area with the tubes gets pretty hot. Often this results in damage to the doorknob capacitors that will crack or short through overheating. </font></font></span></p>
+
+<p align="center"><span lang="N"><font pbzloc="87" size="2"><img height="235" src="capsf1.jpg" width="160" />&nbsp;<img height="235" src="capsf1a.jpg" width="288" />&nbsp;<img height="235" src="capsf1b.jpg" width="288" />&nbsp;<img height="235" src="capsf4.jpg" width="207" /></font></span></p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="620">
+	<tbody>
+		<tr>
+			<td valign="middle" width="53%">
+			<p align="center"><font size="2"><span lang="N"><img height="193" src="capsf2.jpg" width="320" /></span></font></p>
+			</td>
+			<td valign="top" width="47%">
+			<p align="center"><font size="2"><span lang="N"><img height="193" src="capsf2a.jpg" width="270" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">&nbsp;</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="191">The air pressure of the two fans is minimal and creates an airflow that is hardly noticeable. During long transmission period&#39;s e.g. during a contest, slow scan TV, RTTY etc. the area with the tubes gets pretty hot. </span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">&nbsp;</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">&nbsp;</span></font></font></p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N"><img align="left" height="121" hspace="9" src="capsf3.jpg" width="320" /> </span></font></font>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="11">That explains the common problem of failed ceramic disc capacitors next to the tubes. They crack or break by overheating shortcut is also commonplace. Links you can see how a defective copies PA7TWO has replaced by more modern types. On the left shows how PA7TWO has replaced faulty capacitors by more modern types. </span></font></font></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">&nbsp;</font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="249" hspace="9" src="fanf.jpg" width="320" /> </font></font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">An extra ventilator can be placed on top of the cabinet to improve cooling and extending the life of the tube. A near new radiator fan for a VW (&laquo;fig) was bought at a car wrecker by PA7TWO. At 5 VDC this runs very silent while at the same time the airflow is &quot;out of this world&quot;. </font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="left" height="140" hspace="9" src="supplyfans.gif" width="315" /> </font></font></span>
+
+<p><span lang="N">&nbsp;</span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="14" size="4">Another option is to use some 12 V/ 2.5 W fans as used in computers. The filament supply is sufficient to supply the fans too. Make sure to make this DC &quot;floating&quot; (fig&raquo;) without a connection to earth!</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><a name="INPUT">INPUT CIRCUIT</a></font></font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">This linear was produced to complement valve transceivers. With the modern semiconductor transceivers this results in problems due to the fluctuating SWR. An external or internal tuner is required to drive the linear properly with sufficient power.</font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="right" height="189" hspace="9" src="inputswrs.gif" width="356" /> </font></font></span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="18" size="4">The thin hook-up wire and long connections to the relays in the input circuit creates problems, especially at the higher HF bands. A 27 pF capacitor across the relays contacts (sometimes even across the input connector) creates a broadband tuning of the cabling in the 10 &ndash; 15m frequencies. Using a trimmer can improve results even more. Wiring using coax cable can help but often the capacitor is required due to the cabling around the relays.</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><a name="SUPPRESSOR">PARASITIC SUPPRESSION CIRCUITS</a></font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="348" hspace="9" src="stoppersf3.jpg" width="465" /> </font></font></b><img align="left" height="91" hspace="9" src="suppressors1.gif" width="101" /> </span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">A method of parasitic suppression is the insertion of RF current (hairpin shaped) obstacles (dampers) at right angles to the probable flow of the parasitic currents. This method can be used up to frequencies of several 100 MHz without noticeably reducing fundamental power. The main function is to provide a high impedance path in series with other (tank) circuit elements. However such method can be used only where the fundamental and parasitic frequencies are sufficiently far apart, so that excessive resistive losses of the fundamental frequencies are avoided.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The circuit should have a L/C ratio as low as practicable and be suitably damped to give a broadband effect.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="88" size="4">Damping can be achieved by paralleling the hairpin circuit inductor with a non-inductive resistor and by making the inductor from resistive material. A mat surface rather than a polished surface may provide sufficient surface resistance. The resistive component needs often be no more than a nickel alloy wire/strip or tinned copper wire/strip with a DC resistive valued of a fraction of an ohm.</font></font></span></p>
+
+<center pbzloc="89">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="929">
+	<tbody>
+		<tr>
+			<td valign="middle" width="34%">
+			<p><font size="2"><span lang="N"><img height="154" src="suppressorf1.jpg" width="280" /></span></font></p>
+			</td>
+			<td valign="middle" width="32%">
+			<p align="center"><font size="2"><span lang="N"><img height="184" src="suppressorf2.jpg" width="280" /></span></font></p>
+			</td>
+			<td valign="middle" width="33%">
+			<p align="right"><font size="2"><span lang="N"><img height="102" src="stoppersf1.jpg" width="278" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+<img align="right" height="92" hspace="9" src="stoppersf2.jpg" width="278" /> <span lang="N"><img align="left" height="105" hspace="9" src="stoppers.gif" width="117" /> </span>
+
+<p pbzloc="92" style="text-align: justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="33" size="4">&nbsp;</font></font></span></p>
+
+<p pbzloc="92" style="text-align: justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="35" size="4">The suppressors in this amplifier are small coils L4 and L5 respective paralleled with R6 and R9. They prevent parasitic oscillations in the VHF region. The value of a resistor is not critical (22 -100 Ohm) but it needs to be non-inductive and has the purpose to broadband for VHF.</font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img pbzloc="31" src="resistorf2.jpg" style="height: 200px; width: 460px; float: left; margin-left: 7px; margin-right: 7px" /> </font></font></span>
+
+<p align="center" pbzloc="91">&nbsp;</p>
+<span lang="N"><img align="left" height="162" hspace="9" src="weerstandf.jpg" width="139" /> </span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="39" size="4">A blackened resistor needs to be replaced. The vintage (fig&raquo;) non-inductive carbon composition resistor is no longer manufactured and hard to find and a modern equivalent are 3 W brown Philips in values from 22 to 470 Ohm. Most shops have (&laquo;fig) the smaller 1.2 W version in stock. Make sure to ask for the 3 W ones. Mount the resistor next to the coil, not inside it. Eventually mont 4 &times; 220 Ohm/1.2 W in parallel. </font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="right" height="210" hspace="9" src="stoppersf.jpg" width="417" /><img align="left" height="210" hspace="9" src="suppressors2.gif" width="212" /> </font></font></span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify" pbzloc="23">&nbsp;</p>
+
+<p align="justify" pbzloc="23"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="40" size="4">If you happen to have to replace the coil make then a hairpin according to the diagram and picture. A standard &quot;design&quot; was developed after much trial and error and consists of 12 cm wire shaped in a &quot;U&quot; with a distance of 2 cm between the &quot;legs&quot;. However use 13.5 cm and use the 1.5 cm to wind around the legs of the resistor and solder it. Use standard tinned wire because this introduces additional losses on VHF ensuring a broadband functioning of the trap.</font></font></span></p>
+
+<p align="justify" pbzloc="23">&nbsp;</p>
+
+<p align="justify" pbzloc="23">&nbsp;</p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><a name="RFC" pbzloc="22">PLATE/ANODE CHOKE</a></font></font></b></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="350" src="rfcf.jpg" width="940" /></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="96"><font face="Tahoma"><font face="Tahoma" pbzloc="94">Info for homebrewers: RFC L1; the turns per section. </font></font></b></span></span><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><img align="right" height="142" hspace="9" src="rfcf2.jpg" width="141" /> </font></font></b></span></p>
+
+<p align="center" pbzloc="131">&nbsp;</p>
+<span lang="N"><img align="left" height="142" hspace="9" src="rfcf1.jpg" width="178" /> </span>
+
+<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">&nbsp;</font></font></b></span></p>
+
+<p><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="97" size="4">The photograph of the anode RF choke (L1) is shown that the number of windings per section may be counted in the event that you are dealing with a burnt or burnt coil. Possibly you may fix the coil.</font></font></span></p>
+
+<p><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font></span></p>
+
+<p><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="133" size="4">&nbsp;</font></font></span></p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="956">
+	<tbody>
+		<tr>
+			<td valign="top" width="50%">
+			<p align="center"><font size="2"><span lang="N"><img height="101" src="rfcf5.jpg" width="460" /></span></font></p>
+
+			<p align="center" pbzloc="98">&nbsp;<font size="2"><span lang="N"><img height="259" src="rfcf3.jpg" width="460" /></span></font></p>
+			</td>
+			<td valign="middle" width="50%">
+			<p align="center"><font size="2"><span lang="N"><img height="365" pbzloc="99" src="rfcf4.jpg" style="height: 380px; width: 470px" width="460" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p pbzloc="134"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="135">A defect tube can have various causes such as the absence of the previously described security, tuning to the wrong band or working without a load. An amplifier was investigated and showed a repaired choke, apparently the RFC also burned due to a defect tube. To restore the previous owner had removed the damaged windings, a section rewound and then the loose ends soldered together. The coil becomes a false resonance in the 12 m segment making it virtually impossible to obtain some output on that band. By applying additional windings of thin (Teflon) insulated wire, I shifted resonance and the output on the 12 m band increased to the usual value. </span></font></font></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="101" size="5"><a name="BIAS" pbzloc="100">BIAS</a></font></font></b></span></p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="590">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="justify"><font size="2"><span lang="N"><img height="336" src="svetlanaf.jpg" width="560" /></span></font></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">Full size Cetron 572B and the smaller Svetlana&#39;s type.</font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="223">Several reports point out that the Svetlana tubes with their higher &micro; are not very suitable for HF. Apparently these were designed for LF amplifiers. On the photo you can see that the anode is considerable smaller in size than another manufacturer&rsquo;s &quot;normal&quot; 572B. The anode dissipation of the Svetlana is subsequently smaller.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="227">The valve shown in the picture was totally &quot;worn out&quot; (perhaps through misuse?) and more power went in than came out. If you look carefully then you&rsquo;ll see that the valve is shorter than those of other manufacturers are and modification of the amplifier may be necessary to connect it.</span></font></font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify" pbzloc="102">&nbsp;</p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" style="width: 1000px" width="940">
+	<tbody>
+		<tr>
+			<td valign="middle" width="31%">
+			<p align="center"><font size="2"><span lang="N"><img height="136" src="extrarelays.gif" width="255" /></span></font></p>
+			</td>
+			<td valign="top" width="69%">
+			<p align="justify"><font size="2"><span lang="N"><img height="320" src="extrarelayf1.jpg" width="228" /></span></font><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="107" size="5">&nbsp;<img height="320" src="extrarelayf2.jpg" width="174" /> <img height="320" src="extrarelayf3.jpg" width="222" /></font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p pbzloc="136"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="137">With tubes that have a higher &micro; that the original 572B the negative bias to &quot;close the tube&quot; may be too low. If the amplifier is not loaded properly this may result in self-oscillation of the amplifier. W8IJ uses a 100 K resistor to the centre of the filament winding to prevent this. A relay shorts this resistor to earth when transmitting. PA7TWO has applied this modification with success.</span></font></font></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><a name="MATCHED">MATCHED TUBES</a></font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="295" hspace="9" src="572bf1.jpg" width="190" /> </font></font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Often matched tubes are recommended and this goes hand in hand with a substantial increase in price. Although there may be a place for this in some amplifiers in this amplifier and Heathkit SB-200, Ten Tec Centaur or Ameritron it is not required. I have about 15 &times; 572B and 13 are from different manufacturers. These have been in mixed usage in my amplifiers in 2 &times; 572B and 3 &times; 572B set-ups without detecting anything detrimental.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">In the schematic both tubes are equally driven, but due to the assembling of the components will always be a difference between the two tubes. In my opinion matched (real) transmitting tubes does not make sense. The HF current chooses the shortest route and therefore has a preference for one of the two tubes. If one anode is redder than the other is changing the tubes can compensate the difference.</font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><a name="REACTIVATION">REACTIVATON 572B</a></font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="left" height="137" hspace="9" src="reconditions.gif" width="307" /> </font></font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">To avoid flashover in a new or a long time unused tube, it is prudent to prepare (&quot;reactivate&quot;) it for his task. There are various opinions and solutions how to do it, but with a 572B it can be relatively simple. A DC of 40 to 50 V is sufficient for the tube to draw 250 mA as the grid is connected to the anode. Heat the tube 30 minutes with a filament voltage of 6.3 V. Then supply a &quot;high voltage&quot; of about 45 V and set the voltage to a current of 250 mA. </font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">With a new 572B a current of 250 mA should occur at 44 - 45 V. </font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">If possible use a current limiter, because during reactivate the current can increase suddenly so that continue monitoring could be necessary to maintain 400 mA. Usually I will not reactivate longer than an hour. Soon you will find out at which voltage a good tube drawn 250 mA, so you have an indication if another tube is better or not.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">All good used or new TAYLOR, WATERS and CETRON tubes that I could test were remarkably similar, as they were 250 mA at 44 Volts.</font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">CHEAP TUBES</font></font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">PA7TWO bought a few Chinese branded 572B&rsquo;s in the US. In his Yaesu FL-2100 they perform like a charm. When he showed them to me they look like a copy of the CETRON 572B&rsquo;s and when tested in my amplifier no differences with other brands could be detected. </font></font></span></p>
+
+<p><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">DK6NI: &quot;Nochmals besten Dank f&uuml;r Deine guten Ratschl&auml;ge. </font></font></span><a href="http://stores.ebay.co.uk/Tubesonix"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">http://stores.ebay.co.uk/Tubesonix</span></font></font></a><span lang="N"> </span></p>
+
+<p><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Die neuen R&ouml;hren von Tubesonix sind eingetroffen! Die SB-200 arbeitet nun offensichtlich einwandfrei&quot;.</font></font></span></p>
+
+<p><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">At present the link does not work!</font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="108" size="5"><a name="STEPSTART">STEP-START</a></font></font></b></span></p>
+
+<center pbzloc="4">
+<p align="center"><font size="2"><span lang="N" pbzloc="20"><img pbzloc="23" src="stepstarts.gif" style="height: 188px; width: 271px; float: left; margin-left: 7px; margin-right: 7px" /></span></font></p>
+
+<p align="center"><font size="2"><span lang="N" pbzloc="20"><font size="2"><span lang="N" pbzloc="53"><img alt="" src="switchf.jpg" style="height: 149px; width: 320px; float: right; margin-left: 7px; margin-right: 7px" /></span></font></span></font></p>
+</center>
+
+<center pbzloc="12" style="text-align: left">&nbsp;</center>
+
+<center pbzloc="12" style="text-align: left"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span id="result_box" lang="en" pbzloc="56">This amplifier has no soft start system&nbsp;and actually it is better for HV diodes and filaments to&nbsp;use such device. Foreign readers have asked me for an external system because it seems to be a problem to build in that system. See a&nbsp;simple, cheap and proven system that has been featured in many publications in the previous decade. <span pbzloc="92">Do not forget to mount the yellow-green earth wire in the system.</span></span></span></span></center>
+
+<center pbzloc="12" style="text-align: left">&nbsp;</center>
+
+<center pbzloc="12" style="text-align: left">&nbsp;</center>
+
+<center pbzloc="12" style="text-align: left">
+<table align="center" cellpadding="1" cellspacing="1" style="width: 500px">
+	<tbody>
+		<tr>
+			<td pbzloc="67" style="text-align: center"><img pbzloc="114" src="ntc&#32;f.jpg" style="border-top: 0px solid; border-right: 0px solid; border-bottom: 0px solid; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></td>
+			<td pbzloc="73" style="text-align: center">
+			<p pbzloc="77"><img pbzloc="107" src="soft&#32;start&#32;s.gif" style="border-top: 0px solid; border-right: 0px solid; border-bottom: 0px solid; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></p>
+
+			<p pbzloc="84" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span id="result_box" lang="en" pbzloc="86">A simple but effective delay can be done with an NTC resistor. <span pbzloc="117">The primary winding of the transformer is only a few Ohm, so that a 1Ohm/20A NTC is&nbsp;sufficient to limit the large&nbsp;momentary switching currents of uncharged HV elco&#39;s and cold filaments.</span></span></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<center pbzloc="3">&nbsp;</center>
+
+<center pbzloc="20" style="text-align: left"><span pbzloc="22" style="font-size: 24px"><span pbzloc="23" style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="89"><a id="Conversion" name="Conversion" pbzloc="37"></a>CONVERSION WITH GI7B</strong></span></span></center>
+
+<center pbzloc="20" style="text-align: left">&nbsp;</center>
+
+<center pbzloc="30" style="text-align: justify"><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><span id="result_box" lang="en" pbzloc="4"><span pbzloc="68">The 13 VAC winding of&nbsp;trafo PT1 appears to be sufficiently&nbsp;for feeding 2 &times; GI7B&#39;s filaments.</span> <span id="result_box" lang="en"><span pbzloc="5">Together they use approximately 4 A/12 V and 572B&#39;s 8 A/6.3 V. </span></span>Consequently, a conversion is easy to perform.&nbsp;</span><span id="result_box" lang="en"><span pbzloc="29"> </span></span><br />
+<span id="result_box" lang="en" pbzloc="1">One tube may already be sufficient, but with two ones heat and thus cooling will be divided over two tubes. That fits well with the fans already present. </span></span></span></center>
+
+<center pbzloc="4" style="text-align: justify"><strong><span style="color: #0000ff"><span style="font-size: 18px"><span style="font-family: tahoma,geneva,sans-serif">By the way, I have not (yet) carried out the modification!</span></span></span></strong><br />
+&nbsp;</center>
+
+<center pbzloc="5">&nbsp;<img border="0" pbzloc="79" src="fl2100z&#32;gi7b&#32;conversion&#32;s1.gif" /></center>
+
+<center pbzloc="43"><img border="0" src="fl2100z&#32;gi7b&#32;conversion&#32;s2.gif" /></center>
+
+<center pbzloc="82"><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 14px"><span id="result_box" lang="en"><span pbzloc="44">The changes in the original schematic are red-circled.</span></span></span></span></strong></center>
+
+<center pbzloc="82"><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 14px"><span lang="en"><span pbzloc="48"><img border="0" src="gi7b&#32;cooler&#32;f.jpg" /></span></span></span></span></strong></center>
+
+<center pbzloc="82" style="text-align: left">&nbsp;</center>
+
+<p pbzloc="59" style="text-align: justify"><span style="font-size: 18px"><span style="font-family: tahoma,geneva,sans-serif"><span id="result_box" lang="en" pbzloc="64">GI7Bs have the same thread as the illustrated coolers. They are narrower than the original cooler and fit alongside&nbsp;anode choke. <span pbzloc="105">Due to the construction, the tube receives a suitable transverse cooling of the underlying fans.</span></span></span></span></p>
+
+<p pbzloc="14"><strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="11" style="font-size: 22px">&nbsp;<a id="GI7B" name="GI7B" pbzloc="30"></a><span pbzloc="111" style="font-size: 24px">PA3HBT&#39;s 2 &times; GI7B CONVERSION</span></span></span></strong></p>
+
+<p pbzloc="123" style="text-align: center"><img border="0" src="fl2100z&#32;gi7b&#32;(1).jpg" />&nbsp;<img border="0" src="fl2100z&#32;gi7b&#32;(2).jpg" />&nbsp; <img border="0" height="480" src="fl2100z&#32;gi7b&#32;(4).jpg" width="640" />&nbsp;<img border="0" src="fl2100z&#32;gi7b&#32;(3).jpg" />&nbsp;<img border="0" pbzloc="45" src="fl2100z&#32;gi7b&#32;(5).jpg" /></p>
+
+<p pbzloc="122" style="text-align: justify"><span style="font-size: 18px"><span pbzloc="1" style="font-family: tahoma,geneva,sans-serif">PA3HBT came into possession of a partially decommissioned FL2100 without 527Bs, but with two sets of GI7Bs. You can see the conversion in the images shown.<br />
+In his opinion&nbsp;was the wire of the 12 V connection of the power transformer too thin to feed the filaments of the GI7Bs. That is why he installed a small toroidal transformer between the capacitors of the HV power supply.<br />
+To sufficiently cool the tubes, three other fans were mounted. The third at the back through an additional opening.<br />
+The drive is directly to the cathode/filament, so without an input circuit. The SWR at 80 m is on the high side but decreases favorably as a higher band is used.<br />
+Output of more than 700 W is possible, but that will be a considerable overload of the power transformer.</span></span></p>
+
+<p pbzloc="54" style="text-align: center">&nbsp;<font size="2"><span lang="N" pbzloc="60"><img height="36" pbzloc="142" src="bar2.gif" width="500" /></span></font></p>
+
+<p align="center"><a href="../Lineairs.htm"><img border="0" height="25" src="backfri.gif" width="53" /></a></p>
+</body>
+</html>

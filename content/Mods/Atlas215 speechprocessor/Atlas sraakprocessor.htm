@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Atlas sraakprocessor</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BACKGROUND="Image9.gif">
+
+<B><FONT FACE="Tahoma" SIZE=6><FONT FACE="Tahoma" SIZE=6><SPAN LANG="N"><P ALIGN="CENTER">EEN HF SPEECH PROCESSOR VOOR Atlas210x/215x</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="engver.gif" WIDTH=83 HEIGHT=22></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4>&nbsp;</FONT></FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2>click on </B></FONT></FONT></SPAN><A HREF="Atlas&#32;speechprocessor.htm"><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><SPAN LANG="N">Atlas speech processor</B></FONT></FONT></SPAN></A><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><SPAN LANG="N">.</P>
+</FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="CENTER">Eenvoudig universeel toepasbaar systeem gebaseerd op DSB begrenzing en selectie met &eacute;&eacute;n filter.</P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="Atlas-210xf.jpg" WIDTH=812 HEIGHT=301></P>
+<P ALIGN="CENTER"></P>
+<P ALIGN="CENTER"><IMG SRC="Atlas-215xf.jpg" WIDTH=812 HEIGHT=304></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P>INLEIDING</P>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">De DSB begrenzer in mijn oorspronkelijke Atlas artikel had problemen bij sommige buitenlandse nabouwers. Waarschijnlijk door het gebruik van een ander type IC (b.v. TBA120S, TBA120AS, TBA120T, TBA120U) dan het eerdere model TBA120 (TBA120A) hetwelk in mijn schakeling toegepast werd. Bovendien zijn de oudere types steeds moeilijker te verkrijgen. Reden waarom ik ben gaan experimenteren met de goed beschikbare NE612A of SA12AN, zie ook </FONT></FONT></SPAN><A HREF="../../Diversen/DSBclipper/dsb-clipper.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">DSB clipper</FONT></FONT></SPAN></A><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">. De onderstaande eenvoudige versie van een speech clipper, een van mijn vele geteste bedenksels, werkt zo goed dat het ook in mijn SWAN100MX en Ten Tec Corsair II sets komt.</P></FONT></FONT></SPAN>
+<P ALIGN="CENTER"><CENTER><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=911 DIR="LTR">
+<TR><TD WIDTH="60%" VALIGN="TOP">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="atlas&#32;clippers.gif" WIDTH=427 HEIGHT=329></FONT></SPAN></TD>
+<TD WIDTH="40%" VALIGN="MIDDLE">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="clipperf1.jpg" WIDTH=320 HEIGHT=197></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Dode kever montage systeem om te experimenteren.</P>
+<P ALIGN="CENTER">IC voeten gebruikt voor het geval dat de component het loodje legt.</B></FONT></FONT></SPAN></TD>
+</TR>
+</TABLE>
+</CENTER></P>
+
+<B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><SPAN LANG="N"><P ALIGN="JUSTIFY">BEGRENZER </FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4>(CLIPPER)</P><IMG SRC="diodeclips1.gif" ALIGN="RIGHT" HSPACE=9 WIDTH=102 HEIGHT=75>
+</B><P ALIGN="JUSTIFY">Het dubbel zijband signaal uit de eerste NE612A (pin 4, 5) is te zwak om begrensd te worden met silicium of Schottky diodes zonder voorspanning. Daarom ontstond al experimenterend een (fig») stroom trekkende clipper schakeling met &eacute;&eacute;n diode en de basis-emitter overgang van een transistor (T1) als tweede diode. De weerstanden 1k8 en 3k9 zijn er voor een zo goed mogelijke symmetrische begrenzing. </P><IMG SRC="diodeclips2.gif" ALIGN="LEFT" HSPACE=9 WIDTH=92 HEIGHT=93>
+<P ALIGN="JUSTIFY">Eventueel («fig) te vervangen door een 5k0 potmeter en 1k0 weerstand om bij uw versie de instelling te verfijnen. Verder zorgt de transistor voor de nodige versterking naar het keramische CFW455H filter. Dit 455 kHz type moet aan de in en uitgang afgesloten worden met 2k0. Dat deed ik in eerste instantie, maar er werd geen verschil gemerkt met de hogere waarden in het schema. </P>
+<P ALIGN="JUSTIFY">De bedoeling is dat de diodes clippen en niet de tweede mixer. Met voldoende signaal uit het filter gaat de tweede mixer eerder begrenzen dan de diodes. Om dat te voorkomen is aan de uitgang van het filter een spanningsdeler (2k2, 1k0) aangebracht.</P><IMG SRC="mixers.gif" ALIGN="LEFT" HSPACE=9 WIDTH=75 HEIGHT=73>
+<P ALIGN="JUSTIFY">Merk op dat, in tegenstelling tot de ontwerpen van anderen, oscillator en HF signalen op respectievelijk de pennen 1 en 6 van de tweede NE612A worden aangeboden. Daarmee was er meer LF output op pen 4.</P><IMG SRC="scoopf.jpg" ALIGN="RIGHT" HSPACE=9 WIDTH=153 HEIGHT=140>
+<P ALIGN="JUSTIFY">Het clipniveau wordt bepaald door de sterkte van het microfoonsignaal en extreme begrenzing dient men te vermijden om een goede verstaanbaarheid te behouden. Optimaal is een groter gemiddeld zendvermogen zonder dat de gesprekspartner merkt dat er een speech processor in het spel is. De S meter wijst niet meer aan, maar beweegt veel minder. Met een luid aahhh… in de microfoon ziet dat er zo (fig») uit op een scoop. </P><IMG SRC="outputs.gif" ALIGN="LEFT" HSPACE=9 WIDTH=226 HEIGHT=56>
+<P ALIGN="JUSTIFY">Het toegenomen zendvermogen kan men zelf vaststellen. Gebruik een 230 V/100 W gloeilamp als belasting en regel met een (interne) tuner af op SWR = 1. Praat in de microfoon zonder processor en daarna met ingeschakelde clipper, zie dan dat de lamp meer licht geeft. </P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">FILTER</P><IMG SRC="cfw455hf2.jpg" ALIGN="RIGHT" HSPACE=9 WIDTH=270 HEIGHT=125>
+</B></FONT></FONT><P ALIGN="JUSTIFY"></P><IMG SRC="cfw455hf1.jpg" ALIGN="LEFT" HSPACE=9 WIDTH=320 HEIGHT=119>
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Het 6kHz/6dB, 18kHz/50dB Murata CFW455H filter (»fig) is geselecteerd als compromis tussen bandbreedte en prijs. Het type is "obsolete", maar is nog steeds in de handel bij onder andere KENT Electronics, Barend Hendrikse, Conrad (CFW455HT) en verder via internet winkels. Modernere versies met dezelfde specificaties en met de toevoeging "H" (o.a. CFWLA455K</FONT></FONT><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff"><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff"><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff">H</FONT></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4>FA-B0) zijn ook geschikt. Naar keuze kan men het veel duurdere en smallere SSB filter type CFJ455K13 inzetten. Met enig geduld of goed uitkijken is dat via eBay voor een gemiddelde prijs van ongeveer 15 Euro aan te schaffen. Ten tijde van mijn experimenten werd dat filter om de een of ander reden veelvuldig via ebay.de en ebay.co.uk aangeboden en zo heb ik ook een aantal verkregen.</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">KERAMISCHE RESONATOR </P><IMG SRC="csb455ef.jpg" ALIGN="RIGHT" HSPACE=9 WIDTH=246 HEIGHT=125>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">In de oscillator schakeling wordt een 455 kHz keramische resonator toegepast. Helaas piepen zij zelden op of rond de aangegeven frequentie. Experimenteren is vaak geboden, want het komt zelfs voor bij exemplaren en types van hetzelfde merk. Gekozen is voor (fig») een Murata CSB455E, omdat dit model wat meer in omloop is. </P><IMG SRC="ztb455ef.jpg" ALIGN="LEFT" HSPACE=9 WIDTH=88 HEIGHT=120>
+<P ALIGN="JUSTIFY">Conrad heeft een ZTB455E resonator («fig) dat waarschijnlijk een nieuwere versie is van het CSB455E type. Afhankelijk van de frequentie van de resonator komt er SSB uit het CFW455H filter met onvoldoende onderdrukte andere zijband of goed onderdrukte andere zijband. Een bijna correcte SSB is er als de draaggolf ingesteld wordt op 452 of 457 kHz waarbij men bij voorkeur moet kiezen voor de laatste frequentie. In dit ontwerp is het niet gelukt om de resonator naar 457 kHz te trekken. Overigens maakt het, gezien de kwaliteit van het LF signaal aan de uitang van de processor, niet uit of de andere zijband al dan niet goed onderdrukt is. </P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">INBOUWEN</P><IMG SRC="clipperf3.jpg" ALIGN="RIGHT" HSPACE=9 WIDTH=320 HEIGHT=204>
+</B></FONT></FONT><P ALIGN="JUSTIFY"></P><IMG SRC="clipperf2.jpg" ALIGN="LEFT" HSPACE=9 WIDTH=320 HEIGHT=131>
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">Omdat er bijna geen ruimte meer over was in mijn al met een VFO stabilisator uitgeruste Atlas215x, was een printontwerp (zonder SMD spul) te groot om te kunnen plaatsen. De beproefde "dode kever" methode en een selectie van de kleinste componenten die hier aanwezig waren, beperkte het formaat. Daarna was het mogelijk om de schakeling met sterke tweezijdig (Tesa) plakband aan de achterkant van de tweevoudige potmeters MIC.GAIN/ALC te bevestigen. </P><IMG SRC="clipperf4.jpg" ALIGN="LEFT" HSPACE=9 WIDTH=254 HEIGHT=200>
+<P ALIGN="JUSTIFY">&nbsp;</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">Dat kwam goed uit, want dat is vlak naast de aan te brengen wijzigingen in de bedrading. Maak bij («fig) de potmeters aan de bovenkant de draad die van PC300 komt los, ontkoppel met 10 nF en soldeer via een 47k weerstand aan de ingang van de processor. Leg een draad aan van de uitgang naar dezelfde bovenkant van de potmeter. Verbindt de print verder met chassis en de gestabiliseerde (= oranje draad) 8 &agrave; 9 Volt voeding.</P>
+<P ALIGN="JUSTIFY"></P>
+<P ALIGN="JUSTIFY">&nbsp;</P>
+<P ALIGN="JUSTIFY">&nbsp;</P>
+<B><U><P ALIGN="JUSTIFY"></P>
+</B></U></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="atlas210x-215x&#32;modsf.jpg" WIDTH=601 HEIGHT=413></P>
+</FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P>Zie ook mijn andere Atlas artikelen:</P>
+</FONT></FONT><FONT SIZE=2><P></FONT></SPAN><A HREF="../Atlas215/atlas215.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">Algemene informatie en experimenten</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P></FONT></SPAN><A HREF="../Atlas215&#32;stabilizer/Atlas215x&#32;VFO&#32;stabilisator.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">VFO stabilisator</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P></FONT></SPAN><A HREF="../Atlas215&#32;post&#32;mixer&#32;amp/Atlas215x&#32;mixer&#32;buffer.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">Post mixer buffer versterker</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P></FONT></SPAN><A HREF="../Atlas210&#32;17m&#32;mod/atlas210x&#32;17m&#32;mod.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">Atlas210x 17 m modificatie</FONT></FONT></SPAN></A></P>
+<FONT SIZE=2><SPAN LANG="N"><P></FONT></SPAN><A HREF="../Atlas215&#32;AGC&#32;mod/atlas215&#32;agc&#32;mod.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">AGC modificatie</FONT></FONT></SPAN></A></P>
+<U><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">
+</U></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="bar2.gif" WIDTH=500 HEIGHT=36></P>
+<P ALIGN="CENTER"></FONT></SPAN><A HREF="../Modifaties.htm"><IMG SRC="backfri.gif" BORDER=0 WIDTH=53 HEIGHT=25></A></P>
+<SPAN LANG="N"><P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">&nbsp;</P></SPAN></BODY>
+</HTML>

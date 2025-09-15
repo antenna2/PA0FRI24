@@ -1,0 +1,219 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<TITLE>SOMMERKAMP FT220 modificaties</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BACKGROUND="Image1.gif">
+<p align="center" pbzloc="231"><b><font face="Tahoma" pbzloc="63" size="6">(YAESU) SOMMERKAMP FT220</font></b></p>
+
+<p align="center" pbzloc="234"><img border="0" height="22" src="engver.gif" width="83" />&nbsp;<strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="239" style="font-size: 14px">Click on<a class="0" href="ft220&#32;modification.htm"> FT-220 mods eng</a></span></span></strong></p>
+
+<p align="center" pbzloc="223"><img height="12" src="updated2.gif" width="44" /><font face="Tahoma" pbzloc="74" size="6">&nbsp;</font><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 14px"><strong><font pbzloc="4"><span pbzloc="6"><span pbzloc="227">01-mar-2016 Met Modificatie TB76001 en afbeeldingen toegevoegd.</span></span></font></strong></span></span></p>
+
+<p align="center"><img height="426" src="ft220f.jpg" width="800" /></p>
+
+<p><b><font face="Tahoma" size="5">BESCHRIJVING</font></b></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="64" size="4">Een Yaesu FT220 werd omstreeks 1974 op de markt gebracht. Het is een 2 m, 10 W, FM, CW, USB en LSB transceiver met ingebouwde 100&ndash;234 VAC (of 13.8 V externe) voeding. In Europa zorgde een Zwitserse importeur Sommerkamp voor de verspreiding van het 25 &times; 12.5 &times; 29.5 cm (b&times;h&times;d) en 8.5 kg zware doosje van. Daarom is het apparaat het meest bekend als Sommerkamp FT220. </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Allerlei voorzieningen zoals: VOX, RIT, RF gain control, CW monitor, NOISE blanker, repeater shift, 1750 Hz tone etc. zijn aanwezig. Zie verder bovenstaande foto om een indruk van alles te krijgen. De transceiver is opgebouwd met afzonderlijke printen die verwijdert kunnen worden door stekkertjes en vier schroeven los te maken. </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Deze mooie set heeft een VFO van 8 tot 8.5 MHz en met behulp van een premixer systeem wordt het binnen komende signaal direct omgezet naar een IF van 10.7 MHz. Het bereik van 144 tot 146 MHz is in vier stappen van 500 kHz uitgevoerd. Verder kan men met 4 kristallen (optie) in totaal 16 vaste kanalen &quot;programmeren&quot;. Voor SSB wordt een 10.7 MHz kristalfilter (300 - 2700 Hz &plusmn; 3dB) gebruikt. Bij FM komt eerst een tweevoudig 10.7 MHz (10F30A) kristalfilter (XF301), dan een conversie naar 455 kHz gevolgd door een 455 kHz (CFM455D) keramisch filter (CF301) van Murata. Beide laatste filters zijn eigenlijk te breed voor het huidige 12.5 kHz kanalenraster. De schaalaandrijving is nog ouderwets degelijk uitgevoerd met 8 tandwielen en een trommel. De frequentie aflezing op de ronde lineaire schaal is verrassend goed en een nauwkeurigheid van &plusmn; 500 Hz is mogelijk. IJken kan met een interne 100 kHz calibrator of marker generator waarvan de harmonischen op 2 m nog ruisvrij &quot;ontvangen&quot; worden. Een relais zorgt daarbij dat het ontvangerdeel tijdelijk afgeschakeld wordt. De interne VFO blijkt stabieler te zijn dan de 100 kHz marker oscillator.</font></p>
+<font face="Tahoma" size="4"><img align="right" height="230" hspace="9" src="100kHz&#32;xtalf.jpg" width="465" /> </font>
+
+<p align="justify"><font face="Tahoma" size="4">Dat komt omdat zijn plaats dichtbij de voedingstransformator verkeerd gekozen is. Tijdens gebruik wordt de laatste behoorlijk warm en verhit dan indirect het relatief grote 100 kHz kristal. Daardoor kunnen de ijkpunten van koude naar warme toestand een afwijking van wel 4 kHz op de schaal veroorzaken als dat opnieuw gekalibreerd wordt. Het blijkt dat als de kast, bodem en dekplaat verwijderd zijn, de oscillator wel stabiel is en de schaal behoorlijk nauwkeurig geijkt kan worden. Voorlopig (fig&raquo;) heb ik het kristal met twee draden verlengd en aan de onderkant tegen de ontvanger IF FM print gemonteerd, maar een echte verbetering bleek het niet te zijn. </font></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="14" size="4">Het probleem kan verholpen worden door de 6.4 MHz marker generator verder in dit artikel in te bouwen. Daarmee blijven de calibreer punten vrij nauwkeurig op frequentie en dat is een verbetering van 64 &times; ten opzichte van de originele 100 kHz oscillator. </font></p>
+
+<p align="justify" pbzloc="17"><font face="Tahoma" size="4">De printboards zijn niet allemaal in glasvezel-epoxy uitgevoerd. Daarom is het een heikele klus om te solderen aan printen van ander materiaal want de printspoortjes laten gemakkelijk los bij het verwijderen van componenten. </font></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="5" size="4"><span pbzloc="7" style="font-size: 24px"><strong pbzloc="27">REPEATER</strong></span></font></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="19" size="4">Jammer is dat de relais (repeater) shift afwijkt van wat bij ons gebruikelijk is. Bij het indrukken van RPT wordt tijdens ontvangst de frequentie 600 kHz omhoog geschoven terwijl de schaal op de ingangsfrequentie van het relais staat. Voor een relais moet men dus afstemmen op de ingangsfrequentie. Na bestudering van het schema lijkt het mogelijk om dat te veranderen door het bestellen van een 63.1 MHz kristal en het wijzigen van de bedrading bij relais RL2 (contact naar &quot;A&quot; &amp; &quot;B&quot;) en drukschakelaar RPT (S5a).</font></p>
+
+<p align="justify" pbzloc="26"><strong><span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 24px"><font pbzloc="23">VOEDING</font></span></span></strong></p>
+<font face="Tahoma" pbzloc="38" size="4"><img pbzloc="46" src="connectorf.jpg" style="height: 158px; width: 420px; float: left; margin-left: 7px; margin-right: 7px" /><img pbzloc="43" src="connectorf2.jpg" style="border-top: 0px solid; height: 182px; border-right: 0px solid; width: 191px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /> </font>
+
+<p align="justify"><font face="Tahoma" size="4">De contactstop voor het lichtnet of een externe 13.8 V voeding is uitgevoerd in de vorm van een standaard 4 pens microfoonplug (&laquo;fig). Met deze aansluiting is het dus oppassen geblazen want al experimenterend of met uw gedachten elders, kunnen de snoeren van microfoon en lichtnetsnoer zo met elkaar verwisseld worden! </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Door voeding uit het lichtnet is de gelijkspanning ongeveer 14.5 V en het zendvermogen is dan 12 &agrave; 13 W. </font></p>
+
+<p><b><font face="Tahoma" size="5">VOORVERSTERKER</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="150" hspace="9" src="preamps.gif" width="245" /> </font></b>
+
+<p><font face="Tahoma" size="4">De instruction manual vermeldt: Sensitivity SSB 0.5 uV S/N 10 dB, FM -4 dB for 20 dB QS.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Volgens de huidige maatstaven is de ontvanger wat ongevoelig maar daar kan zelf nog wat aan gedaan worden. Vergelijking tussen een aangebrachte BF981 en de originele 3SK40 (Q501) als ingangsversterker gaven qua signaal ruis verhouding geen feitelijke verbetering alleen was de versterking van het eerste type groter. Dat kan ook met een cascode systeem bereikt worden door een J310 FET in serie te schakelen (fig&raquo;) met de 3SK40. Hiervan wordt de drain los gesoldeerd en aan de source van de J310 vastgemaakt, zie verder het schema. De transistor is dan zelfdragend in de schakeling gemonteerd. Na deze modificatie en het opnieuw afregelen van de kringen L501 en L503 van de cascode versterker zullen stations die voorheen bijna niet te ontvangen waren veel duidelijk te horen zijn.<b>&nbsp;</b>Mede door een geringe wijziging van de mixer is de huidige<b> </b></font><font face="Tahoma" size="4">gevoeligheid zodanig dat een FM signaal van 0.1 &micro;V nog verstaanbaar is en een 0.3 &micro;V signaal vrijwel ruisvrij ontvangen wordt. Zelfs het baken op ongeveer 144.415 MHz in Scheveningen kan met een 5/8 &lambda; rondstraler op de schoorsteen hier in Ett</font><font face="Tahoma" size="4">en-Leur bijna altijd met SSB ontvangen worden. Het een en ander werd gemeten en afgeregeld met een Wavetek 3001 signaalgenerator.</font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">MIXER</font></b></p>
+<b><font face="Tahoma" size="5"><img align="left" height="137" hspace="9" src="mixers.gif" width="412" /> </font></b>
+
+<p align="justify"><font face="Tahoma" pbzloc="70" size="4">De instelling van de mixer Q502 (3SK40) bleek te verbeteren als de source weerstand R510 (&laquo;fig) vergroot werd van 680 Ohm</font><font face="Tahoma" pbzloc="72" size="4"> naar<b> </b>1.5<b> </b>kOhm</font><font face="Tahoma" pbzloc="19" size="4">.<b> </b>Dezelfde instelling was ook optimaal als deze FET vervangen werd door een BF981 met het voordeel dat de mengversterking toenam. Als u dat laatste niet nodig vindt laat dan de 3SK40 op zijn plaats zitten. Ook hier is het resultaat optimaal als L507 en L508 nageregeld worden. Het mooiste is als u de mogelijkheid heeft om de helical filters L503, L504 en L507 met behulp van een spectrummonitor of spectrumanalysator af te regelen. Mijn HP analyzer gaat maar tot 110 MHz en daarom werd de klus geklaard met mijn zelfgebouwde spectrummonitor (ontwerp PE&Oslash;SSB) en ruisgenerator.</font></p>
+
+<p><font face="Tahoma" pbzloc="66" size="4">Bij een andere FT-220 werd gate 2 met een 10 kOhm</font><font face="Tahoma" pbzloc="73" size="4"> weerstand (R508) aan de source verbonden en weerstand R510 tijdelijk vervangen door een 1 kOhm</font><font face="Tahoma" pbzloc="68" size="4"> potmeter. De mixerversterking bleek optimaal te zijn met R510 = 220 Ohm</font><font face="Tahoma" pbzloc="25" size="4">. </font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">MARKER GENERATOR OF CALIBRATOR</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="142" hspace="9" src="calibrators1.gif" width="521" /> </font></b>
+
+<p align="justify"><font face="Tahoma" size="4">In het hier aanwezige &quot;CIRCUIT DIAGRAM&quot; is PB-1424 getekend en dat is een kristal calibrator met een 1 MHz oscillator gevolgd door een deler. In drie onderzochte FT-220 transceivers werd echter PB-1331A (fig&raquo;) aangetroffen: een 100 kHz kristal oscillator gevolgd door een buffer vermenigvuldiger of pulsvormer. Die wijziging is later ook gevonden in onduidelijke schema&#39;s op internet. Daarom staat hiernaast een schema getekend volgens de componenten op de print. De directe koppeling via een C1206 met de ingangskring vind ik niet zo geslaagd en daarom werd een emittervolger toegevoegd. De koppeling gaat nu via een ge&iuml;soleerde (wit-blauwe) draad als &quot;antenne&quot; en dat werd dichtbij Q502 gelegd.</font></p>
+
+<p align="center"><img pbzloc="63" src="calibratorf1.jpg" style="height: 245px; width: 243px; margin-left: 3px; margin-right: 3px" /><font face="Tahoma" pbzloc="1" size="4">&nbsp;<img pbzloc="64" src="calibratorf2.jpg" style="height: 245px; width: 640px; margin-left: 3px; margin-right: 3px" /></font></p>
+
+<p align="center" pbzloc="26">&nbsp;<span style="font-size: 14px"><b pbzloc="79"><font face="Tahoma">Draad als &quot;antenne&quot; voor de calibrator.</font></b></span></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="7" size="4"><img pbzloc="10" src="calibrators2.gif" style="border-top: 0px solid; height: 213px; border-right: 0px solid; width: 376px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" />Vanwege het 12.5 kHz kanalenraster is het comfortabeler om kalibreer punten of markers ook om de 12.5 kHz te hebben. Jaren geleden had ik in mijn Icom IC240 door deling van het aanwezige 6.4 MHz signaal met een 4060 IC een 1750 Hz toon verkregen om relais open te sturen. Iets dergelijks gebeurt hier ook met een goedkoop 6.4 MHz kristal en een interne oscillator van een MC14060BCP. Als men deelt door 512 (pen 13) krijgt men om de 12.5 kHz ijkpunten, maar die zijn niet zo sterk als een deling door 256 met ijkpunten om de 25 kHz (pen 14). Vandaar dat gekozen is voor het laatste waarbij de 12.5 kHz markers ook nog, zij het in veel mindere mate, waarneembaar zijn. </font></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="21" size="4">Van een of andere PC print had ik eens een 12.8 MHz kristal gehaald en dat deed het ook goed in de schakeling. Alleen werd het signaal van pen 13 afgenomen, want ook hier bleek dat de ijkpunten om de 25 kHz sterker waren dan een deling voor 12.5 kHz piekjes. </font></p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" hspace="12" width="647">
+	<tbody>
+		<tr>
+			<td valign="middle" width="31%">
+			<p align="center" pbzloc="24"><img height="169" src="calibratorf4.jpg" width="190" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="82"><font face="Tahoma">Originele 100 kHz oscillator.</font></b></span></p>
+			</td>
+			<td valign="middle" width="30%">
+			<p align="center"><img height="169" src="calibrators3.gif" width="195" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="86"><font face="Tahoma">25 kHz markers (fig&raquo;).</font></b></span></p>
+			</td>
+			<td valign="top" width="38%">
+			<p align="center"><img height="169" src="calibratorf3.jpg" width="259" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="89"><font face="Tahoma">Nieuwe 6.4 MHz oscillator.</font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" pbzloc="19" size="4">Meer gelijkmatige pulsen verkrijgt men met een extra versterkertrapje of pulsvormer. Dat kan een tweede IC zijn, maar ook (fig&raquo;) een simpele &quot;general purpose transistor&quot;. Ik heb verschillende types getest en allen (b.v. BC547, C945) gaven nog behoorlijke signalen in de 2 m band. Vreemd genoeg deed een &quot;echte&quot; HF transistor BF199 het veel minder goed in deze schakeling die (fig&raquo;) in mijn tweede FT-220 ingebouwd werd.</font></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="33" size="4">Overigens is het de vraag of een schaal wel zo nauwkeurig hoeft te zijn, want het is mij opgevallen dat veel stations die met FM&nbsp;op 2 m werken er 1 tot 3 kHz naast zitten. </font></p>
+
+<p style="text-align: center"><font face="Tahoma" pbzloc="33" size="4"><img border="0" src="calibratorf5.jpg" /></font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">IF FILTER XF301 (10,7 MHz)</font></b></p>
+<b><font face="Tahoma" size="5"><img align="left" height="92" hspace="9" src="if-filters1.gif" width="153" /> </font></b>
+
+<p align="justify"><font face="Tahoma" pbzloc="83" size="4">Een snelle en niet te dure methode om de middenfrequent bandbreedte te verminderen is het vervangen van het 10F30A filter (XF301) dat 30 kHz breed is. Dit met twee kristallen uitgeruste ladderfilter kan vervangen worden door het smallere type 10F7.5A van NKD. Waarschijnlijk had u zelf gedacht aan een 10F15A filter maar dat blijkt in de praktijk toch te breed te zijn. Het voordeel van dergelijke types is dat ook het 10F7.5A model meteen in de bestaande print past en dat beide kringen L301 en L302 slechts weinig bijgeregeld hoeven te worden. Normaal gesproken is de bandbreedte dan geschikt om een kanaal naast de eigen frequentie voldoende te onderdrukken mits de modulatie van de buurman aangepast is op het 12.5 kHz raster. Helaas blijken nog veel operators niet in de gaten te hebben dat hun zwaai wat aan de ruime kant is. </font></p>
+
+<p align="justify"><b><font face="Tahoma" pbzloc="162" size="5">IF FILTER CF301 (455 kHz)</font></b></p>
+
+<p pbzloc="37" style="text-align: center">&nbsp;</p>
+
+<center pbzloc="6">
+<table cellpadding="4" cellspacing="1" width="840">
+	<tbody>
+		<tr>
+			<td valign="middle" width="57%">
+			<p align="justify"><font face="Tahoma" pbzloc="188" size="4">Ook het ladderfilter CF301 met 9 keramische elementen</font></p>
+
+			<p align="justify"><font face="Tahoma" pbzloc="33" size="4">kan vervangen worden door een smaller type zoals:</font></p>
+			</td>
+			<td valign="top" width="43%">
+			<p>&nbsp;</p>
+
+			<p><span style="font-size: 12px"><font face="Tahoma" pbzloc="159"><span style="font-size: 12px"><b pbzloc="19"><font face="Tahoma" pbzloc="1">CFM-455D, &plusmn;7kHz/3dB, &plusmn;10kHz/6dB, &plusmn;20kHz/70dB</font></b></span><font face="Tahoma" pbzloc="4" size="4"> </font></font></span></p>
+
+			<p><span style="font-size: 12px"><b pbzloc="145"><font face="Tahoma" pbzloc="2">CFM-455E, &plusmn;5.5kHz/3dB, &plusmn;8kHz/6dB, &plusmn;16kHz/70dB </font></b></span></p>
+
+			<p><span style="font-size: 12px"><b pbzloc="148"><font face="Tahoma" pbzloc="3">CFM-455F,&nbsp;&plusmn;4.2kHz/3dB, &plusmn;6kHz/6dB, &plusmn;12kHz/70dB</font></b></span></p>
+
+			<p><span style="font-size: 12px"><b pbzloc="151"><font face="Tahoma" pbzloc="4">CFM-455H, &plusmn;3kHz/6dB, &plusmn;7.5kHz/70dB</font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" hspace="12" pbzloc="4" width="620">
+	<tbody>
+		<tr>
+			<td valign="top" width="47%">
+			<p align="center" pbzloc="40"><img height="128" src="if-filters2.gif" width="285" /></p>
+			</td>
+			<td valign="middle" width="53%">
+			<p align="center"><img height="121" src="cfm455hf.jpg" width="320" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify" pbzloc="12"><font face="Tahoma" pbzloc="57" size="4">Bij de twee laatste filters moeten in en uitgang belast worden met 2 kOhm</font><font face="Tahoma" pbzloc="59" size="4"> in plaats van 1.5 kOhm</font><font face="Tahoma" pbzloc="10" size="4"> (R310 &amp; R311). In een aantal omgebouwde mobilofoons voor 2 m had ik al met succes de smallere &quot;H&quot; types aangebracht. Als iedereen zich aan de voorgeschreven deviatie met FM houdt, blijkt dat in de praktijk met het 12.5 kHz raster goed te voldoen. Men heeft geen last meer van een station dat in een kanaal ernaast werkt. </font></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="61" size="4">In mijn FT220 werd daarom, eerst als proef, het CFM-455D filter vervangen door CFM-455H zonder R310 en R311 te wijzigen. Het werkte zonder verdere afregeling zo goed, dat het vooralsnog zo gelaten werd. Bij een tweede set werden R310 en R311 vervangen door een 2.2 kOhm</font><font face="Tahoma" pbzloc="15" size="4"> weerstand.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Als u een smaller 455 kHz filter (CF-301) monteert, is het niet beslist nodig om ook het 10.7 MHz filter (XF301) te vervangen. </font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">LOCAL OSCILLATOR PB-1348A</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="279" hspace="9" src="localoscf.jpg" width="480" /> </font></b>
+
+<p align="justify"><img pbzloc="74" src="localoscs.gif" style="height: 108px; width: 346px; float: left; margin-left: 7px; margin-right: 7px" /></p>
+
+<p align="justify"><font face="Tahoma" size="4">In veel FT-220 apparaten (export Europa) zit een PB-1348A &quot;Local Oscillator&quot; in plaats van type PB-1418. Bovendien is de nummering van de trimmers op het schema anders dan op de print, zodat een eventuele afregeling tot een verkeerd resultaat leidt. De schakeling bestaat uit een 62 &agrave; 63 MHz oscillator gevolgd door een versterker als verdubbeltrap. Voor band D (145.5) heeft men geen trimmer maar een vaste 10 pF condensator gemonteerd. </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">In de tabel en foto heb ik de juiste relatie van trimmers en banden afgebeeld. De frequentie regelt men af met trimmers A1 - C1 en de verdubbeltrap (output) met trimmers A2 - D2. De trimmer C1 voor band C (145.0) wordt ook gebruikt voor het kristal voor de repeater shift zodat de ontvangst frequentie iets kan afwijken en dat kan men corrigeren (volgens de handleiding) door de &quot;Clarifier&quot; in te schakelen.</font></p>
+
+<p align="justify"><b><font face="Tahoma" pbzloc="30" size="5">BRUGGELIJKRICHTER</font></b></p>
+
+<p align="center" pbzloc="31">&nbsp;</p>
+
+<center pbzloc="28">
+<table border="0" cellpadding="4" cellspacing="0" width="874">
+	<tbody>
+		<tr>
+			<td valign="middle" width="40%">
+			<p align="center"><img height="345" pbzloc="68" src="rectifierf2.jpg" style="height: 374px; width: 222px" width="200" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="108"><font face="Tahoma">De originele &quot;brugcel&quot;.</font></b></span></p>
+			</td>
+			<td valign="middle" width="60%">
+			<p align="center" pbzloc="33"><img height="375" src="rectifierf3.jpg" width="500" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="111"><font face="Tahoma">Schroef deze print goed vast om brom te vermijden.</font></b></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="middle" width="40%">
+			<p align="center"><img height="251" src="rectifierf1.jpg" width="323" /></p>
+			</td>
+			<td valign="middle" width="60%">
+			<p align="center"><img height="223" src="coolers.jpg" width="500" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="114"><font face="Tahoma">Extra &quot;coolers&quot;.</font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p pbzloc="39">&nbsp;<font face="Tahoma" size="4">De koeling van de bruggelijkrichter (D101 - D104) in de voeding vindt plaats door twee metalen strippen waar de diodes twee aan twee op gemonteerd zijn. Je brandt je vingers aan de diodes, zo heet worden zij en het heeft mij verbaasd dat er nog niet &eacute;&eacute;n doorgepiept is. Voor de zekerheid werden zij vervangen door een brugcel aan de achterwand op de plaats van C10 (3300 &micro;F/25 V). Om het verlies aan capaciteit te compenseren werden C101 (1000 &micro;F/25 V) op de printplaat verwijderd om plaats te maken voor een modernere elco van 3300 &micro;F/35 V en C22 (1000 &micro;F/25 V), parallel aan de serietransistor Q1 (2SD114), vervangen door hetzelfde 3300 &micro;F/35 V type. </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Er werd door tegenstations herhaaldelijk gemeld dat er brom op mijn signaal was. In eerste instantie zocht ik het probleem in verouderde elco&#39;s en inderdaad &eacute;&eacute;n exemplaar diende vervangen te worden. Jammer genoeg bleef de brom en een ellenlange zoektocht begon. Uiteindelijk bleek het de bevestiging van de print te zijn. Door vier schroeven extra aan te draaien was het probleem opgelost. Voor de zekerheid werd aan de printzijde het vertinde koper extra goed gereinigd evenals het metaal rond de schroefdraad van het chassis. Bij een tweede FT-220 bleek dat ook de remedie te zijn.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">De brugcel en Q1 aan de achterwand werden naar mijn zin nog te warm tijdens FM uitzendingen. Door het monteren van twee koellichamen (uit de rommelbak) was dat minpunt ook weer verholpen. Ook een transistor op de voedingsprint kreeg een U-vormig profiel voor extra koeling.</font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">SCHAALVERLICHTING</font></b></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="1" size="4">Toen mijn gebruikte set aangeschaft werd, ontbraken de twee lampjes van de schaalverlichting. Om de levensduur van dergelijke verlichting te verlengen voed ik ze met een constante stroombron of een lagere spanning of ik plaats een lamp die geschikt is voor een hogere spanning. Meestal is de verlichting naar mijn smaak toch te fel. In dit apparaat werden twee 12 V/4 W lampjes gekocht die in de apparatuur van het dashboard in een auto zitten. Als zij gevoed worden met een 8 V driepootstabilisator dan heeft u een mooie en toch duidelijke verlichting voor S meter en frequentieschaal en dan hebben de lampjes het eeuwige leven zonder knipperen tijdens het zenden.&nbsp;&nbsp; Met deze maatregel wordt het lampje van de schaalverlichting niet te warm. Bij een normale voedingspanning kan de hete lamp, als dat te dichtbij de ronde trommelschaal gemonteerd is, smeltplekken op de kunststofschaal veroorzaken. Controleer of de lamp niet tegen de schaal komt!</font></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="3" size="4"><span pbzloc="5" style="font-size: 24px"><span pbzloc="6" style="font-family: tahoma,geneva,sans-serif"><strong pbzloc="7">TB76001 MODIFICATIE</strong></span></span></font></p>
+
+<p align="justify" pbzloc="7">&nbsp;<img pbzloc="10" src="ft-220&#32;tb76001&#32;s.gif" style="border-top: 0px solid; height: 384px; border-right: 0px solid; width: 635px; border-bottom: 0px solid; float: right; margin-left: 7px; border-left: 0px solid; margin-right: 7px" /></p>
+
+<p align="justify" pbzloc="86"><font face="Tahoma" pbzloc="3" size="4"><span pbzloc="5" style="font-size: 24px"><span pbzloc="6" style="font-family: tahoma,geneva,sans-serif"><span pbzloc="92" style="font-size: 18px">Het is waarschijnlijk niet bij alle eiganeren van een FT-220 bekend dat er van YAESU een technisch bulletin TB76001 bestaat. Het gaat om een 20 dB verbetering met betrekking tot kruismodulatie. Zo gek is dat nog niet want origineel wordt de noiseblanker direct aangestuurd door de RF/MIX unit en met de verandering pas na een 10.7 MHz filter.</span></span></span></font></p>
+
+<p align="justify" pbzloc="70"><font face="Tahoma" pbzloc="3" size="4"><span pbzloc="5" style="font-size: 24px"><span pbzloc="6" style="font-family: tahoma,geneva,sans-serif"><span pbzloc="82" style="font-size: 18px">Het bulletin is summier omdat niet na te gaan is of het wel officieel is. Wat bekend is heb ik&nbsp;verzameld in een tekening. </span></span></span></font></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="3" size="4"><span pbzloc="5" style="font-size: 24px"><span pbzloc="6" style="font-family: tahoma,geneva,sans-serif"><span pbzloc="53" style="font-size: 18px">Zoals het beschreven is en vergeleken met het complete schema van een FT-220, zou door de&nbsp;modificatie&nbsp;de verbinding tussen pen (6) van PB1357A en pen (1) van PB-1302A verbroken worden. De FM/IF unit krijgt dan geen sturing van de RF/MX unit en dan zou het FM gedeelte qua ontvangst niet werken.</span></span></span></font></p>
+
+<p align="justify"><font face="Tahoma" pbzloc="3" size="4"><span pbzloc="5" style="font-size: 24px"><span pbzloc="6" style="font-family: tahoma,geneva,sans-serif"><span pbzloc="54" style="font-size: 18px">Omdat deze vaststelling nog niet met de daadwerkelijke bedrading vergeleken is, werd door mij de modificatie (nog) niet uitgevoerd.</span></span></span></font></p>
+
+<p pbzloc="122" style="text-align: center">&nbsp;<img border="0" height="36" src="bar2.gif" width="500" /></p>
+
+<p pbzloc="116" style="text-align: center"><a href="../Modifaties.htm" pbzloc="117"><img border="0" height="25" pbzloc="120" src="backfri.gif" width="53" /></a></p>
+</body>
+</html>

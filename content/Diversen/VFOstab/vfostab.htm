@@ -1,0 +1,259 @@
+<TITLE>PA0KSB VFO stabilisator test en toepassing</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080" BACKGROUND="Image5.gif">
+<p align="center"><b><font face="Tahoma" pbzloc="246" size="5">(SK) PA&Oslash;KSB&#39;s VFO Stabilisator getest en toegepast</font></b></p>
+
+<p align="center"><img height="12" src="updated2.gif" width="44" /><b pbzloc="250"><font face="Tahoma" size="5">&nbsp;</font><span style="font-size: 14px"><font face="Tahoma">Schema&#39;s opnieuw getekend, een ontwerp van een gaatjesprint toegevoegd, de tekst aangevuld met de stabilisator in ON6AB&#39;s FT-707.</font></span></b></p>
+
+<p><b><font face="Tahoma" size="5">INLEIDING</font></b></p>
+
+<p align="justify"><font face="Tahoma" size="4">Een uitkomst voor de zelfbouwer is de VFO stabilisator van wijlen Klaas PA0KSB. Het ontwerp is ook wel bekend als Bijsloffer en Huff and Puff stabiliser. Overjarige transceivers met vrijlopende VFO&rsquo;s uit de zes en zeventiger jaren zijn daarmee goed te stabiliseren. Voormalige C amateurs, die nu op HF banden werken met zulke oude getrouwen, kunnen dat ook gebruiken.</font></p>
+<font face="Tahoma" size="4"><img align="right" height="359" hspace="9" src="vfostabs.gif" width="766" /> </font>
+
+<p align="justify"><font face="Tahoma" size="4">Meer dan een kwart eeuw geleden verscheen het eerste ontwerp van de bijsloffer. Destijds werd dat systeem door mij als experiment in een Yaesu FT-7 gebouwd. Dat was een wonder en openbaring, want de los lopende VFO werd kristalstabiel.</font></p>
+
+<p><font face="Tahoma" size="4">PA&Oslash;KSB&rsquo;s laatste en gemoderniseerde versie werd onder andere in Electron van december 96 gepubliceerd. </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">PA0CMU maakte later een printontwerp en deed mij een aantal cadeau. Dat was een aanzet om weer uitgebreid met het nieuwe ontwerp van PA&Oslash;KSB aan de gang te gaan. Gedurende de daarop volgende experimenten onderging de schakeling geleidelijk een aantal wijzigingen (zie schema).</font></p>
+
+<p><b><font face="Tahoma" pbzloc="251" size="5">WERKING</font></b></p>
+
+<p align="justify"><font face="Tahoma" size="4">In beknopte en vereenvoudigde vorm is de werking als volgt: een meervoudig gedeeld VFO signaal wordt met een vaste frequentie in een mixer digitaal gemengd. De eruit komende blokspanning wordt gelijkgericht, naar een bufferversterker gebracht en dan vergeleken met een nog meer gedeeld en gelijkgericht VFO signaal. Een onbalans wordt in een CA3140 versterkt en als gelijkspanning naar een varicap diode gestuurd. De verandering van frequentie wordt daardoor tot een paar Hertz beperkt. </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Een op zich instabiele oscillator wordt niet beter, maar het langzame kruipen wordt tegengegaan. Als men aan de VFO draait gebeurt er niets. Pas als men stopt zoekt de stabilisator in stapjes van ongeveer 4 &ndash; 16 Hz het dichtstbijzijnde referentiepunt op. Het een en ander is afhankelijk van deeltallen, VFO en oscillatorfrequentie. Voor meer snufjes, gedetailleerde informatie over de werking van het systeem en de berekening van de deeltallen, mag ik verwijzen naar het originele artikel.</font></p>
+
+<p><b><font face="Tahoma" size="5">KRISTAL OSCILLATOR</font></b></p>
+
+<p align="justify"><font face="Tahoma" size="4">De kristaloscillator was een overtone type met een afgestemde kring in de collector. De instelling en de sturing naar 74HC74 bleken nogal kritisch te zijn. Misschien ook omdat hier al jaren onderdelen gerecykeld worden van afgedankte consumenten elektronica. Toen de andere helft van een 74HC74 gebruikt werd om de overtone oscillator door twee te delen, was het probleem opgelost (door de blokspanning uit de deler). Deze extra deling is in dit ontwerp niet aangebracht omdat het met de volgende oscillator niet nodig was.</font></p>
+<font face="Tahoma" size="4"><img align="left" height="87" hspace="9" src="xtaloscs.gif" width="147" /> </font>
+
+<p align="justify"><font face="Tahoma" size="4">Minder problemen heeft men (&laquo;fig) met het plaatsen van een kant en klare oscillator. DIL typen van 12 &ndash; 48 MHz komen veel in oude moederborden voor. Zo&rsquo;n blokje is gemakkelijk, stabiel, ruimtebesparend en eenvoudig te monteren. Controleer tijdig of onder en boven harmonischen geen piepjes in de middenfrequent versterker veroorzaken. Als alles ingeblikt is, blijkt het toch moeilijk om MF straling te voorkomen. Kies eventueel een andere kristaloscillator. Van boven af gezien is de stip, afgeplatte of spitse hoek de aansluiting 1 (pin &quot;1&quot;), (denkbeeldige) pin &quot;7&quot; is aarde, pin &quot;8&quot; de uitgang en pin &quot;14&quot; is +5 V. Let op; de in deze schakeling geteste typen van 24 &ndash; 66 MHz gaven niet allemaal dezelfde output bij 5 V. De laagste spanning was net onder 1 V top-top en het hoogste niveau was 4 V top-top. Als de mixer niet goed werkt, kan het zijn dat de oscillator te weinig HF spanning afgeeft.</font></p>
+
+<p><b><font face="Tahoma" size="5">VOORVERSTERKER</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="147" hspace="9" src="preamps.gif" width="104" /> </font></b>
+
+<p align="justify"><font face="Tahoma" size="4">Een eenvoudige voorversterker met een BC547 (fig&raquo;) was nodig omdat sommige VFO&rsquo;s net niet genoeg signaal gaven om de eerste, van een print uitgesoldeerde deler, MC14060BCP te sturen. Dat kan vastgesteld worden door op pin 6 een scoop aan te sluiten. Een brede band van ongeveer 4 V top-top moet te zien zijn. Ook de pinnen 14 en 15 van de tweede deler zijn zo te testen op de goede werking van dat IC. Een voorversterker werkt daarbij ook als scheidingstrap of buffer achter een VFO. Kies eventueel, in plaats van een 220 k weerstand, een andere waarde zodat de collectorspanning 2.5 V wordt.</font></p>
+
+<p><b><font face="Tahoma" size="5">DELERS</font></b></p>
+
+<p align="justify"><font face="Tahoma" size="4">PA0KSB beschrijft uitgebreid de relatie tussen het delen, VFO en oscillatorfrequentie. In de praktijk bleken VFO&rsquo;s van 5 &ndash; 9 MHz goed te stabiliseren met oscillators van 28 &ndash; 66 MHz zonder de getekende deelinstelling te veranderen. In mijn huidige 5 MHz PTO zit een 66 MHz oscillator die gekocht werd tijdens een vlooienmarkt op bij een Dag van de Amateur. Hoe hoger de frequentie hoe dichter de referentie c.q. stabilisatie punten bij elkaar komen. Volg de berekening in het artikel van Klaas als u wilt dat de stabilisatiepunten optimaal worden.</font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">MIXER</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="175" hspace="9" src="mixers.gif" width="102" /> </font></b>
+
+<p align="justify"><font face="Tahoma" size="4">Als de delers en de kristaloscillator voldoende signaal afgeven, is dat op pinnen 5 en 6 van de 74HC74 mengtrap te zien. De scoop laat dan een breed beeld zien met boven en onder onderbroken schuine strepen. Dat zijn enigszins vertekende blokvormen.</font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">BUFFER VERSTERKER</font></b></p>
+<b><font face="Tahoma" size="5"><img align="left" height="153" hspace="9" src="amps.gif" width="166" /> </font></b>
+
+<p align="justify"><font face="Tahoma" size="4">Op pin 3 van CA3140 (&laquo;fig) staat de halve voedingsspanning. Als de spanning op pin 2 daarvan afwijkt versterkt de operatione</font><font face="Tahoma" size="4">le versterker de verandering. De 2.2 &mu;F condensator (pin 2 en 6) wordt opgeladen en verliest slechts langzaam zijn lading door de hoge ingangsimpedantie van de versterker en de twee 4.7 M&Omega; weerstanden. Als er erg veel aan de VFO gedraaid wordt, gaat de sp</font><font face="Tahoma" size="4">anning op pin 6 steeds meer afwijken van de halve voedingsspanning. De VFO blijft echter gestabiliseerd. </font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Er is in mijn gewijzigde ontwerp een extra 10 k&Omega; weerstand van pin 6 naar aarde toegevoegd. De 2.2 &mu;F condensator behoudt vrij lang zijn lading als de </font><font face="Tahoma" size="4">set tijdens experimenten veelvuldig aan en uitgeschakeld wordt. De weerstand versnelt de ontlading. In bedrijf moet de schakeling dan meer zijn best doen om de spanning voor de varicap diode constant te houden en dat verbetert (volgens mij) de stabiliserende werking.</font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5">RESET</font></b></p>
+<b><font face="Tahoma" size="5"><img align="right" height="144" hspace="9" src="resets2.gif" width="173" /> </font></b>
+
+<p align="justify">&nbsp;</p>
+<img align="left" height="107" hspace="9" src="resets1.gif" width="168" />
+<p align="justify"><font face="Tahoma" size="4">Als men veelvuldig van frequentie verandert, dan schuift de regelspanning naar de VFO steeds meer omhoog of omlaag en loopt u de kans dat de stabilisatie uit zijn bereik raakt. Met een voedingspanning van 8 V werkt de bijsloffer niet meer goed als de spann</font><font face="Tahoma" size="4">ing op pin 6 lager is dan 2 V of hoger is dan 6 V. Daarom kan met een reset drukknop (fig&raquo;) een relais bekrachtigd worden zodat de 2.2 &mu;F condensator via 10 k&Omega; ontladen wordt en de halve voedingsspanning terugkeert. Het relais werd bij mij toegepast om ee</font><font face="Tahoma" size="4">n knop van een transceiver een dubbele functie toe te kennen. U kan eventueel het relais weg laten (fig&raquo;) en het resetten alleen met een drukknop doen. Bij het ontwerp van de volgende gaatjesprint is het relais weggelaten.</font></p>
+
+<p><b><font face="Tahoma" size="5">VFO</font></b></p>
+
+<p align="justify"><font face="Tahoma" size="4">Meestal kan men de werking van het systeem testen, door met afgeschakelde RIT de regelspanning van de bijsloffer op de varicapdiode van de RIT te zetten. Als de stabilisatie dan werkt en de RIT is niet nodig, kan men het zo laten. </font></p>
+<font face="Tahoma" size="4"><img align="right" height="84" hspace="9" src="varicaps.gif" width="119" /> </font>
+
+<p align="justify"><font face="Tahoma" size="4">Wanneer men een RIT wenst te behouden, dan moet in een VFO of PTO (VFO met permeabiliteitafstemming) een varicap diode (fig&raquo;) bijgeplaatst worden. Omdat deze diode vrijwel parallel staat aan de andere componenten van het RIT systeem, wordt het bereik daarvan wordt kleiner als hij ingeschakeld wordt. De getekende extra componenten van de tekening deden het goed in de oscillatoren van Yaesu FT-7, FTdx401, Ten Tec Corsair II en een eigenbouw 5 MHz VFO. Vaak werkt het ook door de componenten van een RIT te dupliceren en ernaast in de VFO te monteren.</font></p>
+
+<p><b><font face="Tahoma" size="5">BOUW</font></b></p>
+
+<table align="center" border="0" cellpadding="4" cellspacing="0" width="960">
+	<tbody>
+		<tr>
+			<td valign="middle" width="33%">
+			<p align="center"><img height="300" src="on6abf1.gif" width="273" /></p>
+
+			<p><span style="font-size: 14px"><b pbzloc="267"><font face="Tahoma">Dit is een gedeelte van de gaatjesprint in een FT-707. In het ontwerp hiernaast (fig&raquo;) is de onderste rode condensator meer naar de rand verschoven.</font></b></span></p>
+			</td>
+			<td valign="top" width="67%">
+			<p align="center"><img height="510" pbzloc="255" src="pcb-on6ab.gif" width="607" /></p>
+
+			<p align="justify"><span style="font-size: 14px"><b pbzloc="263"><font face="Tahoma">Dit is de componentzijde met zwarte draden als doorverbinding. De grijze draden komen aan de koperzijde. De zwarte stippen op de draden zijn doorverbindingen met de koperbanen aan de onderzijde. Vergeet niet om de koperbanen te onderbreken zoals dat is getekend onder de IC&#39;s.</font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" pbzloc="269" size="4">ON6AB heeft deze stabilisator in een FT-707 gebouwd en hij vond het resultaat opmerkelijk. De componenten werden op gaatjesprint gemonteerd waarvan de afmetingen gekozen waren op de beschikbare plaats in zijn transceiver. Het printontwerp heb ik voor algemeen gebruik met een paar wijzigingen aangepast en overgetekend. Wij beiden claimen niet dat het perfecte printontwerpen zijn, maar het kan u tijd besparen als u bij voorbeeld eerst wil experimenteren.</font></p>
+
+<center pbzloc="270">
+<table border="0" cellpadding="4" cellspacing="0" width="920">
+	<tbody>
+		<tr>
+			<td valign="top" width="53%">
+			<p align="center"><img height="320" src="stabpcbf2.jpg" width="417" /></p>
+
+			<p><b><font face="Tahoma" size="2">PA0CMU&#39;s printje en mijn vorige stabilisator, maar met voorversterker en relais. Hier werd nog een &plusmn; 52 MHz overtone kristal oscillator gebruikt. </font></b></p>
+			</td>
+			<td valign="top" width="47%">
+			<p align="center"><img height="320" src="stabpcbf3.jpg" width="417" /></p>
+
+			<p align="justify"><b><font face="Tahoma" size="2">Een door PA0CMU ontworpen en opgebouwde printje met alle componenten.</font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="right">&nbsp;</p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" hspace="12" width="543">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><img height="405" src="stabpcbf1.gif" width="521" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="273"><font face="Tahoma">PACMU&#39;s printontwerp.</font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">Een echt printontwerp (fig&raquo;) werd door PA&Oslash;CMU gemaakt. Met enige handigheid is dat 5.5 &times; 6.5 cm printje voor het door mij gewijzigde ontwerp te gebruiken. Pin 3 van CA3140 komt op de halve voedingsspanning.</font></p>
+
+<p><font face="Tahoma" size="4">Print, foto&#39;s en meer informatie zijn te downloaden van Carel&rsquo;s site: </font></p>
+
+<p><a href="http://members.ziggo.nl/cmulder/"><font face="Tahoma" size="4">http://members.ziggo.nl/cmulder/</font></a></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><b><font face="Tahoma" size="5">TOEPASSEN</font></b></p>
+
+<p><font face="Tahoma" size="4">Er volgen nu voorbeelden van apparaten die uitgerust werden met de stabilisator.</font></p>
+
+<p><b><font face="Tahoma" pbzloc="274" size="5">ON6AB&#39;s HUFF AND PUFF FOR THE FT-707</font></b></p>
+
+<p align="center"><img height="180" src="on6abf2.gif" width="240" /><b><font face="Tahoma" size="5">&nbsp;<img height="180" src="on6abf4.gif" width="240" /> <img height="180" src="on6abf3.gif" width="241" /></font></b></p>
+
+<p align="center"><font face="Tahoma" size="4">De complete bouwbeschrijving in PDF leest u hier </font><a href="../FT707stabiliser/FT707stabiliser.htm"><font face="Tahoma" size="4">ON6AB</font></a>.</p>
+
+<p><b><font face="Tahoma" pbzloc="275" size="5">PA&Oslash;FRI</font></b></p>
+
+<center pbzloc="280">
+<table border="0" cellpadding="4" cellspacing="0" width="940">
+	<tbody>
+		<tr>
+			<td valign="middle" width="36%">
+			<p align="justify"><font face="Tahoma" size="4">Op de PA&Oslash;CMU&#39;s print kan de blokoscillator (fig&raquo;) gemonteerd worden in de ruimte (blauw kader) van de oorspronkelijke overtone oscillator. Ernaast is plaats voor een op zijn kop gelijmd relais. Eventueel moet in de VFO de condensator van 10 &ndash; 22 pF tijdelijk vervangen worden door een trimmer om het regelbereik in te stellen.</font></p>
+
+			<p pbzloc="278" style="text-align: justify"><font face="Tahoma" size="4">Blik de stabilisator in met doorvoer condensatoren om ongewenste stoorstraling in de ontvanger te voorkomen. Op de foto is de tijdelijk geopende stabilisator te zien in mijn Ten Tec Corsair II. </font></p>
+			</td>
+			<td valign="middle" width="64%">
+			<p><img height="424" src="vfostabf1.JPG" width="580" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center" pbzloc="282">&nbsp;</p>
+
+<center pbzloc="284">
+<table border="0" cellpadding="4" cellspacing="0" width="794">
+	<tbody>
+		<tr>
+			<td valign="top" width="60%">
+			<p align="center"><img height="480" src="vfostabf2.jpg" width="442" /></p>
+			</td>
+			<td valign="middle" width="40%">
+			<p align="center"><img height="350" src="vfostabf3.JPG" width="292" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><span style="font-size: 14px"><b pbzloc="287"><font face="Tahoma">De stabilisator in een blikken doosje geplaatst en tegen de rechterwand van een Corsair II vastgemaakt. </font></b></span></p>
+
+<p><b><font face="Tahoma" pbzloc="288" size="5">PA&Oslash;HRP</font></b></p>
+
+<center pbzloc="292">
+<table border="0" cellpadding="4" cellspacing="0" width="787">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><img height="432" src="vfostabf5.jpg" width="712" /></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+			<p align="center"><img height="358" src="vfostabf6.jpg" width="715" /></p>
+
+			<p align="center"><span style="font-size: 14px"><b pbzloc="291"><font face="Tahoma">Stabilisator door Pa&Oslash;HRP in een Drake R7A aangebracht</font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p><b><font face="Tahoma" pbzloc="293" size="5">PA3HBT</font></b></p>
+
+<center pbzloc="294">
+<table border="0" cellpadding="4" cellspacing="0" width="940">
+	<tbody>
+		<tr>
+			<td valign="middle" width="69%">
+			<p align="center"><img height="293" src="vfostabf7.JPG" width="600" /></p>
+			</td>
+			<td valign="top" width="31%">
+			<p align="justify"><font face="Tahoma" size="4">PA3HBT bouwde de stabilisator (&laquo;fig) in een Yaesu FTdx401 transceiver. Hij rapporteert dat met zijn Yaesu VFO (8.5 &ndash; 9.5 MHz) en een 40 MHz oscillator, de beste stabilisatie is verkregen door pin 15 (IC1) te verbinden met pin 11 (IC2). Hij heeft dus de Q10 uitgang van IC1 gekozen. Als vervanger van een 1S145 varicapdiode in de originele VFO kan een NTE614 gebruikt worden.</font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center" pbzloc="296">&nbsp;</p>
+
+<center pbzloc="297">
+<table border="0" cellpadding="4" cellspacing="0" width="920">
+	<tbody>
+		<tr>
+			<td valign="middle" width="35%">
+			<p align="justify"><font face="Tahoma" size="4">PA3HBT hij heeft ook de stabilisator (ander printontwerp) in een Ten Tec Corsair II gebouwd. Beide transceivers zijn nu net zo stabiel als een moderne set.</font></p>
+			</td>
+			<td valign="top" width="65%">
+			<p><img height="265" src="vfostabf8.JPG" width="599" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p><b><font face="Tahoma" size="5">OH6CJ&#39;s PIC FREQUENTIE TELLER MET STABILISATOR </font></b></p>
+<b><font face="Tahoma" size="5"><img align="left" height="138" hspace="9" src="pcb-oh6cjs.gif" width="299" /> </font></b>
+
+<p><font face="Tahoma" size="4">Een interessant ontwerp voor zijn 5 MHz VFO komt van OH6CJ zie: </font><a href="http://www.qsl.net/om3cph/counter/lcd/contribs/pic_flck.htm"><font face="Tahoma" size="4">http://www.qsl.net/om3cph/counter/lcd/contribs/pic_flck.htm</font></a></p>
+
+<p align="justify"><font face="Tahoma" size="4">Zelf heb ik het nog niet toegepast, maar het is zo praktisch dat ik niet kon nalaten om schema en printontwerp af te drukken.</font></p>
+
+<p align="justify"><font face="Tahoma" size="4">&nbsp;</font></p>
+
+<p align="center"><img height="640" src="stab-oh6cjs.gif" width="888" /></p>
+
+<p align="center"><img height="36" src="bar2.gif" width="500" /></p>
+
+<p align="center"><a href="../Diversen.htm"><img border="0" height="25" src="backfri.gif" width="53" /></a></p>
+</body>
+</html>

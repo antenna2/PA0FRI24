@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>Omni VI modseng</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY LINK="#0000ff" VLINK="#800080" BACKGROUND="Image1.gif">
+
+<B><FONT FACE="Tahoma" SIZE=7><FONT FACE="Tahoma" SIZE=7><SPAN LANG="N"><P ALIGN="CENTER">TEN TEC OMNI VI MODIFICATIONS</P>
+</FONT></FONT><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff"><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff"><FONT FACE="Tahoma" SIZE=4 COLOR="#0000ff"><P ALIGN="CENTER">This article is in progress!</P>
+</B></FONT></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="omni6f.jpg" WIDTH=800 HEIGHT=251></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P>INTRODUCTION</P>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">There are several modifications for a Ten Tec OMNI VI, but mine I have not come across as such on the Internet.</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P>RX ATTENUATOR ON 160m </P>
+</B></FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="frontends.gif" WIDTH=898 HEIGHT=773></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Monteer 100 nF parellel aan de gemarkeerde condensators (C3, C10, C23, C38, C39, C40, C41 en C49).</P>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">If I inject my Corsair II and Omni VI with a 50 µV signal the S-meter indicates 2 - 3 S-units less than S9 on 160 meters. I have searched for a long time to find the causes and apparently discovered one of them. Furthermore, I suspect that the inductance of the balance transformer (T3) windings is insufficient for this band.</P></FONT></FONT></SPAN>
+<P ALIGN="RIGHT"><TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=618 ALIGN="RIGHT" HSPACE=12 DIR="LTR">
+<TR><TD VALIGN="TOP">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="capsf1.jpg" WIDTH=600 HEIGHT=330></P>
+<P ALIGN="CENTER"><IMG SRC="capsf2.jpg" WIDTH=600 HEIGHT=201></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">BPF/FRONT END BOARD (81593), 8 × 100 nF en 2 × 470R</B></FONT></FONT></SPAN></TD>
+</TR>
+</TABLE>
+</P>
+
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N"><P ALIGN="JUSTIFY">The total coupling capacitance for the 160 m signal is to small, especially compared to a 50 ohms signal of the source. From the antenna input to the 4 × J30 amplifier are respective in series C3, C10, C23, and then in series with C38, C39, C40, C41 in parallel.</P>
+<P ALIGN="JUSTIFY">That's a total of only (3.3 × 40) : (3.3 + 40) = 3 nF! Also, C42 (10 nF) and C49 (10 nF) are insufficient. The S-meter indicate a more correct value if a 100 nF capacitor was installed onto the track side in parallel with each of these capacitance's. A significant improvement but it does take some track's investigation to locate the right components. The picture may facilitate the precise work.</P>
+<P ALIGN="JUSTIFY">Two 470R resistors in parallel with the original 470R resistors is a modification extracted from the internet. You can remove the original ones and mount 220R resistors instead.</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">S-METER ADJUSTMENT</P><IMG SRC="s&#32;meters.gif" ALIGN="RIGHT" HSPACE=9 WIDTH=223 HEIGHT=129>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">It was not possible to adjust the S-meter in my 5th.hands FT-736R according to the manual: 0.8 µV = S3 and 50 µV= S9. With 0.8 µV the pointer stays in the left corner and with 50 µV the pointer moved just over S9. </P>
+<P ALIGN="JUSTIFY">Overall improvement was possible with (fig») a Schottky diode (BAT85) parallel to D4 (1N4148) at the track side. S3 = 0.8 µV still fails, but S7, S8, S9 and S9 + are closer to the truth. If you perform this change, do not forget to readjust L3 and L5!</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">AGC</P></B></FONT></FONT></SPAN>
+<TABLE CELLSPACING=0 BORDER=0 CELLPADDING=4 WIDTH=949 DIR="LTR">
+<TR><TD WIDTH="31%" VALIGN="MIDDLE">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="agcs.gif" WIDTH=207 HEIGHT=212></P>
+</FONT><B><FONT FACE="Tahoma" SIZE=2><FONT FACE="Tahoma" SIZE=2><P ALIGN="CENTER">Bruggelijkrichting voor het AGC systeem.</B></FONT></FONT></SPAN></TD>
+<TD WIDTH="69%" VALIGN="MIDDLE">
+<FONT SIZE=2><SPAN LANG="N"><P ALIGN="CENTER"><IMG SRC="agcf.jpg" WIDTH=601 HEIGHT=274></FONT></SPAN></TD>
+</TR>
+</TABLE>
+
+<FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N"><P ALIGN="JUSTIFY">The receiver has regularly a tic-tic jam like an electrical fence system, but that is not the source. Atlas210x/215x, Corsair II and other transceivers with a LF-derived AGC system have the same inconvenience. In Atlas types it was almost eliminated with a </FONT></FONT></SPAN><A HREF="../Atlas215&#32;AGC&#32;mod/atlas215&#32;agc&#32;mod&#32;eng.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">bridge rectifier</FONT></FONT></SPAN></A><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N"> for the AGC system.</P>
+<P ALIGN="JUSTIFY">I did it again in an OMNI VI and the interference is much reduced. The design includes an additional transistor (BC547) as phase shifter with a gain of 1. The emitter is not decoupled. The circuit is parallel to the base of Q3 and BC547's collector signal is rectified with two extra diodes (1N4148). D6 and D7 (1N4148) plus the extra diodes are a bridge rectifier. Purists will state that the 220R resistors should equal to R6, but with the values shown it works satisfactory. Again, L3 and L5 have to be adjusted again!</P>
+</FONT></FONT><B><FONT FACE="Tahoma" SIZE=5><FONT FACE="Tahoma" SIZE=5><P ALIGN="JUSTIFY">NEW SPEECH PROCESSOR</P>
+</B></FONT></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><P ALIGN="JUSTIFY">A RF speech processor (IF Clipper) with an 455 ceramic filter:</FONT></FONT> </SPAN><A HREF="../../Diversen/DSBclipper/dsb-clipper.eng.htm"><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">A limiting RF speech processor</FONT></FONT></SPAN></A><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4><SPAN LANG="N">. The reason is that the original LF compressor/clipper is not really effective. Incidentally, those of the Corsair II is just as ineffective and therefore it was never turned on by me. </P>
+</FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="speechprocf1.jpg" WIDTH=552 HEIGHT=355></P>
+<P ALIGN="CENTER"><IMG SRC="speechprocs1.gif" WIDTH=495 HEIGHT=248><IMG SRC="speechprocs2.gif" WIDTH=419 HEIGHT=221></P>
+<P ALIGN="CENTER"><IMG SRC="speechprocf2.jpg" WIDTH=333 HEIGHT=313></FONT><FONT FACE="Tahoma" SIZE=4><FONT FACE="Tahoma" SIZE=4>&nbsp;<IMG SRC="speechprocf3.jpg" WIDTH=286 HEIGHT=313></P>
+</FONT></FONT><FONT SIZE=2><P ALIGN="CENTER"><IMG SRC="bar2.gif" WIDTH=500 HEIGHT=36></P>
+<P ALIGN="CENTER"></FONT></SPAN><A HREF="../Modifaties.htm"><IMG SRC="backfri.gif" BORDER=0 WIDTH=53 HEIGHT=25></A></P></BODY>
+</HTML>

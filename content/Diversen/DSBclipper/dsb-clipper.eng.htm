@@ -1,0 +1,241 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>dsb-clipper</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BACKGROUND="Image1.gif">
+<p align="center"><b><font face="Tahoma" size="6"><font face="Tahoma" size="6"><span lang="EN-GB" pbzloc="17">A LIMITING RF SPEECH PROCESSOR </span></font></font></b></p>
+
+<p align="center"><b><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">A simple system based on double-sideband limiting and selection with one filter.</font></font></span></b></p>
+
+<p align="center"><b><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Experiments and a simple working design. </font></font></span></b></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="12" src="updated2.gif" width="44" /></span></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB"><strong>&nbsp;</strong></span></font></font><span style="font-size: 14px"><span lang="EN-GB"><font face="Tahoma"><font face="Tahoma"><strong pbzloc="12"> 27 jan 2017:&nbsp;&nbsp;New PCB [</strong><span style="font-size: 14px"><span lang="EN-GB"><font face="Tahoma"><font face="Tahoma"><strong pbzloc="11">18 jul 2011: 2 Photo&#39;s.]</strong></font></font></span></span></font></font></span></span></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="267" pbzloc="28" src="speech&#32;processorf3.jpg" style="height: 283px; width: 775px" width="601" /></span></font></p>
+
+<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB" pbzloc="13">Rinus the owner&nbsp;of &nbsp;</span></font></font></b><a href="http://www.kent-electronics.nl/"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">KENT-Electronics</span></font></font></b></a><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB" pbzloc="15"> is SK </span></font></font></b></span></p>
+
+<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB" pbzloc="29"><img border="0" src="speech&#32;processorf6.jpg" /></span></font></font></b></span></p>
+
+<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB" pbzloc="23">&nbsp;This PCB (printboard) designed&nbsp;by PA&Oslash;MBJ is on request available by him: <a href="mailto:PA0MBJ@veron.nl" pbzloc="22">PA0MBJ@veron.nl</a>.</span></font></font></b></span></p>
+
+<table align="center" cellpadding="1" cellspacing="1" style="width: 700px">
+	<tbody>
+		<tr>
+			<td pbzloc="75" style="text-align: center"><img border="0" height="416" src="speech&#32;processorf7.jpg" width="800" /></td>
+			<td pbzloc="77" style="text-align: center"><img border="0" height="119" src="speech&#32;processorf8.jpg" width="229" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="32"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="35" style="font-size: 18px">The design can be ordered as a kit from van Dijken Electronics:</span><br />
+<span pbzloc="36" style="font-size: 18px"><a href="https://www.vandijkenelektronica.eu/nl/search?controller=search&amp;orderby=position&amp;orderway=desc&amp;search_query=pa0fri" pbzloc="15">https://www.vandijkenelektronica.eu/nl/search?controller=search&amp;orderby=position&amp;orderway=desc&amp;search_query=pa0fri</a></span></span></p>
+
+<p><b><span lang="EN-GB"><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="25" size="5">INTRODUCTION</font></font></span></b></p>
+<b><span lang="EN-GB"><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="left" height="197" hspace="9" src="speech&#32;processorf1.jpg" width="320" /> </font></font></span></b><span lang="EN-GB"><img align="right" height="330" hspace="9" src="speech&#32;processorf5.jpg" width="512" /> </span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="3" size="4">The DSB limiter in my original article (see at the bottom) gave problems for some foreign home brewers. Probably by using a different type of IC (eg TBA120S, TBA120AS, TBA120T, TBA120U) than the previous model (TBA120, TBA120A) which was used in my circuit. Moreover, the older types are difficult to obtain. Reason why I started experimenting with readily available mixer NE612A (or SA12AN). This experimental version (&laquo;fig) of a speech clipper, one of the many tested designs, worked satisfactorily. See also </font></font></span><a href="../../Mods/Atlas215&#32;speechprocessor/Atlas&#32;speechprocessor.htm"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">Atlas speech processor</span></font></font></a><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="41">.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="42">&nbsp;</span></font></font></p>
+
+<p><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="24" size="5">DESIGN</font></font></b></span></p>
+
+<p align="justify" pbzloc="27"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="20" size="4"><img pbzloc="23" src="speechclips1.gif" style="border-top: 0px solid; height: 403px; border-right: 0px solid; width: 802px; border-bottom: 0px solid; float: left; margin-left: 7px; border-left: 0px solid; margin-right: 7px" />The double sideband signal from the first NE612A (pins 4, 5) is too weak to be limited with two silicon or Schottky diodes without idling current. During experimenting arose a clipper circuit with a diode and the emitter-base junction of a transistor (T1) as second diode. The 1k8 and 3k9 resistors are used for the best possible symmetrical clipping. Eventually can be replaced by a 5k0 potentiometer and 1K0 resistor to refine symmetrical clipping. The transistor contributes the necessary amplification for the ceramic filter CFW455H. This 455 kHz type must be loaded at input and output with 2k0 impedance, which I did at first. However no marked difference was noted with the higher values in the diagram.</font></font></span></p>
+<span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img pbzloc="14" src="scoopf.jpg" style="height: 140px; width: 153px; float: right; margin-left: 5px; margin-right: 5px" /> </font></font></span>
+
+<p style="text-align: justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="43" size="4">The intention is that the diodes clips and not the second mixer. With sufficient signal from the filter, the second mixer limits rather than the diodes. Therefore the filter is loaded with a voltage divider (2k2, 1K0). This (&laquo;fig) can be seen on an oscilloscope with aaahhh ... into the mic.</font></font></span></p>
+<span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="52" size="4"><img pbzloc="55" src="mixers.gif" style="border-top: 0px solid; height: 85px; border-right: 0px solid; width: 85px; border-bottom: 0px solid; float: right; margin-left: 5px; border-left: 0px solid; margin-right: 5px" /> </font></font></span>
+
+<p style="text-align: justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="39" size="4">Note that, unlike the designs of others, oscillator and RF signals are respectively routed to pins 1 and 6 of the second NE612A. I did this for more LF output at pin 4. The clipping level is determined by the strength of the microphone signal. Extreme limiting must be avoid to maintain a good understanding. Optimal is a higher average power output while the listener does not notice that a speech processor is in action. The S meter moves much less. </font></font></span></p>
+<span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="right" height="56" hspace="9" src="outputs.jpg" width="226" /> </font></font></span>
+
+<p><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">The increased average output is noticeable. Use (fig&raquo;) a 230 V/100 W lamp as transmitter load and tune with an ATU for SWR = 1. Speak into the microphone without processor and then enabled clipper, see the lamp show&#39;s more light.</font></font></span></p>
+
+<p><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">FILTER</font></font></b></span></p>
+<span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="125" hspace="9" src="cfw455hf2.jpg" width="270" /> </font></font></b><img align="left" height="119" hspace="9" src="cfw455hf1.jpg" width="320" /> </span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="15" size="4">The Murata 6 kHz/6 dB, 18 kHz/50 dB CFW455H filter (&laquo;fig) is selected as a compromise between bandwidth and price. The type is obsolete, but is still available via internet (ebay.de, ebay.co.uk). More modern versions with the same specifications and with the addition of &quot;H&quot; (eg CFWLA455KHFA-B0) are also suitable. Alternatively, an expensive and narrow SSB filter type CFJ455K13 may used.</font></font></span><br />
+&nbsp;</p>
+
+<p><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">RESONATOR</font></font></b></span></p>
+<span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="125" hspace="9" src="csb455ef.jpg" width="246" /> </font></font></b></span>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">A (fig &raquo;) 455 kHz ceramic resonator is used for the oscillator circuit. Unfortunately, they seldom resonate at the specified frequency. </font></font></span></p>
+
+<table align="left" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="334">
+	<tbody>
+		<tr>
+			<td valign="top" width="30%">
+			<p align="justify"><font size="2"><span lang="N"><img height="120" src="ztb455ef.jpg" width="88" /></span></font></p>
+			</td>
+			<td valign="top" width="70%">
+			<p align="justify"><font size="2"><span lang="N"><img height="124" src="oscillators1.gif" width="225" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">Experimentation is often needed even with items of the same type and brand. I chose for a Murata CSB455E, this model is more in circulation. </span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">Some vendors offer (&laquo;fig) a ZTB455E resonator, probably a newer version of the CSB455E type.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">Experiment with the capacitance in series with the resonator for optimum modulation. For example use first a 470 pF variable capacitor. </span></font></font></p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB"><img align="right" height="105" hspace="9" src="oscillators2.gif" width="90" /> </span></font></font>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">Depending on the resonator&#39;s oscillation frequency the filter&#39;s output signal is SSB with suppressed opposite sideband or partly suppressed opposite sideband. Almost perfect SSB is obtained if the carrier is set to 452 or 457 kHz, which favour to the last frequency. Unfortunately the CSB455E does not oscillate on 457 kHz in this design. If the resonator doesn&#39;t start try (fig&raquo;) the transistor oscillator of the next designs (C = 3n3 - 5n6). </span></font></font></p>
+
+<p align="justify"><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">OTHER DESIGNS</font></font></b></span></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="208" src="speechclips2.gif" width="794" /></span></font></p>
+
+<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">Both are experimental!</span></font></font></b></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">For your information here are a few of my other and possibly interesting designs. At left a compressor where T2 is used as voltage-actuated device and thereby regulates the gain of first NE612A. At right a clipper system with a third NE612A as limiter. Both systems work, but because the previous simple version performs, these circuits are not (yet) &quot;polished&quot;.</font></font></span></p>
+
+<p align="center"><span lang="EN-GB"><b><u><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">The original article</font></font></font></u></b></span></p>
+
+<p align="center"><span lang="EN-GB"><b><font face="Tahoma" size="6"><font face="Tahoma" size="6">A Double-Sideband Limiting RF (HF) Speech Processor </font></font></b></span></p>
+
+<p align="center"><span lang="EN-GB"><b><font face="Tahoma" size="4"><font face="Tahoma" size="4">A simple system based on double-sideband limiting without RF filters. </font></font></b></span></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="162" src="dsb-clips1.gif" width="507" /></span></font></p>
+
+<p align="justify"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><span lang="EN-GB">SPEECH PROCESSOR</span></font></font></b></p>
+<b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><span lang="EN-GB"><img align="right" height="214" hspace="9" src="clipsyss.gif" width="577" /> </span></font></font></b>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">An audio or RF speech processor will give your SSB signal valuable extra &quot;punch&quot;. An audio clipper simply either compresses or clips (or both) the audio signal. This actually ends up making your speech less intelligible, because it produces in-band distortion products. If you clip a signal, it creates harmonics, put simply 800 Hz &raquo; 1600 Hz, 2400 Hz and so on. This can (and often does) result in &#39;whiskers&#39; or splatter which make the transmitted signal wider. </font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4"># Converts audio signal into dsb signal, clips &amp; processes it for greater average envelope power</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4"># Converts signal back into audio</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4"># Adjustable levels of processing &amp; output,</font></font></span></p>
+
+<p align="justify"><span lang="EN-GB"><font face="Tahoma" size="4"><font face="Tahoma" size="4">RF speech processing avoids this issue by converting the audio to a double-sideband (DSB) RF signal before clipping or compression. Any distortion produced will be harmonics of the RF frequency used. If the RF processor uses 6.4 MHz then the harmonics would be 12.8 MHz, 19.2 MHz etc., which are easily filtered out using a narrow band filter. The RF is then demodulated back to audio again. This gives a cleaner sounding signal for the same amount of compression or clipping and a</font></font> <font face="Tahoma" size="4"><font face="Tahoma" pbzloc="50" size="4">6 dB improvement (one S-unit) in RF SSB output power is possible.&nbsp;</font></font></span></p>
+
+<center pbzloc="51">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" pbzloc="16" width="752">
+	<tbody>
+		<tr>
+			<td pbzloc="18" valign="middle" width="55%">
+			<p align="right"><font size="2"><span lang="N"><img height="329" src="testclipf1.jpg" width="403" /></span></font></p>
+			</td>
+			<td valign="top" width="45%">
+			<p><font size="2"><span lang="N"><img height="329" src="testclipf2.jpg" width="320" /></span></font></p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="middle">
+			<p align="center"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2"><span lang="EN-GB"><span style="font-size: 14px">Testing designs with NE612A, CA3028A and TBA120A</span>.</span></font></font></b></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+<img align="right" height="232" hspace="9" src="testclipf3.jpg" width="465" />
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="17">&nbsp;</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">&nbsp;</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB" pbzloc="20">An SSB clipping processor is ideal, although somewhat expensive and complex. A double-sideband limiting processor was constructed and evaluated against an SSB-Clipper. Experimental evidence showed that the DSB-Limiting scheme performed as well as the SSB-Clipping processor when the clipping level was not excessive.&nbsp;</span></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">&nbsp;</span></font></font></p>
+
+<p align="center"><span lang="EN-GB"><font face="Tahoma" size="1"><font face="Tahoma" size="1">&nbsp;</font></font></span></p>
+
+<p align="center" pbzloc="52">&nbsp;</p>
+
+<center pbzloc="53">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="920">
+	<tbody>
+		<tr>
+			<td valign="top" width="58%">
+			<p align="center"><font size="2"><span lang="N"><img height="162" src="dsb-clips1.gif" width="507" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">Saving RF filters with this kiss speech processor.</span></font></font></b></span></p>
+			</td>
+			<td valign="bottom" width="42%">
+			<p align="center"><font size="2"><span lang="N"><img height="120" src="2tonef1.jpg" width="114" /></span></font><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">&nbsp; <img height="120" src="2tonef2.jpg" width="123" /></span></font></font></p>
+
+			<p align="center"><span style="font-size: 14px"><span lang="EN-GB"><b pbzloc="47"><font face="Tahoma"><font face="Tahoma">Two tone output pin 8 TBA120.</font></font></b></span></span></p>
+
+			<p align="center"><span style="font-size: 14px"><span lang="EN-GB"><b pbzloc="23"><font face="Tahoma"><font face="Tahoma">Left: linear, right: symmetrical clipped.</font></font></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="57" size="5">Double-Sideband RF Speech Processor&nbsp;</font></font></b></span></p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="520">
+	<tbody>
+		<tr>
+			<td valign="top" width="73%">
+			<p><font size="2"><span lang="N"><img height="258" src="dsb-clips2.gif" width="371" /></span></font></p>
+			</td>
+			<td valign="middle" width="27%">
+			<p><span style="font-size: 14px"><span lang="N"><img height="120" src="2tonef3.jpg" width="113" /></span></span></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">Output tx: with aahhh&hellip; into the microphone.</span></font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">This Double-Sideband RF Speech Processor takes the audio from the microphone and converts it in a NE612A to an internal 6.4 MHz DSB signal. The signal is then clipped in a TBA120A and is further converted back to audio for input to a transmitter or transceiver. The resulting harmonics (of 6.4 MHz) are filtered out with simple RC filtering when it was demodulated back to audio. The result is a &#39;cleaner&#39; clipped signal being finally transmitted. This increases the average output level of an audio signal from a microphone by clipping off the excessive signal peaks. By lowering the peaks in proportion to the average level, a higher average output level can be attained with an associated increase in intelligibility under difficult conditions. It is set up easily without special equipment because no RF filters are used. It can be used with any make of rig, requiring only signal connections to and from the normal microphone socket. This effective design offers microphone level input and output adjustments. The clip level depends on the amount of microphone gain. </span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="EN-GB">The ALC meter indication may not be quite as high as when the processor is off. This is normal, as the average power output is higher with the processor, although the peaks are being clipped of the loud or hard sounds to eliminate overdrive that leads to spurious and harmonics. It is possible to set the controls so that the peak envelope power reaches the desired level without activating the ALC at all. </span></font></font></p>
+
+<p align="justify"><span lang="EN-GB"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">The level then is only a few tenths of a dB below the level that would have been set by the ALC, but the transmission is a lot cleaner while maintaining very high average modulation. </font></font></font></span></p>
+
+<p><span lang="EN-GB"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">CIRCUIT IDEAS</font></font></b><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="62" size="4">&nbsp;</font></font></span></p>
+
+<center pbzloc="59">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="910">
+	<tbody>
+		<tr>
+			<td colspan="2" valign="middle" width="63%">
+			<p align="center"><font size="2"><span lang="N"><img height="147" src="tuned-circuits.gif" width="188" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB" pbzloc="65">Eventual a tuned circuit.</span></font></font></b></span></p>
+			</td>
+			<td colspan="3" valign="middle" width="37%">
+			<p align="center"><font size="2"><span lang="N"><img height="239" src="dsb-clips3.gif" width="417" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">With audio band pass filter.</span></font></font></b></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="bottom" width="38%">
+			<p align="center"><font size="2"><span lang="N"><img height="105" src="lf-filters.gif" width="330" /></span></font></p>
+
+			<p align="center"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><span lang="EN-GB">&nbsp;</span></font></font></b></p>
+
+			<p align="center"><span style="font-size: 14px"><b><span lang="EN-GB"><font face="Tahoma"><font face="Tahoma">Audio band pass filter.</font></font></span></b></span></p>
+			</td>
+			<td colspan="4" valign="bottom" width="62%">
+			<p align="center"><font size="2"><span lang="N"><img height="171" src="mic-amps.gif" width="317" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">Balance input for the NE612A.</span></font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="center"><font size="2"><span lang="N"><img height="215" src="dsb-clips4.gif" width="920" /></span></font></p>
+
+<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="EN-GB">These 2 circuits are not fully tested.</span></font></font></b></span></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="36" src="bar2.gif" width="500" /></span></font></p>
+
+<p align="center"><a href="../Diversen.htm"><img border="0" height="25" src="backfri.gif" width="53" /></a></p>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="Generator" CONTENT="Microsoft Word 97">
+<TITLE>dsb-clipper</TITLE>
+<META NAME="Titel" CONTENT=" ">
+<META NAME="Template" CONTENT="C:\Program Files\Microsoft Office\Sjablonen\Webpagina's\Wizard Webpagina.wiz">
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" BACKGROUND="Image1.gif">
+<p align="center"><b><font face="Tahoma" size="6"><font face="Tahoma" size="6"><span lang="N" pbzloc="4">EEN DUBBEL ZIJBAND HF SPEECH PROCESSOR</span></font></font></b></p>
+
+<p align="center"><b><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Een eenvoudig systeem gebaseerd op DSB begrenzing en selectie met &eacute;&eacute;n filter.</font></font></span></b></p>
+
+<p align="center"><b><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Experimenten en een werkende eenvoudige versie.</font></font></span></b></p>
+
+<p align="center" pbzloc="7"><span lang="N"><font size="2"><img height="22" src="engver.gif" width="83" /></font><b pbzloc="12"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font><span style="font-size: 14px"><font face="Tahoma"><font face="Tahoma">click on </font></font></span></b></span><span style="font-size: 14px"><a href="dsb-clipper.eng.htm"><b><font face="Tahoma"><font face="Tahoma"><span lang="N" pbzloc="10">RF processor</span></font></font></b></a></span></p>
+
+<p align="center"><font size="2"><span lang="N"><img height="12" src="updated2.gif" width="44" /></span></font><span lang="N"><b pbzloc="9"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp;</font></font><span style="font-size: 14px"><font face="Tahoma"><font face="Tahoma" pbzloc="47">18 jul 2011 Foto van het ontwerp ingebouwd in een TEN-TECC OMNI VI.</font></font></span></b></span></p>
+
+<p align="center"><span lang="N"><b pbzloc="9"><span style="font-size: 14px"><font face="Tahoma"><font face="Tahoma" pbzloc="48">27 jan 2017 Nieuw printontwerp voor een kit.</font></font></span></b></span></p>
+
+<p align="center" pbzloc="16"><span lang="N"><font pbzloc="63" size="2"><img height="379" pbzloc="18" src="speech&#32;processorf3.jpg" width="851" /></font></span><br />
+<strong><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="64" style="font-size: 14px">Een door KENT Electronics&nbsp;ontworpen print. Een kitje is niet meer leverbaar omdat Rinus overleden is</span></span></strong></p>
+
+<p align="center" pbzloc="19"><br />
+<span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" pbzloc="66" size="2"><img border="0" pbzloc="5" src="speech&#32;processorf6.jpg" /></font></font></b></span><br pbzloc="65" />
+<span style="font-size: 14px"><span lang="N"><b pbzloc="22"><font face="Tahoma"><font face="Tahoma" pbzloc="67">Een&nbsp; professionele print&nbsp;ontworpen door PA&Oslash;MBJ kan bij hem besteld worden: <a href="mailto:PA0MBJ@veron.nl" pbzloc="3">PA0MBJ@veron.nl</a>&nbsp;. </font></font></b></span></span></p>
+
+<table align="center" cellpadding="1" cellspacing="1" pbzloc="25" style="width: 700px">
+	<tbody>
+		<tr>
+			<td pbzloc="38" style="text-align: center"><img border="0" height="416" pbzloc="51" src="speech&#32;processorf7.jpg" width="800" /></td>
+			<td pbzloc="53" style="text-align: center"><br />
+			<img border="0" height="119" src="speech&#32;processorf8.jpg" width="229" /></td>
+		</tr>
+	</tbody>
+</table>
+
+<p pbzloc="20"><span style="font-family: tahoma,geneva,sans-serif"><span pbzloc="19" style="font-size: 18px">Het ontwerp kan als&nbsp;bouwpakket bij van Dijken Elektronica besteld worden:</span></span><br />
+<span style="font-family: tahoma,geneva,sans-serif"><span style="font-size: 18px"><a href="https://www.vandijkenelektronica.eu/nl/search?controller=search&amp;orderby=position&amp;orderway=desc&amp;search_query=pa0fri" pbzloc="15">https://www.vandijkenelektronica.eu/nl/search?controller=search&amp;orderby=position&amp;orderway=desc&amp;search_query=pa0fri</a></span></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="12" size="5">INLEIDING</font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="330" hspace="9" src="speech&#32;processorf5.jpg" width="512" /> </font></font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="19" size="4">Het experimenteren met dubbel zijband (DSB) clippers in allerlei vormen heb ik weer eens opgepakt. De getoonde schakeling kan &quot;buitenboord&quot; tussen microfoon en zender. Nog beter is het om het ontwerp in een (oudere) transceiver te monteren als vervanger van het systeem tussen microfooningang en balansmodulator. Dan voorkomt men extra versterking en mogelijke vervorming van de bestaande microfoonversterker. Inmiddels is het ontwerp in aangepaste vorm in een Atlas215x geplaatst, zie </font></font></span><a href="../../Mods/Atlas215&#32;speechprocessor/Atlas&#32;sraakprocessor.htm"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Atlas spraakprocessor</span></font></font></a><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">. Het plan is om zulks ook te doen in mijn TenTec en Swan apparaten.</span></font></font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="75">De DSB begrenzer in mijn oorspronkelijke artikel (zie onderaan) gaf problemen bij sommige buitenlandse nabouwers. Waarschijnlijk door het gebruik van een ander type IC (b.v. TBA120S, TBA120AS, TBA120T, TBA120U) dan het eerdere model (TBA120, TBA120A) hetwelk in mijn schakeling toegepast werd. Bovendien zijn de oudere types steeds moeilijker te verkrijgen. Reden waarom ik ben gaan experimenteren met de goed beschikbare NE612A of SA612AN. </span></font></font></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="79">Destijds&nbsp;heb ik KENT Electonics gevraagd of zij een print willen ontwerpen om het gemakkelijker voor zelfbouwers te maken. Het gevolg is dat er een kitje met alle componenten als zelfbouwpakket in hun assortiment werd opgenomen.</span></font></font><br />
+&nbsp;</p>
+
+<p align="center">&nbsp;</p>
+
+<center pbzloc="11">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="911">
+	<tbody>
+		<tr>
+			<td valign="top" width="60%">
+			<p align="center" pbzloc="10"><img border="0" height="403" src="speechclips1.gif" width="802" /></p>
+
+			<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="23"><font face="Tahoma"><font face="Tahoma" pbzloc="8">De eenvoudige versie.</font></font></b></span></span></p>
+			</td>
+			<td valign="middle" width="40%">
+			<p align="center"><font size="2"><span lang="N"><img height="197" src="speech&#32;processorf1.jpg" width="320" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="26"><font face="Tahoma"><font face="Tahoma">Dode kever montage systeem om te experimenteren. IC voeten gebruikt voor het geval dat de component het loodje legt.</font></font></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p>&nbsp;</p>
+<img align="right" height="143" hspace="9" src="heilamps.jpg" width="231" />
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Deze eenvoudige versie van al mijn bedachte systemen werkt naar behoren en trekt ongeveer 13 mA stroom. Drie verschillende printontwerpen werden gebruikt en met een geschikte resonator deden ze het allemaal zonder afregeling goed. Sommige microfoons geven te weinig af en dan is een milde voorversterker nodig. Bij voorbeeld (fig&raquo;) het type dat ontworpen is voor mijn HEIL microfoons. De output van de processor is voor sommige transceivers te laag, zodat er nog een (eventueel dezelfde) versterkertrap achter de laatste mixer (NE612) moet komen. Het een en ander hoefde niet bij mijn Atlas 215x, Swan 100MX, Ten-Tec Corsair II en Ten-Tec OMNI VI. In de laatste twee sets werkt dit ontwerp beter dan de ingebouwde originele spraak processors.</span></font></font></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">BEGRENZER </font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">(CLIPPER)</font></font></b></span></p>
+
+<table align="left" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="200">
+	<tbody>
+		<tr>
+			<td valign="middle" width="51%">
+			<p align="justify"><font size="2"><span lang="N"><img height="75" src="diodeclips1.gif" width="102" /></span></font></p>
+			</td>
+			<td valign="middle" width="49%">
+			<p align="justify"><font size="2"><span lang="N"><img height="93" src="diodeclips2.gif" width="92" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Het dubbel zijband signaal uit de eerste mixer NE612A (pin 4, 5) wordt geclipt, maar is te zwak om zonder voorspanning begrensd te worden met silicium of Schottky diodes. Daarom ontstond al experimenterend een (&laquo;fig) stroom trekkende begrenzer met twee diodes: een 1N4148 en de basis-emitter overgang van een transistor (T1) als tweede diode. De weerstanden 1k8 en 3k9 zijn er voor een zo goed mogelijke symmetrische begrenzing. Eventueel te vervangen door een 5k0 potmeter en 1k0 weerstand om bij uw versie de instelling te verfijnen. Verder zorgt de transistor voor de nodige versterking naar het keramische CFW455H filter. Dit 455 kHz type moet aan de in en uitgang afgesloten worden met 2k0. Dat deed ik in eerste instantie, maar er werd geen verschil gemerkt met de hogere waarden in het schema. </span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">De bedoeling is dat de diodes clippen en niet de tweede mixer. Met voldoende signaal uit het filter gaat de tweede mixer eerder begrenzen dan de diodes. Om dat te voorkomen is aan de uitgang van het filter een spanningsdeler (2k2, 1k0) aangebracht. </span></font></font></p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N"><img align="left" height="140" hspace="9" src="scoopf.jpg" width="153" /> </span></font></font>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Het clipniveau wordt bepaald door de sterkte van het microfoonsignaal en extreme begrenzing dient men te vermijden om een goede verstaanbaarheid te behouden. Optimaal is een groter gemiddeld zendvermogen zonder dat de luisteraar merkt dat er een speech processor in het spel is. Met 100 W zendvermogen en een mechanische Wattmeter zal de wijzer gemiddeld ongeveer 20 &agrave; 25 W aanwijzen. De S-meter bij de gesprekspartner wijst niet meer aan, maar beweegt veel minder. De set trekt gemiddeld ook meer stroom zodat het koelblok van de transistor eindtrap veel warmer wordt! Met een luid aahhh&hellip; in de microfoon ziet dat er zo (&laquo;fig) uit op een scoop. </span></font></font></p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N"><img align="right" height="56" hspace="9" src="outputs.jpg" width="226" /> </span></font></font>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Het toegenomen zendvermogen kan men zelf vaststellen. Gebruik (fig&raquo;) een 230 V/100 W gloeilamp als belasting en regel met een (interne) tuner af op SWR = 1. Praat in de microfoon zonder processor en daarna met ingeschakelde clipper, zie dan dat de lamp meer licht geeft. </span></font></font></p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N"><img align="right" height="85" hspace="9" src="mixers.gif" width="85" /> </span></font></font>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Merk op dat, in tegenstelling tot de ontwerpen van anderen, (fig&raquo;) oscillator en HF signalen op respectievelijk de pennen 1 en 6 van de tweede NE612A worden aangeboden. Daarmee was er meer LF output op pen 4.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Er was een potmeter aan de ingang nodig omdat de ingezette dynamische microfoon bij de proeven teveel signaal produceerde. </span></font></font></p>
+
+<p align="justify" pbzloc="8">&nbsp;</p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="125" hspace="9" src="cfw455hf2.jpg" width="270" /> </font></font></b></span>
+
+<p align="justify" pbzloc="5"><span lang="N"><b pbzloc="3"><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="6" size="5">FILTER</font></font></b></span></p>
+<span lang="N"><img align="left" height="119" hspace="9" src="cfw455hf1.jpg" width="320" /> </span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Het Murata 6kHz/6dB, 18kHz/50dB CFW455H filter is geselecteerd als compromis tussen bandbreedte en prijs. Het type is &quot;obsolete&quot;, maar is nog steeds in de handel bij onder andere KENT Electronics, Barend Hendrikse, Conrad (CFW455HT) en verder via internet winkels. Modernere versies met dezelfde specificaties en met de toevoeging &quot;H&quot; (o.a. CFWLA455K</font></font><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">H</font></font></font><font face="Tahoma" size="4"><font face="Tahoma" size="4">FA-B0) zijn ook geschikt. Naar keuze kan men het veel duurdere en smallere SSB filter type CFJ455K13 inzetten. Met enig geduld of goed uitkijken is dat via eBay voor een gemiddelde prijs van ongeveer 15 Euro aan te schaffen. Ten tijde van mijn experimenten werd dat filter om de een of ander reden veelvuldig via eBay.de aangeboden en zo heb ik ook een aantal verkregen.</font></font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="113" size="5">KERAMISCHE RESONATOR&nbsp;</font></font></b></span></p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="255">
+	<tbody>
+		<tr>
+			<td valign="middle">
+			<p><font size="2"><span lang="N"><img height="125" src="csb455ef.jpg" width="246" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">In de oscillator schakeling wordt een (fig&raquo;) 455 kHz keramische resonator toegepast. Jammer genoeg piepen zij zelden op of rond de aangegeven frequentie. Experimenteren is vaak geboden, want het komt zelfs voor bij exemplaren en types van hetzelfde merk. Gekozen is voor een Murata CSB455E, dit model is wat meer in omloop. Men kan de modulatie optimaliseren door het veranderen van de condensator in serie met de resonator. In het volgende schema ziet u de optimale waarden die gevonden werden voor de resonatoren die ik monteerde. </span></font></font></p>
+
+<table align="left" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="340">
+	<tbody>
+		<tr>
+			<td valign="middle" width="29%">
+			<p align="justify"><font size="2"><span lang="N"><img height="120" src="ztb455ef.jpg" width="88" /></span></font></p>
+			</td>
+			<td valign="middle" width="71%">
+			<p align="center"><font size="2"><span lang="N"><img height="124" src="oscillators1.gif" width="225" /></span></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Conrad en KENT hebben een ZTB455E type dat waarschijnlijk een nieuwere versie is van CSB455E. </span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Een (&laquo;fig) ZTB455E oscilleerde in de schakeling op 449.7 kHz en dat zorgde voor een schelle modulatie met weinig lage tonen. Die frequentie was net te ver van het -6 DB punt van de filterdoorlaat. Om de frequentie te verhogen naar 452 kHz was 330 pF in serie met de resonator nodig. Om een zo goed mogelijke modulatie te verkrijgen kan men tijdelijk een 500 pF variabele condensator of trimmer gebruiken en daarna een vaste waarde monteren.</span></font></font></p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N"><img align="right" height="105" hspace="9" src="oscillators2.gif" width="90" /> </span></font></font>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Het blauwe 455 kHz exemplaar van een onbekend merk resoneerde zelfs in de buurt van 463 kHz en kon alleen door (fig&raquo;) de getoonde &eacute;&eacute;n transistor oscillator (C=3n3-5n6) op frequentie gebracht worden.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Afhankelijk van de frequentie van de resonator komt er SSB uit het CFW455H filter met onvoldoende onderdrukte andere zijband of goed onderdrukte andere zijband. Een bijna correcte SSB is er als de draaggolf ingesteld wordt op 452 of 457 kHz waarbij men bij voorkeur moet kiezen voor de laatste frequentie. Jammer genoeg kon dat alleen met een signaalgenerator, want de NE612A was met een CSB455E niet op 457 kHz aan de gang te krijgen. Overigens maakt het gezien de audio kwaliteit aan de uitang van de processor niet uit of de andere zijband al dan niet goed onderdrukt is. Maar toch wil je alles zo optimaal mogelijk, niet waar?</span></font></font></p>
+<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N"><img align="right" height="43" hspace="9" src="oscillators3.gif" width="156" /> </span></font></font>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">Om een duur 457 kHz kristal uit te sparen kan men eventueel (fig&raquo;) een oscillator met een goedkoop 3655 kHz piepsteentje maken en de frequentie door 8 delen. </span></font></font></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">PRINT OF?</font></font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Met geduld, een loep en vaste vingers, kan het ontwerp (&laquo;fig) kleiner worden dan mijn eerder afgebeelde proefmodel.</font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="right" height="135" hspace="9" src="speech&#32;processorf4.jpg" width="302" /> </font></font></span>
+
+<p align="justify">&nbsp;</p>
+<span lang="N"><img align="left" height="131" hspace="9" src="speech&#32;processorf2.jpg" width="320" /> </span>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="82" size="4">KENT Electronics te Hoek hadt (fig&raquo;) een 9 &times; 4 cm print ontworpen en leverde dat als bouwpakketje inclusief de componenten.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="80" size="4">Met SMD componenten en een goed printontwerp, is een miniatuur formaat mogelijk dat in veel oudere transceivers zal passen.&nbsp;</font></font></span></p>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">ANDERE ONTWERPEN</font></font></b></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="208" src="speechclips2.gif" width="794" /></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="30"><font face="Tahoma"><font face="Tahoma">Deze schakelingen werken, maar zijn vooralsnog in experimentele fase!</font></font></b></span></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="70" size="4">Ter informatie ziet u hier nog een paar van mijn andere en misschien interessante ontwerpen waarmee ge&euml;xperimenteerd werd. Links een compressor systeem waarbij de spanning en dus versterking op de eerste NE612A geregeld wordt met T2. Rechts een clipper systeem met een derde NE612A als begrenzer. Beide systemen werken, maar omdat de eenvoudige versie het goed deed, zijn deze schakelingen (nog) niet verder gepolijst.&nbsp;</font></font></span></p>
+
+<p align="center"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">HET OORSPRONKELIJKE ARTIKEL</font></font></b></span></p>
+
+<p align="center"><span lang="N"><b><font face="Tahoma" size="4"><font face="Tahoma" size="4">Een eenvoudig systeem gebaseerd op DSB begrenzing zonder HF filters.</font></font></b></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="162" src="dsb-clips1.gif" width="507" /></font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">SPRAAKBEGRENZER</font></font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Het zal wel bekend zijn dat het gemiddelde spraakniveau verhoogd kan worden door compressie of door begrenzen (clippen) van een LF of HF signaal. Met HF clippen kan men het gemiddelde vermogen van een zender zodanig vermeerderen dat het lijkt alsof er een 6 dB HF versterker ingeschakeld wordt. Beide systemen zijn eigenlijk niet lineaire bewerkingen waarbij vervorming ontstaat door het opwekken van veelvouden van de aangeboden frequenties. Bij LF vallen de veelvouden in het spraakgebied en met HF valt het erbuiten door het opschonen met &eacute;&eacute;n of meer smalle kristal of keramische filters. </font></font></span></p>
+<span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><img align="right" height="214" hspace="9" src="clipsyss.gif" width="577" /> </font></font></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Bewerking van een HF signaal is het effectiefste. Daarom ziet men vaak een systeem (fig&raquo;) waarbij het middenfrequent signaal (IF) geclipt wordt en dan is een extra filter toegevoegd. Begrenzen van een dubbel zijband (DSB) signaal werkt net zo goed en kost geen tweede filter. Er ontstaat meer vervorming dat echter door het al aanwezige filter onderdrukt wordt. Als men het clipniveau niet tot het uiterste instelt, is er in de praktijk geen verschil tussen beide systemen te horen.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Mijn idee was dat als het begrensde DSB signaal zonder HF filter weer naar LF getransformeerd wordt, een eenvoudig LF filter ervoor kan zorgen dat de geconverteerde nevenproducten van het DSB signaal voldoende onderdrukt worden. De uitgang wordt op de microfooningang van een transceiver aangesloten. Door verdere bewerking in de set zal vervorming nauwelijks te onderscheiden zijn van een HF clipper met al zijn dure filters.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Een bijkomende eigenschap van een begrenzer vind ik eigenlijk nog het grootste voordeel, namelijk dat met een juiste instelling een eindtrap van een zender nooit overstuurd kan worden en een schoon signaal behouden blijft. </font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="71" size="5">PROBEERSELS</font></font></b></span></p>
+
+<center pbzloc="107">
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="752">
+	<tbody>
+		<tr>
+			<td valign="middle" width="55%">
+			<p align="right"><font size="2"><span lang="N" pbzloc="95"><img height="329" src="testclipf1.jpg" width="403" /></span></font></p>
+			</td>
+			<td pbzloc="96" valign="top" width="45%"><img align="left" height="232" hspace="9" pbzloc="97" src="testclipf3.jpg" style="height: 328px; width: 519px" width="465" /></td>
+			<td valign="top" width="45%">
+			<p><font size="2"><span lang="N"><img height="329" pbzloc="87" src="testclipf2.jpg" width="320" /></span></font></p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" valign="middle">
+			<p align="center"><span style="font-size: 14px"><b><font face="Tahoma"><font face="Tahoma"><span lang="N">Experimentele schakelingen met onder andere NE612A, CA3028A and TBA120A.</span></font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="108">Jaren geleden heeft een dergelijke schakeling van mij al in Electron gestaan. Momenteel wordt er weer met dat idee gespeeld. Omdat hier nog niet met een NE612A gestoeid werd, leek het oppakken van dat oude ontwerp een goed begin om ervaring op te doen. Na het testen van diverse probeersels van NE612 in combinatie met TBA120A en, of, CA3028A ontstond het volgende eenvoudige ontwerp met zo min mogelijk componenten. Dit schema leek aantrekkelijk om er verder mee te experimenteren.</span></font></font></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" pbzloc="15" size="5">SIMPEL EN EFFECTIEF</font></font></b></span></p>
+
+<table align="right" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="527">
+	<tbody>
+		<tr>
+			<td valign="top">
+			<p align="center"><font size="2"><span lang="N"><img height="162" src="dsb-clips1.gif" width="507" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="37"><font face="Tahoma"><font face="Tahoma">Deze eenvoudige processor heeft geen dure keramische of kristalfilters.</font></font></b></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">In een NE612A mixer wordt HF opgewekt door het mengen van signalen uit microfoon en interne oscillator. Er ontstaat een HF dubbel zijband signaal dat via pin 4 gevoerd wordt naar twee emitter gekoppelde transistors in een TBA120. Zij zorgen voor het begrenzen en een interne mixer mengt weer omlaag naar LF. De van buiten toegankelijke halfgeleiders zitten jammer genoeg niet in het mixersysteem van een NE612A, anders kon het ontwerp beperkt worden tot &eacute;&eacute;n type IC. Het kristal van 6.4 MHz is niet kritisch, er waren hier genoeg in voorraad. Elke andere frequentie van 3 - 10.7 MHz is bruikbaar omdat de interne oscillator gemakkelijk op gang komt en er geen filters zijn. Bij het inbouwen in een set kan de oscillator vervallen als van een aanwezige klokoscillator het (verzwakte) signaal op pin 6 ge&iuml;njecteerd wordt. </span></font></font></p>
+
+<table align="left" border="0" cellpadding="4" cellspacing="0" dir="ltr" hspace="12" width="440">
+	<tbody>
+		<tr>
+			<td valign="top" width="69%">
+			<p align="center"><font size="2"><span lang="N"><img height="120" src="2tonef1.jpg" width="114" /></span></font><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">&nbsp; <img height="120" src="2tonef2.jpg" width="123" /></font></font></span></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">Tweetoon signaal op pin 8 van TBA120.</font></font></b></span></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">Links: lineair, rechts: symmetrisch begrensd.</font></font></b></span></p>
+			</td>
+			<td valign="middle" width="31%">
+			<p align="center"><font size="2"><span lang="N"><img height="120" src="2tonef3.jpg" width="113" /></span></font></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">Uit de zender met ahhh&hellip; in de microfoon.</font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p align="justify">&nbsp;</p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N" pbzloc="112">De mate van begrenzing wordt bepaald door de sterkte van het microfoonsignaal. De begrenzer van een TBA120A was eigenlijk teveel van het goede en daarom wordt het gebruikt als buffer voor het signaal van de kristaloscillator. De versterking werd verder getemperd door respectievelijk: diverse pinnen niet te ontkoppelen, montage van een kleine koppelcondensator (10 - 22 pF) en pin 12 via 2.2 k</span></font></font><span lang="N"><b><font face="Symbol" size="4"><font face="Symbol" size="4">W</font></font></b><font face="Tahoma" size="4"><font face="Tahoma" size="4"> met pin 13 en 14 te verbinden. In eerste instantie werd het dubbel zijband signaal in tegenfase aangeboden aan pin 7 en 9, maar dan was het begrenzen minder symmetrisch en de mixerversterking onnodig groter. </font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Hoewel een TBA120A uit de productie genomen is, blijkt dat zij nog steeds nieuw (oude voorraad) te koop aangeboden worden.</font></font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">EXTRA TERUGREGELING</font></font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Meermaals vroeg ik mij af hoe een speech processor zo werken als begrenzen en comprimeren gecombineerd werden. Er zijn wel ontwerpen waarbij dat gebeurt, maar dan wordt eerst op LF gecomprimeerd en daarna op HF geclipt. Een omgekeerde volgorde ben ik nog niet tegengekomen, maar met een TBA120 is dat mogelijk als pin 5 geregeld wordt. Hoewel het goed werkte, werd dat idee los gelaten omdat de instelling daarvan nogal kritisch was en bij het nabouwen een probleem kan worden. </font></font></span></p>
+
+<p><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">EXTERNE PROCESSOR</font></font></b></span></p>
+<span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5"><img align="right" height="258" hspace="9" src="dsb-clips2.gif" width="371" /> </font></font></b></span>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Voor transceivers zonder speech processor kan men een externe eenheid (fig&raquo;) bouwen zodat moeilijke en dure modificaties in het apparaat niet nodig zijn. De transistor T (b.v. BC547) met een vaste weerstand in de collector werd ontworpen voor een Heil HC5 microfoon element. Er hoefde bij mij niets geregeld te worden want in combinatie met mijn stem ontstaat voldoende en niet te veel begrenzing. In het schema werd een potmeter ingetekend om toch een regelmogelijkheid te bieden. Eventueel kan men naar eigen smaak een andere regelbare microfoon versterker toepassen.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Frequenties hoger dan 3000 Hz worden onderdrukt door een interne weerstand en de twee condensatoren die pin 8 van de TBA120A ontkoppelen. De smoorspoel houdt resten van het HF signaal tegen.</font></font></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Het totale stroomverbruik bij 8 Volt is kleiner dan 20 mA, TBA120 en NE612 samen 17 mA en met voorversterker erbij 18.5 mA. Als het ontwerp compact gebouwd wordt, past het zelfs in veel bestaande microfoon behuizingen.</font></font></span></p>
+
+<p align="justify"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">GEDACHTENKRONKELS</font></font></b></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" pbzloc="74" size="4">De charme van dit ontwerp is zijn eenvoud en als zodanig werkt het goed en zal het onder andere in mijn ATLAS 210x transceiver gebouwd worden. U kunt zelf de schakeling verder uitbreiden of naar smaak perfectioneren. Hier volgen enige idee&euml;n die u op weg kunnen helpen.</font></font></span></p>
+
+<center>
+<table border="0" cellpadding="4" cellspacing="0" dir="ltr" width="868">
+	<tbody>
+		<tr>
+			<td colspan="2" valign="middle" width="61%">
+			<p align="center"><font size="2"><span lang="N"><img height="147" src="tuned-circuits.gif" width="188" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="77"><font face="Tahoma"><font face="Tahoma">Eventueel een afgestemde kring. </font></font></b></span></span></p>
+			</td>
+			<td colspan="2" valign="middle" width="39%">
+			<p align="center"><font size="2"><span lang="N"><img height="239" src="dsb-clips3.gif" width="417" /></span></font></p>
+
+			<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="40"><font face="Tahoma"><font face="Tahoma">Een eenvoudig LF filter aan de uitgang.</font></font></b></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="bottom" width="39%">
+			<p align="center"><font size="2"><span lang="N"><img height="105" src="lf-filters.gif" width="330" /></span></font></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="5"><font face="Tahoma" size="5">&nbsp;</font></font></b></span></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">(1)</font></font></b></span></p>
+			</td>
+			<td colspan="2" valign="bottom" width="36%">
+			<p align="center"><font size="2"><span lang="N"><img height="171" src="mic-amps.gif" width="317" /></span></font></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">(2)</font></font></b></span></p>
+			</td>
+			<td valign="middle" width="25%">
+			<p align="center"><font size="2"><span lang="N"><img height="216" src="darlingtons.gif" width="185" /></span></font></p>
+
+			<p align="center"><span lang="N"><b><font face="Tahoma" size="2"><font face="Tahoma" size="2">(3)</font></font></b></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p pbzloc="41">&nbsp;<font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">(1) Een eenvoudig filter met een opamp of transistor kan als toevoeging ervoor zorgen dat het spraakspectrum nog beter geselecteerd wordt.</span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">(2) Een NE612A heeft ook een balans ingang op pin 1 en 2. Een schakeling om dat te benutten ziet u in de tweede figuur gecombineerd met hetzelfde filter dat achter de TBA120A staat. </span></font></font></p>
+
+<p align="justify"><font face="Tahoma" size="4"><font face="Tahoma" size="4"><span lang="N">(3) Voor andere toepassingen kan men bij een NE612A de stabiliteit van de oscillator verbeteren met een Darlington systeem. Een extra transistor gekoppeld aan de interne oscillator schakeling vermindert de invloed op het kristal of VFO omdat grotere capaciteiten in het circuit mogelijk zijn. Bovendien werkt het als buffer om het signaal eventueel elders te injecteren.</span></font></font><span lang="N"><b><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4"><font color="#0000ff" face="Tahoma" size="4">&nbsp;</font></font></font></b></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="215" src="dsb-clips4.gif" width="920" /></font></span></p>
+
+<p align="center"><span style="font-size: 14px"><span lang="N"><b pbzloc="44"><font face="Tahoma"><font face="Tahoma">Dit is niet uitgebreid getest.</font></font></b></span></span></p>
+
+<p align="justify"><span lang="N"><font face="Tahoma" size="4"><font face="Tahoma" size="4">Ook kan men andere (modernere) IC&#39;s voor dit ontwerp gebruiken of een ouder type zoals CA3028A inzetten of dit IC vervangen door discrete componenten. Tegenwoordig krijg ik vrijwel geen informatie meer over nieuwe IC&#39;s, maar wellicht zijn er inmiddels typen die dit ontwerp nog eenvoudiger kunnen maken.</font></font></span></p>
+
+<p align="center"><span lang="N"><font size="2"><img height="36" src="bar2.gif" width="500" /></font></span></p>
+
+<p align="center"><a href="../Diversen.htm"><img border="0" height="25" src="backfri.gif" width="53" /></a></p>
+
+<p align="center"><span lang="N">&nbsp;</span></p>
+
+<p align="center"><span lang="N">&nbsp;</span></p>
+</body>
+</html>
